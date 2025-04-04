@@ -51,7 +51,7 @@ fetch(routeUrl)
         weight: 4,
         opacity: 0.7
       }).addTo(map);
-      route1.bindPopup('Etappe 1: Bogotá → Subía');
+      route1.bindPopup('Etappe 1: Bogotá &rarr; Subía');  // HTML-Entity für den Pfeil
     } else {
       console.error('Keine Route in der API-Antwort gefunden:', data);  // Fehler, wenn keine Route in der Antwort ist
     }
