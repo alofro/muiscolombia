@@ -11,18 +11,7 @@ function showElevation() {
 }
 
 // Leaflet-Karte initialisieren
-const map = L.map('map').setView([4.711, -74.072], 6); // Bogotá als Beispiel
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '© OpenStreetMap',
-}).addTo(map);
-
-// Beispielmarker
-//const marker = L.marker([4.711, -74.072]).addTo(map);
-//marker.bindPopup('Start in Bogotá').openPopup();
-
-// Karte initialisieren
-const map = L.map('map').setView([4.6, -74.2], 9); // Zwischen Bogotá & Subía
+const map = L.map('map').setView([4.7, -74.3], 10); // Zwischen Bogotá & Subía
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap',
@@ -36,15 +25,16 @@ bogota.bindPopup('<b>Tag 1 Start</b><br>Bogotá');
 const subia = L.marker([4.75, -74.45]).addTo(map);
 subia.bindPopup('<b>Tag 1 Ziel</b><br>Subía');
 
-// Linie von Bogotá nach Subía
+// Linie zwischen Bogotá und Subía
 const route1 = L.polyline([
   [4.711, -74.072],
   [4.75, -74.45]
 ], {
-  color: 'blue'
+  color: 'blue',
+  weight: 4,
+  opacity: 0.7
 }).addTo(map);
 route1.bindPopup('Etappe 1: Bogotá → Subía');
-
 
 // Höhenprofil-Dummy
 const ctx = document.getElementById('elevationChart').getContext('2d');
