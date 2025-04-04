@@ -51,4 +51,29 @@ fetch(routeUrl)
         weight: 4,
         opacity: 0.7
       }).addTo(map);
-      route1.bindPopup('Etappe 1: Bogotá →
+      route1.bindPopup('Etappe 1: Bogotá → Subía');
+    } else {
+      console.error('Keine Route in der API-Antwort gefunden:', data);  // Fehler, wenn keine Route in der Antwort ist
+    }
+  })
+  .catch(error => console.error('Fehler beim Abrufen der Route:', error));
+
+// Höhenprofil-Dummy (Chart.js)
+const ctx = document.getElementById('elevationChart').getContext('2d');
+const elevationChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ['0 km', '10 km', '20 km', '30 km'],
+    datasets: [{
+      label: 'Höhenmeter',
+      data: [2600, 2800, 2500, 2700],
+      fill: false,
+      borderColor: 'green',
+      tension: 0.1
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false
+  }
+});
