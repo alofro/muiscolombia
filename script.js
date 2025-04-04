@@ -28,8 +28,6 @@ subia.bindPopup('<b>Tag 1 Ziel</b><br>Subía');
 
 // OpenRouteService API-Aufruf
 const apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';  // Dein OpenRouteService API-Schlüssel
-
-// Die Route-URL muss vor dem fetch-Aufruf definiert werden
 const routeUrl = `https://api.openrouteservice.org/v2/directions/driving-car?api_key=${apiKey}&start=-74.072,4.711&end=-74.45,4.75`;
 
 fetch(routeUrl)
@@ -58,28 +56,32 @@ fetch(routeUrl)
       }).addTo(map);
 
       route1.bindPopup('<b>Etappe 1: Bogotá → Subía</b>');  // PopUp mit HTML
+
+      // Extrahieren der Höheninformationen aus der API-Antwort
+      const elevationData = data.features[0].segments[0].steps.map(step => step.elevation);
+      console.log('Höheninformationen:', elevationData);  // Überprüfe die Höhenwerte in der Konsole
+
+      // Höheninformationen im Diagramm anzeigen
+      const elevationChart = new Chart(document.getElementById('elevationChart').getContext('2d'), {
+        type: 'line',
+        data: {
+          labels: Array.from({ length: elevationData.length }, (_, i) => `${i} km`), // X-Achse mit km-Werten
+          datasets: [{
+            label: 'Höhenmeter',
+            data: elevationData,  // Höheninformationen aus den API-Daten
+            fill: false,
+            borderColor: 'green',
+            tension: 0.1
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false
+        }
+      });
+
     } else {
       console.error('Keine Route in der API-Antwort gefunden:', data);  // Fehlerbehandlung
     }
   })
   .catch(error => console.error('Fehler beim Abrufen der Route:', error));
-
-// Höhenprofil-Dummy (Chart.js)
-const ctx = document.getElementById('elevationChart').getContext('2d');
-const elevationChart = new Chart(ctx, {
-  type: 'line',
-  data: {
-    labels: ['0 km', '10 km', '20 km', '30 km'],
-    datasets: [{
-      label: 'Höhenmeter',
-      data: [2600, 2800, 2500, 2700],
-      fill: false,
-      borderColor: 'green',
-      tension: 0.1
-    }]
-  },
-  options: {
-    responsive: true,
-    maintainAspectRatio: false
-  }
-});
