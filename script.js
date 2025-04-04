@@ -1,50 +1,64 @@
-// Karte initialisieren
-const map = L.map('map').setView([4.60971, -74.08175], 9);
+// Initialisieren der Karte
+const map = L.map('map').setView([4.60971, -74.08175], 12); // Startpunkt Bogotá
 
-// OpenStreetMap-Layer hinzufügen
+// OpenStreetMap Tile Layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; OpenStreetMap contributors'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Dein OpenRouteService API-Key
+// Die Koordinaten der Routenpunkte
+const waypoints = [
+    [4.60971, -74.08175],  // Bogotá
+    [4.5982, -74.0223],    // Subía (Beispiel, du kannst hier weitere Punkte hinzufügen)
+];
+
+// Marker für die Punkte setzen
+const markers = waypoints.map(coord => {
+    const marker = L.marker(coord).addTo(map);
+    marker.bindPopup('Marker');
+    return marker;
+});
+
+// URL der API für die Route
+const url = 'https://api.openrouteservice.org/v2/directions/cycling-regular/geojson';
+
+// Deine OpenRouteService API-Key
 const apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';
 
-// Daten aus routes.json laden
-fetch('routes.json')
-  .then(response => response.json())
-  .then(async data => {
-    const coords = data.map(point => point.coordinates);
-    const latlngs = [];
+// Berechnung der Route von den Waypoints
+async function getRoute() {
+    const coordinates = waypoints.map(point => point.reverse());  // Die Koordinaten für die API in [lon, lat] umdrehen
 
-    data.forEach((point, index) => {
-      const marker = L.marker(point.coordinates).addTo(map);
-      marker.bindPopup(`${index + 1}. Etappe: ${point.name}`);
+    const body = JSON.stringify({
+        coordinates: coordinates,
+        profile: 'cycling-regular',
+        format: 'geojson'
     });
 
-    // Anfrage an OpenRouteService
-    const response = await fetch('https://api.openrouteservice.org/v2/directions/cycling-regular/geojson', {
-      method: 'POST',
-      headers: {
-        'Authorization': apiKey,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        coordinates: coords
-      })
+    const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+            'Authorization': apiKey,
+            'Content-Type': 'application/json'
+        },
+        body: body
     });
 
-    const geojson = await response.json();
+    if (response.ok) {
+        const geojson = await response.json();
+        console.log('GeoJSON Antwort:', geojson);
 
-    // Route auf der Karte darstellen
-    const route = L.geoJSON(geojson, {
-      style: {
-        color: 'blue',
-        weight: 4
-      }
-    }).addTo(map);
+        // Route auf der Karte anzeigen
+        L.geoJSON(geojson, {
+            style: {
+                color: 'blue',
+                weight: 4
+            }
+        }).addTo(map);
+    } else {
+        console.error('Error loading the route data:', response.statusText);
+    }
+}
 
-    map.fitBounds(route.getBounds());
-  })
-  .catch(error => {
-    console.error('Error loading the route data:', error);
-  });
+// Aufrufen der Funktion, um die Route zu laden
+getRoute();
