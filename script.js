@@ -32,6 +32,7 @@ const routeUrl = `https://api.openrouteservice.org/v2/directions/driving-car?api
 fetch(routeUrl)
   .then(response => response.json())
   .then(data => {
+    console.log('API Antwort:', data);  // Ausgabe der gesamten API-Antwort
     const coordinates = data.routes[0].geometry.coordinates.map(coord => [coord[1], coord[0]]);  // Umkehrung der Koordinaten (wegen GeoJSON)
 
     // Linie der Route hinzufügen
