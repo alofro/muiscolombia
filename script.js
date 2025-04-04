@@ -25,16 +25,24 @@ bogota.bindPopup('<b>Tag 1 Start</b><br>Bogotá');
 const subia = L.marker([4.75, -74.45]).addTo(map);
 subia.bindPopup('<b>Tag 1 Ziel</b><br>Subía');
 
-// Linie zwischen Bogotá und Subía
-const route1 = L.polyline([
-  [4.711, -74.072],
-  [4.75, -74.45]
-], {
-  color: 'blue',
-  weight: 4,
-  opacity: 0.7
-}).addTo(map);
-route1.bindPopup('Etappe 1: Bogotá → Subía');
+// OpenRouteService API-Aufruf
+const apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';  // Dein OpenRouteService API-Schlüssel
+const routeUrl = `https://api.openrouteservice.org/v2/directions/driving-car?api_key=${apiKey}&start=-74.072,4.711&end=-74.45,4.75`;
+
+fetch(routeUrl)
+  .then(response => response.json())
+  .then(data => {
+    const coordinates = data.routes[0].geometry.coordinates.map(coord => [coord[1], coord[0]]);  // Umkehrung der Koordinaten (wegen GeoJSON)
+
+    // Linie der Route hinzufügen
+    const route1 = L.polyline(coordinates, {
+      color: 'blue',
+      weight: 4,
+      opacity: 0.7
+    }).addTo(map);
+    route1.bindPopup('Etappe 1: Bogotá → Subía');
+  })
+  .catch(error => console.error('Error fetching route:', error));
 
 // Höhenprofil-Dummy
 const ctx = document.getElementById('elevationChart').getContext('2d');
