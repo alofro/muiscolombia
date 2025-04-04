@@ -1,5 +1,11 @@
-// Dein API-Key
+// API Key von OpenRouteService
 const apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';
+
+// Koordinaten der Marker
+const coordinates = [
+  [-74.2973, 4.5709],  // Startpunkt
+  [-74.0, 4.7]         // Zielpunkt
+];
 
 // Erstelle eine Karte
 var map = L.map('map').setView([4.5709, -74.2973], 7);  // Zentrales Koordinaten für Kolumbien
@@ -11,20 +17,12 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Marker-Daten aus routes.json laden
 fetch('https://raw.githubusercontent.com/alofro/muiscolombia/main/routes.json')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
+  .then(response => response.json())
   .then(data => {
-    // Konsolenausgabe, um den Inhalt zu überprüfen
-    console.log('GeoJSON Daten:', data);  // Ausgabe des geladenen JSON-Daten
-    
     // Marker hinzufügen
     data.features.forEach(function (feature) {
       const coords = feature.geometry.coordinates;
-      const latLng = [coords[1], coords[0]]; // Keine Umkehrung nötig, weil GeoJSON bereits [lon, lat] ist
+      const latLng = [coords[1], coords[0]]; // Koordinaten umkehren, weil GeoJSON [lon, lat] ist
 
       // Marker erstellen und hinzufügen
       const marker = L.marker(latLng).addTo(map);
@@ -35,44 +33,43 @@ fetch('https://raw.githubusercontent.com/alofro/muiscolombia/main/routes.json')
     // Route zwischen den Markern zeichnen
     const routeCoordinates = data.features.map(function (feature) {
       const coords = feature.geometry.coordinates;
-      return [coords[1], coords[0]]; // Koordinaten umkehren, falls nötig
+      return [coords[1], coords[0]]; // Koordinaten umkehren
     });
 
-    // Wenn du Routen über die OpenRouteService API berechnen möchtest:
-    const coordinatesForRoute = routeCoordinates.map(coord => [coord[1], coord[0]]); // ggf. wieder [lat, lon] umkehren
-    const body = {
-      coordinates: coordinatesForRoute
+    // Linie zwischen den Markern hinzufügen
+    L.polyline(routeCoordinates, { color: 'blue' }).addTo(map);
+
+    // POST-Anfrage an OpenRouteService API senden
+    const routeRequestBody = {
+      "coordinates": coordinates,
+      "profile": "cycling-regular"
     };
 
-    // Routenanfrage an OpenRouteService
-    fetch(`https://api.openrouteservice.org/v2/directions/cycling-regular/geojson?api_key=${apiKey}`, {
+    fetch('https://api.openrouteservice.org/v2/directions/cycling-regular/geojson?api_key=' + apiKey, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(body)
+      body: JSON.stringify(routeRequestBody)
     })
     .then(response => response.json())
     .then(routeData => {
-      // Konsolenausgabe der API-Antwort
-      console.log('API-Antwort von OpenRouteService:', routeData);  // Ausgabe der API-Antwort
-      
-      // Überprüfe, ob die Antwort den erwarteten GeoJSON-Standard erfüllt
-      if (!routeData || !routeData.features || !Array.isArray(routeData.features)) {
-        throw new Error('Ungültiges GeoJSON-Datenformat von der API');
-      }
+      if (routeData.type === 'FeatureCollection') {
+        // Routen-Daten sind im GeoJSON-Format
+        const routeCoordinates = routeData.features[0].geometry.coordinates.map(function (coord) {
+          return [coord[1], coord[0]]; // Umkehren der Koordinaten
+        });
 
-      // Route von OpenRouteService zeichnen
-      L.geoJSON(routeData).addTo(map);
+        // Route auf der Karte darstellen
+        L.polyline(routeCoordinates, { color: 'red' }).addTo(map);
+      } else {
+        console.error('Ungültiges GeoJSON von der API');
+      }
     })
     .catch(error => {
       console.error('Fehler bei der Routenberechnung:', error);
     });
-
-    // Linie zwischen den Markern hinzufügen (falls keine API-Route benötigt wird)
-    L.polyline(routeCoordinates, { color: 'blue' }).addTo(map);
-
   })
   .catch(error => {
-    console.error('Fehler beim Laden der Routen-Daten:', error);
+    console.error('Error loading the route data:', error);
   });
