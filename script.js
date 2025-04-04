@@ -1,5 +1,5 @@
 // Funktion, um die Routen aus der JSON-Datei zu laden
-fetch('routes.json')
+fetch('https://raw.githubusercontent.com/alofro/muiscolombia/refs/heads/main/routes.js')
   .then(response => response.json())
   .then(data => {
     // Hier werden die Marker auf der Karte gesetzt
