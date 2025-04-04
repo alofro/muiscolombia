@@ -27,7 +27,11 @@ const apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';
 
 // Berechnung der Route von den Waypoints
 async function getRoute() {
-    const coordinates = waypoints.map(point => point.reverse());  // Die Koordinaten für die API in [lon, lat] umdrehen
+    // Umkehren der Koordinaten [lat, lon] → [lon, lat]
+    const coordinates = waypoints.map(point => point.reverse());
+    
+    // Überprüfen der Koordinaten
+    console.log("Koordinaten, die an die API geschickt werden:", coordinates);
 
     const body = JSON.stringify({
         coordinates: coordinates,
