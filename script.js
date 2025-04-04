@@ -55,9 +55,9 @@ fetch('https://raw.githubusercontent.com/alofro/muiscolombia/main/routes.json')
     .then(response => response.json())
     .then(routeData => {
       // Konsolenausgabe der API-Antwort
-      console.log('API-Antwort von OpenRouteService:', routeData);
+      console.log('API-Antwort von OpenRouteService:', routeData);  // Ausgabe der API-Antwort
       
-      // Fehlerbehandlung, falls das GeoJSON ungültig ist
+      // Überprüfe, ob die Antwort den erwarteten GeoJSON-Standard erfüllt
       if (!routeData || !routeData.features || !Array.isArray(routeData.features)) {
         throw new Error('Ungültiges GeoJSON-Datenformat von der API');
       }
