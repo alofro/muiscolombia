@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abenteuer Muiscolombia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Abenteuer Muiscolombia</h1>
+    <div class="view-toggle">
+      <button onclick="showMap()">Karte</button>
+      <button onclick="showElevation()">Höhenprofil</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="map" class="view"></div>
+    <canvas id="elevationChart" class="view"></canvas>
+  </main>
+
+  <div id="tooltip" class="tooltip">Info hier</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
