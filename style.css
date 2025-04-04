@@ -40,3 +40,10 @@ button {
   display: none;
   pointer-events: none;
 }
+/* Fügt ein responsives Layout für das Höhenprofil-Diagramm hinzu */
+#elevationChart {
+  width: 100%;  /* Macht das Diagramm responsiv, sodass es die Breite des Containers anpasst */
+  height: 300px;  /* Setzt eine feste Höhe für das Höhenprofil */
+  max-height: 500px;  /* Maximale Höhe, um das Diagramm nicht zu groß werden zu lassen */
+  margin-top: 20px;  /* Fügt oben etwas Abstand hinzu */
+}

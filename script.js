@@ -1,87 +1,71 @@
-// Funktion zum Anzeigen der Karte
-function showMap() {
-  document.getElementById("map").style.display = "block";
-  document.getElementById("elevationChart").style.display = "none";
-}
+// Initialisiere die Karte
+var map = L.map('map').setView([4.60971, -74.08175], 12);  // Startpunkt: Bogotá
 
-// Funktion zum Anzeigen des Höhenprofils
-function showElevation() {
-  document.getElementById("map").style.display = "none";
-  document.getElementById("elevationChart").style.display = "block";
-}
-
-// Leaflet-Karte initialisieren
-const map = L.map('map').setView([4.7, -74.3], 10); // Zwischen Bogotá & Subía
-
-// OpenStreetMap als TileLayer verwenden
+// Füge OpenStreetMap-Kachel-Layer hinzu
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '© OpenStreetMap',
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Marker für Bogotá
-const bogota = L.marker([4.711, -74.072]).addTo(map);
-bogota.bindPopup('<b>Tag 1 Start</b><br>Bogotá');
+// GPS-Daten für die Route (Beispiel)
+const routeCoords = [
+  [4.60971, -74.08175],  // Bogotá
+  [4.61000, -74.07800],  // Zwischenpunkt
+  [4.61500, -74.07000]   // Subía
+];
 
-// Marker für Subía
-const subia = L.marker([4.75, -74.45]).addTo(map);
-subia.bindPopup('<b>Tag 1 Ziel</b><br>Subía');
+// Route auf der Karte hinzufügen
+var routeLine = L.polyline(routeCoords, {color: 'blue'}).addTo(map);
+routeLine.bindPopup('Etappe 1: Bogotá → Subía');
 
-// OpenRouteService API-Aufruf
-const apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';  // Dein OpenRouteService API-Schlüssel
-const routeUrl = `https://api.openrouteservice.org/v2/directions/driving-car?api_key=${apiKey}&start=-74.072,4.711&end=-74.45,4.75`;
+// Beispiel-Daten für das Höhenprofil
+const elevationData = [1000, 1100, 1050, 1200, 1250, 1300, 1350];  // Höhenangaben in Metern
 
-fetch(routeUrl)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Netzwerkantwort war nicht ok');
-    }
-    return response.json();
-  })
-  .then(data => {
-    console.log('API Antwort:', data);  // Überprüfe die gesamte API-Antwort in der Konsole
-
-    // Überprüfe, ob die 'features' existieren
-    if (data.features && data.features.length > 0) {
-      const coordinates = data.features[0].geometry.coordinates;
-      console.log('Koordinaten:', coordinates);  // Sieh dir die Koordinaten an
-
-      const polylineCoordinates = coordinates.map(coord => [coord[1], coord[0]]); // Koordinaten umkehren
-      console.log('PolyLine Koordinaten:', polylineCoordinates); // Sieh dir die Polyline-Koordinaten an
-
-      // Linie der Route hinzufügen
-      const route1 = L.polyline(polylineCoordinates, {
-        color: 'blue',
-        weight: 4,
-        opacity: 0.7
-      }).addTo(map);
-
-      route1.bindPopup('<b>Etappe 1: Bogotá → Subía</b>');  // PopUp mit HTML
-
-      // Extrahieren der Höheninformationen aus der API-Antwort
-      const elevationData = data.features[0].segments[0].steps.map(step => step.elevation);
-      console.log('Höheninformationen:', elevationData);  // Überprüfe die Höhenwerte in der Konsole
-
-      // Höheninformationen im Diagramm anzeigen
-      const elevationChart = new Chart(document.getElementById('elevationChart').getContext('2d'), {
-        type: 'line',
-        data: {
-          labels: Array.from({ length: elevationData.length }, (_, i) => `${i} km`), // X-Achse mit km-Werten
-          datasets: [{
-            label: 'Höhenmeter',
-            data: elevationData,  // Höheninformationen aus den API-Daten
-            fill: false,
-            borderColor: 'green',
-            tension: 0.1
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false
+// Höhlenprofil im Diagramm anzeigen
+const elevationChart = new Chart(document.getElementById('elevationChart').getContext('2d'), {
+  type: 'line',
+  data: {
+    labels: Array.from({ length: elevationData.length }, (_, i) => `${i} km`), // X-Achse mit km-Werten
+    datasets: [{
+      label: 'Höhenmeter',
+      data: elevationData,  // Höheninformationen aus den API-Daten
+      fill: false,
+      borderColor: 'green',
+      tension: 0.1
+    }]
+  },
+  options: {
+    responsive: true,  // Stellt sicher, dass das Diagramm auf die Containergröße reagiert
+    maintainAspectRatio: false,  // Deaktiviert das Festhalten am Seitenverhältnis
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: 'Kilometer'
         }
-      });
-
-    } else {
-      console.error('Keine Route in der API-Antwort gefunden:', data);  // Fehlerbehandlung
+      },
+      y: {
+        title: {
+          display: true,
+          text: 'Höhenmeter'
+        }
+      }
     }
-  })
-  .catch(error => console.error('Fehler beim Abrufen der Route:', error));
+  }
+});
+
+// Funktion, um die Karte anzuzeigen
+function showMap() {
+  map.invalidateSize(); // Karte neu zeichnen
+  document.getElementById('elevationChart').style.display = 'none';  // Versteckt das Höhenprofil
+  document.getElementById('map').style.display = 'block';  // Zeigt die Karte an
+}
+
+// Funktion, um das Höhenprofil anzuzeigen
+function showElevation() {
+  map.invalidateSize(); // Karte neu zeichnen
+  document.getElementById('map').style.display = 'none';  // Versteckt die Karte
+  document.getElementById('elevationChart').style.display = 'block';  // Zeigt das Höhenprofil an
+}
+
+// Startansicht: Zeigt die Karte
+showMap();
