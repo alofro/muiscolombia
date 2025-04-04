@@ -1,35 +1,33 @@
-// Initialisieren der Karte
-const map = L.map('map').setView([4.60971, -74.08175], 12); // Startpunkt Bogotá
-
-// OpenStreetMap Tile Layer
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
-// Die Koordinaten der Routenpunkte
-const waypoints = [
-    [4.60971, -74.08175],  // Bogotá
-    [4.5982, -74.0223],    // Subía (Beispiel, du kannst hier weitere Punkte hinzufügen)
-];
-
-// Marker für die Punkte setzen
-const markers = waypoints.map(coord => {
-    const marker = L.marker(coord).addTo(map);
-    marker.bindPopup('Marker');
-    return marker;
-});
-
-// URL der API für die Route
+// API-URL und dein API-Schlüssel von OpenRouteService
 const url = 'https://api.openrouteservice.org/v2/directions/cycling-regular/geojson';
-
-// Deine OpenRouteService API-Key
 const apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';
 
-// Berechnung der Route von den Waypoints
+// Beispielkoordinaten für zwei Punkte (Bogotá und Subía)
+const waypoints = [
+    [-74.0721, 4.7110],  // Bogotá
+    [-74.0158, 4.9023]   // Subía
+];
+
+// Karte initialisieren
+const map = L.map('map').setView([4.7110, -74.0721], 13);
+
+// OpenStreetMap Tile Layer hinzufügen
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+}).addTo(map);
+
+// Marker für die beiden Punkte (Bogotá und Subía) setzen
+L.marker([4.7110, -74.0721]).addTo(map)
+    .bindPopup('Startpunkt: Bogotá')
+    .openPopup();
+L.marker([4.9023, -74.0158]).addTo(map)
+    .bindPopup('Zielpunkt: Subía');
+
+// Funktion, um die Route von OpenRouteService abzurufen und anzuzeigen
 async function getRoute() {
     // Umkehren der Koordinaten [lat, lon] → [lon, lat]
     const coordinates = waypoints.map(point => point.reverse());
-    
+
     // Überprüfen der Koordinaten
     console.log("Koordinaten, die an die API geschickt werden:", coordinates);
 
@@ -39,16 +37,23 @@ async function getRoute() {
         format: 'geojson'
     });
 
-    const response = await fetch(url, {
-        method: 'POST',
-        headers: {
-            'Authorization': apiKey,
-            'Content-Type': 'application/json'
-        },
-        body: body
-    });
+    try {
+        // API-Request
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Authorization': apiKey,
+                'Content-Type': 'application/json'
+            },
+            body: body
+        });
 
-    if (response.ok) {
+        // Wenn der Antwortstatus nicht OK ist, werfen wir einen Fehler
+        if (!response.ok) {
+            throw new Error(`HTTP Fehler! Status: ${response.status}`);
+        }
+
+        // Antwort als JSON parsen
         const geojson = await response.json();
         console.log('GeoJSON Antwort:', geojson);
 
@@ -59,10 +64,12 @@ async function getRoute() {
                 weight: 4
             }
         }).addTo(map);
-    } else {
-        console.error('Error loading the route data:', response.statusText);
+
+    } catch (error) {
+        // Fehlerbehandlung: Fehler in der Konsole anzeigen
+        console.error('Fehler beim Laden der Route:', error);
     }
 }
 
-// Aufrufen der Funktion, um die Route zu laden
+// Rufe die getRoute-Funktion auf, um die Route zu laden
 getRoute();
