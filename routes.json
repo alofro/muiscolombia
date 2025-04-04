@@ -1,14 +1,13 @@
-[
-  {
-    "name": "Bogotá",
-    "coordinates": [4.60971, -74.08175]
-  },
-  {
-    "name": "Subía",
-    "coordinates": [4.61000, -74.07800]
-  },
-  {
-    "name": "Dritter Punkt",
-    "coordinates": [4.61500, -74.07000]
-  }
-]
+const routeData = {
+  "routes": [
+    {
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-74.0721, 4.7110],  // Startpunkt Bogotá
+          [-74.1373, 4.8764]   // Zielpunkt Subía
+        ]
+      }
+    }
+  ]
+};
