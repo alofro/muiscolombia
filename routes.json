@@ -1,13 +1,13 @@
-const routeData = {
+{
   "routes": [
     {
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-74.0721, 4.7110],  // Startpunkt Bogotá
-          [-74.1373, 4.8764]   // Zielpunkt Subía
+          [-74.0721, 4.7110],  // Bogotá
+          [-74.1373, 4.8764]   // Subía
         ]
       }
     }
   ]
-};
+}
