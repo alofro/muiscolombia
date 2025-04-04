@@ -1,5 +1,5 @@
-// Dein API-Key (hier als Beispiel, ersetze es mit deinem echten API-Key)
-const apiKey = 'DEIN_API_KEY_HIER';
+// Dein API-Key
+const apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';
 
 // Erstelle eine Karte
 var map = L.map('map').setView([4.5709, -74.2973], 7);  // Zentrales Koordinaten für Kolumbien
