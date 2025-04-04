@@ -28,6 +28,8 @@ subia.bindPopup('<b>Tag 1 Ziel</b><br>Subía');
 
 // OpenRouteService API-Aufruf
 const apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';  // Dein OpenRouteService API-Schlüssel
+
+// Die Route-URL muss vor dem fetch-Aufruf definiert werden
 const routeUrl = `https://api.openrouteservice.org/v2/directions/driving-car?api_key=${apiKey}&start=-74.072,4.711&end=-74.45,4.75`;
 
 fetch(routeUrl)
