@@ -19,7 +19,7 @@ fetch('https://raw.githubusercontent.com/alofro/muiscolombia/main/routes.json')
   })
   .then(data => {
     // Konsolenausgabe, um den Inhalt zu überprüfen
-    console.log(data);  // Ausgabe des geladenen JSON-Daten
+    console.log('GeoJSON Daten:', data);  // Ausgabe des geladenen JSON-Daten
     
     // Marker hinzufügen
     data.features.forEach(function (feature) {
@@ -44,6 +44,7 @@ fetch('https://raw.githubusercontent.com/alofro/muiscolombia/main/routes.json')
       coordinates: coordinatesForRoute
     };
 
+    // Routenanfrage an OpenRouteService
     fetch(`https://api.openrouteservice.org/v2/directions/cycling-regular/geojson?api_key=${apiKey}`, {
       method: 'POST',
       headers: {
@@ -53,6 +54,14 @@ fetch('https://raw.githubusercontent.com/alofro/muiscolombia/main/routes.json')
     })
     .then(response => response.json())
     .then(routeData => {
+      // Konsolenausgabe der API-Antwort
+      console.log('API-Antwort von OpenRouteService:', routeData);
+      
+      // Fehlerbehandlung, falls das GeoJSON ungültig ist
+      if (!routeData || !routeData.features || !Array.isArray(routeData.features)) {
+        throw new Error('Ungültiges GeoJSON-Datenformat von der API');
+      }
+
       // Route von OpenRouteService zeichnen
       L.geoJSON(routeData).addTo(map);
     })
