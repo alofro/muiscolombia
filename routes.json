@@ -1,12 +1,26 @@
 {
-  "routes": [
+  "type": "FeatureCollection",
+  "features": [
     {
+      "type": "Feature",
       "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-74.0721, 4.7110],  // Bogotá
-          [-74.1373, 4.8764]   // Subía
-        ]
+        "type": "Point",
+        "coordinates": [-74.2973, 4.5709]
+      },
+      "properties": {
+        "name": "Marker 1",
+        "description": "Startpunkt"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0, 4.7]
+      },
+      "properties": {
+        "name": "Marker 2",
+        "description": "Zielpunkt"
       }
     }
   ]
