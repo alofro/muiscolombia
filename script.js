@@ -34,7 +34,7 @@ async function getRoute() {
   };
 
   try {
-    const response = await fetch('https://api.openrouteservice.org/v2/directions/cycling-regular/geojson', {
+    const response = await fetch('https://api.openrouteservice.org/v2/directions/cycling-regular/', {
       method: 'POST',
       headers: {
         'Authorization': '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78',
