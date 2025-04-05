@@ -29,6 +29,7 @@ var routeRequestData = {
     ]
 };
 
+// Stelle sicher, dass die API-Aufruf korrekt ist
 fetch(routeUrl, {
     method: 'POST',
     headers: {
