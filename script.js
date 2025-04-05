@@ -55,12 +55,16 @@ fetch(routeUrl, {
 })
 .then(response => response.json())
 .then(data => {
-    // Zeichne die Route auf der Karte
-    var routeCoordinates = data.features[0].geometry.coordinates.map(function(coord) {
-        return [coord[1], coord[0]];  // GeoJSON [lon, lat] in [lat, lon] umkehren
-    });
+    console.log(data);  // Gib die gesamte Antwort der API in der Konsole aus
+    if (data.features && data.features.length > 0) {
+        var routeCoordinates = data.features[0].geometry.coordinates.map(function(coord) {
+            return [coord[1], coord[0]];  // GeoJSON [lon, lat] in [lat, lon] umkehren
+        });
 
-    L.polyline(routeCoordinates, { color: 'blue' }).addTo(map);
+        L.polyline(routeCoordinates, { color: 'blue' }).addTo(map);
+    } else {
+        console.error("Keine gültige Route gefunden oder leere Antwort.");
+    }
 })
 .catch(error => {
     console.error('Fehler bei der Routenberechnung:', error);
