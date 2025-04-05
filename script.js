@@ -1,46 +1,60 @@
-// API Key von OpenRouteService
-const apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';
-
-// Beispiel-Koordinaten für Kolumbien (Start- und Zielpunkt)
-const coordinates = [
-  [-74.2973, 4.5709],  // Bogotá
-  [-74.0, 4.7]         // Ziel in der Nähe
-];
-
 // Karte erstellen
-const map = L.map('map').setView([4.5709, -74.2973], 7);
+var map = L.map('map').setView([4.5709, -74.2973], 7);
 
-// OpenStreetMap Tiles
+// OpenStreetMap-Tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Marker setzen
-coordinates.forEach(coord => {
-  L.marker([coord[1], coord[0]]).addTo(map);
+// Marker-Daten direkt im Code
+const markers = [
+  {
+    name: "Startpunkt",
+    description: "Bogotá",
+    coords: [4.5709, -74.2973]
+  },
+  {
+    name: "Zielpunkt",
+    description: "Irgendwo westlich von Bogotá",
+    coords: [4.7, -74.0]
+  }
+];
+
+// Marker hinzufügen
+markers.forEach(marker => {
+  const m = L.marker(marker.coords).addTo(map);
+  m.bindPopup(`<strong>${marker.name}</strong><br>${marker.description}`);
 });
 
-// Route von OpenRouteService anfragen
-fetch('https://api.openrouteservice.org/v2/directions/cycling-regular/geojson', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': apiKey
-  },
-  body: JSON.stringify({
+// Route abrufen über OpenRouteService
+async function getRoute() {
+  const coordinates = markers.map(m => [m.coords[1], m.coords[0]]); // [lon, lat]
+  const body = {
     coordinates: coordinates
-  })
-})
-  .then(response => {
+  };
+
+  try {
+    const response = await fetch('https://api.openrouteservice.org/v2/directions/cycling-regular/geojson', {
+      method: 'POST',
+      headers: {
+        'Authorization': '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(body)
+    });
+
     if (!response.ok) {
       throw new Error(`HTTP Fehler! Status: ${response.status}`);
     }
-    return response.json();
-  })
-  .then(geojson => {
-    const coords = geojson.features[0].geometry.coordinates.map(coord => [coord[1], coord[0]]);
-    L.polyline(coords, { color: 'blue' }).addTo(map);
-  })
-  .catch(error => {
+
+    const geojson = await response.json();
+    L.geoJSON(geojson, {
+      style: { color: 'blue', weight: 4 }
+    }).addTo(map);
+
+  } catch (error) {
     console.error('Fehler bei der Routenberechnung:', error);
-  });
+  }
+}
+
+getRoute();
