@@ -2,21 +2,15 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abenteuer Muiscolombia</title>
+  <title>Muiscolombia</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
-  <div id="map" style="height: 500px;"></div>
+  <h1>Abenteuer Muiscolombia</h1>
+  <div id="map"></div>
 
-  <!-- Höhendiagramm als Canvas -->
-  <canvas id="elevationChart"></canvas>
-
-  <button onclick="showMap()">Route anzeigen</button>
-  <button onclick="showElevation()">Höhenprofil anzeigen</button>
-
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
