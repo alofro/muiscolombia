@@ -1,47 +1,87 @@
-// API Key von OpenRouteService
-const apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';
+// Funktion zum Anzeigen der Karte
+function showMap() {
+  document.getElementById("map").style.display = "block";
+  document.getElementById("elevationChart").style.display = "none";
+}
 
-// Koordinaten der Marker
-const coordinates = [
-  [-74.2973, 4.5709],  // Startpunkt
-  [-74.0, 4.7]         // Zielpunkt
-];
+// Funktion zum Anzeigen des Höhenprofils
+function showElevation() {
+  document.getElementById("map").style.display = "none";
+  document.getElementById("elevationChart").style.display = "block";
+}
 
-// Erstelle eine Karte
-var map = L.map('map').setView([4.5709, -74.2973], 7);  // Zentrales Koordinaten für Kolumbien
+// Leaflet-Karte initialisieren
+const map = L.map('map').setView([4.7, -74.3], 10); // Zwischen Bogotá & Subía
 
-// OpenStreetMap Tiles einfügen
+// OpenStreetMap als TileLayer verwenden
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  attribution: '© OpenStreetMap',
 }).addTo(map);
 
-// POST-Anfrage an OpenRouteService API senden
-const routeRequestBody = {
-  "coordinates": coordinates,
-  "profile": "cycling-regular"
-};
+// Marker für Bogotá
+const bogota = L.marker([4.711, -74.072]).addTo(map);
+bogota.bindPopup('<b>Tag 1 Start</b><br>Bogotá');
 
-fetch('https://api.openrouteservice.org/v2/directions/cycling-regular/geojson?api_key=' + apiKey, {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify(routeRequestBody)
-})
-.then(response => response.json())
-.then(routeData => {
-  if (routeData.type === 'FeatureCollection') {
-    // Routen-Daten sind im GeoJSON-Format
-    const routeCoordinates = routeData.features[0].geometry.coordinates.map(function (coord) {
-      return [coord[1], coord[0]]; // Umkehren der Koordinaten
-    });
+// Marker für Subía
+const subia = L.marker([4.75, -74.45]).addTo(map);
+subia.bindPopup('<b>Tag 1 Ziel</b><br>Subía');
 
-    // Route auf der Karte darstellen
-    L.polyline(routeCoordinates, { color: 'red' }).addTo(map);
-  } else {
-    console.error('Ungültiges GeoJSON von der API');
-  }
-})
-.catch(error => {
-  console.error('Fehler bei der Routenberechnung:', error);
-});
+// OpenRouteService API-Aufruf
+const apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';  // Dein OpenRouteService API-Schlüssel
+const routeUrl = `https://api.openrouteservice.org/v2/directions/driving-car?api_key=${apiKey}&start=-74.072,4.711&end=-74.45,4.75`;
+
+fetch(routeUrl)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Netzwerkantwort war nicht ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('API Antwort:', data);  // Überprüfe die gesamte API-Antwort in der Konsole
+
+    // Überprüfe, ob die 'features' existieren
+    if (data.features && data.features.length > 0) {
+      const coordinates = data.features[0].geometry.coordinates;
+      console.log('Koordinaten:', coordinates);  // Sieh dir die Koordinaten an
+
+      const polylineCoordinates = coordinates.map(coord => [coord[1], coord[0]]); // Koordinaten umkehren
+      console.log('PolyLine Koordinaten:', polylineCoordinates); // Sieh dir die Polyline-Koordinaten an
+
+      // Linie der Route hinzufügen
+      const route1 = L.polyline(polylineCoordinates, {
+        color: 'blue',
+        weight: 4,
+        opacity: 0.7
+      }).addTo(map);
+
+      route1.bindPopup('<b>Etappe 1: Bogotá → Subía</b>');  // PopUp mit HTML
+
+      // Extrahieren der Höheninformationen aus der API-Antwort
+      const elevationData = data.features[0].segments[0].steps.map(step => step.elevation);
+      console.log('Höheninformationen:', elevationData);  // Überprüfe die Höhenwerte in der Konsole
+
+      // Höheninformationen im Diagramm anzeigen
+      const elevationChart = new Chart(document.getElementById('elevationChart').getContext('2d'), {
+        type: 'line',
+        data: {
+          labels: Array.from({ length: elevationData.length }, (_, i) => `${i} km`), // X-Achse mit km-Werten
+          datasets: [{
+            label: 'Höhenmeter',
+            data: elevationData,  // Höheninformationen aus den API-Daten
+            fill: false,
+            borderColor: 'green',
+            tension: 0.1
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false
+        }
+      });
+
+    } else {
+      console.error('Keine Route in der API-Antwort gefunden:', data);  // Fehlerbehandlung
+    }
+  })
+  .catch(error => console.error('Fehler beim Abrufen der Route:', error));
