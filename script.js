@@ -1,68 +1,33 @@
-// Karte initialisieren
-var map = L.map('map').setView([4.5709, -74.2973], 7); // Zentrale Koordinaten für Kolumbien
+// Erstelle eine Karte
+var map = L.map('map').setView([4.5709, -74.2973], 7);  // Zentrales Koordinaten für Kolumbien
 
-// OpenStreetMap-Tiles einfügen
+// OpenStreetMap Tiles einfügen
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// API-Key für OpenRouteService
-const apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';
+// Definiere die Koordinaten für Bogotá und Subía
+var bogotaCoords = [-74.0721, 4.7110];  // Bogotá: [longitude, latitude]
+var subiaCoords = [-74.6250, 4.6167];  // Subía: [longitude, latitude]
 
-// Funktion zum Abrufen und Anzeigen der Route
-async function getRoute(coordinates) {
-  const url = 'https://api.openrouteservice.org/v2/directions/cycling-regular/';
+// Marker für Bogotá und Subía
+var bogotaMarker = L.marker([bogotaCoords[1], bogotaCoords[0]]).addTo(map);
+bogotaMarker.bindPopup("<strong>Bogotá</strong><br>Startpunkt");
 
-  const body = {
-    coordinates: coordinates
-  };
+var subiaMarker = L.marker([subiaCoords[1], subiaCoords[0]]).addTo(map);
+subiaMarker.bindPopup("<strong>Subía</strong><br>Zielpunkt");
 
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Authorization': apiKey,
-      'Content-Type': 'application/json',
-      'Accept': 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8'
-    },
-    body: JSON.stringify(body)
-  });
+// Routenberechnung mit OpenRouteService API
+var apiKey = 'DEIN_API_KEY'; // Deinen OpenRouteService API-Key hier einfügen
 
-  if (!response.ok) {
-    throw new Error(`HTTP Fehler! Status: ${response.status}`);
-  }
+var routeUrl = `https://api.openrouteservice.org/v2/directions/cycling-regular/geojson?api_key=${apiKey}`;
 
-  const geojson = await response.json();
+var routeRequestData = {
+    coordinates: [
+        [bogotaCoords[0], bogotaCoords[1]],  // Bogotá
+        [subiaCoords[0], subiaCoords[1]]     // Subía
+    ]
+};
 
-  // Route auf der Karte anzeigen
-  L.geoJSON(geojson, {
-    style: {
-      color: 'blue',
-      weight: 4
-    }
-  }).addTo(map);
-}
-
-// Marker und Route laden
-fetch('https://raw.githubusercontent.com/alofro/muiscolombia/main/routes.json')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Netzwerkfehler beim Laden der routes.json');
-    }
-    return response.json();
-  })
-  .then(data => {
-    const coordinates = [];
-
-    data.features.forEach(feature => {
-      const [lng, lat] = feature.geometry.coordinates;
-      coordinates.push([lng, lat]);
-
-      const marker = L.marker([lat, lng]).addTo(map);
-      marker.bindPopup(`<strong>${feature.properties.name}</strong><br>${feature.properties.description}`);
-    });
-
-    return getRoute(coordinates);
-  })
-  .catch(error => {
-    console.error('Fehler bei der Routenberechnung:', error);
-  });
+fetch(routeUrl, {
+    method:
