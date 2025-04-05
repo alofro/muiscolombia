@@ -11,7 +11,7 @@ const apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';
 
 // Funktion zum Abrufen und Anzeigen der Route
 async function getRoute(coordinates) {
-  const url = 'https://api.openrouteservice.org/v2/directions/cycling-regular/geojson';
+  const url = 'https://api.openrouteservice.org/v2/directions/cycling-regular/';
 
   const body = {
     coordinates: coordinates
