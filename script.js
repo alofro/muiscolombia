@@ -9,7 +9,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Definiere die Koordinaten für Bogotá, Subía, Natagaima
 var bogotaCoords = [-74.0721, 4.7110];  // Bogotá: [longitude, latitude]
 var subiaCoords = [-74.6250, 4.6167];  // Subía: [longitude, latitude]
-var natagaimaCoords = [-75.5203, 4.1178];  // Koordinaten für Natagaima
+var natagaimaCoords = [-75.5203, 4.1178];  // Natagaima: [longitude, latitude]
 
 // Marker für Bogotá und Subía
 var bogotaMarker = L.marker([bogotaCoords[1], bogotaCoords[0]]).addTo(map);
@@ -29,7 +29,7 @@ var routeUrl = `https://api.openrouteservice.org/v2/directions/cycling-regular/g
 var routeRequestData = {
     coordinates: [
         [bogotaCoords[0], bogotaCoords[1]],  // Bogotá
-        [natagamiaCoords[0], natagamiaCoords[1]],     // Natagaima
+        [natagaimaCoords[0], natagaimaCoords[1]],     // Natagaima
         [subiaCoords[0], subiaCoords[1]]     // Subía
     ]
 };
