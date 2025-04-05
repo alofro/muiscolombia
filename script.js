@@ -1,60 +1,68 @@
-// Karte erstellen
-var map = L.map('map').setView([4.5709, -74.2973], 7);
+// Karte initialisieren
+var map = L.map('map').setView([4.5709, -74.2973], 7); // Zentrale Koordinaten für Kolumbien
 
-// OpenStreetMap-Tiles
+// OpenStreetMap-Tiles einfügen
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Marker-Daten direkt im Code
-const markers = [
-  {
-    name: "Startpunkt",
-    description: "Bogotá",
-    coords: [4.5709, -74.2973]
-  },
-  {
-    name: "Zielpunkt",
-    description: "Irgendwo westlich von Bogotá",
-    coords: [4.7, -74.0]
-  }
-];
+// API-Key für OpenRouteService
+const apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';
 
-// Marker hinzufügen
-markers.forEach(marker => {
-  const m = L.marker(marker.coords).addTo(map);
-  m.bindPopup(`<strong>${marker.name}</strong><br>${marker.description}`);
-});
+// Funktion zum Abrufen und Anzeigen der Route
+async function getRoute(coordinates) {
+  const url = 'https://api.openrouteservice.org/v2/directions/cycling-regular/geojson';
 
-// Route abrufen über OpenRouteService
-async function getRoute() {
-  const coordinates = markers.map(m => [m.coords[1], m.coords[0]]); // [lon, lat]
   const body = {
     coordinates: coordinates
   };
 
-  try {
-    const response = await fetch('https://api.openrouteservice.org/v2/directions/cycling-regular/', {
-      method: 'POST',
-      headers: {
-        'Authorization': '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(body)
-    });
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Authorization': apiKey,
+      'Content-Type': 'application/json',
+      'Accept': 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8'
+    },
+    body: JSON.stringify(body)
+  });
 
-    if (!response.ok) {
-      throw new Error(`HTTP Fehler! Status: ${response.status}`);
-    }
-
-    const geojson = await response.json();
-    L.geoJSON(geojson, {
-      style: { color: 'blue', weight: 4 }
-    }).addTo(map);
-
-  } catch (error) {
-    console.error('Fehler bei der Routenberechnung:', error);
+  if (!response.ok) {
+    throw new Error(`HTTP Fehler! Status: ${response.status}`);
   }
+
+  const geojson = await response.json();
+
+  // Route auf der Karte anzeigen
+  L.geoJSON(geojson, {
+    style: {
+      color: 'blue',
+      weight: 4
+    }
+  }).addTo(map);
 }
 
-getRoute();
+// Marker und Route laden
+fetch('https://raw.githubusercontent.com/alofro/muiscolombia/main/routes.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Netzwerkfehler beim Laden der routes.json');
+    }
+    return response.json();
+  })
+  .then(data => {
+    const coordinates = [];
+
+    data.features.forEach(feature => {
+      const [lng, lat] = feature.geometry.coordinates;
+      coordinates.push([lng, lat]);
+
+      const marker = L.marker([lat, lng]).addTo(map);
+      marker.bindPopup(`<strong>${feature.properties.name}</strong><br>${feature.properties.description}`);
+    });
+
+    return getRoute(coordinates);
+  })
+  .catch(error => {
+    console.error('Fehler bei der Routenberechnung:', error);
+  });
