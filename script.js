@@ -26,12 +26,23 @@ var apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78'; // Dein
 
 var routeUrl = `https://api.openrouteservice.org/v2/directions/cycling-regular/geojson?api_key=${apiKey}`;
 
+//var routeRequestData = {
+//    coordinates: [
+//       [bogotaCoords[0], bogotaCoords[1]],  // Bogotá
+//        [natagaimaCoords[0], natagaimaCoords[1]],     // Natagaima
+//        [subiaCoords[0], subiaCoords[1]]     // Subía
+//    ]
+//};
+
 var routeRequestData = {
     coordinates: [
         [bogotaCoords[0], bogotaCoords[1]],  // Bogotá
+        [subiaCoords[0], subiaCoords[1]],     // Subía
         [natagaimaCoords[0], natagaimaCoords[1]],     // Natagaima
-        [subiaCoords[0], subiaCoords[1]]     // Subía
-    ]
+    ],
+    options: {
+        waypoints: [subiaCoords] // Das Zwischenziel explizit als waypoints hinzufügen
+    }
 };
 
 // Stelle sicher, dass die API-Aufruf korrekt ist
