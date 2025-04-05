@@ -18,7 +18,7 @@ var subiaMarker = L.marker([subiaCoords[1], subiaCoords[0]]).addTo(map);
 subiaMarker.bindPopup("<strong>Subía</strong><br>Zielpunkt");
 
 // Routenberechnung mit OpenRouteService API
-var apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78'; // Deinen OpenRouteService API-Key hier einfügen
+var apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78'; // Dein OpenRouteService API-Key
 
 var routeUrl = `https://api.openrouteservice.org/v2/directions/cycling-regular/geojson?api_key=${apiKey}`;
 
@@ -30,4 +30,21 @@ var routeRequestData = {
 };
 
 fetch(routeUrl, {
-    method:
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(routeRequestData)
+})
+.then(response => response.json())
+.then(data => {
+    // Zeichne die Route auf der Karte
+    var routeCoordinates = data.features[0].geometry.coordinates.map(function(coord) {
+        return [coord[1], coord[0]];  // GeoJSON [lon, lat] in [lat, lon] umkehren
+    });
+
+    L.polyline(routeCoordinates, { color: 'blue' }).addTo(map);
+})
+.catch(error => {
+    console.error('Fehler bei der Routenberechnung:', error);
+});
