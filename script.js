@@ -58,7 +58,7 @@ var routeRequestData = {
     coordinates: [
         [bogotaCoords[0], bogotaCoords[1]],     // Bogotá
         [subiaCoords[0], subiaCoords[1]],        // Subia
-        [pinchada1Coords[0], pinchada1Coords[2]], // Pinchada1 
+        [pinchada1Coords[0], pinchada1Coords[1]], // Pinchada1 
         [natagaimaCoords[0], natagaimaCoords[1]], // Natagaima
         [neivaCoords[0], neivaCoords[1]], // Neiva
         [espinalCoords[0], espinalCoords[1]] // Espinal
