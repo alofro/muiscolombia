@@ -6,11 +6,12 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Definiere die Koordinaten, Bogotá, Subía, Natagaima
+// Definiere die Koordinaten, Bogotá, Subía, Natagaima, Espinal
 var bogotaCoords = [-74.0787, 4.6459];  // Bogotá: [longitude, latitude]
 var subiaCoords = [-74.3834, 4.4709];  // Subia: [longitude, latitude]
 var natagaimaCoords = [-75.1002, 3.6266];  // Natagaima: [longitude, latitude]
 var neivaCoords = [-75.3116, 2.9541]; // Neiva: [longitude, latitude]
+var espinalCoords = [-74.891551, 4.1501]; // Espinal [longitude, latitude]
 
 // Marker für Bogotá, Subia, Natagaima, Neiva
 var bogotaMarker = L.marker([bogotaCoords[1], bogotaCoords[0]]).addTo(map);
@@ -25,8 +26,11 @@ natagaimaMarker.bindPopup("<b>Natagaima</b><br>Zwischenziel");
 var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]]).addTo(map);
 subiaMarker.bindPopup("<strong>Subía</strong><br>Zwischenziel");
 
-// Routenberechnung mit OpenRouteService API
-var apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78'; // Dein OpenRouteService API-Key
+var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]).addTo(map);
+subiaMarker.bindPopup("<strong>Subía</strong><br>Zwischenhalt");
+
+// Routenberechnung mit OpenRouteService API aus config.js
+var apiKey = OPENROUTESERVICE_API_KEY;  // API-Key aus der config.js
 
 var routeUrl = `https://api.openrouteservice.org/v2/directions/driving-car/geojson?api_key=${apiKey}`;
 
@@ -35,7 +39,8 @@ var routeRequestData = {
         [bogotaCoords[0], bogotaCoords[1]],     // Bogotá
         [subiaCoords[0], subiaCoords[1]],        // Subia
         [natagaimaCoords[0], natagaimaCoords[1]], // Natagaima
-        [neivaCoords[0], neivaCoords[1]] // Neiva
+        [neivaCoords[0], neivaCoords[1]], // Neiva
+        [neivaCoords[0], neivaCoords[1]] // Espinal
     ]
 };
 
