@@ -30,7 +30,7 @@ var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]).addTo(map);
 espinalMarker.bindPopup("<strong>Espinal</strong><br>Zwischenhalt");
 
 // Routenberechnung mit OpenRouteService API 
-var apiKey = 5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78;  // Mein API-Key 
+var apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';  // Mein API-Key 
 
 var routeUrl = `https://api.openrouteservice.org/v2/directions/driving-car/geojson?api_key=${apiKey}`;
 
