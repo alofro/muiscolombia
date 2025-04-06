@@ -9,12 +9,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Definiere die Koordinaten, Bogotá, Subía, Natagaima, Espinal
 var bogotaCoords = [-74.0787, 4.6459];  // Bogotá: [longitude, latitude]
 var subiaCoords = [-74.3834, 4.4709];  // Subia: [longitude, latitude]
+var melgarCoords = [-74.7634, 4.247982]; // Melgar
 var pinchada1Coords = [-75.0689, 3.7844]; // Pinchada1
 var natagaimaCoords = [-75.1002, 3.6266];  // Natagaima: [longitude, latitude]
 var neivaCoords = [-75.3116, 2.9541]; // Neiva: [longitude, latitude]
 var espinalCoords = [-74.891551, 4.1501]; // Espinal [longitude, latitude]
 
-// Marker für Bogotá, Subia, Natagaima, Neiva
+// Marker für Bogotá, Subia, Natagaima, Neiva, etc
 var bogotaMarker = L.marker([bogotaCoords[1], bogotaCoords[0]]).addTo(map);
 bogotaMarker.bindPopup("<strong>Bogotá</strong><br>Punto de partida");
 
@@ -34,6 +35,16 @@ var pinchada1Content = `
   </div>
 `;
 pinchada1Marker.bindPopup(pinchada1Content);
+
+var melgarMarker = L.marker([melgarCoords[1], melgarCoords[0]]).addTo(map);
+var melgarContent = `
+  <div style="width: 200px;">
+    <img src="bilder/melgar.jpg" alt="Melgar" style="width: 100%; border-radius: 8px;">
+    <p style="font-size: 0.9em; margin-top: 5px;">
+      Toma entre Melgar y El Espinal donde me encuentro descansando; hoy fue una etapa de 95km (abundantes bajadas y una que otra subida que coroné sin bajarme a empujar -tal parece que mis cuádriceps de atleta se están acostumbrando al deporte de las bielas)    </p>
+  </div>
+`;
+melgarMarker.bindPopup(melgarContent);
 
 var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]]).addTo(map);
 neivaMarker.bindPopup("<strong>Neiva</strong><br>Etapa 3");
@@ -58,6 +69,7 @@ var routeRequestData = {
     coordinates: [
         [bogotaCoords[0], bogotaCoords[1]],     // Bogotá
         [subiaCoords[0], subiaCoords[1]],        // Subia
+        [melgarCoords[0], melgarCoords[1]],        // Melgar
         [pinchada1Coords[0], pinchada1Coords[1]], // Pinchada1 
         [natagaimaCoords[0], natagaimaCoords[1]], // Natagaima
         [neivaCoords[0], neivaCoords[1]], // Neiva
