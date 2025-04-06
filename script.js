@@ -13,38 +13,34 @@ var natagaimaCoords = [-75.1002, 3.6266];  // Natagaima: [longitude, latitude]
 var neivaCoords = [-75.3116, 2.9541]; // Neiva: [longitude, latitude]
 var espinalCoords = [-74.891551, 4.1501]; // Espinal [longitude, latitude]
 
-// Hübsche Marker
-function createNumberedMarker(lat, lon, number, color) {
-  var icon = L.divIcon({
-    html: `<div style="
-      background-color: ${color};
-      color: white;
-      border-radius: 50%;
-      width: 30px;
-      height: 30px;
-      text-align: center;
-      line-height: 30px;
-      font-weight: bold;
-      border: 2px solid white;
-      box-shadow: 0 0 3px rgba(0,0,0,0.5);
-    ">${number}</div>`,
-    className: ''  // Kein zusätzliches Leaflet-CSS
+// Funktion für grüne Marker mit Zahlen
+function createGreenMarker(lat, lon, number) {
+  var icon = L.icon({
+    iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png', // Standard Leaflet Icon
+    iconSize: [25, 41],  // Standard Größe
+    iconAnchor: [12, 41], // Die Ankerposition für das Marker-Icon
+    popupAnchor: [1, -34], // Popup-Position relativ zum Marker
+    className: 'green-marker'  // Eine eigene Klasse, um später mit CSS den Marker grün zu färben
   });
-  return L.marker([lat, lon], { icon: icon }).addTo(map);
+
+  var marker = L.marker([lat, lon], { icon: icon }).addTo(map);
+
+  // Den Text (Tag) auf den Marker legen
+  marker.bindPopup(`<strong>Tag ${number}</strong>`); // Tag-Nummer als Popup
+  return marker;
 }
 
-// Marker für Bogotá, Subia, Natagaima, Neiva (mit Zahlen und Farbe)
+// Erstelle Marker für Subia, Natagaima, Neiva
 var bogotaMarker = L.marker([bogotaCoords[1], bogotaCoords[0]]).addTo(map);
 bogotaMarker.bindPopup("<strong>Bogotá</strong><br>Startpunkt");
 
-// Richtig: Die Funktion `createNumberedMarker` verwenden!
-var subiaMarker = createNumberedMarker(subiaCoords[1], subiaCoords[0], 1, 'green');
+var subiaMarker = createGreenMarker(subiaCoords[1], subiaCoords[0], 1);
 subiaMarker.bindPopup("<strong>Subia</strong><br>Zwischenziel");
 
-var natagaimaMarker = createNumberedMarker(natagaimaCoords[1], natagaimaCoords[0], 2, 'green');
+var natagaimaMarker = createGreenMarker(natagaimaCoords[1], natagaimaCoords[0], 2);
 natagaimaMarker.bindPopup("<strong>Natagaima</strong><br>Zwischenziel");
 
-var neivaMarker = createNumberedMarker(neivaCoords[1], neivaCoords[0], 3, 'green');
+var neivaMarker = createGreenMarker(neivaCoords[1], neivaCoords[0], 3);
 neivaMarker.bindPopup("<strong>Neiva</strong><br>Zwischenziel");
 
 var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]).addTo(map);
@@ -57,6 +53,24 @@ var espinalContent = `
   </div>
 `;
 espinalMarker.bindPopup(espinalContent);
+
+// CSS für grüne Marker
+var style = document.createElement('style');
+style.innerHTML = `
+  .green-marker {
+    background-color: green !important;
+    border-radius: 50% !important;
+    color: white !important;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 2px solid white !important;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  }
+`;
+document.head.appendChild(style);
 
 // Routenberechnung mit OpenRouteService API 
 var apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';  // Dein API-Key 
