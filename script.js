@@ -43,7 +43,7 @@ var espinalContent = `
   <div style="width: 200px;">
     <img src="bilder/espinal.jpg" alt="Espinal" style="width: 100%; border-radius: 8px;">
     <p style="font-size: 0.9em; margin-top: 5px;">
-      Espinal war ein heißer, aber schöner Zwischenstopp – perfekt für eine Pause mit Mangos und Musik.
+      Parque Mitológico de El Espinal por la mañana.
     </p>
   </div>
 `;
