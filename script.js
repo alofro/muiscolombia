@@ -18,16 +18,16 @@ var bogotaMarker = L.marker([bogotaCoords[1], bogotaCoords[0]]).addTo(map);
 bogotaMarker.bindPopup("<strong>Bogotá</strong><br>Startpunkt");
 
 var subiaMarker = L.marker([subiaCoords[1], subiaCoords[0]]).addTo(map);
-subiaMarker.bindPopup("<strong>Subía</strong><br>Zwischenziel");
+subiaMarker.bindPopup("<strong>Subia</strong><br>Zwischenziel");
 
 var natagaimaMarker = L.marker([natagaimaCoords[1], natagaimaCoords[0]]).addTo(map);
 natagaimaMarker.bindPopup("<b>Natagaima</b><br>Zwischenziel");
 
 var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]]).addTo(map);
-subiaMarker.bindPopup("<strong>Subía</strong><br>Zwischenziel");
+neivaMarker.bindPopup("<strong>Neiva</strong><br>Zwischenziel");
 
 var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]).addTo(map);
-subiaMarker.bindPopup("<strong>Subía</strong><br>Zwischenhalt");
+espinalMarker.bindPopup("<strong>Espinal</strong><br>Zwischenhalt");
 
 // Routenberechnung mit OpenRouteService API aus config.js
 var apiKey = OPENROUTESERVICE_API_KEY;  // API-Key aus der config.js
@@ -40,7 +40,7 @@ var routeRequestData = {
         [subiaCoords[0], subiaCoords[1]],        // Subia
         [natagaimaCoords[0], natagaimaCoords[1]], // Natagaima
         [neivaCoords[0], neivaCoords[1]], // Neiva
-        [neivaCoords[0], neivaCoords[1]] // Espinal
+        [espinalCoords[0], espinalCoords[1]] // Espinal
     ]
 };
 
