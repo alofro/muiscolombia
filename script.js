@@ -6,7 +6,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Definiere die Koordinaten, Bogotá, Subía, Natagaima, Espinal
+// Definiere die Koordinaten, Bogotá, Subia, Natagaima, Espinal
 var bogotaCoords = [-74.0787, 4.6459];  // Bogotá: [longitude, latitude]
 var subiaCoords = [-74.3834, 4.4709];  // Subia: [longitude, latitude]
 var natagaimaCoords = [-75.1002, 3.6266];  // Natagaima: [longitude, latitude]
@@ -32,23 +32,23 @@ function createGreenMarker(lat, lon, number) {
 
 // Erstelle Marker für Subia, Natagaima, Neiva
 var bogotaMarker = L.marker([bogotaCoords[1], bogotaCoords[0]]).addTo(map);
-bogotaMarker.bindPopup("<strong>Bogotá</strong><br>Startpunkt");
+bogotaMarker.bindPopup("<strong>Bogotá</strong><br>Punto de partida");
 
 var subiaMarker = createGreenMarker(subiaCoords[1], subiaCoords[0], 1);
-subiaMarker.bindPopup("<strong>Subia</strong><br>Zwischenziel");
+subiaMarker.bindPopup("<strong>Subia</strong><br>Etapa día 1");
 
 var natagaimaMarker = createGreenMarker(natagaimaCoords[1], natagaimaCoords[0], 2);
-natagaimaMarker.bindPopup("<strong>Natagaima</strong><br>Zwischenziel");
+natagaimaMarker.bindPopup("<strong>Natagaima</strong><br>Etapa día 2");
 
 var neivaMarker = createGreenMarker(neivaCoords[1], neivaCoords[0], 3);
-neivaMarker.bindPopup("<strong>Neiva</strong><br>Zwischenziel");
+neivaMarker.bindPopup("<strong>Neiva</strong><br>Etapa día 3");
 
 var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]).addTo(map);
 var espinalContent = `
   <div style="width: 200px;">
     <img src="bilder/espinal.jpg" alt="Espinal" style="width: 100%; border-radius: 8px;">
     <p style="font-size: 0.9em; margin-top: 5px;">
-      Espinal war ein heißer, aber schöner Zwischenstopp – perfekt für eine Pause mit Mangos und Musik.
+      El parque mitológico de El Espinal en la mañana
     </p>
   </div>
 `;
