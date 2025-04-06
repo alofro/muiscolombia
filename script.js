@@ -26,8 +26,17 @@ natagaimaMarker.bindPopup("<b>Natagaima</b><br>Zwischenziel");
 var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]]).addTo(map);
 neivaMarker.bindPopup("<strong>Neiva</strong><br>Zwischenziel");
 
-var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]).addTo(map);
-espinalMarker.bindPopup("<strong>Espinal</strong><br>Zwischenhalt");
+//var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]).addTo(map);
+//espinalMarker.bindPopup("<strong>Espinal</strong><br>Zwischenhalt");
+espinalMarker.bindPopup(`
+  <div class="espinal-popup">
+    <strong>Espinal</strong><br>Zwischenhalt
+    <div class="image-container">
+      <img src="bilder/espinal.jpg" alt="Espinal" class="espinal-image">
+    </div>
+  </div>
+`);
+
 
 // Routenberechnung mit OpenRouteService API 
 var apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';  // Mein API-Key 

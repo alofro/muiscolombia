@@ -13,3 +13,20 @@ h1 {
   height: 90vh;
   width: 100%;
 }
+
+.espinal-popup .image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.espinal-image {
+  display: none;
+  width: 200px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.espinal-popup:hover .espinal-image {
+  display: block;
+}
