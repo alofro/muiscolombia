@@ -27,7 +27,7 @@ natagaimaMarker.bindPopup("<strong>Natagaima</strong><br>Etapa 2");
 var pinchada1Marker = L.marker([pinchada1Coords[1], pinchada1Coords[0]]).addTo(map);
 var pinchada1Content = `
   <div style="width: 200px;">
-    <img src="bilder/pinchada1.jpg" alt="Espinal" style="width: 100%; border-radius: 8px;">
+    <img src="bilder/pinchada1.jpg" alt="pinchada1" style="width: 100%; border-radius: 8px;">
     <p style="font-size: 0.9em; margin-top: 5px;">
       Pinchada a 1/2 de camino entre Saldaña y Natagaima; por eso -excepcionalmente, pese a que me iba cogiendo la noche- tomé la decisión de proseguir hasta Natagaima.
     </p>
