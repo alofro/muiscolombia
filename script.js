@@ -7,8 +7,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Definiere die Koordinaten für Bogotá, Subía, Natagaima
-var bogotaCoords = [-74.0721, 4.7110];  // Bogotá: [longitude, latitude]
-var subiaCoords = [-74.6250, 4.6167];  // Subía: [longitude, latitude]
+var bogotaCoords = [-74.0787, 4.6459];  // Bogotá: [longitude, latitude]
+var subiaCoords = [-74.3834, 4.4709];  // Subia: [longitude, latitude]
 var natagaimaCoords = [-75.1002, 3.6266];  // Natagaima: [longitude, latitude]
 
 // Marker für Bogotá und Subía
