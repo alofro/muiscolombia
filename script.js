@@ -33,11 +33,11 @@ function createNumberedMarker(lat, lon, number, color) {
   return L.marker([lat, lon], { icon: icon }).addTo(map);
 }
 
-
 // Marker für Bogotá, Subia, Natagaima, Neiva (mit Zahlen und Farbe)
 var bogotaMarker = L.marker([bogotaCoords[1], bogotaCoords[0]]).addTo(map);
 bogotaMarker.bindPopup("<strong>Bogotá</strong><br>Startpunkt");
 
+// Richtig: Die Funktion `createNumberedMarker` verwenden!
 var subiaMarker = createNumberedMarker(subiaCoords[1], subiaCoords[0], 1, 'green');
 subiaMarker.bindPopup("<strong>Subia</strong><br>Zwischenziel");
 
@@ -58,9 +58,8 @@ var espinalContent = `
 `;
 espinalMarker.bindPopup(espinalContent);
 
-
 // Routenberechnung mit OpenRouteService API 
-var apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';  // Mein API-Key 
+var apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';  // Dein API-Key 
 
 var routeUrl = `https://api.openrouteservice.org/v2/directions/driving-car/geojson?api_key=${apiKey}`;
 
@@ -73,7 +72,6 @@ var routeRequestData = {
         [espinalCoords[0], espinalCoords[1]] // Espinal
     ]
 };
-
 
 // Stelle sicher, dass die API-Aufruf korrekt ist
 fetch(routeUrl, {
