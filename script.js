@@ -30,7 +30,7 @@ var routeRequestData = {
     coordinates: [
         [bogotaCoords[0], bogotaCoords[1]],     // Bogotá
         [subiaCoords[0], subiaCoords[1]],        // Subía
-        [natagaimaCoords[0], natagaimaCoords[1]], // Natagaima
+        [natagaimaCoords[0], natagaimaCoords[1]] // Natagaima
     ]
 };
 
