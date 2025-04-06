@@ -26,7 +26,7 @@ natagaimaMarker.bindPopup("<b>Natagaima</b><br>Zwischenziel");
 var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]]).addTo(map);
 neivaMarker.bindPopup("<strong>Neiva</strong><br>Zwischenziel");
 
-//var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]).addTo(map);
+var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]).addTo(map);
 //espinalMarker.bindPopup("<strong>Espinal</strong><br>Zwischenhalt");
 espinalMarker.bindPopup(`
   <div class="espinal-popup">
