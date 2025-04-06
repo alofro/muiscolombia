@@ -19,7 +19,7 @@ var bogotaMarker = L.marker([bogotaCoords[1], bogotaCoords[0]]).addTo(map);
 bogotaMarker.bindPopup("<strong>Bogotá</strong><br>Punto de partida");
 
 var subiaMarker = L.marker([subiaCoords[1], subiaCoords[0]]).addTo(map);
-subiaMarker.bindPopup("<strong>Subía</strong><br>Etapa 1");
+subiaMarker.bindPopup("<strong>Subia</strong><br>Etapa 1");
 
 var natagaimaMarker = L.marker([natagaimaCoords[1], natagaimaCoords[0]]).addTo(map);
 natagaimaMarker.bindPopup("<strong>Natagaima</strong><br>Etapa 2");
