@@ -16,7 +16,7 @@ var espinalCoords = [-74.891551, 4.1501]; // Espinal [longitude, latitude]
 // Funktion für grüne Marker mit Zahlen
 function createGreenMarker(lat, lon, number) {
   var icon = L.icon({
-    iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png', // Standard Leaflet Icon
+    iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png', // Standard Leaflet Icon
     iconSize: [25, 41],  // Standard Größe
     iconAnchor: [12, 41], // Die Ankerposition für das Marker-Icon
     popupAnchor: [1, -34], // Popup-Position relativ zum Marker
@@ -57,17 +57,23 @@ espinalMarker.bindPopup(espinalContent);
 // CSS für grüne Marker
 var style = document.createElement('style');
 style.innerHTML = `
-  .green-marker {
+  .leaflet-marker-icon.green-marker {
     background-color: green !important;
-    border-radius: 50% !important;
     color: white !important;
     font-weight: bold;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
     text-align: center;
+    line-height: 25px; /* Positioniere den Text im Marker */
+    width: 25px;
+    height: 41px;
+    border-radius: 50%;
     border: 2px solid white !important;
     box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  }
+  .leaflet-marker-icon.green-marker:before {
+    content: attr(data-number);
+    font-size: 18px; /* Textgröße anpassen */
+    color: white;
+    font-weight: bold;
   }
 `;
 document.head.appendChild(style);
