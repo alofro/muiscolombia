@@ -39,25 +39,35 @@ function createNumberedMarker(lat, lon, number, color) {
 var bogotaMarker = L.marker([bogotaCoords[1], bogotaCoords[0]]).addTo(map);
 bogotaMarker.bindPopup("<strong>Bogotá</strong><br>Startpunkt");
 
-var subiaMarker = L.marker([subiaCoords[1], subiaCoords[0]], 1, 'green').addTo(map);
+var subiaMarker = L.marker([subiaCoords[1], subiaCoords[0]], 1, 'green');
 subiaMarker.bindPopup("<strong>Subia</strong><br>Zwischenziel");
 
 var natagaimaMarker = L.marker([natagaimaCoords[1], natagaimaCoords[0]], 2, 'green').addTo(map);
 natagaimaMarker.bindPopup("<b>Natagaima</b><br>Zwischenziel");
 
-var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]], 3, 'green').addTo(map);
+var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]], 3, 'green');
 neivaMarker.bindPopup("<strong>Neiva</strong><br>Zwischenziel");
 
-var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]).addTo(map);
+var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]);
 //espinalMarker.bindPopup("<strong>Espinal</strong><br>Zwischenhalt");
-espinalMarker.bindPopup(`
-  <div class="espinal-popup">
-    <strong>Espinal</strong><br>Zwischenhalt
-    <div class="image-container">
-      <img src="bilder/espinal.jpg" alt="Espinal" class="espinal-image">
-    </div>
+var espinalContent = `
+  <div style="width: 200px;">
+    <img src="bilder/espinal.jpg" alt="Espinal" style="width: 100%; border-radius: 8px;">
+    <p style="font-size: 0.9em; margin-top: 5px;">
+      Espinal war ein heißer, aber schöner Zwischenstopp – perfekt für eine Pause mit Mangos und Musik.
+    </p>
   </div>
-`);
+`;
+espinalMarker.bindPopup(espinalContent);
+
+//espinalMarker.bindPopup(`
+//  <div class="espinal-popup">
+//    <strong>Espinal</strong><br>Zwischenhalt
+//    <div class="image-container">
+//      <img src="bilder/espinal.jpg" alt="Espinal" class="espinal-image">
+//    </div>
+//  </div>
+//`);
 
 
 // Routenberechnung mit OpenRouteService API 
