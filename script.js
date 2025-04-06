@@ -9,22 +9,34 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Definiere die Koordinaten, Bogotá, Subía, Natagaima, Espinal
 var bogotaCoords = [-74.0787, 4.6459];  // Bogotá: [longitude, latitude]
 var subiaCoords = [-74.3834, 4.4709];  // Subia: [longitude, latitude]
+var pinchada1Coords = [-75.0689, 3.7844]; // Pinchada1
 var natagaimaCoords = [-75.1002, 3.6266];  // Natagaima: [longitude, latitude]
 var neivaCoords = [-75.3116, 2.9541]; // Neiva: [longitude, latitude]
 var espinalCoords = [-74.891551, 4.1501]; // Espinal [longitude, latitude]
 
 // Marker für Bogotá, Subia, Natagaima, Neiva
 var bogotaMarker = L.marker([bogotaCoords[1], bogotaCoords[0]]).addTo(map);
-bogotaMarker.bindPopup("<strong>Bogotá</strong><br>Startpunkt");
+bogotaMarker.bindPopup("<strong>Bogotá</strong><br>Punto de partida");
 
 var subiaMarker = L.marker([subiaCoords[1], subiaCoords[0]]).addTo(map);
-subiaMarker.bindPopup("<strong>Subía</strong><br>Etappenziel");
+subiaMarker.bindPopup("<strong>Subía</strong><br>Etapa 1");
 
 var natagaimaMarker = L.marker([natagaimaCoords[1], natagaimaCoords[0]]).addTo(map);
-natagaimaMarker.bindPopup("<strong>Natagaima</strong><br>Etappenziel");
+natagaimaMarker.bindPopup("<strong>Natagaima</strong><br>Etapa 2");
+
+var pinchada1Marker = L.marker([pinchada1Coords[1], pinchada1Coords[0]]).addTo(map);
+var pinchada1Content = `
+  <div style="width: 200px;">
+    <img src="bilder/pinchada1.jpg" alt="Espinal" style="width: 100%; border-radius: 8px;">
+    <p style="font-size: 0.9em; margin-top: 5px;">
+      Pinchada a 1/2 de camino entre Saldaña y Natagaima; por eso -excepcionalmente, pese a que me iba cogiendo la noche- tomé la decisión de proseguir hasta Natagaima.
+    </p>
+  </div>
+`;
+pinchada1Marker.bindPopup(pinchada1Content);
 
 var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]]).addTo(map);
-neivaMarker.bindPopup("<strong>Neiva</strong><br>Etappenziel");
+neivaMarker.bindPopup("<strong>Neiva</strong><br>Etapa 3");
 
 var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]).addTo(map);
 var espinalContent = `
@@ -46,6 +58,7 @@ var routeRequestData = {
     coordinates: [
         [bogotaCoords[0], bogotaCoords[1]],     // Bogotá
         [subiaCoords[0], subiaCoords[1]],        // Subia
+        [pinchada1Coords[0], pinchada2Coords[2]], // Pinchada1 
         [natagaimaCoords[0], natagaimaCoords[1]], // Natagaima
         [neivaCoords[0], neivaCoords[1]], // Neiva
         [espinalCoords[0], espinalCoords[1]] // Espinal
