@@ -13,17 +13,39 @@ var natagaimaCoords = [-75.1002, 3.6266];  // Natagaima: [longitude, latitude]
 var neivaCoords = [-75.3116, 2.9541]; // Neiva: [longitude, latitude]
 var espinalCoords = [-74.891551, 4.1501]; // Espinal [longitude, latitude]
 
+// Hübsche Marker
+function createNumberedMarker(lat, lon, number, color) {
+  var icon = L.divIcon({
+    html: `<div style="
+      background-color: ${color};
+      color: white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      font-weight: bold;
+      border: 2px solid white;
+      box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    ">${number}</div>`,
+    className: ''  // Kein zusätzliches Leaflet-CSS
+  });
+  return L.marker([lat, lon], { icon: icon }).addTo(map);
+}
+
+
+
 // Marker für Bogotá, Subia, Natagaima, Neiva
 var bogotaMarker = L.marker([bogotaCoords[1], bogotaCoords[0]]).addTo(map);
 bogotaMarker.bindPopup("<strong>Bogotá</strong><br>Startpunkt");
 
-var subiaMarker = L.marker([subiaCoords[1], subiaCoords[0]]).addTo(map);
+var subiaMarker = L.marker([subiaCoords[1], subiaCoords[0]], 1, 'green').addTo(map);
 subiaMarker.bindPopup("<strong>Subia</strong><br>Zwischenziel");
 
-var natagaimaMarker = L.marker([natagaimaCoords[1], natagaimaCoords[0]]).addTo(map);
+var natagaimaMarker = L.marker([natagaimaCoords[1], natagaimaCoords[0]], 2, 'green').addTo(map);
 natagaimaMarker.bindPopup("<b>Natagaima</b><br>Zwischenziel");
 
-var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]]).addTo(map);
+var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]], 3, 'green').addTo(map);
 neivaMarker.bindPopup("<strong>Neiva</strong><br>Zwischenziel");
 
 var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]).addTo(map);
