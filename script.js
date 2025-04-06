@@ -81,4 +81,11 @@ fetch(routeUrl, {
             return [coord[1], coord[0]];  // GeoJSON [lon, lat] in [lat, lon] umkehren
         });
 
-        L.polyline
+        L.polyline(routeCoordinates, { color: 'blue' }).addTo(map);
+    } else {
+        console.error("Keine gültige Route gefunden oder leere Antwort.");
+    }
+})
+.catch(error => {
+    console.error('Fehler bei der Routenberechnung:', error);
+});
