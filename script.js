@@ -26,12 +26,17 @@ var flatTireMarker = L.AwesomeMarkers.icon({
   markerColor: 'red',
   prefix: 'fa'  // Font Awesome
 });
+var cameraMarker = L.AwesomeMarkers.icon({
+  icon: 'camera',
+  markerColor: 'blue',
+  prefix: 'fa'  // Font Awesome
+});
 
 // Marker für Bogotá, Subia, Natagaima, Neiva, etc
 var bogotaMarker = L.marker([bogotaCoords[1], bogotaCoords[0]]).addTo(map);
 bogotaMarker.bindPopup("<strong>Bogotá</strong><br>Punto de partida");
 
-var subiaMarker = L.marker([subiaCoords[1], subiaCoords[0]]).addTo(map);
+var subiaMarker = L.marker([subiaCoords[1], subiaCoords[0]],{ icon: etapaMarker }).addTo(map);
 subiaMarker.bindPopup("<strong>Subia</strong><br>Etapa 1");
 
 var natagaimaMarker = L.marker([natagaimaCoords[1], natagaimaCoords[0]], { icon: etapaMarker }).addTo(map);
@@ -48,7 +53,7 @@ var pinchada1Content = `
 `;
 pinchada1Marker.bindPopup(pinchada1Content);
 
-var melgarMarker = L.marker([melgarCoords[1], melgarCoords[0]]).addTo(map);
+var melgarMarker = L.marker([melgarCoords[1], melgarCoords[0]], { icon: cameraMarker }).addTo(map);
 var melgarContent = `
   <div style="width: 200px;">
     <img src="bilder/melgar.jpg" alt="Melgar" style="width: 100%; border-radius: 8px;">
@@ -58,7 +63,7 @@ var melgarContent = `
 `;
 melgarMarker.bindPopup(melgarContent);
 
-var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]]).addTo(map);
+var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]]{ icon: etapaMarker }).addTo(map);
 neivaMarker.bindPopup("<strong>Neiva</strong><br>Etapa 3");
 
 var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]).addTo(map);
