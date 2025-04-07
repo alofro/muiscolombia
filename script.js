@@ -66,7 +66,7 @@ var melgarContent = `
 `;
 melgarMarker.bindPopup(melgarContent);
 
-var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]).addTo(map);
+var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]], { icon: cameraMarker }).addTo(map);
 var espinalContent = `
   <div style="width: 200px;">
     <img src="bilder/espinal.jpg" alt="Espinal" style="width: 100%; border-radius: 8px;">
