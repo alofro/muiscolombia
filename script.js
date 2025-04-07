@@ -82,10 +82,10 @@ var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]], { icon: etapaMarker
 neivaMarker.bindPopup("<strong>Neiva</strong><br>Etapa 3");
 
 var giganteMarker = L.marker([giganteCoords[1], giganteCoords[0]], { icon: etapaMarker }).addTo(map);
-giganteMarker.bindPopup("<strong>Neiva</strong><br>Etapa 4");
+giganteMarker.bindPopup("<strong>Gigante</strong><br>Etapa 4");
 
 var altamiraMarker = L.marker([altamiraCoords[1], altamiraCoords[0]], { icon: etapaMarker }).addTo(map);
-altamiraMarker.bindPopup("<strong>Neiva</strong><br>Etapa 5");
+altamiraMarker.bindPopup("<strong>Altamira</strong><br>Etapa 5");
 
 
 
