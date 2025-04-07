@@ -8,11 +8,39 @@
   <!-- Eigene CSS-Datei -->
   <link rel="stylesheet" href="style.css">
   
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha512-oH+m3cMf8BXYMb0MZDh3zQ5fmuDCJZT5i4qkkjdy4C+jCKD7M8ek0PHXnAOqV9I7CSgo0lfDgkD4nW4xhYKh9Q==" crossorigin="" />
+  <!-- Leaflet CSS ohne integrity -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   
   <!-- Leaflet Awesome Markers CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet.awesome-markers@2.0.5/dist/leaflet.awesome-markers.css" />
 
   <style>
     body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+    #map {
+      width: 100%;
+      height: 90vh;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Aventura Muiscolombia</h1>
+  <div id="map"></div>
+
+  <!-- Leaflet JS ohne integrity -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  
+  <!-- Leaflet Awesome Markers JS -->
+  <script src="https://unpkg.com/leaflet.awesome-markers@2.0.5/dist/leaflet.awesome-markers.js"></script>
+
+  <!-- Dein eigenes JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
