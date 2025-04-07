@@ -78,14 +78,22 @@ var espinalContent = `
 espinalMarker.bindPopup(espinalContent);
 
 
-var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]]{ icon: etapaMarker }).addTo(map);
+var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]], { icon: etapaMarker }).addTo(map);
 neivaMarker.bindPopup("<strong>Neiva</strong><br>Etapa 3");
 
-var giganteMarker = L.marker([giganteCoords[1], giganteCoords[0]]{ icon: etapaMarker }).addTo(map);
+var giganteMarker = L.marker([giganteCoords[1], giganteCoords[0]], { icon: etapaMarker }).addTo(map);
 giganteMarker.bindPopup("<strong>Neiva</strong><br>Etapa 4");
 
-var altamiraMarker = L.marker([altamiraCoords[1], altamiraCoords[0]]{ icon: etapaMarker }).addTo(map);
+var altamiraMarker = L.marker([altamiraCoords[1], altamiraCoords[0]], { icon: etapaMarker }).addTo(map);
 altamiraMarker.bindPopup("<strong>Neiva</strong><br>Etapa 5");
+
+
+
+
+
+
+
+
 
 // Routenberechnung mit OpenRouteService API 
 var apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';  // Mein API-Key 
