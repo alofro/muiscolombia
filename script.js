@@ -12,6 +12,7 @@ var subiaCoords = [-74.3834, 4.4709];  // Subia: [longitude, latitude]
 var melgarCoords = [-74.7634, 4.247982]; // Melgar
 var pinchada1Coords = [-75.0689, 3.7844]; // Pinchada1
 var natagaimaCoords = [-75.1002, 3.6266];  // Natagaima: [longitude, latitude]
+var pinchada2Coords = [-75.2742, 3.1594]; // Pinchada2
 var neivaCoords = [-75.3116, 2.9541]; // Neiva: [longitude, latitude]
 var espinalCoords = [-74.891551, 4.1501]; // Espinal [longitude, latitude]
 var giganteCoords = [-75.5476, 2.386522]; // Gigante [longitude, latitude]
@@ -55,6 +56,17 @@ var pinchada1Content = `
   </div>
 `;
 pinchada1Marker.bindPopup(pinchada1Content);
+
+var pinchada2Marker = L.marker([pinchada2Coords[1], pinchada2Coords[0]], { icon: flatTireMarker }).addTo(map);
+var pinchada2Content = `
+  <div style="width: 200px;">
+    <img src="bilder/pinchada2.jpg" alt="Pinchada2" style="width: 100%; border-radius: 8px;">
+    <p style="font-size: 0.9em; margin-top: 5px;">
+      Senza parole 😒
+    </p>
+  </div>
+`;
+pinchada2Marker.bindPopup(pinchada2Content);
 
 var melgarMarker = L.marker([melgarCoords[1], melgarCoords[0]], { icon: cameraMarker }).addTo(map);
 var melgarContent = `
@@ -108,6 +120,7 @@ var routeRequestData = {
         [pinchada1Coords[0], pinchada1Coords[1]], // Pinchada1 
         [espinalCoords[0], espinalCoords[1]], // Espinal
         [natagaimaCoords[0], natagaimaCoords[1]], // Natagaima
+        [pinchada2Coords[0], pinchada2Coords[1]], // Pinchada2
         [neivaCoords[0], neivaCoords[1]], // Neiva
         [giganteCoords[0], giganteCoords[1]], // Gigante
         [altamiraCoords[0], altamiraCoords[1]] // Altamira
