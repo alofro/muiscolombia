@@ -14,6 +14,9 @@ var pinchada1Coords = [-75.0689, 3.7844]; // Pinchada1
 var natagaimaCoords = [-75.1002, 3.6266];  // Natagaima: [longitude, latitude]
 var neivaCoords = [-75.3116, 2.9541]; // Neiva: [longitude, latitude]
 var espinalCoords = [-74.891551, 4.1501]; // Espinal [longitude, latitude]
+var giganteCoords = [-75.5476, 2.386522]; // Gigante [longitude, latitude]
+var altamiraCoords = [-75.7895, 2.0650]; // Altamira [longitude, latitude]
+
 
 //Awesome Markers - spezielle Symbole für Marker
 var etapaMarker = L.AwesomeMarkers.icon({
@@ -63,9 +66,6 @@ var melgarContent = `
 `;
 melgarMarker.bindPopup(melgarContent);
 
-var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]]{ icon: etapaMarker }).addTo(map);
-neivaMarker.bindPopup("<strong>Neiva</strong><br>Etapa 3");
-
 var espinalMarker = L.marker([espinalCoords[1], espinalCoords[0]]).addTo(map);
 var espinalContent = `
   <div style="width: 200px;">
@@ -76,6 +76,16 @@ var espinalContent = `
   </div>
 `;
 espinalMarker.bindPopup(espinalContent);
+
+
+var neivaMarker = L.marker([neivaCoords[1], neivaCoords[0]]{ icon: etapaMarker }).addTo(map);
+neivaMarker.bindPopup("<strong>Neiva</strong><br>Etapa 3");
+
+var giganteMarker = L.marker([giganteCoords[1], giganteCoords[0]]{ icon: etapaMarker }).addTo(map);
+giganteMarker.bindPopup("<strong>Neiva</strong><br>Etapa 4");
+
+var altamiraMarker = L.marker([altamiraCoords[1], altamiraCoords[0]]{ icon: etapaMarker }).addTo(map);
+altamiraMarker.bindPopup("<strong>Neiva</strong><br>Etapa 5");
 
 // Routenberechnung mit OpenRouteService API 
 var apiKey = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78';  // Mein API-Key 
@@ -88,9 +98,12 @@ var routeRequestData = {
         [subiaCoords[0], subiaCoords[1]],        // Subia
         [melgarCoords[0], melgarCoords[1]],        // Melgar
         [pinchada1Coords[0], pinchada1Coords[1]], // Pinchada1 
+        [espinalCoords[0], espinalCoords[1]], // Espinal
         [natagaimaCoords[0], natagaimaCoords[1]], // Natagaima
         [neivaCoords[0], neivaCoords[1]], // Neiva
-        [espinalCoords[0], espinalCoords[1]] // Espinal
+        [giganteCoords[0], giganteCoords[1]], // Gigante
+        [altamiraCoords[0], altamiraCoords[1]] // Altamira
+        
     ]
 };
 
