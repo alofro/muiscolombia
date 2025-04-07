@@ -15,6 +15,18 @@ var natagaimaCoords = [-75.1002, 3.6266];  // Natagaima: [longitude, latitude]
 var neivaCoords = [-75.3116, 2.9541]; // Neiva: [longitude, latitude]
 var espinalCoords = [-74.891551, 4.1501]; // Espinal [longitude, latitude]
 
+//Awesome Markers - spezielle Symbole für Marker
+var etapaMarker = L.AwesomeMarkers.icon({
+  icon: 'flag',
+  markerColor: 'green',
+  prefix: 'fa'  // Font Awesome
+});
+var flatTireMarker = L.AwesomeMarkers.icon({
+  icon: 'wrench',
+  markerColor: 'red',
+  prefix: 'fa'  // Font Awesome
+});
+
 // Marker für Bogotá, Subia, Natagaima, Neiva, etc
 var bogotaMarker = L.marker([bogotaCoords[1], bogotaCoords[0]]).addTo(map);
 bogotaMarker.bindPopup("<strong>Bogotá</strong><br>Punto de partida");
@@ -22,14 +34,8 @@ bogotaMarker.bindPopup("<strong>Bogotá</strong><br>Punto de partida");
 var subiaMarker = L.marker([subiaCoords[1], subiaCoords[0]]).addTo(map);
 subiaMarker.bindPopup("<strong>Subia</strong><br>Etapa 1");
 
-var natagaimaMarker = L.marker([natagaimaCoords[1], natagaimaCoords[0]]).addTo(map);
+var natagaimaMarker = L.marker([natagaimaCoords[1], natagaimaCoords[0]], { icon: etapaMarker }).addTo(map);
 natagaimaMarker.bindPopup("<strong>Natagaima</strong><br>Etapa 2");
-
-var flatTireMarker = L.AwesomeMarkers.icon({
-  icon: 'wrench',
-  markerColor: 'red',
-  prefix: 'fa'  // Font Awesome
-});
 
 var pinchada1Marker = L.marker([pinchada1Coords[1], pinchada1Coords[0]], { icon: flatTireMarker }).addTo(map);
 var pinchada1Content = `
