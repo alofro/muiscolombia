@@ -25,7 +25,13 @@ subiaMarker.bindPopup("<strong>Subia</strong><br>Etapa 1");
 var natagaimaMarker = L.marker([natagaimaCoords[1], natagaimaCoords[0]]).addTo(map);
 natagaimaMarker.bindPopup("<strong>Natagaima</strong><br>Etapa 2");
 
-var pinchada1Marker = L.marker([pinchada1Coords[1], pinchada1Coords[0]]).addTo(map);
+var flatTireMarker = L.AwesomeMarkers.icon({
+  icon: 'wrench',
+  markerColor: 'red',
+  prefix: 'fa'  // Font Awesome
+});
+
+var pinchada1Marker = L.marker([pinchada1Coords[1], pinchada1Coords[0]], { icon: flatTireMarker }).addTo(map);
 var pinchada1Content = `
   <div style="width: 200px;">
     <img src="bilder/pinchada1.jpg" alt="Pinchada" style="width: 100%; border-radius: 8px;">
