@@ -11,7 +11,7 @@
     "type": "etapa",
     "lat": 4.4709,
     "lon": -74.3834,
-    "etappe": 1
+    "description": "Etapa 1"
   },
   {
     "name": "Melgar",
@@ -42,7 +42,7 @@
     "type": "etapa",
     "lat": 3.6266,
     "lon": -75.1002,
-    "etappe": 2
+    "description": "Etapa 2"
   },
   {
     "name": "Pinchada2",
@@ -57,27 +57,27 @@
     "type": "etapa",
     "lat": 2.9541,
     "lon": -75.3116,
-    "etappe": 3
+    "description": "Etapa 3"
   },
   {
     "name": "Gigante",
     "type": "etapa",
     "lat": 2.386522,
     "lon": -75.5476,
-    "etappe": 4
+    "description": "Etapa 4"
   },
   {
     "name": "Altamira",
     "type": "etapa",
     "lat": 2.0650,
     "lon": -75.7895,
-    "etappe": 5
+    "description": "Etapa 5"
   },
   {
   "name": "Bruselas",
   "type": "etapa",
   "lat": 1.7714,
   "lon": -76.1703,
-  "etappe": 6
+  "description": "Etapa 6"
   }
 ]

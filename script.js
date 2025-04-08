@@ -47,27 +47,36 @@ fetch('data/points.json')
       const marker = L.marker([point.lat, point.lon], markerOptions).addTo(map);
 
       // Popup-Inhalt hinzufügen
-      if (point.popup) {
-        let popupContent = `<div style="width: 200px;">`;
+      let popupContent = `<div style="width: 200px;">`;
 
-        // Bild einfügen, falls vorhanden
-        if (point.popup.image) {
-          popupContent += `
-            <img src="${point.popup.image}" alt="${point.name}" style="width: 100%; border-radius: 8px;">`;
-        }
-
-        // Text einfügen, falls vorhanden
-        if (point.popup.text) {
-          popupContent += `
-            <p style="font-size: 0.9em; margin-top: 5px;">${point.popup.text}</p>`;
-        }
-
-        popupContent += `</div>`;
-
-        marker.bindPopup(popupContent);
-      } else {
-        marker.bindPopup(`<strong>${point.name}</strong><br>${point.description}`);
+      // Bild einfügen, falls der Typ "foto" ist und ein Bild vorhanden ist
+      if (point.type === 'foto' && point.image) {
+        popupContent += `
+          <img src="bilder/${point.image}" alt="${point.name}" style="width: 100%; border-radius: 8px;">`;
       }
+
+      // Text einfügen, falls vorhanden
+      if (point.text) {
+        popupContent += `
+          <p style="font-size: 0.9em; margin-top: 5px;">${point.text}</p>`;
+      }
+
+      // Name des Markers einfügen
+      if (point.name) {
+        popupContent += `
+          <strong>${point.name}</strong><br>`;
+      }
+
+      // Für alle Marker den description-Text hinzufügen
+      if (point.description) {
+        popupContent += `
+          <p style="font-size: 0.9em; margin-top: 5px;">${point.description}</p>`;
+      }
+
+      popupContent += `</div>`;
+
+      // Wenn Popup-Inhalt vorhanden ist, binde es an den Marker
+      marker.bindPopup(popupContent);
     });
   })
   .catch(error => {
