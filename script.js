@@ -17,6 +17,7 @@ var neivaCoords = [-75.3116, 2.9541]; // Neiva: [longitude, latitude]
 var espinalCoords = [-74.891551, 4.1501]; // Espinal [longitude, latitude]
 var giganteCoords = [-75.5476, 2.386522]; // Gigante [longitude, latitude]
 var altamiraCoords = [-75.7895, 2.0650]; // Altamira [longitude, latitude]
+var timanaCoords = [-75.9326, 1.9723]; // Timaná
 
 
 //Awesome Markers - spezielle Symbole für Marker
@@ -99,7 +100,16 @@ giganteMarker.bindPopup("<strong>Gigante</strong><br>Etapa 4");
 var altamiraMarker = L.marker([altamiraCoords[1], altamiraCoords[0]], { icon: etapaMarker }).addTo(map);
 altamiraMarker.bindPopup("<strong>Altamira</strong><br>Etapa 5");
 
-
+var timanaMarker = L.marker([timanaCoords[1], timanaCoords[0]], { icon: cameraMarker }).addTo(map);
+var timanaContent = `
+  <div style="width: 200px;">
+    <img src="bilder/timana.jpg" alt="Timana" style="width: 100%; border-radius: 8px;">
+    <p style="font-size: 0.9em; margin-top: 5px;">
+      Timaná.
+    </p>
+  </div>
+`;
+timanaMarker.bindPopup(timanaContent);
 
 
 
@@ -123,7 +133,8 @@ var routeRequestData = {
         [pinchada2Coords[0], pinchada2Coords[1]], // Pinchada2
         [neivaCoords[0], neivaCoords[1]], // Neiva
         [giganteCoords[0], giganteCoords[1]], // Gigante
-        [altamiraCoords[0], altamiraCoords[1]] // Altamira
+        [altamiraCoords[0], altamiraCoords[1]], // Altamira
+        [timanaCoords[0], timanaCoords[1]] // Timana
         
     ]
 };
