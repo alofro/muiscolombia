@@ -11,24 +11,42 @@ with open('data/points.json', 'r') as f:
 # Extrahiere die Koordinaten aus den Routenpunkten
 coordinates = [(point['lon'], point['lat']) for point in route_points]
 
-# Setze die URL für die OpenRouteService API
+# 1. Routenberechnung (Route)
 route_url = 'https://api.openrouteservice.org/v2/directions/driving-car/geojson'
-
-# Anfrage-Daten für die Routenberechnung
 route_request_data = {
     "coordinates": coordinates
 }
 
-# Sende die Anfrage an die OpenRouteService API
-response = requests.post(route_url, json=route_request_data, headers={'Authorization': api_key})
+# Anfrage an den OpenRouteService API für Routenberechnung
+route_response = requests.post(route_url, json=route_request_data, headers={'Authorization': api_key})
 
-if response.status_code == 200:
-    route_data = response.json()
-    
-    # Speichere das Ergebnis als route.geojson
+if route_response.status_code == 200:
+    route_data = route_response.json()
+    # Speichere die Route in route.geojson
     with open('data/route.geojson', 'w') as outfile:
         json.dump(route_data, outfile, indent=4)
-    
     print("Routenberechnung erfolgreich und in route.geojson gespeichert.")
 else:
-    print(f"Fehler bei der Routenberechnung: {response.status_code}")
+    print(f"Fehler bei der Routenberechnung: {route_response.status_code}")
+
+# 2. Höhenabfrage entlang der Route
+elevation_url = 'https://api.openrouteservice.org/elevation/line'
+elevation_request_data = {
+    "geometry": {
+        "type": "LineString",
+        "coordinates": coordinates
+    },
+    "format_in": "geojson"  # Das 'format_in'-Argument hinzufügen
+}
+
+# Anfrage an den OpenRouteService API für Höhenabfrage
+elevation_response = requests.post(elevation_url, json=elevation_request_data, headers={'Authorization': api_key})
+
+if elevation_response.status_code == 200:
+    elevation_data = elevation_response.json()
+    # Speichere die Höhenangaben in route_elevation.geojson
+    with open('data/route_elevation.geojson', 'w') as outfile:
+        json.dump(elevation_data, outfile, indent=4)
+    print("Höhenangaben erfolgreich und in route_elevation.geojson gespeichert.")
+else:
+    print(f"Fehler bei der Höhenabfrage: {elevation_response.status_code}")

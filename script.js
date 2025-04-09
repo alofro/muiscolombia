@@ -18,7 +18,6 @@ fetch('data/route.geojson')
   .then(response => response.json())
   .then(data => {
     if (data.features && data.features.length > 0) {
-      // Route als Polyline auf der Karte hinzufügen
       const routeCoordinates = data.features[0].geometry.coordinates.map(coord => [coord[1], coord[0]]);
       L.polyline(routeCoordinates, { color: 'blue' }).addTo(map);
     } else {
@@ -36,46 +35,38 @@ fetch('data/points.json')
     routePoints.forEach(point => {
       let markerOptions = {};
 
-      // Prüfen, ob der Typ ein gültiger Icon-Typ ist
       if (point.type && icons[point.type]) {
         markerOptions.icon = icons[point.type];
       } else if (point.type !== 'start') {
         console.warn(`Kein gültiges Icon für den Typ "${point.type}" gefunden, Standard-Icon wird verwendet.`);
       }
 
-      // Marker hinzufügen
       const marker = L.marker([point.lat, point.lon], markerOptions).addTo(map);
 
-      // Popup-Inhalt hinzufügen
+      // Popup-Inhalt
       let popupContent = `<div style="width: 200px;">`;
 
-      // Bild einfügen, falls der Typ "foto" ist und ein Bild vorhanden ist
-      if (point.type === 'foto' && point.image) {
-        popupContent += `
-          <img src="bilder/${point.image}" alt="${point.name}" style="width: 100%; border-radius: 8px;">`;
+      // Bild, falls vorhanden
+      if (point.image) {
+        popupContent += `<img src="bilder/${point.image}" alt="${point.name || ''}" style="width: 100%; border-radius: 8px; margin-bottom: 5px;">`;
       }
 
-      // Text einfügen, falls vorhanden
-      if (point.text) {
-        popupContent += `
-          <p style="font-size: 0.9em; margin-top: 5px;">${point.text}</p>`;
-      }
-
-      // Name des Markers einfügen
+      // Name des Markers
       if (point.name) {
-        popupContent += `
-          <strong>${point.name}</strong><br>`;
+        popupContent += `<strong>${point.name}</strong><br>`;
       }
 
-      // Für alle Marker den description-Text hinzufügen
+      // Beschreibung
       if (point.description) {
-        popupContent += `
-          <p style="font-size: 0.9em; margin-top: 5px;">${point.description}</p>`;
+        popupContent += `<p style="font-size: 0.9em; margin-top: 5px;">${point.description}</p>`;
+      }
+
+      // Optionaler Text
+      if (point.text) {
+        popupContent += `<p style="font-size: 0.9em; margin-top: 5px;">${point.text}</p>`;
       }
 
       popupContent += `</div>`;
-
-      // Wenn Popup-Inhalt vorhanden ist, binde es an den Marker
       marker.bindPopup(popupContent);
     });
   })

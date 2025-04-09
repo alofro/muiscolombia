@@ -79,5 +79,13 @@
   "lat": 1.7714,
   "lon": -76.1703,
   "description": "Etapa 6"
+  },
+   {
+    "name": "Pinchada4",
+    "type": "pinchazo",
+    "lat": 1.7239,
+    "lon": -76.181274,
+    "image": "pinchada4.jpg",
+    "text": "4. Pinchazo; con ayuda y una buena bomba es más fácil"
   }
 ]
