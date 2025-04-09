@@ -59,6 +59,22 @@
     "lon": -75.3116,
     "description": "Etapa 3"
   },
+   {
+    "name": "Boa Contrictor",
+    "type": "foto",
+    "lat": 2.5137,
+    "lon": -75.5310,
+    "image": "boa.jpg",
+    "text": "Boa Constrictor Constrictor"
+  },
+  {
+    "name": "Pinchada3",
+    "type": "pinchazo",
+    "lat": 2.4696,
+    "lon": -75.5422,
+    "image": "pinchada3.jpg",
+    "text": "Pinchada 3: ¿? 😒"
+  },
   {
     "name": "Gigante",
     "type": "etapa",
