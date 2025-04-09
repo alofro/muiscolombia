@@ -87,5 +87,12 @@
     "lon": -76.181274,
     "image": "pinchada4.jpg",
     "text": "4. Pinchazo; con ayuda y una buena bomba es más fácil"
+  },
+  {
+  "name": "San Juan de Villalobos",
+  "type": "etapa",
+  "lat": 1.4994,
+  "lon": -76.3713,
+  "description": "Etapa 7"
   }
 ]
