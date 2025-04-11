@@ -1,0 +1,230 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.0787,
+                    4.6459
+                ]
+            },
+            "properties": {
+                "name": "Bogot\u00e1",
+                "elevation": null,
+                "description": "Punto de partida"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.3834,
+                    4.4709
+                ]
+            },
+            "properties": {
+                "name": "Subia",
+                "elevation": null,
+                "description": "Etapa 1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.7634,
+                    4.247982
+                ]
+            },
+            "properties": {
+                "name": "Melgar",
+                "elevation": null,
+                "description": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.0689,
+                    3.7844
+                ]
+            },
+            "properties": {
+                "name": "Pinchada1",
+                "elevation": null,
+                "description": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.891551,
+                    4.1501
+                ]
+            },
+            "properties": {
+                "name": "El Espinal",
+                "elevation": null,
+                "description": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1002,
+                    3.6266
+                ]
+            },
+            "properties": {
+                "name": "Natagaima",
+                "elevation": null,
+                "description": "Etapa 2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.2441,
+                    3.2398
+                ]
+            },
+            "properties": {
+                "name": "Pinchada2",
+                "elevation": null,
+                "description": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.3116,
+                    2.9541
+                ]
+            },
+            "properties": {
+                "name": "Neiva",
+                "elevation": null,
+                "description": "Etapa 3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.531,
+                    2.5137
+                ]
+            },
+            "properties": {
+                "name": "Boa Contrictor",
+                "elevation": null,
+                "description": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.5422,
+                    2.4696
+                ]
+            },
+            "properties": {
+                "name": "Pinchada3",
+                "elevation": null,
+                "description": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.5476,
+                    2.386522
+                ]
+            },
+            "properties": {
+                "name": "Gigante",
+                "elevation": null,
+                "description": "Etapa 4"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.7895,
+                    2.065
+                ]
+            },
+            "properties": {
+                "name": "Altamira",
+                "elevation": null,
+                "description": "Etapa 5"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.1703,
+                    1.7714
+                ]
+            },
+            "properties": {
+                "name": "Bruselas",
+                "elevation": null,
+                "description": "Etapa 6"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.181274,
+                    1.7239
+                ]
+            },
+            "properties": {
+                "name": "Pinchada4",
+                "elevation": null,
+                "description": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.3713,
+                    1.4994
+                ]
+            },
+            "properties": {
+                "name": "San Juan de Villalobos",
+                "elevation": null,
+                "description": "Etapa 7"
+            }
+        }
+    ]
+}

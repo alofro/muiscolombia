@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distanzberechnung</title>
+</head>
+<body>
+    <h1>Gesamtdistanz der Route</h1>
+    <p id="distance">Lädt...</p>
+
+    <script>
+      fetch('data/elevation_simplified.geojson')
+        .then(response => response.json())
+        .then(geojson => {
+          const coords = geojson.features[0].geometry.coordinates;
+          let totalDistance = 0;
+          
+          // Berechnung der Gesamtstrecke
+          for (let i = 1; i < coords.length; i++) {
+            const [lon1, lat1] = coords[i - 1];
+            const [lon2, lat2] = coords[i];
+
+            const toRad = deg => deg * Math.PI / 180;
+            const R = 6371; // Erdradius in km
+            const dLat = toRad(lat2 - lat1);
+            const dLon = toRad(lon2 - lon1);
+            const a = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            const d = R * c; // Abstand in km
+            totalDistance += d;
+          }
+
+          document.getElementById('distance').innerText = `Gesamtdistanz: ${totalDistance.toFixed(2)} km`;
+        });
+    </script>
+</body>
+</html>
