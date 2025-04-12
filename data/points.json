@@ -64,7 +64,7 @@
     "type": "foto",
     "lat": 2.5137,
     "lon": -75.5310,
-    "image": "boa.jpg",
+    "images":["boa.jpg"],
     "text": "Boa Constrictor Constrictor"
   },
   {
@@ -101,7 +101,7 @@
     "type": "pinchazo",
     "lat": 1.7239,
     "lon": -76.181274,
-    "image": "pinchada4.jpg",
+    "images": ["pinchada4.jpg"],
     "text": "4. Pinchazo; con ayuda y una buena bomba es más fácil"
   },
   {
@@ -116,13 +116,23 @@
   "type": "etapa",
   "lat": 1.5026,
   "lon": -76.3575,
+  "images": ["verdeyaco1.jpg", "verdeyaco2.jpg"],
   "description": "Etapa 8"
+  },
+  {
+  "name": "Yunguillo",
+  "type": "foto",
+  "lat": 1.3649,
+  "lon": -76.5172,
+  "images": ["yunguillo1.jpg", "yunguillo2.jpg", "yunguillo3.jpg", "yunguillo4.jpg", "yunguillo5.jpg", "yunguillo6.jpg"],
+  "text" : "Camino a Mocoa"
   },
   {
   "name": "Mocoa",
   "type": "etapa",
   "lat": 1.1487,
   "lon": -76.6482,
+  "images":["mocoa1.jpg", "mocoa2.jpg", "mocoa3.jpg", "mocoa4.jpg", "mocoa5.jpg", "mocoa6.jpg"],
   "description": "Etapa 9"
   }
 ]

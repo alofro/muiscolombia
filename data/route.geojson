@@ -1176,18 +1176,46 @@
                         ]
                     },
                     {
-                        "distance": 69188.6,
-                        "duration": 3330.5,
+                        "distance": 35724.6,
+                        "duration": 1513.0,
                         "steps": [
                             {
-                                "distance": 68707.1,
-                                "duration": 3257.8,
+                                "distance": 35724.6,
+                                "duration": 1513.0,
                                 "type": 11,
                                 "instruction": "Head southwest on V\u00eda Mocoa - Pitalito, 45",
                                 "name": "V\u00eda Mocoa - Pitalito, 45",
                                 "way_points": [
                                     7627,
-                                    8718
+                                    8324
+                                ]
+                            },
+                            {
+                                "distance": 0.0,
+                                "duration": 0.0,
+                                "type": 10,
+                                "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the right",
+                                "name": "-",
+                                "way_points": [
+                                    8324,
+                                    8324
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "distance": 33509.3,
+                        "duration": 1819.4,
+                        "steps": [
+                            {
+                                "distance": 33027.7,
+                                "duration": 1746.6,
+                                "type": 11,
+                                "instruction": "Head south on Mocoa - San Juan de Villalobos, 45",
+                                "name": "Mocoa - San Juan de Villalobos, 45",
+                                "way_points": [
+                                    8324,
+                                    8719
                                 ]
                             },
                             {
@@ -1198,8 +1226,8 @@
                                 "name": "Carrera 9, 45",
                                 "exit_number": 2,
                                 "way_points": [
-                                    8718,
-                                    8731
+                                    8719,
+                                    8732
                                 ]
                             },
                             {
@@ -1209,8 +1237,8 @@
                                 "instruction": "Turn sharp left onto Carrera 9, 45",
                                 "name": "Carrera 9, 45",
                                 "way_points": [
-                                    8731,
-                                    8733
+                                    8732,
+                                    8734
                                 ]
                             },
                             {
@@ -1220,8 +1248,8 @@
                                 "instruction": "Arrive at Carrera 9, 45, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    8733,
-                                    8733
+                                    8734,
+                                    8734
                                 ]
                             }
                         ]
@@ -1242,14 +1270,14 @@
                             ],
                             [
                                 414,
-                                8733,
+                                8734,
                                 0
                             ]
                         ],
                         "summary": [
                             {
                                 "value": 0.0,
-                                "distance": 743351.7,
+                                "distance": 743397.0,
                                 "amount": 99.98
                             },
                             {
@@ -1283,11 +1311,12 @@
                     6679,
                     7588,
                     7627,
-                    8733
+                    8324,
+                    8734
                 ],
                 "summary": {
-                    "distance": 743519.1,
-                    "duration": 37501.100000000006
+                    "distance": 743564.4,
+                    "duration": 37503.00000000001
                 }
             },
             "geometry": {
@@ -34589,6 +34618,10 @@
                         1.364915
                     ],
                     [
+                        -76.517229,
+                        1.36491
+                    ],
+                    [
                         -76.517343,
                         1.364569
                     ],
@@ -36236,7 +36269,7 @@
     "metadata": {
         "attribution": "openrouteservice.org | OpenStreetMap contributors",
         "service": "routing",
-        "timestamp": 1744399703044,
+        "timestamp": 1744490247342,
         "query": {
             "coordinates": [
                 [
@@ -36302,6 +36335,10 @@
                 [
                     -76.3575,
                     1.5026
+                ],
+                [
+                    -76.5172,
+                    1.3649
                 ],
                 [
                     -76.6482,
