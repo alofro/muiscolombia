@@ -1,7 +1,7 @@
 {
     "type": "FeatureCollection",
     "bbox": [
-        -76.91948,
+        -77.004081,
         1.06653,
         -74.078809,
         4.645908
@@ -9,7 +9,7 @@
     "features": [
         {
             "bbox": [
-                -76.91948,
+                -77.004081,
                 1.06653,
                 -74.078809,
                 4.645908
@@ -870,18 +870,46 @@
                         ]
                     },
                     {
-                        "distance": 11636.3,
-                        "duration": 542.4,
+                        "distance": 22624.8,
+                        "duration": 958.2,
                         "steps": [
                             {
-                                "distance": 10264.6,
-                                "duration": 434.7,
+                                "distance": 22624.8,
+                                "duration": 958.2,
                                 "type": 11,
-                                "instruction": "Head south on V\u00eda Gigante - Hobo, 45",
+                                "instruction": "Head north on V\u00eda Gigante - Hobo, 45",
                                 "name": "V\u00eda Gigante - Hobo, 45",
                                 "way_points": [
                                     4639,
-                                    4840
+                                    4969
+                                ]
+                            },
+                            {
+                                "distance": 0.0,
+                                "duration": 0.0,
+                                "type": 10,
+                                "instruction": "Arrive at V\u00eda Gigante - Hobo, 45, on the left",
+                                "name": "-",
+                                "way_points": [
+                                    4969,
+                                    4969
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "distance": 34221.1,
+                        "duration": 1498.9,
+                        "steps": [
+                            {
+                                "distance": 32849.4,
+                                "duration": 1391.2,
+                                "type": 11,
+                                "instruction": "Head southwest on Carrera 8, 45",
+                                "name": "Carrera 8, 45",
+                                "way_points": [
+                                    4969,
+                                    5499
                                 ]
                             },
                             {
@@ -892,8 +920,8 @@
                                 "name": "-",
                                 "exit_number": 1,
                                 "way_points": [
-                                    4840,
-                                    4873
+                                    5499,
+                                    5532
                                 ]
                             },
                             {
@@ -903,8 +931,8 @@
                                 "instruction": "Arrive at your destination, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    4873,
-                                    4873
+                                    5532,
+                                    5532
                                 ]
                             }
                         ]
@@ -920,8 +948,8 @@
                                 "instruction": "Head south on Carrera 4, 45",
                                 "name": "Carrera 4, 45",
                                 "way_points": [
-                                    4873,
-                                    4903
+                                    5532,
+                                    5562
                                 ]
                             },
                             {
@@ -931,8 +959,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    4903,
-                                    4919
+                                    5562,
+                                    5578
                                 ]
                             },
                             {
@@ -942,8 +970,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    4919,
-                                    5303
+                                    5578,
+                                    5962
                                 ]
                             },
                             {
@@ -954,8 +982,8 @@
                                 "name": "Variante Garz\u00f3n, 45",
                                 "exit_number": 2,
                                 "way_points": [
-                                    5303,
-                                    5367
+                                    5962,
+                                    6026
                                 ]
                             },
                             {
@@ -966,8 +994,8 @@
                                 "name": "Variante Garz\u00f3n, 45",
                                 "exit_number": 1,
                                 "way_points": [
-                                    5367,
-                                    5378
+                                    6026,
+                                    6037
                                 ]
                             },
                             {
@@ -978,8 +1006,8 @@
                                 "name": "V\u00eda Altamira - Garz\u00f3n, 45",
                                 "exit_number": 1,
                                 "way_points": [
-                                    5378,
-                                    5664
+                                    6037,
+                                    6323
                                 ]
                             },
                             {
@@ -989,8 +1017,8 @@
                                 "instruction": "Turn left onto Calle 5",
                                 "name": "Calle 5",
                                 "way_points": [
-                                    5664,
-                                    5665
+                                    6323,
+                                    6324
                                 ]
                             },
                             {
@@ -1000,8 +1028,8 @@
                                 "instruction": "Arrive at Calle 5, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    5665,
-                                    5665
+                                    6324,
+                                    6324
                                 ]
                             }
                         ]
@@ -1017,8 +1045,8 @@
                                 "instruction": "Head northwest on Calle 5",
                                 "name": "Calle 5",
                                 "way_points": [
-                                    5665,
-                                    5666
+                                    6324,
+                                    6325
                                 ]
                             },
                             {
@@ -1028,8 +1056,8 @@
                                 "instruction": "Turn left onto V\u00eda Timan\u00e1-  Altamira, 45",
                                 "name": "V\u00eda Timan\u00e1-  Altamira, 45",
                                 "way_points": [
-                                    5666,
-                                    6030
+                                    6325,
+                                    6689
                                 ]
                             },
                             {
@@ -1039,8 +1067,8 @@
                                 "instruction": "Turn right onto Calle 13, 45",
                                 "name": "Calle 13, 45",
                                 "way_points": [
-                                    6030,
-                                    6374
+                                    6689,
+                                    7033
                                 ]
                             },
                             {
@@ -1051,8 +1079,8 @@
                                 "name": "Avenida Circunvalar, 45",
                                 "exit_number": 1,
                                 "way_points": [
-                                    6374,
-                                    6398
+                                    7033,
+                                    7057
                                 ]
                             },
                             {
@@ -1063,8 +1091,8 @@
                                 "name": "Avenida Circunvalar, 45",
                                 "exit_number": 3,
                                 "way_points": [
-                                    6398,
-                                    6447
+                                    7057,
+                                    7106
                                 ]
                             },
                             {
@@ -1074,8 +1102,8 @@
                                 "instruction": "Turn right onto V\u00eda Mocoa - Pitalito, 45",
                                 "name": "V\u00eda Mocoa - Pitalito, 45",
                                 "way_points": [
-                                    6447,
-                                    6535
+                                    7106,
+                                    7194
                                 ]
                             },
                             {
@@ -1085,8 +1113,8 @@
                                 "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    6535,
-                                    6535
+                                    7194,
+                                    7194
                                 ]
                             }
                         ]
@@ -1102,8 +1130,8 @@
                                 "instruction": "Head southwest on V\u00eda Mocoa - Pitalito, 45",
                                 "name": "V\u00eda Mocoa - Pitalito, 45",
                                 "way_points": [
-                                    6535,
-                                    6679
+                                    7194,
+                                    7338
                                 ]
                             },
                             {
@@ -1113,36 +1141,36 @@
                                 "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    6679,
-                                    6679
+                                    7338,
+                                    7338
                                 ]
                             }
                         ]
                     },
                     {
-                        "distance": 40007.7,
-                        "duration": 1694.4,
+                        "distance": 42002.0,
+                        "duration": 1778.9,
                         "steps": [
                             {
-                                "distance": 40007.7,
-                                "duration": 1694.4,
+                                "distance": 42002.0,
+                                "duration": 1778.9,
                                 "type": 11,
                                 "instruction": "Head southwest on V\u00eda Mocoa - Pitalito, 45",
                                 "name": "V\u00eda Mocoa - Pitalito, 45",
                                 "way_points": [
-                                    6679,
-                                    7550
+                                    7338,
+                                    8247
                                 ]
                             },
                             {
                                 "distance": 0.0,
                                 "duration": 0.0,
                                 "type": 10,
-                                "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the right",
+                                "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    7550,
-                                    7550
+                                    8247,
+                                    8247
                                 ]
                             }
                         ]
@@ -1155,11 +1183,11 @@
                                 "distance": 2013.9,
                                 "duration": 85.3,
                                 "type": 11,
-                                "instruction": "Head southwest on V\u00eda Mocoa - Pitalito, 45",
+                                "instruction": "Head east on V\u00eda Mocoa - Pitalito, 45",
                                 "name": "V\u00eda Mocoa - Pitalito, 45",
                                 "way_points": [
-                                    7550,
-                                    7589
+                                    8247,
+                                    8286
                                 ]
                             },
                             {
@@ -1169,25 +1197,25 @@
                                 "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    7589,
-                                    7589
+                                    8286,
+                                    8286
                                 ]
                             }
                         ]
                     },
                     {
-                        "distance": 33718.9,
-                        "duration": 1428.1,
+                        "distance": 35724.6,
+                        "duration": 1513.0,
                         "steps": [
                             {
-                                "distance": 33718.9,
-                                "duration": 1428.1,
+                                "distance": 35724.6,
+                                "duration": 1513.0,
                                 "type": 11,
-                                "instruction": "Head west on V\u00eda Mocoa - Pitalito, 45",
+                                "instruction": "Head southwest on V\u00eda Mocoa - Pitalito, 45",
                                 "name": "V\u00eda Mocoa - Pitalito, 45",
                                 "way_points": [
-                                    7589,
-                                    8248
+                                    8286,
+                                    8983
                                 ]
                             },
                             {
@@ -1197,25 +1225,36 @@
                                 "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    8248,
-                                    8248
+                                    8983,
+                                    8983
                                 ]
                             }
                         ]
                     },
                     {
-                        "distance": 33509.3,
-                        "duration": 1819.4,
+                        "distance": 33480.5,
+                        "duration": 1818.2,
                         "steps": [
                             {
-                                "distance": 33027.7,
-                                "duration": 1746.6,
+                                "distance": 8.2,
+                                "duration": 0.3,
                                 "type": 11,
-                                "instruction": "Head south on Mocoa - San Juan de Villalobos, 45",
+                                "instruction": "Head north on Mocoa - San Juan de Villalobos, 45",
                                 "name": "Mocoa - San Juan de Villalobos, 45",
                                 "way_points": [
-                                    8248,
-                                    8643
+                                    8983,
+                                    8984
+                                ]
+                            },
+                            {
+                                "distance": 32990.7,
+                                "duration": 1745.1,
+                                "type": 3,
+                                "instruction": "Turn sharp right onto Mocoa - San Juan de Villalobos, 45",
+                                "name": "Mocoa - San Juan de Villalobos, 45",
+                                "way_points": [
+                                    8984,
+                                    9379
                                 ]
                             },
                             {
@@ -1226,8 +1265,8 @@
                                 "name": "Carrera 9, 45",
                                 "exit_number": 2,
                                 "way_points": [
-                                    8643,
-                                    8656
+                                    9379,
+                                    9392
                                 ]
                             },
                             {
@@ -1237,8 +1276,8 @@
                                 "instruction": "Turn sharp left onto Carrera 9, 45",
                                 "name": "Carrera 9, 45",
                                 "way_points": [
-                                    8656,
-                                    8658
+                                    9392,
+                                    9394
                                 ]
                             },
                             {
@@ -1248,15 +1287,15 @@
                                 "instruction": "Arrive at Carrera 9, 45, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    8658,
-                                    8658
+                                    9394,
+                                    9394
                                 ]
                             }
                         ]
                     },
                     {
-                        "distance": 81035.5,
-                        "duration": 8646.1,
+                        "distance": 34955.4,
+                        "duration": 3487.6,
                         "steps": [
                             {
                                 "distance": 63.6,
@@ -1265,8 +1304,8 @@
                                 "instruction": "Head north on Carrera 9, 45",
                                 "name": "Carrera 9, 45",
                                 "way_points": [
-                                    8658,
-                                    8661
+                                    9394,
+                                    9397
                                 ]
                             },
                             {
@@ -1276,8 +1315,8 @@
                                 "instruction": "Continue straight onto Carrera 9, 45",
                                 "name": "Carrera 9, 45",
                                 "way_points": [
-                                    8661,
-                                    8666
+                                    9397,
+                                    9402
                                 ]
                             },
                             {
@@ -1287,8 +1326,8 @@
                                 "instruction": "Turn slight right onto Carrera 9",
                                 "name": "Carrera 9",
                                 "way_points": [
-                                    8666,
-                                    8671
+                                    9402,
+                                    9407
                                 ]
                             },
                             {
@@ -1298,8 +1337,8 @@
                                 "instruction": "Turn right onto Carrera 8",
                                 "name": "Carrera 8",
                                 "way_points": [
-                                    8671,
-                                    8683
+                                    9407,
+                                    9419
                                 ]
                             },
                             {
@@ -1309,19 +1348,47 @@
                                 "instruction": "Turn left onto Carrera 10",
                                 "name": "Carrera 10",
                                 "way_points": [
-                                    8683,
-                                    8909
+                                    9419,
+                                    9645
                                 ]
                             },
                             {
-                                "distance": 69675.4,
-                                "duration": 7692.6,
+                                "distance": 24441.4,
+                                "duration": 2717.8,
                                 "type": 1,
                                 "instruction": "Turn right onto V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
                                 "name": "V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
                                 "way_points": [
-                                    8909,
-                                    12045
+                                    9645,
+                                    10857
+                                ]
+                            },
+                            {
+                                "distance": 0.0,
+                                "duration": 0.0,
+                                "type": 10,
+                                "instruction": "Arrive at V\u00eda San Francisco - el Pepino - Villa Garzon, 10, on the right",
+                                "name": "-",
+                                "way_points": [
+                                    10857,
+                                    10857
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "distance": 46869.8,
+                        "duration": 5253.3,
+                        "steps": [
+                            {
+                                "distance": 46023.6,
+                                "duration": 5069.6,
+                                "type": 11,
+                                "instruction": "Head west on V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
+                                "name": "V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
+                                "way_points": [
+                                    10857,
+                                    12782
                                 ]
                             },
                             {
@@ -1331,8 +1398,8 @@
                                 "instruction": "Turn right",
                                 "name": "-",
                                 "way_points": [
-                                    12045,
-                                    12046
+                                    12782,
+                                    12783
                                 ]
                             },
                             {
@@ -1342,8 +1409,8 @@
                                 "instruction": "Turn left onto Calle 17",
                                 "name": "Calle 17",
                                 "way_points": [
-                                    12046,
-                                    12051
+                                    12783,
+                                    12788
                                 ]
                             },
                             {
@@ -1353,8 +1420,8 @@
                                 "instruction": "Turn left onto Carrera 18",
                                 "name": "Carrera 18",
                                 "way_points": [
-                                    12051,
-                                    12052
+                                    12788,
+                                    12789
                                 ]
                             },
                             {
@@ -1364,19 +1431,130 @@
                                 "instruction": "Turn left onto Calle principal, 10",
                                 "name": "Calle principal, 10",
                                 "way_points": [
-                                    12052,
-                                    12053
+                                    12789,
+                                    12790
                                 ]
                             },
                             {
                                 "distance": 0.0,
                                 "duration": 0.0,
                                 "type": 10,
-                                "instruction": "Arrive at Calle principal, 10, on the left",
+                                "instruction": "Arrive at Calle principal, 10, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    12053,
-                                    12053
+                                    12790,
+                                    12790
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "distance": 7365.7,
+                        "duration": 471.7,
+                        "steps": [
+                            {
+                                "distance": 49.8,
+                                "duration": 7.2,
+                                "type": 11,
+                                "instruction": "Head southeast on Calle principal, 10",
+                                "name": "Calle principal, 10",
+                                "way_points": [
+                                    12790,
+                                    12791
+                                ]
+                            },
+                            {
+                                "distance": 115.5,
+                                "duration": 13.9,
+                                "type": 0,
+                                "instruction": "Turn left",
+                                "name": "-",
+                                "way_points": [
+                                    12791,
+                                    12792
+                                ]
+                            },
+                            {
+                                "distance": 113.8,
+                                "duration": 27.3,
+                                "type": 0,
+                                "instruction": "Turn left onto Calle 17",
+                                "name": "Calle 17",
+                                "way_points": [
+                                    12792,
+                                    12793
+                                ]
+                            },
+                            {
+                                "distance": 117.2,
+                                "duration": 28.1,
+                                "type": 0,
+                                "instruction": "Turn left onto Carrera 18",
+                                "name": "Carrera 18",
+                                "way_points": [
+                                    12793,
+                                    12794
+                                ]
+                            },
+                            {
+                                "distance": 6969.4,
+                                "duration": 395.2,
+                                "type": 1,
+                                "instruction": "Turn right onto Carretera Pasto - Mocoa, 10",
+                                "name": "Carretera Pasto - Mocoa, 10",
+                                "way_points": [
+                                    12794,
+                                    12846
+                                ]
+                            },
+                            {
+                                "distance": 0.0,
+                                "duration": 0.0,
+                                "type": 10,
+                                "instruction": "Arrive at Carretera Pasto - Mocoa, 10, on the left",
+                                "name": "-",
+                                "way_points": [
+                                    12846,
+                                    12846
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "distance": 6471.6,
+                        "duration": 364.6,
+                        "steps": [
+                            {
+                                "distance": 6445.9,
+                                "duration": 361.5,
+                                "type": 11,
+                                "instruction": "Head southwest on Carretera Pasto - Mocoa, 10",
+                                "name": "Carretera Pasto - Mocoa, 10",
+                                "way_points": [
+                                    12846,
+                                    12934
+                                ]
+                            },
+                            {
+                                "distance": 25.7,
+                                "duration": 3.1,
+                                "type": 0,
+                                "instruction": "Turn left",
+                                "name": "-",
+                                "way_points": [
+                                    12934,
+                                    12935
+                                ]
+                            },
+                            {
+                                "distance": 0.0,
+                                "duration": 0.0,
+                                "type": 10,
+                                "instruction": "Arrive at your destination, on the right",
+                                "name": "-",
+                                "way_points": [
+                                    12935,
+                                    12935
                                 ]
                             }
                         ]
@@ -1397,14 +1575,14 @@
                             ],
                             [
                                 414,
-                                12053,
+                                12935,
                                 0
                             ]
                         ],
                         "summary": [
                             {
                                 "value": 0.0,
-                                "distance": 820432.5,
+                                "distance": 884240.3,
                                 "amount": 99.98
                             },
                             {
@@ -1432,19 +1610,23 @@
                     3802,
                     4467,
                     4639,
-                    4873,
-                    5665,
-                    6535,
-                    6679,
-                    7550,
-                    7589,
-                    8248,
-                    8658,
-                    12053
+                    4969,
+                    5532,
+                    6324,
+                    7194,
+                    7338,
+                    8247,
+                    8286,
+                    8983,
+                    9394,
+                    10857,
+                    12790,
+                    12846,
+                    12935
                 ],
                 "summary": {
-                    "distance": 820599.9,
-                    "duration": 45979.700000000004
+                    "distance": 884407.7,
+                    "duration": 48993.7
                 }
             },
             "geometry": {
@@ -20010,6 +20192,2642 @@
                         2.469602
                     ],
                     [
+                        -75.542242,
+                        2.469627
+                    ],
+                    [
+                        -75.54225,
+                        2.469748
+                    ],
+                    [
+                        -75.542276,
+                        2.469871
+                    ],
+                    [
+                        -75.542334,
+                        2.470039
+                    ],
+                    [
+                        -75.542696,
+                        2.470692
+                    ],
+                    [
+                        -75.542735,
+                        2.470865
+                    ],
+                    [
+                        -75.542742,
+                        2.471374
+                    ],
+                    [
+                        -75.542858,
+                        2.471784
+                    ],
+                    [
+                        -75.542881,
+                        2.47196
+                    ],
+                    [
+                        -75.542865,
+                        2.472119
+                    ],
+                    [
+                        -75.542836,
+                        2.472281
+                    ],
+                    [
+                        -75.542758,
+                        2.472426
+                    ],
+                    [
+                        -75.542649,
+                        2.472551
+                    ],
+                    [
+                        -75.542101,
+                        2.472907
+                    ],
+                    [
+                        -75.541963,
+                        2.473017
+                    ],
+                    [
+                        -75.541862,
+                        2.47312
+                    ],
+                    [
+                        -75.541782,
+                        2.473262
+                    ],
+                    [
+                        -75.541449,
+                        2.474096
+                    ],
+                    [
+                        -75.541432,
+                        2.474224
+                    ],
+                    [
+                        -75.541465,
+                        2.474378
+                    ],
+                    [
+                        -75.541536,
+                        2.474503
+                    ],
+                    [
+                        -75.542068,
+                        2.474999
+                    ],
+                    [
+                        -75.542121,
+                        2.475093
+                    ],
+                    [
+                        -75.542144,
+                        2.47519
+                    ],
+                    [
+                        -75.542129,
+                        2.47532
+                    ],
+                    [
+                        -75.542079,
+                        2.475406
+                    ],
+                    [
+                        -75.542024,
+                        2.475462
+                    ],
+                    [
+                        -75.54157,
+                        2.475702
+                    ],
+                    [
+                        -75.541134,
+                        2.475982
+                    ],
+                    [
+                        -75.540474,
+                        2.476351
+                    ],
+                    [
+                        -75.540391,
+                        2.476419
+                    ],
+                    [
+                        -75.540344,
+                        2.476518
+                    ],
+                    [
+                        -75.540341,
+                        2.476608
+                    ],
+                    [
+                        -75.540371,
+                        2.476696
+                    ],
+                    [
+                        -75.540419,
+                        2.476781
+                    ],
+                    [
+                        -75.540481,
+                        2.476833
+                    ],
+                    [
+                        -75.540569,
+                        2.476867
+                    ],
+                    [
+                        -75.540702,
+                        2.47686
+                    ],
+                    [
+                        -75.541476,
+                        2.476588
+                    ],
+                    [
+                        -75.541594,
+                        2.476509
+                    ],
+                    [
+                        -75.542028,
+                        2.476151
+                    ],
+                    [
+                        -75.542134,
+                        2.476101
+                    ],
+                    [
+                        -75.542259,
+                        2.47608
+                    ],
+                    [
+                        -75.542378,
+                        2.476107
+                    ],
+                    [
+                        -75.542478,
+                        2.476155
+                    ],
+                    [
+                        -75.542555,
+                        2.476242
+                    ],
+                    [
+                        -75.542616,
+                        2.476332
+                    ],
+                    [
+                        -75.542648,
+                        2.476534
+                    ],
+                    [
+                        -75.542618,
+                        2.476624
+                    ],
+                    [
+                        -75.541776,
+                        2.478076
+                    ],
+                    [
+                        -75.541678,
+                        2.478206
+                    ],
+                    [
+                        -75.541532,
+                        2.478323
+                    ],
+                    [
+                        -75.540514,
+                        2.478729
+                    ],
+                    [
+                        -75.540093,
+                        2.478962
+                    ],
+                    [
+                        -75.53995,
+                        2.479095
+                    ],
+                    [
+                        -75.539233,
+                        2.480216
+                    ],
+                    [
+                        -75.539219,
+                        2.480301
+                    ],
+                    [
+                        -75.539248,
+                        2.480474
+                    ],
+                    [
+                        -75.539439,
+                        2.480995
+                    ],
+                    [
+                        -75.539547,
+                        2.481242
+                    ],
+                    [
+                        -75.539668,
+                        2.481393
+                    ],
+                    [
+                        -75.53981,
+                        2.481497
+                    ],
+                    [
+                        -75.540417,
+                        2.481778
+                    ],
+                    [
+                        -75.541484,
+                        2.482223
+                    ],
+                    [
+                        -75.541614,
+                        2.482267
+                    ],
+                    [
+                        -75.541747,
+                        2.482286
+                    ],
+                    [
+                        -75.541878,
+                        2.482267
+                    ],
+                    [
+                        -75.542038,
+                        2.482204
+                    ],
+                    [
+                        -75.54225,
+                        2.482096
+                    ],
+                    [
+                        -75.542395,
+                        2.482045
+                    ],
+                    [
+                        -75.542545,
+                        2.482022
+                    ],
+                    [
+                        -75.542722,
+                        2.482014
+                    ],
+                    [
+                        -75.543336,
+                        2.482083
+                    ],
+                    [
+                        -75.543513,
+                        2.482066
+                    ],
+                    [
+                        -75.543677,
+                        2.482018
+                    ],
+                    [
+                        -75.545399,
+                        2.48097
+                    ],
+                    [
+                        -75.546794,
+                        2.480201
+                    ],
+                    [
+                        -75.546937,
+                        2.480146
+                    ],
+                    [
+                        -75.547143,
+                        2.480106
+                    ],
+                    [
+                        -75.547425,
+                        2.480133
+                    ],
+                    [
+                        -75.547528,
+                        2.480166
+                    ],
+                    [
+                        -75.547721,
+                        2.480261
+                    ],
+                    [
+                        -75.547878,
+                        2.480383
+                    ],
+                    [
+                        -75.547933,
+                        2.480451
+                    ],
+                    [
+                        -75.548213,
+                        2.48099
+                    ],
+                    [
+                        -75.548203,
+                        2.48134
+                    ],
+                    [
+                        -75.547856,
+                        2.482981
+                    ],
+                    [
+                        -75.547845,
+                        2.483094
+                    ],
+                    [
+                        -75.547857,
+                        2.48329
+                    ],
+                    [
+                        -75.547904,
+                        2.483447
+                    ],
+                    [
+                        -75.548012,
+                        2.483722
+                    ],
+                    [
+                        -75.548021,
+                        2.48395
+                    ],
+                    [
+                        -75.547958,
+                        2.484246
+                    ],
+                    [
+                        -75.547943,
+                        2.48437
+                    ],
+                    [
+                        -75.547948,
+                        2.484454
+                    ],
+                    [
+                        -75.548014,
+                        2.485073
+                    ],
+                    [
+                        -75.548128,
+                        2.48537
+                    ],
+                    [
+                        -75.548381,
+                        2.485542
+                    ],
+                    [
+                        -75.549553,
+                        2.486086
+                    ],
+                    [
+                        -75.549705,
+                        2.486273
+                    ],
+                    [
+                        -75.549743,
+                        2.486466
+                    ],
+                    [
+                        -75.549647,
+                        2.487171
+                    ],
+                    [
+                        -75.54958,
+                        2.487852
+                    ],
+                    [
+                        -75.549246,
+                        2.488688
+                    ],
+                    [
+                        -75.549163,
+                        2.488948
+                    ],
+                    [
+                        -75.549177,
+                        2.489218
+                    ],
+                    [
+                        -75.549294,
+                        2.489706
+                    ],
+                    [
+                        -75.549402,
+                        2.490297
+                    ],
+                    [
+                        -75.549335,
+                        2.490646
+                    ],
+                    [
+                        -75.549259,
+                        2.490793
+                    ],
+                    [
+                        -75.549033,
+                        2.490999
+                    ],
+                    [
+                        -75.548196,
+                        2.491703
+                    ],
+                    [
+                        -75.547961,
+                        2.491792
+                    ],
+                    [
+                        -75.54779,
+                        2.491788
+                    ],
+                    [
+                        -75.547224,
+                        2.49168
+                    ],
+                    [
+                        -75.547102,
+                        2.491688
+                    ],
+                    [
+                        -75.546994,
+                        2.491717
+                    ],
+                    [
+                        -75.54673,
+                        2.491853
+                    ],
+                    [
+                        -75.546494,
+                        2.491929
+                    ],
+                    [
+                        -75.545376,
+                        2.49221
+                    ],
+                    [
+                        -75.545146,
+                        2.492302
+                    ],
+                    [
+                        -75.54493,
+                        2.492424
+                    ],
+                    [
+                        -75.544249,
+                        2.492902
+                    ],
+                    [
+                        -75.543894,
+                        2.493123
+                    ],
+                    [
+                        -75.543757,
+                        2.493166
+                    ],
+                    [
+                        -75.543439,
+                        2.493235
+                    ],
+                    [
+                        -75.54335,
+                        2.49328
+                    ],
+                    [
+                        -75.543301,
+                        2.493316
+                    ],
+                    [
+                        -75.543227,
+                        2.493412
+                    ],
+                    [
+                        -75.543182,
+                        2.49354
+                    ],
+                    [
+                        -75.543154,
+                        2.494074
+                    ],
+                    [
+                        -75.543122,
+                        2.494261
+                    ],
+                    [
+                        -75.543034,
+                        2.494432
+                    ],
+                    [
+                        -75.542864,
+                        2.494652
+                    ],
+                    [
+                        -75.542657,
+                        2.494888
+                    ],
+                    [
+                        -75.542466,
+                        2.495045
+                    ],
+                    [
+                        -75.542258,
+                        2.495174
+                    ],
+                    [
+                        -75.54182,
+                        2.49538
+                    ],
+                    [
+                        -75.538372,
+                        2.49703
+                    ],
+                    [
+                        -75.538197,
+                        2.497156
+                    ],
+                    [
+                        -75.537837,
+                        2.497503
+                    ],
+                    [
+                        -75.537664,
+                        2.497721
+                    ],
+                    [
+                        -75.537457,
+                        2.498071
+                    ],
+                    [
+                        -75.537357,
+                        2.498232
+                    ],
+                    [
+                        -75.537106,
+                        2.498723
+                    ],
+                    [
+                        -75.537087,
+                        2.498826
+                    ],
+                    [
+                        -75.537089,
+                        2.498922
+                    ],
+                    [
+                        -75.537687,
+                        2.500548
+                    ],
+                    [
+                        -75.537784,
+                        2.500942
+                    ],
+                    [
+                        -75.537909,
+                        2.501904
+                    ],
+                    [
+                        -75.538042,
+                        2.503229
+                    ],
+                    [
+                        -75.538061,
+                        2.503657
+                    ],
+                    [
+                        -75.537964,
+                        2.504358
+                    ],
+                    [
+                        -75.53777,
+                        2.505013
+                    ],
+                    [
+                        -75.53768,
+                        2.505154
+                    ],
+                    [
+                        -75.53757,
+                        2.505252
+                    ],
+                    [
+                        -75.537436,
+                        2.505327
+                    ],
+                    [
+                        -75.537295,
+                        2.505371
+                    ],
+                    [
+                        -75.53631,
+                        2.505346
+                    ],
+                    [
+                        -75.536099,
+                        2.505386
+                    ],
+                    [
+                        -75.534216,
+                        2.506408
+                    ],
+                    [
+                        -75.533847,
+                        2.506678
+                    ],
+                    [
+                        -75.532572,
+                        2.507895
+                    ],
+                    [
+                        -75.532354,
+                        2.508147
+                    ],
+                    [
+                        -75.532214,
+                        2.508419
+                    ],
+                    [
+                        -75.53214,
+                        2.50877
+                    ],
+                    [
+                        -75.532145,
+                        2.511433
+                    ],
+                    [
+                        -75.532099,
+                        2.511671
+                    ],
+                    [
+                        -75.531905,
+                        2.512179
+                    ],
+                    [
+                        -75.53155,
+                        2.512954
+                    ],
+                    [
+                        -75.531373,
+                        2.513245
+                    ],
+                    [
+                        -75.530482,
+                        2.514477
+                    ],
+                    [
+                        -75.530145,
+                        2.514918
+                    ],
+                    [
+                        -75.529272,
+                        2.51571
+                    ],
+                    [
+                        -75.527917,
+                        2.516881
+                    ],
+                    [
+                        -75.527685,
+                        2.517081
+                    ],
+                    [
+                        -75.524321,
+                        2.519981
+                    ],
+                    [
+                        -75.523895,
+                        2.520293
+                    ],
+                    [
+                        -75.522776,
+                        2.520937
+                    ],
+                    [
+                        -75.522657,
+                        2.521017
+                    ],
+                    [
+                        -75.522122,
+                        2.521552
+                    ],
+                    [
+                        -75.521316,
+                        2.522644
+                    ],
+                    [
+                        -75.520008,
+                        2.524052
+                    ],
+                    [
+                        -75.519274,
+                        2.524811
+                    ],
+                    [
+                        -75.518805,
+                        2.525222
+                    ],
+                    [
+                        -75.51606,
+                        2.527448
+                    ],
+                    [
+                        -75.515728,
+                        2.527666
+                    ],
+                    [
+                        -75.51545,
+                        2.527825
+                    ],
+                    [
+                        -75.515077,
+                        2.527969
+                    ],
+                    [
+                        -75.513966,
+                        2.528295
+                    ],
+                    [
+                        -75.513503,
+                        2.528467
+                    ],
+                    [
+                        -75.513259,
+                        2.528617
+                    ],
+                    [
+                        -75.51307,
+                        2.528781
+                    ],
+                    [
+                        -75.512954,
+                        2.528953
+                    ],
+                    [
+                        -75.510277,
+                        2.533756
+                    ],
+                    [
+                        -75.510129,
+                        2.533965
+                    ],
+                    [
+                        -75.509971,
+                        2.534119
+                    ],
+                    [
+                        -75.509358,
+                        2.534466
+                    ],
+                    [
+                        -75.509315,
+                        2.534491
+                    ],
+                    [
+                        -75.509057,
+                        2.534636
+                    ],
+                    [
+                        -75.508472,
+                        2.534986
+                    ],
+                    [
+                        -75.507446,
+                        2.535528
+                    ],
+                    [
+                        -75.50723,
+                        2.535622
+                    ],
+                    [
+                        -75.507039,
+                        2.535661
+                    ],
+                    [
+                        -75.506863,
+                        2.535653
+                    ],
+                    [
+                        -75.506678,
+                        2.535587
+                    ],
+                    [
+                        -75.506112,
+                        2.535235
+                    ],
+                    [
+                        -75.506041,
+                        2.535216
+                    ],
+                    [
+                        -75.505954,
+                        2.535213
+                    ],
+                    [
+                        -75.505584,
+                        2.535253
+                    ],
+                    [
+                        -75.505154,
+                        2.535161
+                    ],
+                    [
+                        -75.504427,
+                        2.535039
+                    ],
+                    [
+                        -75.504264,
+                        2.535055
+                    ],
+                    [
+                        -75.504165,
+                        2.535099
+                    ],
+                    [
+                        -75.504054,
+                        2.535198
+                    ],
+                    [
+                        -75.503945,
+                        2.535383
+                    ],
+                    [
+                        -75.503788,
+                        2.535753
+                    ],
+                    [
+                        -75.503741,
+                        2.535906
+                    ],
+                    [
+                        -75.503765,
+                        2.536069
+                    ],
+                    [
+                        -75.503796,
+                        2.536142
+                    ],
+                    [
+                        -75.503883,
+                        2.536265
+                    ],
+                    [
+                        -75.503988,
+                        2.536375
+                    ],
+                    [
+                        -75.504991,
+                        2.537243
+                    ],
+                    [
+                        -75.505173,
+                        2.537358
+                    ],
+                    [
+                        -75.505347,
+                        2.537435
+                    ],
+                    [
+                        -75.50571,
+                        2.53754
+                    ],
+                    [
+                        -75.505828,
+                        2.537607
+                    ],
+                    [
+                        -75.506071,
+                        2.537806
+                    ],
+                    [
+                        -75.506229,
+                        2.537968
+                    ],
+                    [
+                        -75.506327,
+                        2.53817
+                    ],
+                    [
+                        -75.506347,
+                        2.538315
+                    ],
+                    [
+                        -75.506334,
+                        2.538439
+                    ],
+                    [
+                        -75.5063,
+                        2.538564
+                    ],
+                    [
+                        -75.506233,
+                        2.538687
+                    ],
+                    [
+                        -75.505961,
+                        2.539054
+                    ],
+                    [
+                        -75.505564,
+                        2.539522
+                    ],
+                    [
+                        -75.505215,
+                        2.539864
+                    ],
+                    [
+                        -75.501129,
+                        2.54358
+                    ],
+                    [
+                        -75.500933,
+                        2.543758
+                    ],
+                    [
+                        -75.500165,
+                        2.544456
+                    ],
+                    [
+                        -75.497456,
+                        2.546931
+                    ],
+                    [
+                        -75.49642,
+                        2.547838
+                    ],
+                    [
+                        -75.496087,
+                        2.54816
+                    ],
+                    [
+                        -75.495939,
+                        2.548326
+                    ],
+                    [
+                        -75.495835,
+                        2.548468
+                    ],
+                    [
+                        -75.495631,
+                        2.548867
+                    ],
+                    [
+                        -75.495377,
+                        2.549468
+                    ],
+                    [
+                        -75.494975,
+                        2.55034
+                    ],
+                    [
+                        -75.494632,
+                        2.550944
+                    ],
+                    [
+                        -75.492755,
+                        2.55387
+                    ],
+                    [
+                        -75.492237,
+                        2.554724
+                    ],
+                    [
+                        -75.492116,
+                        2.554953
+                    ],
+                    [
+                        -75.4913,
+                        2.556795
+                    ],
+                    [
+                        -75.48786,
+                        2.564569
+                    ],
+                    [
+                        -75.487744,
+                        2.564781
+                    ],
+                    [
+                        -75.487503,
+                        2.565014
+                    ],
+                    [
+                        -75.48742,
+                        2.565067
+                    ],
+                    [
+                        -75.487066,
+                        2.56522
+                    ],
+                    [
+                        -75.486905,
+                        2.565255
+                    ],
+                    [
+                        -75.486721,
+                        2.565265
+                    ],
+                    [
+                        -75.486354,
+                        2.565227
+                    ],
+                    [
+                        -75.485446,
+                        2.565016
+                    ],
+                    [
+                        -75.485223,
+                        2.564944
+                    ],
+                    [
+                        -75.484802,
+                        2.56474
+                    ],
+                    [
+                        -75.483484,
+                        2.564009
+                    ],
+                    [
+                        -75.483253,
+                        2.563887
+                    ],
+                    [
+                        -75.482807,
+                        2.563663
+                    ],
+                    [
+                        -75.482558,
+                        2.563556
+                    ],
+                    [
+                        -75.482244,
+                        2.563461
+                    ],
+                    [
+                        -75.480448,
+                        2.563053
+                    ],
+                    [
+                        -75.480279,
+                        2.562996
+                    ],
+                    [
+                        -75.480167,
+                        2.562942
+                    ],
+                    [
+                        -75.480092,
+                        2.562885
+                    ],
+                    [
+                        -75.479538,
+                        2.562211
+                    ],
+                    [
+                        -75.479359,
+                        2.56209
+                    ],
+                    [
+                        -75.479257,
+                        2.562049
+                    ],
+                    [
+                        -75.476688,
+                        2.561284
+                    ],
+                    [
+                        -75.475194,
+                        2.560766
+                    ],
+                    [
+                        -75.474438,
+                        2.56045
+                    ],
+                    [
+                        -75.474127,
+                        2.560287
+                    ],
+                    [
+                        -75.473218,
+                        2.559676
+                    ],
+                    [
+                        -75.471536,
+                        2.558504
+                    ],
+                    [
+                        -75.470955,
+                        2.558076
+                    ],
+                    [
+                        -75.470041,
+                        2.557401
+                    ],
+                    [
+                        -75.469213,
+                        2.556817
+                    ],
+                    [
+                        -75.468905,
+                        2.556607
+                    ],
+                    [
+                        -75.468718,
+                        2.556518
+                    ],
+                    [
+                        -75.468588,
+                        2.556481
+                    ],
+                    [
+                        -75.468427,
+                        2.556459
+                    ],
+                    [
+                        -75.467578,
+                        2.55649
+                    ],
+                    [
+                        -75.467154,
+                        2.556521
+                    ],
+                    [
+                        -75.466964,
+                        2.556565
+                    ],
+                    [
+                        -75.466821,
+                        2.556629
+                    ],
+                    [
+                        -75.466571,
+                        2.556793
+                    ],
+                    [
+                        -75.466239,
+                        2.557189
+                    ],
+                    [
+                        -75.466027,
+                        2.557565
+                    ],
+                    [
+                        -75.465643,
+                        2.558532
+                    ],
+                    [
+                        -75.464581,
+                        2.561974
+                    ],
+                    [
+                        -75.464331,
+                        2.562786
+                    ],
+                    [
+                        -75.463387,
+                        2.565855
+                    ],
+                    [
+                        -75.463268,
+                        2.566135
+                    ],
+                    [
+                        -75.463141,
+                        2.56637
+                    ],
+                    [
+                        -75.462832,
+                        2.566775
+                    ],
+                    [
+                        -75.46066,
+                        2.56925
+                    ],
+                    [
+                        -75.460528,
+                        2.56944
+                    ],
+                    [
+                        -75.460431,
+                        2.569632
+                    ],
+                    [
+                        -75.460354,
+                        2.569842
+                    ],
+                    [
+                        -75.460308,
+                        2.570036
+                    ],
+                    [
+                        -75.460193,
+                        2.570704
+                    ],
+                    [
+                        -75.459477,
+                        2.575547
+                    ],
+                    [
+                        -75.459404,
+                        2.575911
+                    ],
+                    [
+                        -75.45901,
+                        2.577063
+                    ],
+                    [
+                        -75.457838,
+                        2.580461
+                    ],
+                    [
+                        -75.457732,
+                        2.58069
+                    ],
+                    [
+                        -75.457527,
+                        2.580925
+                    ],
+                    [
+                        -75.457405,
+                        2.581025
+                    ],
+                    [
+                        -75.456654,
+                        2.581356
+                    ],
+                    [
+                        -75.456467,
+                        2.581435
+                    ],
+                    [
+                        -75.455207,
+                        2.581972
+                    ],
+                    [
+                        -75.454941,
+                        2.582039
+                    ],
+                    [
+                        -75.454658,
+                        2.582064
+                    ],
+                    [
+                        -75.454224,
+                        2.582051
+                    ],
+                    [
+                        -75.453512,
+                        2.582042
+                    ],
+                    [
+                        -75.45325,
+                        2.582015
+                    ],
+                    [
+                        -75.453005,
+                        2.582039
+                    ],
+                    [
+                        -75.452825,
+                        2.582088
+                    ],
+                    [
+                        -75.452597,
+                        2.582196
+                    ],
+                    [
+                        -75.452426,
+                        2.582344
+                    ],
+                    [
+                        -75.452122,
+                        2.582785
+                    ],
+                    [
+                        -75.451969,
+                        2.583041
+                    ],
+                    [
+                        -75.452122,
+                        2.582785
+                    ],
+                    [
+                        -75.452426,
+                        2.582344
+                    ],
+                    [
+                        -75.452597,
+                        2.582196
+                    ],
+                    [
+                        -75.452825,
+                        2.582088
+                    ],
+                    [
+                        -75.453005,
+                        2.582039
+                    ],
+                    [
+                        -75.45325,
+                        2.582015
+                    ],
+                    [
+                        -75.453512,
+                        2.582042
+                    ],
+                    [
+                        -75.454224,
+                        2.582051
+                    ],
+                    [
+                        -75.454658,
+                        2.582064
+                    ],
+                    [
+                        -75.454941,
+                        2.582039
+                    ],
+                    [
+                        -75.455207,
+                        2.581972
+                    ],
+                    [
+                        -75.456467,
+                        2.581435
+                    ],
+                    [
+                        -75.456654,
+                        2.581356
+                    ],
+                    [
+                        -75.457405,
+                        2.581025
+                    ],
+                    [
+                        -75.457527,
+                        2.580925
+                    ],
+                    [
+                        -75.457732,
+                        2.58069
+                    ],
+                    [
+                        -75.457838,
+                        2.580461
+                    ],
+                    [
+                        -75.45901,
+                        2.577063
+                    ],
+                    [
+                        -75.459404,
+                        2.575911
+                    ],
+                    [
+                        -75.459477,
+                        2.575547
+                    ],
+                    [
+                        -75.460193,
+                        2.570704
+                    ],
+                    [
+                        -75.460308,
+                        2.570036
+                    ],
+                    [
+                        -75.460354,
+                        2.569842
+                    ],
+                    [
+                        -75.460431,
+                        2.569632
+                    ],
+                    [
+                        -75.460528,
+                        2.56944
+                    ],
+                    [
+                        -75.46066,
+                        2.56925
+                    ],
+                    [
+                        -75.462832,
+                        2.566775
+                    ],
+                    [
+                        -75.463141,
+                        2.56637
+                    ],
+                    [
+                        -75.463268,
+                        2.566135
+                    ],
+                    [
+                        -75.463387,
+                        2.565855
+                    ],
+                    [
+                        -75.464331,
+                        2.562786
+                    ],
+                    [
+                        -75.464581,
+                        2.561974
+                    ],
+                    [
+                        -75.465643,
+                        2.558532
+                    ],
+                    [
+                        -75.466027,
+                        2.557565
+                    ],
+                    [
+                        -75.466239,
+                        2.557189
+                    ],
+                    [
+                        -75.466571,
+                        2.556793
+                    ],
+                    [
+                        -75.466821,
+                        2.556629
+                    ],
+                    [
+                        -75.466964,
+                        2.556565
+                    ],
+                    [
+                        -75.467154,
+                        2.556521
+                    ],
+                    [
+                        -75.467578,
+                        2.55649
+                    ],
+                    [
+                        -75.468427,
+                        2.556459
+                    ],
+                    [
+                        -75.468588,
+                        2.556481
+                    ],
+                    [
+                        -75.468718,
+                        2.556518
+                    ],
+                    [
+                        -75.468905,
+                        2.556607
+                    ],
+                    [
+                        -75.469213,
+                        2.556817
+                    ],
+                    [
+                        -75.470041,
+                        2.557401
+                    ],
+                    [
+                        -75.470955,
+                        2.558076
+                    ],
+                    [
+                        -75.471536,
+                        2.558504
+                    ],
+                    [
+                        -75.473218,
+                        2.559676
+                    ],
+                    [
+                        -75.474127,
+                        2.560287
+                    ],
+                    [
+                        -75.474438,
+                        2.56045
+                    ],
+                    [
+                        -75.475194,
+                        2.560766
+                    ],
+                    [
+                        -75.476688,
+                        2.561284
+                    ],
+                    [
+                        -75.479257,
+                        2.562049
+                    ],
+                    [
+                        -75.479359,
+                        2.56209
+                    ],
+                    [
+                        -75.479538,
+                        2.562211
+                    ],
+                    [
+                        -75.480092,
+                        2.562885
+                    ],
+                    [
+                        -75.480167,
+                        2.562942
+                    ],
+                    [
+                        -75.480279,
+                        2.562996
+                    ],
+                    [
+                        -75.480448,
+                        2.563053
+                    ],
+                    [
+                        -75.482244,
+                        2.563461
+                    ],
+                    [
+                        -75.482558,
+                        2.563556
+                    ],
+                    [
+                        -75.482807,
+                        2.563663
+                    ],
+                    [
+                        -75.483253,
+                        2.563887
+                    ],
+                    [
+                        -75.483484,
+                        2.564009
+                    ],
+                    [
+                        -75.484802,
+                        2.56474
+                    ],
+                    [
+                        -75.485223,
+                        2.564944
+                    ],
+                    [
+                        -75.485446,
+                        2.565016
+                    ],
+                    [
+                        -75.486354,
+                        2.565227
+                    ],
+                    [
+                        -75.486721,
+                        2.565265
+                    ],
+                    [
+                        -75.486905,
+                        2.565255
+                    ],
+                    [
+                        -75.487066,
+                        2.56522
+                    ],
+                    [
+                        -75.48742,
+                        2.565067
+                    ],
+                    [
+                        -75.487503,
+                        2.565014
+                    ],
+                    [
+                        -75.487744,
+                        2.564781
+                    ],
+                    [
+                        -75.48786,
+                        2.564569
+                    ],
+                    [
+                        -75.4913,
+                        2.556795
+                    ],
+                    [
+                        -75.492116,
+                        2.554953
+                    ],
+                    [
+                        -75.492237,
+                        2.554724
+                    ],
+                    [
+                        -75.492755,
+                        2.55387
+                    ],
+                    [
+                        -75.494632,
+                        2.550944
+                    ],
+                    [
+                        -75.494975,
+                        2.55034
+                    ],
+                    [
+                        -75.495377,
+                        2.549468
+                    ],
+                    [
+                        -75.495631,
+                        2.548867
+                    ],
+                    [
+                        -75.495835,
+                        2.548468
+                    ],
+                    [
+                        -75.495939,
+                        2.548326
+                    ],
+                    [
+                        -75.496087,
+                        2.54816
+                    ],
+                    [
+                        -75.49642,
+                        2.547838
+                    ],
+                    [
+                        -75.497456,
+                        2.546931
+                    ],
+                    [
+                        -75.500165,
+                        2.544456
+                    ],
+                    [
+                        -75.500933,
+                        2.543758
+                    ],
+                    [
+                        -75.501129,
+                        2.54358
+                    ],
+                    [
+                        -75.505215,
+                        2.539864
+                    ],
+                    [
+                        -75.505564,
+                        2.539522
+                    ],
+                    [
+                        -75.505961,
+                        2.539054
+                    ],
+                    [
+                        -75.506233,
+                        2.538687
+                    ],
+                    [
+                        -75.5063,
+                        2.538564
+                    ],
+                    [
+                        -75.506334,
+                        2.538439
+                    ],
+                    [
+                        -75.506347,
+                        2.538315
+                    ],
+                    [
+                        -75.506327,
+                        2.53817
+                    ],
+                    [
+                        -75.506229,
+                        2.537968
+                    ],
+                    [
+                        -75.506071,
+                        2.537806
+                    ],
+                    [
+                        -75.505828,
+                        2.537607
+                    ],
+                    [
+                        -75.50571,
+                        2.53754
+                    ],
+                    [
+                        -75.505347,
+                        2.537435
+                    ],
+                    [
+                        -75.505173,
+                        2.537358
+                    ],
+                    [
+                        -75.504991,
+                        2.537243
+                    ],
+                    [
+                        -75.503988,
+                        2.536375
+                    ],
+                    [
+                        -75.503883,
+                        2.536265
+                    ],
+                    [
+                        -75.503796,
+                        2.536142
+                    ],
+                    [
+                        -75.503765,
+                        2.536069
+                    ],
+                    [
+                        -75.503741,
+                        2.535906
+                    ],
+                    [
+                        -75.503788,
+                        2.535753
+                    ],
+                    [
+                        -75.503945,
+                        2.535383
+                    ],
+                    [
+                        -75.504054,
+                        2.535198
+                    ],
+                    [
+                        -75.504165,
+                        2.535099
+                    ],
+                    [
+                        -75.504264,
+                        2.535055
+                    ],
+                    [
+                        -75.504427,
+                        2.535039
+                    ],
+                    [
+                        -75.505154,
+                        2.535161
+                    ],
+                    [
+                        -75.505584,
+                        2.535253
+                    ],
+                    [
+                        -75.505954,
+                        2.535213
+                    ],
+                    [
+                        -75.506041,
+                        2.535216
+                    ],
+                    [
+                        -75.506112,
+                        2.535235
+                    ],
+                    [
+                        -75.506678,
+                        2.535587
+                    ],
+                    [
+                        -75.506863,
+                        2.535653
+                    ],
+                    [
+                        -75.507039,
+                        2.535661
+                    ],
+                    [
+                        -75.50723,
+                        2.535622
+                    ],
+                    [
+                        -75.507446,
+                        2.535528
+                    ],
+                    [
+                        -75.508472,
+                        2.534986
+                    ],
+                    [
+                        -75.509057,
+                        2.534636
+                    ],
+                    [
+                        -75.509315,
+                        2.534491
+                    ],
+                    [
+                        -75.509358,
+                        2.534466
+                    ],
+                    [
+                        -75.509971,
+                        2.534119
+                    ],
+                    [
+                        -75.510129,
+                        2.533965
+                    ],
+                    [
+                        -75.510277,
+                        2.533756
+                    ],
+                    [
+                        -75.512954,
+                        2.528953
+                    ],
+                    [
+                        -75.51307,
+                        2.528781
+                    ],
+                    [
+                        -75.513259,
+                        2.528617
+                    ],
+                    [
+                        -75.513503,
+                        2.528467
+                    ],
+                    [
+                        -75.513966,
+                        2.528295
+                    ],
+                    [
+                        -75.515077,
+                        2.527969
+                    ],
+                    [
+                        -75.51545,
+                        2.527825
+                    ],
+                    [
+                        -75.515728,
+                        2.527666
+                    ],
+                    [
+                        -75.51606,
+                        2.527448
+                    ],
+                    [
+                        -75.518805,
+                        2.525222
+                    ],
+                    [
+                        -75.519274,
+                        2.524811
+                    ],
+                    [
+                        -75.520008,
+                        2.524052
+                    ],
+                    [
+                        -75.521316,
+                        2.522644
+                    ],
+                    [
+                        -75.522122,
+                        2.521552
+                    ],
+                    [
+                        -75.522657,
+                        2.521017
+                    ],
+                    [
+                        -75.522776,
+                        2.520937
+                    ],
+                    [
+                        -75.523895,
+                        2.520293
+                    ],
+                    [
+                        -75.524321,
+                        2.519981
+                    ],
+                    [
+                        -75.527685,
+                        2.517081
+                    ],
+                    [
+                        -75.527917,
+                        2.516881
+                    ],
+                    [
+                        -75.529272,
+                        2.51571
+                    ],
+                    [
+                        -75.530145,
+                        2.514918
+                    ],
+                    [
+                        -75.530482,
+                        2.514477
+                    ],
+                    [
+                        -75.531373,
+                        2.513245
+                    ],
+                    [
+                        -75.53155,
+                        2.512954
+                    ],
+                    [
+                        -75.531905,
+                        2.512179
+                    ],
+                    [
+                        -75.532099,
+                        2.511671
+                    ],
+                    [
+                        -75.532145,
+                        2.511433
+                    ],
+                    [
+                        -75.53214,
+                        2.50877
+                    ],
+                    [
+                        -75.532214,
+                        2.508419
+                    ],
+                    [
+                        -75.532354,
+                        2.508147
+                    ],
+                    [
+                        -75.532572,
+                        2.507895
+                    ],
+                    [
+                        -75.533847,
+                        2.506678
+                    ],
+                    [
+                        -75.534216,
+                        2.506408
+                    ],
+                    [
+                        -75.536099,
+                        2.505386
+                    ],
+                    [
+                        -75.53631,
+                        2.505346
+                    ],
+                    [
+                        -75.537295,
+                        2.505371
+                    ],
+                    [
+                        -75.537436,
+                        2.505327
+                    ],
+                    [
+                        -75.53757,
+                        2.505252
+                    ],
+                    [
+                        -75.53768,
+                        2.505154
+                    ],
+                    [
+                        -75.53777,
+                        2.505013
+                    ],
+                    [
+                        -75.537964,
+                        2.504358
+                    ],
+                    [
+                        -75.538061,
+                        2.503657
+                    ],
+                    [
+                        -75.538042,
+                        2.503229
+                    ],
+                    [
+                        -75.537909,
+                        2.501904
+                    ],
+                    [
+                        -75.537784,
+                        2.500942
+                    ],
+                    [
+                        -75.537687,
+                        2.500548
+                    ],
+                    [
+                        -75.537089,
+                        2.498922
+                    ],
+                    [
+                        -75.537087,
+                        2.498826
+                    ],
+                    [
+                        -75.537106,
+                        2.498723
+                    ],
+                    [
+                        -75.537357,
+                        2.498232
+                    ],
+                    [
+                        -75.537457,
+                        2.498071
+                    ],
+                    [
+                        -75.537664,
+                        2.497721
+                    ],
+                    [
+                        -75.537837,
+                        2.497503
+                    ],
+                    [
+                        -75.538197,
+                        2.497156
+                    ],
+                    [
+                        -75.538372,
+                        2.49703
+                    ],
+                    [
+                        -75.54182,
+                        2.49538
+                    ],
+                    [
+                        -75.542258,
+                        2.495174
+                    ],
+                    [
+                        -75.542466,
+                        2.495045
+                    ],
+                    [
+                        -75.542657,
+                        2.494888
+                    ],
+                    [
+                        -75.542864,
+                        2.494652
+                    ],
+                    [
+                        -75.543034,
+                        2.494432
+                    ],
+                    [
+                        -75.543122,
+                        2.494261
+                    ],
+                    [
+                        -75.543154,
+                        2.494074
+                    ],
+                    [
+                        -75.543182,
+                        2.49354
+                    ],
+                    [
+                        -75.543227,
+                        2.493412
+                    ],
+                    [
+                        -75.543301,
+                        2.493316
+                    ],
+                    [
+                        -75.54335,
+                        2.49328
+                    ],
+                    [
+                        -75.543439,
+                        2.493235
+                    ],
+                    [
+                        -75.543757,
+                        2.493166
+                    ],
+                    [
+                        -75.543894,
+                        2.493123
+                    ],
+                    [
+                        -75.544249,
+                        2.492902
+                    ],
+                    [
+                        -75.54493,
+                        2.492424
+                    ],
+                    [
+                        -75.545146,
+                        2.492302
+                    ],
+                    [
+                        -75.545376,
+                        2.49221
+                    ],
+                    [
+                        -75.546494,
+                        2.491929
+                    ],
+                    [
+                        -75.54673,
+                        2.491853
+                    ],
+                    [
+                        -75.546994,
+                        2.491717
+                    ],
+                    [
+                        -75.547102,
+                        2.491688
+                    ],
+                    [
+                        -75.547224,
+                        2.49168
+                    ],
+                    [
+                        -75.54779,
+                        2.491788
+                    ],
+                    [
+                        -75.547961,
+                        2.491792
+                    ],
+                    [
+                        -75.548196,
+                        2.491703
+                    ],
+                    [
+                        -75.549033,
+                        2.490999
+                    ],
+                    [
+                        -75.549259,
+                        2.490793
+                    ],
+                    [
+                        -75.549335,
+                        2.490646
+                    ],
+                    [
+                        -75.549402,
+                        2.490297
+                    ],
+                    [
+                        -75.549294,
+                        2.489706
+                    ],
+                    [
+                        -75.549177,
+                        2.489218
+                    ],
+                    [
+                        -75.549163,
+                        2.488948
+                    ],
+                    [
+                        -75.549246,
+                        2.488688
+                    ],
+                    [
+                        -75.54958,
+                        2.487852
+                    ],
+                    [
+                        -75.549647,
+                        2.487171
+                    ],
+                    [
+                        -75.549743,
+                        2.486466
+                    ],
+                    [
+                        -75.549705,
+                        2.486273
+                    ],
+                    [
+                        -75.549553,
+                        2.486086
+                    ],
+                    [
+                        -75.548381,
+                        2.485542
+                    ],
+                    [
+                        -75.548128,
+                        2.48537
+                    ],
+                    [
+                        -75.548014,
+                        2.485073
+                    ],
+                    [
+                        -75.547948,
+                        2.484454
+                    ],
+                    [
+                        -75.547943,
+                        2.48437
+                    ],
+                    [
+                        -75.547958,
+                        2.484246
+                    ],
+                    [
+                        -75.548021,
+                        2.48395
+                    ],
+                    [
+                        -75.548012,
+                        2.483722
+                    ],
+                    [
+                        -75.547904,
+                        2.483447
+                    ],
+                    [
+                        -75.547857,
+                        2.48329
+                    ],
+                    [
+                        -75.547845,
+                        2.483094
+                    ],
+                    [
+                        -75.547856,
+                        2.482981
+                    ],
+                    [
+                        -75.548203,
+                        2.48134
+                    ],
+                    [
+                        -75.548213,
+                        2.48099
+                    ],
+                    [
+                        -75.547933,
+                        2.480451
+                    ],
+                    [
+                        -75.547878,
+                        2.480383
+                    ],
+                    [
+                        -75.547721,
+                        2.480261
+                    ],
+                    [
+                        -75.547528,
+                        2.480166
+                    ],
+                    [
+                        -75.547425,
+                        2.480133
+                    ],
+                    [
+                        -75.547143,
+                        2.480106
+                    ],
+                    [
+                        -75.546937,
+                        2.480146
+                    ],
+                    [
+                        -75.546794,
+                        2.480201
+                    ],
+                    [
+                        -75.545399,
+                        2.48097
+                    ],
+                    [
+                        -75.543677,
+                        2.482018
+                    ],
+                    [
+                        -75.543513,
+                        2.482066
+                    ],
+                    [
+                        -75.543336,
+                        2.482083
+                    ],
+                    [
+                        -75.542722,
+                        2.482014
+                    ],
+                    [
+                        -75.542545,
+                        2.482022
+                    ],
+                    [
+                        -75.542395,
+                        2.482045
+                    ],
+                    [
+                        -75.54225,
+                        2.482096
+                    ],
+                    [
+                        -75.542038,
+                        2.482204
+                    ],
+                    [
+                        -75.541878,
+                        2.482267
+                    ],
+                    [
+                        -75.541747,
+                        2.482286
+                    ],
+                    [
+                        -75.541614,
+                        2.482267
+                    ],
+                    [
+                        -75.541484,
+                        2.482223
+                    ],
+                    [
+                        -75.540417,
+                        2.481778
+                    ],
+                    [
+                        -75.53981,
+                        2.481497
+                    ],
+                    [
+                        -75.539668,
+                        2.481393
+                    ],
+                    [
+                        -75.539547,
+                        2.481242
+                    ],
+                    [
+                        -75.539439,
+                        2.480995
+                    ],
+                    [
+                        -75.539248,
+                        2.480474
+                    ],
+                    [
+                        -75.539219,
+                        2.480301
+                    ],
+                    [
+                        -75.539233,
+                        2.480216
+                    ],
+                    [
+                        -75.53995,
+                        2.479095
+                    ],
+                    [
+                        -75.540093,
+                        2.478962
+                    ],
+                    [
+                        -75.540514,
+                        2.478729
+                    ],
+                    [
+                        -75.541532,
+                        2.478323
+                    ],
+                    [
+                        -75.541678,
+                        2.478206
+                    ],
+                    [
+                        -75.541776,
+                        2.478076
+                    ],
+                    [
+                        -75.542618,
+                        2.476624
+                    ],
+                    [
+                        -75.542648,
+                        2.476534
+                    ],
+                    [
+                        -75.542616,
+                        2.476332
+                    ],
+                    [
+                        -75.542555,
+                        2.476242
+                    ],
+                    [
+                        -75.542478,
+                        2.476155
+                    ],
+                    [
+                        -75.542378,
+                        2.476107
+                    ],
+                    [
+                        -75.542259,
+                        2.47608
+                    ],
+                    [
+                        -75.542134,
+                        2.476101
+                    ],
+                    [
+                        -75.542028,
+                        2.476151
+                    ],
+                    [
+                        -75.541594,
+                        2.476509
+                    ],
+                    [
+                        -75.541476,
+                        2.476588
+                    ],
+                    [
+                        -75.540702,
+                        2.47686
+                    ],
+                    [
+                        -75.540569,
+                        2.476867
+                    ],
+                    [
+                        -75.540481,
+                        2.476833
+                    ],
+                    [
+                        -75.540419,
+                        2.476781
+                    ],
+                    [
+                        -75.540371,
+                        2.476696
+                    ],
+                    [
+                        -75.540341,
+                        2.476608
+                    ],
+                    [
+                        -75.540344,
+                        2.476518
+                    ],
+                    [
+                        -75.540391,
+                        2.476419
+                    ],
+                    [
+                        -75.540474,
+                        2.476351
+                    ],
+                    [
+                        -75.541134,
+                        2.475982
+                    ],
+                    [
+                        -75.54157,
+                        2.475702
+                    ],
+                    [
+                        -75.542024,
+                        2.475462
+                    ],
+                    [
+                        -75.542079,
+                        2.475406
+                    ],
+                    [
+                        -75.542129,
+                        2.47532
+                    ],
+                    [
+                        -75.542144,
+                        2.47519
+                    ],
+                    [
+                        -75.542121,
+                        2.475093
+                    ],
+                    [
+                        -75.542068,
+                        2.474999
+                    ],
+                    [
+                        -75.541536,
+                        2.474503
+                    ],
+                    [
+                        -75.541465,
+                        2.474378
+                    ],
+                    [
+                        -75.541432,
+                        2.474224
+                    ],
+                    [
+                        -75.541449,
+                        2.474096
+                    ],
+                    [
+                        -75.541782,
+                        2.473262
+                    ],
+                    [
+                        -75.541862,
+                        2.47312
+                    ],
+                    [
+                        -75.541963,
+                        2.473017
+                    ],
+                    [
+                        -75.542101,
+                        2.472907
+                    ],
+                    [
+                        -75.542649,
+                        2.472551
+                    ],
+                    [
+                        -75.542758,
+                        2.472426
+                    ],
+                    [
+                        -75.542836,
+                        2.472281
+                    ],
+                    [
+                        -75.542865,
+                        2.472119
+                    ],
+                    [
+                        -75.542881,
+                        2.47196
+                    ],
+                    [
+                        -75.542858,
+                        2.471784
+                    ],
+                    [
+                        -75.542742,
+                        2.471374
+                    ],
+                    [
+                        -75.542735,
+                        2.470865
+                    ],
+                    [
+                        -75.542696,
+                        2.470692
+                    ],
+                    [
+                        -75.542334,
+                        2.470039
+                    ],
+                    [
+                        -75.542276,
+                        2.469871
+                    ],
+                    [
+                        -75.54225,
+                        2.469748
+                    ],
+                    [
+                        -75.542242,
+                        2.469627
+                    ],
+                    [
                         -75.542322,
                         2.468072
                     ],
@@ -31650,10 +34468,6 @@
                         1.502893
                     ],
                     [
-                        -76.357555,
-                        1.502635
-                    ],
-                    [
                         -76.35773,
                         1.50236
                     ],
@@ -31808,6 +34622,314 @@
                     [
                         -76.371307,
                         1.499419
+                    ],
+                    [
+                        -76.370808,
+                        1.499593
+                    ],
+                    [
+                        -76.369905,
+                        1.499943
+                    ],
+                    [
+                        -76.369624,
+                        1.499967
+                    ],
+                    [
+                        -76.369312,
+                        1.499886
+                    ],
+                    [
+                        -76.368518,
+                        1.49961
+                    ],
+                    [
+                        -76.368248,
+                        1.499613
+                    ],
+                    [
+                        -76.368067,
+                        1.499656
+                    ],
+                    [
+                        -76.367895,
+                        1.499758
+                    ],
+                    [
+                        -76.367684,
+                        1.499997
+                    ],
+                    [
+                        -76.366976,
+                        1.501501
+                    ],
+                    [
+                        -76.366822,
+                        1.501646
+                    ],
+                    [
+                        -76.36663,
+                        1.501777
+                    ],
+                    [
+                        -76.366473,
+                        1.501832
+                    ],
+                    [
+                        -76.364403,
+                        1.50188
+                    ],
+                    [
+                        -76.364212,
+                        1.501868
+                    ],
+                    [
+                        -76.363994,
+                        1.501818
+                    ],
+                    [
+                        -76.363798,
+                        1.501688
+                    ],
+                    [
+                        -76.363649,
+                        1.501552
+                    ],
+                    [
+                        -76.363318,
+                        1.500918
+                    ],
+                    [
+                        -76.363121,
+                        1.500427
+                    ],
+                    [
+                        -76.362997,
+                        1.500291
+                    ],
+                    [
+                        -76.362858,
+                        1.500171
+                    ],
+                    [
+                        -76.362679,
+                        1.500106
+                    ],
+                    [
+                        -76.362519,
+                        1.500085
+                    ],
+                    [
+                        -76.36233,
+                        1.50009
+                    ],
+                    [
+                        -76.362193,
+                        1.500141
+                    ],
+                    [
+                        -76.361961,
+                        1.500257
+                    ],
+                    [
+                        -76.360475,
+                        1.50151
+                    ],
+                    [
+                        -76.360363,
+                        1.501563
+                    ],
+                    [
+                        -76.3602,
+                        1.501562
+                    ],
+                    [
+                        -76.360002,
+                        1.501456
+                    ],
+                    [
+                        -76.359515,
+                        1.500765
+                    ],
+                    [
+                        -76.359304,
+                        1.500627
+                    ],
+                    [
+                        -76.359134,
+                        1.500603
+                    ],
+                    [
+                        -76.358951,
+                        1.500624
+                    ],
+                    [
+                        -76.358698,
+                        1.500803
+                    ],
+                    [
+                        -76.358195,
+                        1.501581
+                    ],
+                    [
+                        -76.35773,
+                        1.50236
+                    ],
+                    [
+                        -76.357555,
+                        1.502635
+                    ],
+                    [
+                        -76.35773,
+                        1.50236
+                    ],
+                    [
+                        -76.358195,
+                        1.501581
+                    ],
+                    [
+                        -76.358698,
+                        1.500803
+                    ],
+                    [
+                        -76.358951,
+                        1.500624
+                    ],
+                    [
+                        -76.359134,
+                        1.500603
+                    ],
+                    [
+                        -76.359304,
+                        1.500627
+                    ],
+                    [
+                        -76.359515,
+                        1.500765
+                    ],
+                    [
+                        -76.360002,
+                        1.501456
+                    ],
+                    [
+                        -76.3602,
+                        1.501562
+                    ],
+                    [
+                        -76.360363,
+                        1.501563
+                    ],
+                    [
+                        -76.360475,
+                        1.50151
+                    ],
+                    [
+                        -76.361961,
+                        1.500257
+                    ],
+                    [
+                        -76.362193,
+                        1.500141
+                    ],
+                    [
+                        -76.36233,
+                        1.50009
+                    ],
+                    [
+                        -76.362519,
+                        1.500085
+                    ],
+                    [
+                        -76.362679,
+                        1.500106
+                    ],
+                    [
+                        -76.362858,
+                        1.500171
+                    ],
+                    [
+                        -76.362997,
+                        1.500291
+                    ],
+                    [
+                        -76.363121,
+                        1.500427
+                    ],
+                    [
+                        -76.363318,
+                        1.500918
+                    ],
+                    [
+                        -76.363649,
+                        1.501552
+                    ],
+                    [
+                        -76.363798,
+                        1.501688
+                    ],
+                    [
+                        -76.363994,
+                        1.501818
+                    ],
+                    [
+                        -76.364212,
+                        1.501868
+                    ],
+                    [
+                        -76.364403,
+                        1.50188
+                    ],
+                    [
+                        -76.366473,
+                        1.501832
+                    ],
+                    [
+                        -76.36663,
+                        1.501777
+                    ],
+                    [
+                        -76.366822,
+                        1.501646
+                    ],
+                    [
+                        -76.366976,
+                        1.501501
+                    ],
+                    [
+                        -76.367684,
+                        1.499997
+                    ],
+                    [
+                        -76.367895,
+                        1.499758
+                    ],
+                    [
+                        -76.368067,
+                        1.499656
+                    ],
+                    [
+                        -76.368248,
+                        1.499613
+                    ],
+                    [
+                        -76.368518,
+                        1.49961
+                    ],
+                    [
+                        -76.369312,
+                        1.499886
+                    ],
+                    [
+                        -76.369624,
+                        1.499967
+                    ],
+                    [
+                        -76.369905,
+                        1.499943
+                    ],
+                    [
+                        -76.370808,
+                        1.499593
                     ],
                     [
                         -76.372067,
@@ -34444,6 +37566,10 @@
                     [
                         -76.517229,
                         1.36491
+                    ],
+                    [
+                        -76.517227,
+                        1.364915
                     ],
                     [
                         -76.517343,
@@ -41932,6 +45058,10 @@
                     [
                         -76.747989,
                         1.07276
+                    ],
+                    [
+                        -76.748196,
+                        1.072772
                     ],
                     [
                         -76.748198,
@@ -49664,6 +52794,586 @@
                     [
                         -76.919012,
                         1.20428
+                    ],
+                    [
+                        -76.918631,
+                        1.204048
+                    ],
+                    [
+                        -76.918086,
+                        1.204932
+                    ],
+                    [
+                        -76.918952,
+                        1.205478
+                    ],
+                    [
+                        -76.91948,
+                        1.204565
+                    ],
+                    [
+                        -76.91965,
+                        1.204625
+                    ],
+                    [
+                        -76.919931,
+                        1.204679
+                    ],
+                    [
+                        -76.920906,
+                        1.204807
+                    ],
+                    [
+                        -76.921791,
+                        1.204919
+                    ],
+                    [
+                        -76.922204,
+                        1.204977
+                    ],
+                    [
+                        -76.92262,
+                        1.205036
+                    ],
+                    [
+                        -76.922916,
+                        1.205077
+                    ],
+                    [
+                        -76.923983,
+                        1.205245
+                    ],
+                    [
+                        -76.924299,
+                        1.20529
+                    ],
+                    [
+                        -76.93184,
+                        1.206368
+                    ],
+                    [
+                        -76.933185,
+                        1.206561
+                    ],
+                    [
+                        -76.933695,
+                        1.2066
+                    ],
+                    [
+                        -76.934755,
+                        1.206518
+                    ],
+                    [
+                        -76.935001,
+                        1.206545
+                    ],
+                    [
+                        -76.935256,
+                        1.206642
+                    ],
+                    [
+                        -76.936368,
+                        1.207134
+                    ],
+                    [
+                        -76.937634,
+                        1.207872
+                    ],
+                    [
+                        -76.937997,
+                        1.208179
+                    ],
+                    [
+                        -76.940228,
+                        1.210701
+                    ],
+                    [
+                        -76.940393,
+                        1.210813
+                    ],
+                    [
+                        -76.940567,
+                        1.210867
+                    ],
+                    [
+                        -76.940642,
+                        1.210882
+                    ],
+                    [
+                        -76.940863,
+                        1.210928
+                    ],
+                    [
+                        -76.940965,
+                        1.210948
+                    ],
+                    [
+                        -76.941826,
+                        1.211125
+                    ],
+                    [
+                        -76.942538,
+                        1.211271
+                    ],
+                    [
+                        -76.942908,
+                        1.211299
+                    ],
+                    [
+                        -76.943078,
+                        1.211275
+                    ],
+                    [
+                        -76.943219,
+                        1.211211
+                    ],
+                    [
+                        -76.943634,
+                        1.210955
+                    ],
+                    [
+                        -76.945174,
+                        1.210005
+                    ],
+                    [
+                        -76.945472,
+                        1.209732
+                    ],
+                    [
+                        -76.94992,
+                        1.20429
+                    ],
+                    [
+                        -76.950252,
+                        1.203981
+                    ],
+                    [
+                        -76.955335,
+                        1.201658
+                    ],
+                    [
+                        -76.95924,
+                        1.199941
+                    ],
+                    [
+                        -76.962211,
+                        1.198593
+                    ],
+                    [
+                        -76.962622,
+                        1.198473
+                    ],
+                    [
+                        -76.963844,
+                        1.198142
+                    ],
+                    [
+                        -76.965417,
+                        1.197636
+                    ],
+                    [
+                        -76.966677,
+                        1.197427
+                    ],
+                    [
+                        -76.966879,
+                        1.197365
+                    ],
+                    [
+                        -76.967103,
+                        1.197242
+                    ],
+                    [
+                        -76.967647,
+                        1.196708
+                    ],
+                    [
+                        -76.968403,
+                        1.195917
+                    ],
+                    [
+                        -76.969155,
+                        1.195129
+                    ],
+                    [
+                        -76.969902,
+                        1.194347
+                    ],
+                    [
+                        -76.970622,
+                        1.193593
+                    ],
+                    [
+                        -76.971368,
+                        1.192813
+                    ],
+                    [
+                        -76.972135,
+                        1.192009
+                    ],
+                    [
+                        -76.972847,
+                        1.191251
+                    ],
+                    [
+                        -76.973147,
+                        1.190942
+                    ],
+                    [
+                        -76.97361,
+                        1.190465
+                    ],
+                    [
+                        -76.974377,
+                        1.189662
+                    ],
+                    [
+                        -76.975091,
+                        1.188905
+                    ],
+                    [
+                        -76.975812,
+                        1.188121
+                    ],
+                    [
+                        -76.976579,
+                        1.187316
+                    ],
+                    [
+                        -76.97684,
+                        1.187019
+                    ],
+                    [
+                        -76.977302,
+                        1.186566
+                    ],
+                    [
+                        -76.978066,
+                        1.185818
+                    ],
+                    [
+                        -76.97923,
+                        1.184677
+                    ],
+                    [
+                        -76.980493,
+                        1.183443
+                    ],
+                    [
+                        -76.980565,
+                        1.183324
+                    ],
+                    [
+                        -76.980595,
+                        1.183184
+                    ],
+                    [
+                        -76.980562,
+                        1.182748
+                    ],
+                    [
+                        -76.980571,
+                        1.182605
+                    ],
+                    [
+                        -76.980753,
+                        1.182233
+                    ],
+                    [
+                        -76.980777,
+                        1.182086
+                    ],
+                    [
+                        -76.980797,
+                        1.181814
+                    ],
+                    [
+                        -76.980821,
+                        1.181691
+                    ],
+                    [
+                        -76.980899,
+                        1.181542
+                    ],
+                    [
+                        -76.981008,
+                        1.181411
+                    ],
+                    [
+                        -76.98137,
+                        1.181084
+                    ],
+                    [
+                        -76.981491,
+                        1.180915
+                    ],
+                    [
+                        -76.981648,
+                        1.180761
+                    ],
+                    [
+                        -76.981699,
+                        1.180728
+                    ],
+                    [
+                        -76.982326,
+                        1.180537
+                    ],
+                    [
+                        -76.982507,
+                        1.180342
+                    ],
+                    [
+                        -76.982885,
+                        1.17888
+                    ],
+                    [
+                        -76.98285,
+                        1.178686
+                    ],
+                    [
+                        -76.982719,
+                        1.178393
+                    ],
+                    [
+                        -76.982705,
+                        1.178266
+                    ],
+                    [
+                        -76.982847,
+                        1.177992
+                    ],
+                    [
+                        -76.982954,
+                        1.177934
+                    ],
+                    [
+                        -76.983723,
+                        1.177907
+                    ],
+                    [
+                        -76.983887,
+                        1.177875
+                    ],
+                    [
+                        -76.984104,
+                        1.177757
+                    ],
+                    [
+                        -76.985175,
+                        1.176479
+                    ],
+                    [
+                        -76.985604,
+                        1.175966
+                    ],
+                    [
+                        -76.987027,
+                        1.174473
+                    ],
+                    [
+                        -76.988791,
+                        1.172676
+                    ],
+                    [
+                        -76.991345,
+                        1.170032
+                    ],
+                    [
+                        -76.992543,
+                        1.168788
+                    ],
+                    [
+                        -76.994598,
+                        1.166651
+                    ],
+                    [
+                        -76.994748,
+                        1.166439
+                    ],
+                    [
+                        -76.994851,
+                        1.16623
+                    ],
+                    [
+                        -76.994921,
+                        1.165827
+                    ],
+                    [
+                        -76.994966,
+                        1.1651
+                    ],
+                    [
+                        -76.995052,
+                        1.163541
+                    ],
+                    [
+                        -76.995117,
+                        1.163296
+                    ],
+                    [
+                        -76.995216,
+                        1.163149
+                    ],
+                    [
+                        -76.996039,
+                        1.162471
+                    ],
+                    [
+                        -76.996175,
+                        1.162284
+                    ],
+                    [
+                        -76.99658,
+                        1.161447
+                    ],
+                    [
+                        -76.996617,
+                        1.161194
+                    ],
+                    [
+                        -76.996563,
+                        1.160033
+                    ],
+                    [
+                        -76.996602,
+                        1.159794
+                    ],
+                    [
+                        -76.996728,
+                        1.159498
+                    ],
+                    [
+                        -76.997051,
+                        1.159208
+                    ],
+                    [
+                        -76.997173,
+                        1.159069
+                    ],
+                    [
+                        -76.997182,
+                        1.158881
+                    ],
+                    [
+                        -76.997128,
+                        1.158777
+                    ],
+                    [
+                        -76.996873,
+                        1.15862
+                    ],
+                    [
+                        -76.996664,
+                        1.158449
+                    ],
+                    [
+                        -76.996559,
+                        1.158245
+                    ],
+                    [
+                        -76.996534,
+                        1.157827
+                    ],
+                    [
+                        -76.996608,
+                        1.157439
+                    ],
+                    [
+                        -76.996827,
+                        1.157109
+                    ],
+                    [
+                        -76.997003,
+                        1.157038
+                    ],
+                    [
+                        -76.997388,
+                        1.157054
+                    ],
+                    [
+                        -76.997534,
+                        1.157136
+                    ],
+                    [
+                        -76.99791,
+                        1.157649
+                    ],
+                    [
+                        -76.998151,
+                        1.157784
+                    ],
+                    [
+                        -76.998406,
+                        1.157796
+                    ],
+                    [
+                        -76.998644,
+                        1.157696
+                    ],
+                    [
+                        -76.998837,
+                        1.157442
+                    ],
+                    [
+                        -76.999265,
+                        1.156261
+                    ],
+                    [
+                        -76.999393,
+                        1.155792
+                    ],
+                    [
+                        -76.999528,
+                        1.155607
+                    ],
+                    [
+                        -76.999875,
+                        1.155332
+                    ],
+                    [
+                        -77.000207,
+                        1.155038
+                    ],
+                    [
+                        -77.001517,
+                        1.153532
+                    ],
+                    [
+                        -77.002138,
+                        1.152842
+                    ],
+                    [
+                        -77.003611,
+                        1.151259
+                    ],
+                    [
+                        -77.0037,
+                        1.151085
+                    ],
+                    [
+                        -77.003722,
+                        1.150907
+                    ],
+                    [
+                        -77.003684,
+                        1.150467
+                    ],
+                    [
+                        -77.00368,
+                        1.150134
+                    ],
+                    [
+                        -77.00389,
+                        1.149081
+                    ],
+                    [
+                        -77.004081,
+                        1.148164
+                    ],
+                    [
+                        -77.003855,
+                        1.148117
                     ]
                 ],
                 "type": "LineString"
@@ -49673,7 +53383,7 @@
     "metadata": {
         "attribution": "openrouteservice.org | OpenStreetMap contributors",
         "service": "routing",
-        "timestamp": 1744606483696,
+        "timestamp": 1744665941554,
         "query": {
             "coordinates": [
                 [
@@ -49717,6 +53427,10 @@
                     2.4696
                 ],
                 [
+                    -75.4519,
+                    2.583
+                ],
+                [
                     -75.5476,
                     2.386522
                 ],
@@ -49733,12 +53447,12 @@
                     1.7239
                 ],
                 [
-                    -76.3575,
-                    1.5026
-                ],
-                [
                     -76.3713,
                     1.4994
+                ],
+                [
+                    -76.3575,
+                    1.5026
                 ],
                 [
                     -76.5172,
@@ -49749,8 +53463,20 @@
                     1.1487
                 ],
                 [
+                    -76.7482,
+                    1.0727
+                ],
+                [
                     -76.919,
                     1.2043
+                ],
+                [
+                    -76.973,
+                    1.1908
+                ],
+                [
+                    -77.0039,
+                    1.1479
                 ]
             ],
             "profile": "driving-car",
@@ -49758,9 +53484,9 @@
             "format": "geojson"
         },
         "engine": {
-            "version": "9.1.1",
-            "build_date": "2025-03-14T11:07:03Z",
-            "graph_date": "2025-04-07T14:38:47Z"
+            "version": "9.1.2",
+            "build_date": "2025-04-10T21:25:30Z",
+            "graph_date": "2025-04-11T22:07:27Z"
         }
     }
 }

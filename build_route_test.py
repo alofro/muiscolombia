@@ -2,9 +2,10 @@ import json
 import requests
 import math
 import time
+from shapely.geometry import LineString, Point
 
 # API-Key für OpenRouteService
-api_key = '5b3ce3597851110001cf6248ef05ac1a70a6483086189e15a986bf78'
+api_key = '5b3ce3597851110001cf62484213859626f6c091cb6e59e6db2764c382442cd76a3c4492e26519f5'
 
 # Lade die points.json Datei
 with open('data/points.json', 'r') as f:
@@ -136,3 +137,34 @@ def simplify_geojson(input_file, output_file, tolerance):
 
 # Anpassen je nach gewünschter Toleranz (z. B. 0.0001 oder 0.00005)
 simplify_geojson("data/elevation.geojson", "data/elevation_simplified.geojson", tolerance=0.0001)
+
+from shapely.geometry import LineString, Point
+
+def add_distances_to_points(points_file, route_file):
+    # Lade die Route
+    with open(route_file, 'r', encoding='utf-8') as f:
+        route_data = json.load(f)
+    route_coords = route_data['features'][0]['geometry']['coordinates']
+
+    # Erzeuge LineString für die Route
+    route_line = LineString(route_coords)
+
+    # Lade die Punkte
+    with open(points_file, 'r', encoding='utf-8') as f:
+        points = json.load(f)
+
+    updated_points = []
+    for point in points:
+        pt = Point(point["lon"], point["lat"])
+        projected_distance = route_line.project(pt)
+        point["distancia"] = round(projected_distance / 1000, 2)  # in km
+        updated_points.append(point)
+
+    # Speichere aktualisierte Datei
+    with open(points_file, 'w', encoding='utf-8') as f:
+        json.dump(updated_points, f, indent=2, ensure_ascii=False)
+
+    print("✓ Punkte aktualisiert mit 'distancia' in km")
+
+# Füge diesen Aufruf am Ende von main() hinzu:
+add_distances_to_points("data/points.json", "data/route.geojson")
