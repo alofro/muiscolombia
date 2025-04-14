@@ -104,13 +104,6 @@
     "images": ["pinchada4.jpg"],
     "text": "4. Pinchazo; con ayuda y una buena bomba es más fácil"
   },
-  {
-  "name": "San Juan de Villalobos",
-  "type": "etapa",
-  "lat": 1.4994,
-  "lon": -76.3713,
-  "description": "Etapa 7"
-  },
    {
   "name": "Verdeyaco",
   "type": "etapa",
@@ -118,6 +111,13 @@
   "lon": -76.3575,
   "images": ["verdeyaco1.jpg", "verdeyaco2.jpg"],
   "description": "Etapa 8"
+  },
+  {
+  "name": "San Juan de Villalobos",
+  "type": "etapa",
+  "lat": 1.4994,
+  "lon": -76.3713,
+  "description": "Etapa 7"
   },
   {
   "name": "Yunguillo",
@@ -134,5 +134,13 @@
   "lon": -76.6482,
   "images":["mocoa1.jpg", "mocoa2.jpg", "mocoa3.jpg", "mocoa4.jpg", "mocoa5.jpg", "mocoa6.jpg"],
   "description": "Etapa 9"
+  },
+  {
+  "name": "Sibundoy",
+  "type": "etapa",
+  "lat": 1.2043,
+  "lon": -76.9190,
+  "images":["sibundoy1.jpg", "sibundoy2.jpg", "sibundoy3.jpg", "sibundoy4.jpg", "sibundoy5.jpg", "sibundoy6.jpg", "sibundoy7.jpg", "sibundoy8.jpg", "sibundoy9.jpg", "sibundoy10.jpg"],
+  "description": "Etapa 10"
   }
 ]
