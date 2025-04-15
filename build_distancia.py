@@ -35,14 +35,26 @@ def add_distances_along_route(points_file, route_file):
                 best_idx = i
         return best_idx
 
+    # Erst distancia berechnen
     for point in points:
         idx = find_closest_index(point["lon"], point["lat"])
         point["distancia"] = round(distances[idx], 2)
 
+    # Dann kmDesdeEtapa für Etappen UND Start berechnen
+    last_etapa_distancia = None
+    for point in points:
+        if point.get("type") in ["etapa", "start"]:
+            if last_etapa_distancia is None:
+                point["kmDesdeEtapa"] = 0.0
+            else:
+                point["kmDesdeEtapa"] = round(point["distancia"] - last_etapa_distancia, 2)
+            last_etapa_distancia = point["distancia"]
+
+    # Datei zurückschreiben
     with open(points_file, 'w', encoding="utf-8") as f:
         json.dump(points, f, indent=2, ensure_ascii=False)
 
-    print("✅ 'distancia' wurde für alle Punkte berechnet und gespeichert.")
+    print("✅ 'distancia' und 'kmDesdeEtapa' wurden berechnet und gespeichert.")
 
 if __name__ == "__main__":
     add_distances_along_route("data/points.json", "data/route.geojson")

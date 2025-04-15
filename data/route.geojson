@@ -18,8 +18,8 @@
             "properties": {
                 "segments": [
                     {
-                        "distance": 50422.8,
-                        "duration": 3402.9,
+                        "distance": 50352.5,
+                        "duration": 3391.8,
                         "steps": [
                             {
                                 "distance": 1042.0,
@@ -88,64 +88,42 @@
                                 ]
                             },
                             {
-                                "distance": 1156.2,
-                                "duration": 92.6,
+                                "distance": 1096.3,
+                                "duration": 84.0,
                                 "type": 12,
                                 "instruction": "Keep left",
                                 "name": "-",
                                 "way_points": [
                                     737,
-                                    768
-                                ]
-                            },
-                            {
-                                "distance": 10.5,
-                                "duration": 2.5,
-                                "type": 1,
-                                "instruction": "Turn right",
-                                "name": "-",
-                                "way_points": [
-                                    768,
-                                    769
+                                    767
                                 ]
                             },
                             {
                                 "distance": 0.0,
                                 "duration": 0.0,
                                 "type": 10,
-                                "instruction": "Arrive at your destination, on the right",
+                                "instruction": "Arrive at your destination, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    769,
-                                    769
+                                    767,
+                                    767
                                 ]
                             }
                         ]
                     },
                     {
-                        "distance": 82446.2,
-                        "duration": 6338.3,
+                        "distance": 82498.4,
+                        "duration": 6344.8,
                         "steps": [
                             {
-                                "distance": 10.5,
-                                "duration": 2.5,
+                                "distance": 519.7,
+                                "duration": 74.8,
                                 "type": 11,
-                                "instruction": "Head northwest",
-                                "name": "-",
-                                "way_points": [
-                                    769,
-                                    770
-                                ]
-                            },
-                            {
-                                "distance": 457.1,
-                                "duration": 65.8,
-                                "type": 1,
-                                "instruction": "Turn right onto Fusagasug\u00e1 - Silvania - Soacha, 40",
+                                "instruction": "Head north on Fusagasug\u00e1 - Silvania - Soacha, 40",
                                 "name": "Fusagasug\u00e1 - Silvania - Soacha, 40",
                                 "way_points": [
-                                    770,
-                                    777
+                                    767,
+                                    776
                                 ]
                             },
                             {
@@ -155,8 +133,8 @@
                                 "instruction": "Turn right",
                                 "name": "-",
                                 "way_points": [
-                                    777,
-                                    780
+                                    776,
+                                    779
                                 ]
                             },
                             {
@@ -166,8 +144,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    780,
-                                    785
+                                    779,
+                                    784
                                 ]
                             },
                             {
@@ -177,8 +155,8 @@
                                 "instruction": "Turn right",
                                 "name": "-",
                                 "way_points": [
-                                    785,
-                                    805
+                                    784,
+                                    804
                                 ]
                             },
                             {
@@ -188,8 +166,8 @@
                                 "instruction": "Turn sharp right",
                                 "name": "-",
                                 "way_points": [
-                                    805,
-                                    821
+                                    804,
+                                    820
                                 ]
                             },
                             {
@@ -199,8 +177,8 @@
                                 "instruction": "Turn right",
                                 "name": "-",
                                 "way_points": [
-                                    821,
-                                    829
+                                    820,
+                                    828
                                 ]
                             },
                             {
@@ -210,8 +188,8 @@
                                 "instruction": "Keep left",
                                 "name": "-",
                                 "way_points": [
-                                    829,
-                                    979
+                                    828,
+                                    978
                                 ]
                             },
                             {
@@ -221,8 +199,8 @@
                                 "instruction": "Keep right onto Carrera 5",
                                 "name": "Carrera 5",
                                 "way_points": [
-                                    979,
-                                    983
+                                    978,
+                                    982
                                 ]
                             },
                             {
@@ -232,8 +210,8 @@
                                 "instruction": "Turn right",
                                 "name": "-",
                                 "way_points": [
-                                    983,
-                                    991
+                                    982,
+                                    990
                                 ]
                             },
                             {
@@ -243,8 +221,8 @@
                                 "instruction": "Turn left",
                                 "name": "-",
                                 "way_points": [
-                                    991,
-                                    1002
+                                    990,
+                                    1001
                                 ]
                             },
                             {
@@ -254,8 +232,8 @@
                                 "instruction": "Continue straight onto Carrera 10",
                                 "name": "Carrera 10",
                                 "way_points": [
-                                    1002,
-                                    1006
+                                    1001,
+                                    1005
                                 ]
                             },
                             {
@@ -265,8 +243,8 @@
                                 "instruction": "Turn right onto Calle 10",
                                 "name": "Calle 10",
                                 "way_points": [
-                                    1006,
-                                    1012
+                                    1005,
+                                    1011
                                 ]
                             },
                             {
@@ -276,8 +254,8 @@
                                 "instruction": "Turn right onto Calle 9A",
                                 "name": "Calle 9A",
                                 "way_points": [
-                                    1012,
-                                    1115
+                                    1011,
+                                    1114
                                 ]
                             },
                             {
@@ -287,8 +265,8 @@
                                 "instruction": "Turn left",
                                 "name": "-",
                                 "way_points": [
-                                    1115,
-                                    1174
+                                    1114,
+                                    1173
                                 ]
                             },
                             {
@@ -298,8 +276,8 @@
                                 "instruction": "Turn left",
                                 "name": "-",
                                 "way_points": [
-                                    1174,
-                                    1184
+                                    1173,
+                                    1183
                                 ]
                             },
                             {
@@ -309,8 +287,8 @@
                                 "instruction": "Keep left",
                                 "name": "-",
                                 "way_points": [
-                                    1184,
-                                    1202
+                                    1183,
+                                    1201
                                 ]
                             },
                             {
@@ -320,8 +298,8 @@
                                 "instruction": "Turn slight left onto Fusagasug\u00e1-Tibacuy",
                                 "name": "Fusagasug\u00e1-Tibacuy",
                                 "way_points": [
-                                    1202,
-                                    1231
+                                    1201,
+                                    1230
                                 ]
                             },
                             {
@@ -331,8 +309,8 @@
                                 "instruction": "Turn right",
                                 "name": "-",
                                 "way_points": [
-                                    1231,
-                                    1244
+                                    1230,
+                                    1243
                                 ]
                             },
                             {
@@ -342,8 +320,8 @@
                                 "instruction": "Turn left",
                                 "name": "-",
                                 "way_points": [
-                                    1244,
-                                    1246
+                                    1243,
+                                    1245
                                 ]
                             },
                             {
@@ -353,8 +331,8 @@
                                 "instruction": "Turn sharp right onto Variante de Fusagasug\u00e1, 40",
                                 "name": "Variante de Fusagasug\u00e1, 40",
                                 "way_points": [
-                                    1246,
-                                    1415
+                                    1245,
+                                    1414
                                 ]
                             },
                             {
@@ -364,8 +342,8 @@
                                 "instruction": "Keep left onto Autopista Bogota Girardot - Boquer\u00f3n - Fusagasug\u00e1, 40",
                                 "name": "Autopista Bogota Girardot - Boquer\u00f3n - Fusagasug\u00e1, 40",
                                 "way_points": [
-                                    1415,
-                                    1469
+                                    1414,
+                                    1468
                                 ]
                             },
                             {
@@ -375,8 +353,8 @@
                                 "instruction": "Turn right onto Autopista Bogota Girardot - Boquer\u00f3n - Fusagasug\u00e1",
                                 "name": "Autopista Bogota Girardot - Boquer\u00f3n - Fusagasug\u00e1",
                                 "way_points": [
-                                    1469,
-                                    2033
+                                    1468,
+                                    2032
                                 ]
                             },
                             {
@@ -386,8 +364,8 @@
                                 "instruction": "Keep left",
                                 "name": "-",
                                 "way_points": [
-                                    2033,
-                                    2058
+                                    2032,
+                                    2057
                                 ]
                             },
                             {
@@ -397,8 +375,8 @@
                                 "instruction": "Arrive at your destination, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    2058,
-                                    2058
+                                    2057,
+                                    2057
                                 ]
                             }
                         ]
@@ -414,8 +392,8 @@
                                 "instruction": "Head east on Variante Girardot, 45",
                                 "name": "Variante Girardot, 45",
                                 "way_points": [
-                                    2058,
-                                    2073
+                                    2057,
+                                    2072
                                 ]
                             },
                             {
@@ -425,8 +403,8 @@
                                 "instruction": "Keep left",
                                 "name": "-",
                                 "way_points": [
-                                    2073,
-                                    2134
+                                    2072,
+                                    2133
                                 ]
                             },
                             {
@@ -436,8 +414,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    2134,
-                                    2154
+                                    2133,
+                                    2153
                                 ]
                             },
                             {
@@ -447,8 +425,8 @@
                                 "instruction": "Turn sharp left onto Carrera 7, 45",
                                 "name": "Carrera 7, 45",
                                 "way_points": [
-                                    2154,
-                                    2214
+                                    2153,
+                                    2213
                                 ]
                             },
                             {
@@ -458,8 +436,8 @@
                                 "instruction": "Keep right onto El Espinal - Girardot, 45",
                                 "name": "El Espinal - Girardot, 45",
                                 "way_points": [
-                                    2214,
-                                    2516
+                                    2213,
+                                    2515
                                 ]
                             },
                             {
@@ -470,8 +448,8 @@
                                 "name": "Carrera 17, 45",
                                 "exit_number": 1,
                                 "way_points": [
-                                    2516,
-                                    2588
+                                    2515,
+                                    2587
                                 ]
                             },
                             {
@@ -481,15 +459,15 @@
                                 "instruction": "Arrive at Carrera 17, 45, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    2588,
-                                    2588
+                                    2587,
+                                    2587
                                 ]
                             }
                         ]
                     },
                     {
-                        "distance": 48865.9,
-                        "duration": 2432.5,
+                        "distance": 48875.1,
+                        "duration": 2434.1,
                         "steps": [
                             {
                                 "distance": 17597.0,
@@ -498,8 +476,8 @@
                                 "instruction": "Head north on Natagaima - Castilla, 45",
                                 "name": "Natagaima - Castilla, 45",
                                 "way_points": [
-                                    2588,
-                                    2659
+                                    2587,
+                                    2658
                                 ]
                             },
                             {
@@ -510,8 +488,8 @@
                                 "name": "Carrera 17, 45",
                                 "exit_number": 2,
                                 "way_points": [
-                                    2659,
-                                    2909
+                                    2658,
+                                    2908
                                 ]
                             },
                             {
@@ -521,8 +499,8 @@
                                 "instruction": "Turn right",
                                 "name": "-",
                                 "way_points": [
-                                    2909,
-                                    2919
+                                    2908,
+                                    2918
                                 ]
                             },
                             {
@@ -532,8 +510,8 @@
                                 "instruction": "Keep left",
                                 "name": "-",
                                 "way_points": [
-                                    2919,
-                                    2924
+                                    2918,
+                                    2923
                                 ]
                             },
                             {
@@ -543,8 +521,8 @@
                                 "instruction": "Keep right onto Transversal 4, 45",
                                 "name": "Transversal 4, 45",
                                 "way_points": [
-                                    2924,
-                                    2934
+                                    2923,
+                                    2933
                                 ]
                             },
                             {
@@ -554,8 +532,8 @@
                                 "instruction": "Keep right onto Carrera 5",
                                 "name": "Carrera 5",
                                 "way_points": [
-                                    2934,
-                                    2939
+                                    2933,
+                                    2938
                                 ]
                             },
                             {
@@ -565,19 +543,19 @@
                                 "instruction": "Turn left onto Calle 17",
                                 "name": "Calle 17",
                                 "way_points": [
-                                    2939,
-                                    2941
+                                    2938,
+                                    2940
                                 ]
                             },
                             {
-                                "distance": 52.8,
-                                "duration": 11.2,
+                                "distance": 61.9,
+                                "duration": 12.9,
                                 "type": 1,
                                 "instruction": "Turn right onto Carrera 4, 45",
                                 "name": "Carrera 4, 45",
                                 "way_points": [
-                                    2941,
-                                    2943
+                                    2940,
+                                    2942
                                 ]
                             },
                             {
@@ -587,25 +565,25 @@
                                 "instruction": "Arrive at Carrera 4, 45, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    2943,
-                                    2943
+                                    2942,
+                                    2942
                                 ]
                             }
                         ]
                     },
                     {
-                        "distance": 67386.0,
-                        "duration": 3265.6,
+                        "distance": 67395.2,
+                        "duration": 3267.2,
                         "steps": [
                             {
-                                "distance": 462.0,
-                                "duration": 93.3,
+                                "distance": 471.2,
+                                "duration": 95.0,
                                 "type": 11,
                                 "instruction": "Head west on Carrera 4, 45",
                                 "name": "Carrera 4, 45",
                                 "way_points": [
-                                    2943,
-                                    2959
+                                    2942,
+                                    2958
                                 ]
                             },
                             {
@@ -616,8 +594,8 @@
                                 "name": "V\u00eda Guamo, 45",
                                 "exit_number": 2,
                                 "way_points": [
-                                    2959,
-                                    2983
+                                    2958,
+                                    2982
                                 ]
                             },
                             {
@@ -627,8 +605,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    2983,
-                                    2985
+                                    2982,
+                                    2984
                                 ]
                             },
                             {
@@ -638,8 +616,8 @@
                                 "instruction": "Keep left",
                                 "name": "-",
                                 "way_points": [
-                                    2985,
-                                    3230
+                                    2984,
+                                    3229
                                 ]
                             },
                             {
@@ -650,8 +628,8 @@
                                 "name": "Carrera 17, 45",
                                 "exit_number": 1,
                                 "way_points": [
-                                    3230,
-                                    3341
+                                    3229,
+                                    3340
                                 ]
                             },
                             {
@@ -661,8 +639,8 @@
                                 "instruction": "Arrive at Carrera 17, 45, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    3341,
-                                    3341
+                                    3340,
+                                    3340
                                 ]
                             }
                         ]
@@ -678,8 +656,8 @@
                                 "instruction": "Head southwest on Natagaima - Castilla, 45",
                                 "name": "Natagaima - Castilla, 45",
                                 "way_points": [
-                                    3341,
-                                    3597
+                                    3340,
+                                    3596
                                 ]
                             },
                             {
@@ -689,8 +667,8 @@
                                 "instruction": "Arrive at Natagaima - Castilla, 45, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    3597,
-                                    3597
+                                    3596,
+                                    3596
                                 ]
                             }
                         ]
@@ -706,8 +684,8 @@
                                 "instruction": "Head south on Neiva - Natagaima, 45",
                                 "name": "Neiva - Natagaima, 45",
                                 "way_points": [
-                                    3597,
-                                    3797
+                                    3596,
+                                    3796
                                 ]
                             },
                             {
@@ -717,8 +695,8 @@
                                 "instruction": "Turn sharp left onto Neiva - Natagaima, 45",
                                 "name": "Neiva - Natagaima, 45",
                                 "way_points": [
-                                    3797,
-                                    3802
+                                    3796,
+                                    3801
                                 ]
                             },
                             {
@@ -728,8 +706,8 @@
                                 "instruction": "Arrive at Neiva - Natagaima, 45, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    3802,
-                                    3802
+                                    3801,
+                                    3801
                                 ]
                             }
                         ]
@@ -745,8 +723,8 @@
                                 "instruction": "Head north on Neiva - Natagaima, 45",
                                 "name": "Neiva - Natagaima, 45",
                                 "way_points": [
-                                    3802,
-                                    3813
+                                    3801,
+                                    3812
                                 ]
                             },
                             {
@@ -756,8 +734,8 @@
                                 "instruction": "Keep left",
                                 "name": "-",
                                 "way_points": [
-                                    3813,
-                                    3841
+                                    3812,
+                                    3840
                                 ]
                             },
                             {
@@ -767,8 +745,8 @@
                                 "instruction": "Continue straight onto Casa Blanca-Neiva, 43",
                                 "name": "Casa Blanca-Neiva, 43",
                                 "way_points": [
-                                    3841,
-                                    3936
+                                    3840,
+                                    3935
                                 ]
                             },
                             {
@@ -779,8 +757,8 @@
                                 "name": "EL Juncal-Casa Blanca, 43",
                                 "exit_number": 2,
                                 "way_points": [
-                                    3936,
-                                    4007
+                                    3935,
+                                    4006
                                 ]
                             },
                             {
@@ -791,8 +769,8 @@
                                 "name": "El Pozo- El Juncal, 45",
                                 "exit_number": 2,
                                 "way_points": [
-                                    4007,
-                                    4049
+                                    4006,
+                                    4048
                                 ]
                             },
                             {
@@ -802,8 +780,8 @@
                                 "instruction": "Turn slight right onto V\u00eda Campoalegre - Neiva, 45",
                                 "name": "V\u00eda Campoalegre - Neiva, 45",
                                 "way_points": [
-                                    4049,
-                                    4114
+                                    4048,
+                                    4113
                                 ]
                             },
                             {
@@ -813,8 +791,8 @@
                                 "instruction": "Turn right onto Calle 24, 45",
                                 "name": "Calle 24, 45",
                                 "way_points": [
-                                    4114,
-                                    4142
+                                    4113,
+                                    4141
                                 ]
                             },
                             {
@@ -824,8 +802,8 @@
                                 "instruction": "Turn right onto Carrera 9, 45",
                                 "name": "Carrera 9, 45",
                                 "way_points": [
-                                    4142,
-                                    4467
+                                    4141,
+                                    4466
                                 ]
                             },
                             {
@@ -835,8 +813,8 @@
                                 "instruction": "Arrive at Carrera 9, 45, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    4467,
-                                    4467
+                                    4466,
+                                    4466
                                 ]
                             }
                         ]
@@ -852,8 +830,8 @@
                                 "instruction": "Head southwest on V\u00eda Gigante - Hobo, 45",
                                 "name": "V\u00eda Gigante - Hobo, 45",
                                 "way_points": [
-                                    4467,
-                                    4639
+                                    4466,
+                                    4638
                                 ]
                             },
                             {
@@ -863,8 +841,8 @@
                                 "instruction": "Arrive at V\u00eda Gigante - Hobo, 45, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    4639,
-                                    4639
+                                    4638,
+                                    4638
                                 ]
                             }
                         ]
@@ -880,8 +858,8 @@
                                 "instruction": "Head north on V\u00eda Gigante - Hobo, 45",
                                 "name": "V\u00eda Gigante - Hobo, 45",
                                 "way_points": [
-                                    4639,
-                                    4969
+                                    4638,
+                                    4968
                                 ]
                             },
                             {
@@ -891,8 +869,8 @@
                                 "instruction": "Arrive at V\u00eda Gigante - Hobo, 45, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    4969,
-                                    4969
+                                    4968,
+                                    4968
                                 ]
                             }
                         ]
@@ -908,8 +886,8 @@
                                 "instruction": "Head southwest on Carrera 8, 45",
                                 "name": "Carrera 8, 45",
                                 "way_points": [
-                                    4969,
-                                    5499
+                                    4968,
+                                    5498
                                 ]
                             },
                             {
@@ -920,8 +898,8 @@
                                 "name": "-",
                                 "exit_number": 1,
                                 "way_points": [
-                                    5499,
-                                    5532
+                                    5498,
+                                    5531
                                 ]
                             },
                             {
@@ -931,8 +909,8 @@
                                 "instruction": "Arrive at your destination, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    5532,
-                                    5532
+                                    5531,
+                                    5531
                                 ]
                             }
                         ]
@@ -948,8 +926,8 @@
                                 "instruction": "Head south on Carrera 4, 45",
                                 "name": "Carrera 4, 45",
                                 "way_points": [
-                                    5532,
-                                    5562
+                                    5531,
+                                    5561
                                 ]
                             },
                             {
@@ -959,8 +937,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    5562,
-                                    5578
+                                    5561,
+                                    5577
                                 ]
                             },
                             {
@@ -970,8 +948,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    5578,
-                                    5962
+                                    5577,
+                                    5961
                                 ]
                             },
                             {
@@ -982,8 +960,8 @@
                                 "name": "Variante Garz\u00f3n, 45",
                                 "exit_number": 2,
                                 "way_points": [
-                                    5962,
-                                    6026
+                                    5961,
+                                    6025
                                 ]
                             },
                             {
@@ -994,8 +972,8 @@
                                 "name": "Variante Garz\u00f3n, 45",
                                 "exit_number": 1,
                                 "way_points": [
-                                    6026,
-                                    6037
+                                    6025,
+                                    6036
                                 ]
                             },
                             {
@@ -1006,8 +984,8 @@
                                 "name": "V\u00eda Altamira - Garz\u00f3n, 45",
                                 "exit_number": 1,
                                 "way_points": [
-                                    6037,
-                                    6323
+                                    6036,
+                                    6322
                                 ]
                             },
                             {
@@ -1017,8 +995,8 @@
                                 "instruction": "Turn left onto Calle 5",
                                 "name": "Calle 5",
                                 "way_points": [
-                                    6323,
-                                    6324
+                                    6322,
+                                    6323
                                 ]
                             },
                             {
@@ -1028,8 +1006,8 @@
                                 "instruction": "Arrive at Calle 5, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    6324,
-                                    6324
+                                    6323,
+                                    6323
                                 ]
                             }
                         ]
@@ -1045,8 +1023,8 @@
                                 "instruction": "Head northwest on Calle 5",
                                 "name": "Calle 5",
                                 "way_points": [
-                                    6324,
-                                    6325
+                                    6323,
+                                    6324
                                 ]
                             },
                             {
@@ -1056,8 +1034,8 @@
                                 "instruction": "Turn left onto V\u00eda Timan\u00e1-  Altamira, 45",
                                 "name": "V\u00eda Timan\u00e1-  Altamira, 45",
                                 "way_points": [
-                                    6325,
-                                    6689
+                                    6324,
+                                    6688
                                 ]
                             },
                             {
@@ -1067,8 +1045,8 @@
                                 "instruction": "Turn right onto Calle 13, 45",
                                 "name": "Calle 13, 45",
                                 "way_points": [
-                                    6689,
-                                    7033
+                                    6688,
+                                    7032
                                 ]
                             },
                             {
@@ -1079,8 +1057,8 @@
                                 "name": "Avenida Circunvalar, 45",
                                 "exit_number": 1,
                                 "way_points": [
-                                    7033,
-                                    7057
+                                    7032,
+                                    7056
                                 ]
                             },
                             {
@@ -1091,8 +1069,8 @@
                                 "name": "Avenida Circunvalar, 45",
                                 "exit_number": 3,
                                 "way_points": [
-                                    7057,
-                                    7106
+                                    7056,
+                                    7105
                                 ]
                             },
                             {
@@ -1102,8 +1080,8 @@
                                 "instruction": "Turn right onto V\u00eda Mocoa - Pitalito, 45",
                                 "name": "V\u00eda Mocoa - Pitalito, 45",
                                 "way_points": [
-                                    7106,
-                                    7194
+                                    7105,
+                                    7193
                                 ]
                             },
                             {
@@ -1113,8 +1091,8 @@
                                 "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    7194,
-                                    7194
+                                    7193,
+                                    7193
                                 ]
                             }
                         ]
@@ -1130,8 +1108,8 @@
                                 "instruction": "Head southwest on V\u00eda Mocoa - Pitalito, 45",
                                 "name": "V\u00eda Mocoa - Pitalito, 45",
                                 "way_points": [
-                                    7194,
-                                    7338
+                                    7193,
+                                    7337
                                 ]
                             },
                             {
@@ -1141,8 +1119,8 @@
                                 "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    7338,
-                                    7338
+                                    7337,
+                                    7337
                                 ]
                             }
                         ]
@@ -1158,8 +1136,8 @@
                                 "instruction": "Head southwest on V\u00eda Mocoa - Pitalito, 45",
                                 "name": "V\u00eda Mocoa - Pitalito, 45",
                                 "way_points": [
-                                    7338,
-                                    8247
+                                    7337,
+                                    8246
                                 ]
                             },
                             {
@@ -1169,8 +1147,8 @@
                                 "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    8247,
-                                    8247
+                                    8246,
+                                    8246
                                 ]
                             }
                         ]
@@ -1186,8 +1164,8 @@
                                 "instruction": "Head east on V\u00eda Mocoa - Pitalito, 45",
                                 "name": "V\u00eda Mocoa - Pitalito, 45",
                                 "way_points": [
-                                    8247,
-                                    8286
+                                    8246,
+                                    8285
                                 ]
                             },
                             {
@@ -1197,8 +1175,8 @@
                                 "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    8286,
-                                    8286
+                                    8285,
+                                    8285
                                 ]
                             }
                         ]
@@ -1214,8 +1192,8 @@
                                 "instruction": "Head southwest on V\u00eda Mocoa - Pitalito, 45",
                                 "name": "V\u00eda Mocoa - Pitalito, 45",
                                 "way_points": [
-                                    8286,
-                                    8983
+                                    8285,
+                                    8982
                                 ]
                             },
                             {
@@ -1225,8 +1203,8 @@
                                 "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    8983,
-                                    8983
+                                    8982,
+                                    8982
                                 ]
                             }
                         ]
@@ -1242,8 +1220,8 @@
                                 "instruction": "Head north on Mocoa - San Juan de Villalobos, 45",
                                 "name": "Mocoa - San Juan de Villalobos, 45",
                                 "way_points": [
-                                    8983,
-                                    8984
+                                    8982,
+                                    8983
                                 ]
                             },
                             {
@@ -1253,8 +1231,8 @@
                                 "instruction": "Turn sharp right onto Mocoa - San Juan de Villalobos, 45",
                                 "name": "Mocoa - San Juan de Villalobos, 45",
                                 "way_points": [
-                                    8984,
-                                    9379
+                                    8983,
+                                    9378
                                 ]
                             },
                             {
@@ -1265,8 +1243,8 @@
                                 "name": "Carrera 9, 45",
                                 "exit_number": 2,
                                 "way_points": [
-                                    9379,
-                                    9392
+                                    9378,
+                                    9391
                                 ]
                             },
                             {
@@ -1276,8 +1254,8 @@
                                 "instruction": "Turn sharp left onto Carrera 9, 45",
                                 "name": "Carrera 9, 45",
                                 "way_points": [
-                                    9392,
-                                    9394
+                                    9391,
+                                    9393
                                 ]
                             },
                             {
@@ -1287,8 +1265,8 @@
                                 "instruction": "Arrive at Carrera 9, 45, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    9394,
-                                    9394
+                                    9393,
+                                    9393
                                 ]
                             }
                         ]
@@ -1304,8 +1282,8 @@
                                 "instruction": "Head north on Carrera 9, 45",
                                 "name": "Carrera 9, 45",
                                 "way_points": [
-                                    9394,
-                                    9397
+                                    9393,
+                                    9396
                                 ]
                             },
                             {
@@ -1315,8 +1293,8 @@
                                 "instruction": "Continue straight onto Carrera 9, 45",
                                 "name": "Carrera 9, 45",
                                 "way_points": [
-                                    9397,
-                                    9402
+                                    9396,
+                                    9401
                                 ]
                             },
                             {
@@ -1326,8 +1304,8 @@
                                 "instruction": "Turn slight right onto Carrera 9",
                                 "name": "Carrera 9",
                                 "way_points": [
-                                    9402,
-                                    9407
+                                    9401,
+                                    9406
                                 ]
                             },
                             {
@@ -1337,8 +1315,8 @@
                                 "instruction": "Turn right onto Carrera 8",
                                 "name": "Carrera 8",
                                 "way_points": [
-                                    9407,
-                                    9419
+                                    9406,
+                                    9418
                                 ]
                             },
                             {
@@ -1348,8 +1326,8 @@
                                 "instruction": "Turn left onto Carrera 10",
                                 "name": "Carrera 10",
                                 "way_points": [
-                                    9419,
-                                    9645
+                                    9418,
+                                    9644
                                 ]
                             },
                             {
@@ -1359,8 +1337,8 @@
                                 "instruction": "Turn right onto V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
                                 "name": "V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
                                 "way_points": [
-                                    9645,
-                                    10857
+                                    9644,
+                                    10856
                                 ]
                             },
                             {
@@ -1370,8 +1348,8 @@
                                 "instruction": "Arrive at V\u00eda San Francisco - el Pepino - Villa Garzon, 10, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    10857,
-                                    10857
+                                    10856,
+                                    10856
                                 ]
                             }
                         ]
@@ -1387,8 +1365,8 @@
                                 "instruction": "Head west on V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
                                 "name": "V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
                                 "way_points": [
-                                    10857,
-                                    12782
+                                    10856,
+                                    12781
                                 ]
                             },
                             {
@@ -1398,8 +1376,8 @@
                                 "instruction": "Turn right",
                                 "name": "-",
                                 "way_points": [
-                                    12782,
-                                    12783
+                                    12781,
+                                    12782
                                 ]
                             },
                             {
@@ -1409,8 +1387,8 @@
                                 "instruction": "Turn left onto Calle 17",
                                 "name": "Calle 17",
                                 "way_points": [
-                                    12783,
-                                    12788
+                                    12782,
+                                    12787
                                 ]
                             },
                             {
@@ -1420,8 +1398,8 @@
                                 "instruction": "Turn left onto Carrera 18",
                                 "name": "Carrera 18",
                                 "way_points": [
-                                    12788,
-                                    12789
+                                    12787,
+                                    12788
                                 ]
                             },
                             {
@@ -1431,8 +1409,8 @@
                                 "instruction": "Turn left onto Calle principal, 10",
                                 "name": "Calle principal, 10",
                                 "way_points": [
-                                    12789,
-                                    12790
+                                    12788,
+                                    12789
                                 ]
                             },
                             {
@@ -1442,8 +1420,8 @@
                                 "instruction": "Arrive at Calle principal, 10, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    12790,
-                                    12790
+                                    12789,
+                                    12789
                                 ]
                             }
                         ]
@@ -1459,8 +1437,8 @@
                                 "instruction": "Head southeast on Calle principal, 10",
                                 "name": "Calle principal, 10",
                                 "way_points": [
-                                    12790,
-                                    12791
+                                    12789,
+                                    12790
                                 ]
                             },
                             {
@@ -1470,8 +1448,8 @@
                                 "instruction": "Turn left",
                                 "name": "-",
                                 "way_points": [
-                                    12791,
-                                    12792
+                                    12790,
+                                    12791
                                 ]
                             },
                             {
@@ -1481,8 +1459,8 @@
                                 "instruction": "Turn left onto Calle 17",
                                 "name": "Calle 17",
                                 "way_points": [
-                                    12792,
-                                    12793
+                                    12791,
+                                    12792
                                 ]
                             },
                             {
@@ -1492,8 +1470,8 @@
                                 "instruction": "Turn left onto Carrera 18",
                                 "name": "Carrera 18",
                                 "way_points": [
-                                    12793,
-                                    12794
+                                    12792,
+                                    12793
                                 ]
                             },
                             {
@@ -1503,8 +1481,8 @@
                                 "instruction": "Turn right onto Carretera Pasto - Mocoa, 10",
                                 "name": "Carretera Pasto - Mocoa, 10",
                                 "way_points": [
-                                    12794,
-                                    12846
+                                    12793,
+                                    12845
                                 ]
                             },
                             {
@@ -1514,8 +1492,8 @@
                                 "instruction": "Arrive at Carretera Pasto - Mocoa, 10, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    12846,
-                                    12846
+                                    12845,
+                                    12845
                                 ]
                             }
                         ]
@@ -1531,8 +1509,8 @@
                                 "instruction": "Head southwest on Carretera Pasto - Mocoa, 10",
                                 "name": "Carretera Pasto - Mocoa, 10",
                                 "way_points": [
-                                    12846,
-                                    12934
+                                    12845,
+                                    12933
                                 ]
                             },
                             {
@@ -1542,8 +1520,8 @@
                                 "instruction": "Turn left",
                                 "name": "-",
                                 "way_points": [
-                                    12934,
-                                    12935
+                                    12933,
+                                    12934
                                 ]
                             },
                             {
@@ -1553,8 +1531,8 @@
                                 "instruction": "Arrive at your destination, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    12935,
-                                    12935
+                                    12934,
+                                    12934
                                 ]
                             }
                         ]
@@ -1575,14 +1553,14 @@
                             ],
                             [
                                 414,
-                                12935,
+                                12934,
                                 0
                             ]
                         ],
                         "summary": [
                             {
                                 "value": 0.0,
-                                "distance": 884240.3,
+                                "distance": 884240.6,
                                 "amount": 99.98
                             },
                             {
@@ -1601,32 +1579,32 @@
                 ],
                 "way_points": [
                     0,
-                    769,
-                    2058,
-                    2588,
-                    2943,
-                    3341,
-                    3597,
-                    3802,
-                    4467,
-                    4639,
-                    4969,
-                    5532,
-                    6324,
-                    7194,
-                    7338,
-                    8247,
-                    8286,
-                    8983,
-                    9394,
-                    10857,
-                    12790,
-                    12846,
-                    12935
+                    767,
+                    2057,
+                    2587,
+                    2942,
+                    3340,
+                    3596,
+                    3801,
+                    4466,
+                    4638,
+                    4968,
+                    5531,
+                    6323,
+                    7193,
+                    7337,
+                    8246,
+                    8285,
+                    8982,
+                    9393,
+                    10856,
+                    12789,
+                    12845,
+                    12934
                 ],
                 "summary": {
-                    "distance": 884407.7,
-                    "duration": 48993.7
+                    "distance": 884408.0,
+                    "duration": 48992.3
                 }
             },
             "geometry": {
@@ -4700,16 +4678,12 @@
                         4.470273
                     ],
                     [
+                        -74.38373,
+                        4.47041
+                    ],
+                    [
                         -74.383687,
                         4.470534
-                    ],
-                    [
-                        -74.383491,
-                        4.470898
-                    ],
-                    [
-                        -74.38342,
-                        4.470861
                     ],
                     [
                         -74.383491,
@@ -13404,8 +13378,8 @@
                         4.150119
                     ],
                     [
-                        -74.891586,
-                        4.150194
+                        -74.891508,
+                        4.150223
                     ],
                     [
                         -74.891791,
@@ -53383,7 +53357,7 @@
     "metadata": {
         "attribution": "openrouteservice.org | OpenStreetMap contributors",
         "service": "routing",
-        "timestamp": 1744665941554,
+        "timestamp": 1744744826978,
         "query": {
             "coordinates": [
                 [
@@ -53391,8 +53365,8 @@
                     4.6459
                 ],
                 [
-                    -74.3834,
-                    4.4709
+                    -74.3837,
+                    4.4704
                 ],
                 [
                     -74.7634,
@@ -53403,8 +53377,8 @@
                     3.7844
                 ],
                 [
-                    -74.891551,
-                    4.1501
+                    -74.8915,
+                    4.1502
                 ],
                 [
                     -75.1002,

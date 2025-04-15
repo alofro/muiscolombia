@@ -6,17 +6,17 @@
     "lon": -74.0787,
     "description": "Punto de partida",
     "distancia": 0.0,
-    "kmDesdeEtapa": null
+    "kmDesdeEtapa": 0.0
   },
   {
     "name": "Subia",
     "type": "etapa",
-    "lat": 4.4709,
-    "lon": -74.3834,
+    "lat": 4.4704,
+    "lon": -74.3837,
     "description": "Etapa 1",
     "fecha": "2025-03-30",
-    "distancia": 50.42,
-    "kmDesdeEtapa": 0.0
+    "distancia": 50.37,
+    "kmDesdeEtapa": 50.37
   },
   {
     "name": "Melgar",
@@ -27,8 +27,7 @@
       "melgar.jpg"
     ],
     "text": "Toma entre Melgar y El Espinal donde me encuentro descansando; hoy fue una etapa de 95km...",
-    "distancia": 132.87,
-    "kmDesdeEtapa": 0.0
+    "distancia": 132.87
   },
   {
     "name": "Pinchada1",
@@ -37,14 +36,13 @@
     "lon": -75.0689,
     "image": "pinchada1.jpg",
     "text": "Pinchada a 1/2 de camino entre Saldaña y Natagaima...",
-    "distancia": 210.19,
-    "kmDesdeEtapa": 0.0
+    "distancia": 210.19
   },
   {
     "name": "El Espinal",
     "type": "etapa",
-    "lat": 4.1501,
-    "lon": -74.891551,
+    "lat": 4.1502,
+    "lon": -74.8915,
     "images": [
       "espinal.jpg"
     ],
@@ -52,7 +50,7 @@
     "description": "Etapa 2",
     "fecha": "2025-03-31",
     "distancia": 259.06,
-    "kmDesdeEtapa": 0.0
+    "kmDesdeEtapa": 208.69
   },
   {
     "name": "Natagaima",
@@ -63,7 +61,7 @@
     "tiempo": "4:51",
     "fecha": "2025-04-01",
     "distancia": 326.44,
-    "kmDesdeEtapa": 0.0
+    "kmDesdeEtapa": 67.38
   },
   {
     "name": "Pinchada2",
@@ -74,8 +72,7 @@
       "pinchada2.jpg"
     ],
     "text": "Pinchada 2: Senza parole 😒",
-    "distancia": 376.72,
-    "kmDesdeEtapa": 0.0
+    "distancia": 376.72
   },
   {
     "name": "Neiva",
@@ -85,7 +82,7 @@
     "description": "Etapa 4",
     "tiempo": "6:20",
     "distancia": 412.13,
-    "kmDesdeEtapa": 0.0
+    "kmDesdeEtapa": 85.69
   },
   {
     "name": "Boa Contrictor",
@@ -96,8 +93,7 @@
       "boa.jpg"
     ],
     "text": "Boa Constrictor Constrictor",
-    "distancia": 485.48,
-    "kmDesdeEtapa": 0.0
+    "distancia": 485.48
   },
   {
     "name": "Pinchada3",
@@ -108,8 +104,7 @@
       "pinchada3.jpg"
     ],
     "text": "Pinchada 3: ¿? 😒",
-    "distancia": 493.63,
-    "kmDesdeEtapa": 0.0
+    "distancia": 493.63
   },
   {
     "name": "Hobo",
@@ -120,7 +115,7 @@
     "tiempo": "4:00",
     "fecha": "2025-04-03",
     "distancia": 516.24,
-    "kmDesdeEtapa": 0.0
+    "kmDesdeEtapa": 104.11
   },
   {
     "name": "Gigante",
@@ -131,7 +126,7 @@
     "tiempo": "3:17",
     "fecha": "2025-04-04",
     "distancia": 550.46,
-    "kmDesdeEtapa": 0.0
+    "kmDesdeEtapa": 34.22
   },
   {
     "name": "Altamira",
@@ -142,7 +137,7 @@
     "tiempo": "4:13",
     "fecha": "2025-04-06",
     "distancia": 606.26,
-    "kmDesdeEtapa": 0.0
+    "kmDesdeEtapa": 55.8
   },
   {
     "name": "Bruselas",
@@ -153,7 +148,7 @@
     "tiempo": "5:21",
     "fecha": "2025-04-07",
     "distancia": 669.25,
-    "kmDesdeEtapa": 0.0
+    "kmDesdeEtapa": 62.99
   },
   {
     "name": "Pinchada4",
@@ -164,8 +159,7 @@
       "pinchada4.jpg"
     ],
     "text": "4. Pinchazo; con ayuda y una buena bomba es más fácil",
-    "distancia": 675.47,
-    "kmDesdeEtapa": 0.0
+    "distancia": 675.47
   },
   {
     "name": "San Juan de Villalobos",
@@ -176,7 +170,7 @@
     "tiempo": "4:15",
     "fecha": "2025-04-08",
     "distancia": 717.46,
-    "kmDesdeEtapa": 0.0
+    "kmDesdeEtapa": 48.21
   },
   {
     "name": "Verdeyaco",
@@ -191,7 +185,7 @@
     "tiempo": "2:23",
     "fecha": "2025-04-09",
     "distancia": 719.47,
-    "kmDesdeEtapa": 0.0
+    "kmDesdeEtapa": 2.01
   },
   {
     "name": "Yunguillo",
@@ -207,8 +201,7 @@
       "yunguillo6.jpg"
     ],
     "text": "Camino a Mocoa",
-    "distancia": 755.19,
-    "kmDesdeEtapa": 0.0
+    "distancia": 755.19
   },
   {
     "name": "Mocoa",
@@ -227,7 +220,7 @@
     "tiempo": "2:19",
     "fecha": "2025-04-10",
     "distancia": 788.66,
-    "kmDesdeEtapa": 0.0
+    "kmDesdeEtapa": 69.19
   },
   {
     "name": "Filo del Hambre",
@@ -242,7 +235,7 @@
     "tiempo": "4:51",
     "fecha": "2025-04-12",
     "distancia": 823.13,
-    "kmDesdeEtapa": 0.0
+    "kmDesdeEtapa": 34.47
   },
   {
     "name": "Sibundoy",
@@ -265,7 +258,7 @@
     "tiempo": "4:54",
     "fecha": "2025-04-14",
     "distancia": 869.69,
-    "kmDesdeEtapa": 0.0
+    "kmDesdeEtapa": 46.56
   },
   {
     "name": "Colon",
@@ -277,8 +270,7 @@
       "colon2.jpg"
     ],
     "text": "Una emPAnadaUSA en Colón, Putumayo",
-    "distancia": 877.06,
-    "kmDesdeEtapa": 0.0
+    "distancia": 877.06
   },
   {
     "name": "Santiago",
@@ -289,6 +281,6 @@
     "tiempo": "1:11",
     "fecha": "2025-04-15",
     "distancia": 883.53,
-    "kmDesdeEtapa": 0.0
+    "kmDesdeEtapa": 13.84
   }
 ]
