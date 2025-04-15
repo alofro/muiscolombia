@@ -92,40 +92,6 @@ def haversine(lon1, lat1, lon2, lat2):
     a = math.sin(dlat/2)**2 + math.cos(lat1)*math.cos(lat2)*math.sin(dlon/2)**2
     return R * 2 * math.asin(math.sqrt(a))
 
-def add_distances_along_route(points_file, route_file):
-    with open(route_file, 'r') as f:
-        route_coords = json.load(f)["features"][0]["geometry"]["coordinates"]
-
-    with open(points_file, 'r') as f:
-        points = json.load(f)
-
-    # Berechne Distanz entlang der Route
-    distances = [0.0]
-    for i in range(1, len(route_coords)):
-        lon1, lat1 = route_coords[i - 1]
-        lon2, lat2 = route_coords[i]
-        dist = haversine(lon1, lat1, lon2, lat2)
-        distances.append(distances[-1] + dist)
-
-    def find_closest_index(lon, lat):
-        best_idx = 0
-        best_dist = float('inf')
-        for i, (r_lon, r_lat) in enumerate(route_coords):
-            d = haversine(lon, lat, r_lon, r_lat)
-            if d < best_dist:
-                best_dist = d
-                best_idx = i
-        return best_idx
-
-    for point in points:
-        idx = find_closest_index(point["lon"], point["lat"])
-        point["distancia"] = round(distances[idx], 2)
-
-    with open(points_file, 'w') as f:
-        json.dump(points, f, indent=2, ensure_ascii=False)
-
-    print("✓ Punkte aktualisiert mit 'distancia' entlang der Route")
-
 def main():
     # Höhenprofil abrufen und speichern
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
