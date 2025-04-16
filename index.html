@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.awesome-markers@2.0.5/dist/leaflet.awesome-markers.css">
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js Annotation Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
 
   <style>
     body {
@@ -42,23 +44,31 @@
     }
 
     #toggle-container {
-      margin-top: 20px;
       text-align: center;
+      margin: 1em 0;
     }
 
+    /* Der verbesserte Button */
     #toggle-view {
-      padding: 10px 20px;
+      padding: 12px 24px;
       background-color: #007bff;
       color: white;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      font-weight: 600;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+      transition: background-color 0.3s, transform 0.2s;
     }
 
     #toggle-view:hover {
       background-color: #0056b3;
+      transform: translateY(-2px);
+    }
+
+    #toggle-view:focus {
+      outline: none;
     }
   </style>
 </head>
@@ -117,29 +127,13 @@
     fetch('data/elevation_simplified.geojson')
       .then(response => response.json())
       .then(geojson => {
-        // Überprüfung der Gesamtstruktur des GeoJSON
-        console.log("Gesamtstruktur des GeoJSON:", geojson);
-
-        // Überprüfe, wie viele Features das GeoJSON hat
-        console.log("Anzahl der Features im GeoJSON:", geojson.features.length);
-
         const coords = geojson.features[0].geometry.coordinates;
-        console.log("Koordinaten aus dem ersten Feature:", coords.length);
-
-        // Sicherstellen, dass alle Koordinaten in der Konsole ausgegeben werden
-        console.log("Alle Features und ihre Koordinaten:");
-        geojson.features.forEach((feature, index) => {
-          console.log(`Feature ${index}:`, feature.geometry.coordinates);
-        });
-
         const elevationData = [];
         const distanceLabels = [];
 
         let totalDistance = 0;
 
         for (let i = 0; i < coords.length; i++) {
-          console.log(`Punkt ${i}: Koordinaten: ${coords[i]}`);
-
           if (i > 0) {
             const [lon1, lat1] = coords[i - 1];
             const [lon2, lat2] = coords[i];
@@ -155,14 +149,11 @@
             const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
             const d = R * c;
             totalDistance += d;
-
-            console.log(`Punkt ${i}:`, coords[i], 'Entfernung:', totalDistance.toFixed(2), 'km');
           }
 
           elevationData.push(coords[i][2]); // Höhe (dritte Koordinate)
           distanceLabels.push(totalDistance.toFixed(2)); // Distanz in km
         }
-        console.log("Gesamtdistanz in km:", totalDistance.toFixed(2));
 
         // Erstellen des Elevation-Charts mit Chart.js
         const ctx = document.getElementById('elevationChart').getContext('2d');

@@ -21,22 +21,13 @@
   {
     "name": "Melgar",
     "type": "foto",
-    "lat": 4.247982,
-    "lon": -74.7634,
+    "lat": 4.2474,
+    "lon": -74.7367,
     "images": [
       "melgar.jpg"
     ],
     "text": "Toma entre Melgar y El Espinal donde me encuentro descansando; hoy fue una etapa de 95km...",
     "distancia": 132.87
-  },
-  {
-    "name": "Pinchada1",
-    "type": "pinchazo",
-    "lat": 3.7844,
-    "lon": -75.0689,
-    "image": "pinchada1.jpg",
-    "text": "Pinchada a 1/2 de camino entre Saldaña y Natagaima...",
-    "distancia": 210.19
   },
   {
     "name": "El Espinal",
@@ -51,6 +42,15 @@
     "fecha": "2025-03-31",
     "distancia": 259.06,
     "kmDesdeEtapa": 208.69
+  },
+  {
+    "name": "Pinchada1",
+    "type": "pinchazo",
+    "lat": 3.7842,
+    "lon": -75.0707,
+    "image": "pinchada1.jpg",
+    "text": "Pinchada a 1/2 de camino entre Saldaña y Natagaima...",
+    "distancia": 210.19
   },
   {
     "name": "Natagaima",
@@ -231,7 +231,7 @@
       "filo1.jpg",
       "filo2.jpg"
     ],
-    "description": "Etapa 13",
+    "description": "Etapa 12",
     "tiempo": "4:51",
     "fecha": "2025-04-12",
     "distancia": 823.13,
@@ -256,7 +256,7 @@
     ],
     "description": "Etapa 13",
     "tiempo": "4:54",
-    "fecha": "2025-04-14",
+    "fecha": "2025-04-13",
     "distancia": 869.69,
     "kmDesdeEtapa": 46.56
   },
@@ -277,10 +277,21 @@
     "type": "etapa",
     "lat": 1.1479,
     "lon": -77.0039,
-    "description": "Etapa 10",
+    "description": "Etapa 14",
     "tiempo": "1:11",
-    "fecha": "2025-04-15",
+    "fecha": "2025-04-14",
     "distancia": 883.53,
     "kmDesdeEtapa": 13.84
+  },
+  {
+    "name": "Bella Vista",
+    "type": "etapa",
+    "lat": 1.1735,
+    "lon": -77.1602,
+    "description": "Etapa 15",
+    "tiempo": "3:36",
+    "fecha": "2025-04-15",
+    "distancia": 0.0,
+    "kmDesdeEtapa": 0.0
   }
 ]

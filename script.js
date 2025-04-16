@@ -32,11 +32,15 @@ fetch('data/route.geojson')
 fetch('data/points.json')
   .then(response => response.json())
   .then(routePoints => {
+    console.log(routePoints);  // Hier werden alle Punkte in der Konsole ausgegeben, um sicherzustellen, dass sie korrekt geladen wurden
+    
     routePoints.forEach(point => {
       let markerOptions = {};
+      
+      // Sicherstellen, dass das Icon für den Punkt korrekt zugewiesen wird
       if (point.type && icons[point.type]) {
         markerOptions.icon = icons[point.type];
-      } else if (point.type !== 'start') {
+      } else {
         console.warn(`Kein gültiges Icon für den Typ "${point.type}" gefunden, Standard-Icon wird verwendet.`);
       }
 
