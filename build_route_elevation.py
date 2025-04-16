@@ -131,7 +131,7 @@ def main():
     simplify_geojson("data/elevation.geojson", "data/elevation_simplified.geojson", tolerance=0.0001)
 
     # Distanz ergänzen
-    add_distances_along_route("data/points.json", "data/route.geojson")
+    #add_distances_along_route("data/points.json", "data/route.geojson")
 
 if __name__ == "__main__":
     main()

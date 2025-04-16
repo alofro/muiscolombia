@@ -20,12 +20,14 @@ Beispiel für einen Routenpunkt in `data/points.json`:
 
 ```json
 {
-  "name": "Bogotá",
-  "type": "start",
-  "lat": 4.6459,
-  "lon": -74.0787,
-  "description": "Punto de partida"
-}
+    "name": "Natagaima",
+    "type": "etapa",
+    "lat": 3.6266,
+    "lon": -75.1002,
+    "description": "Etapa 3",
+    "tiempo": "4:51",
+    "fecha": "2025-04-01"
+  },
 ```
 
 ## Schritt 2: Route berechnen
@@ -44,6 +46,18 @@ Führe das Skript im Verzeichnisordner aus:
 ```
 
 Das Skript berechnet die Route und speichert die Ergebnisse als data/route.geojson. Dieses GeoJSON kann dann in der Karte angezeigt werden.
+
+Um das Höhenprofil zu berechnen, musst Du ein weiteres Skript ausführen. Führe das Skript im Verzeichnisordner aus:
+
+```python3 build_route_elevation.py
+```
+Dieses Skript berechnet die Höhenpunkte entlang von route.geojson (die Du mit dem vorh. Skript erzeugt hast) und reduziert die Anzahl der Punkte auf route_elevation.geojson, um sie im Höhenprofil anzeigen zu können.
+
+Um die Distanz zwischen den Etappen zu berechnen, musst Du ein weiteres Skript ausführen. Führe das Skript im Verzeichnisordner aus:
+
+```python3 build_distancia.py
+```
+Damit werden in points.json die Attribute "distancia" und "kmDesdeEtapa" (nur bei ype "etapa")berechnet und geschrieben.
 
 
 ## Schritt 3: Testen auf lokalem Server
