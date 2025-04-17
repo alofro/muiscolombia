@@ -311,6 +311,10 @@
     "lat": 1.2051,
     "lon": -77.2850,
     "description": "Etapa 16",
+     "images": [
+      "pasto1.jpg",
+      "pasto2.jpg"
+    ],
     "tiempo": "1:45",
     "fecha": "2025-04-16",
     "distancia": 780.08,

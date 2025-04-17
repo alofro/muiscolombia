@@ -1097,7 +1097,7 @@
                                 "name": "V\u00eda Mocoa - Pitalito, 45",
                                 "way_points": [
                                     7599,
-                                    7638
+                                    7637
                                 ]
                             },
                             {
@@ -1107,8 +1107,8 @@
                                 "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    7638,
-                                    7638
+                                    7637,
+                                    7637
                                 ]
                             }
                         ]
@@ -1124,8 +1124,8 @@
                                 "instruction": "Head southwest on V\u00eda Mocoa - Pitalito, 45",
                                 "name": "V\u00eda Mocoa - Pitalito, 45",
                                 "way_points": [
-                                    7638,
-                                    8335
+                                    7637,
+                                    8334
                                 ]
                             },
                             {
@@ -1135,8 +1135,8 @@
                                 "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    8335,
-                                    8335
+                                    8334,
+                                    8334
                                 ]
                             }
                         ]
@@ -1152,8 +1152,8 @@
                                 "instruction": "Head north on Mocoa - San Juan de Villalobos, 45",
                                 "name": "Mocoa - San Juan de Villalobos, 45",
                                 "way_points": [
-                                    8335,
-                                    8336
+                                    8334,
+                                    8335
                                 ]
                             },
                             {
@@ -1163,8 +1163,8 @@
                                 "instruction": "Turn sharp right onto Mocoa - San Juan de Villalobos, 45",
                                 "name": "Mocoa - San Juan de Villalobos, 45",
                                 "way_points": [
-                                    8336,
-                                    8731
+                                    8335,
+                                    8730
                                 ]
                             },
                             {
@@ -1175,8 +1175,8 @@
                                 "name": "Carrera 9, 45",
                                 "exit_number": 2,
                                 "way_points": [
-                                    8731,
-                                    8744
+                                    8730,
+                                    8743
                                 ]
                             },
                             {
@@ -1186,8 +1186,8 @@
                                 "instruction": "Turn sharp left onto Carrera 9, 45",
                                 "name": "Carrera 9, 45",
                                 "way_points": [
-                                    8744,
-                                    8746
+                                    8743,
+                                    8745
                                 ]
                             },
                             {
@@ -1197,8 +1197,8 @@
                                 "instruction": "Arrive at Carrera 9, 45, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    8746,
-                                    8746
+                                    8745,
+                                    8745
                                 ]
                             }
                         ]
@@ -1214,8 +1214,8 @@
                                 "instruction": "Head north on Carrera 9, 45",
                                 "name": "Carrera 9, 45",
                                 "way_points": [
-                                    8746,
-                                    8749
+                                    8745,
+                                    8748
                                 ]
                             },
                             {
@@ -1225,8 +1225,8 @@
                                 "instruction": "Continue straight onto Carrera 9, 45",
                                 "name": "Carrera 9, 45",
                                 "way_points": [
-                                    8749,
-                                    8754
+                                    8748,
+                                    8753
                                 ]
                             },
                             {
@@ -1236,8 +1236,8 @@
                                 "instruction": "Turn slight right onto Carrera 9",
                                 "name": "Carrera 9",
                                 "way_points": [
-                                    8754,
-                                    8759
+                                    8753,
+                                    8758
                                 ]
                             },
                             {
@@ -1247,8 +1247,8 @@
                                 "instruction": "Turn right onto Carrera 8",
                                 "name": "Carrera 8",
                                 "way_points": [
-                                    8759,
-                                    8771
+                                    8758,
+                                    8770
                                 ]
                             },
                             {
@@ -1258,8 +1258,8 @@
                                 "instruction": "Turn left onto Carrera 10",
                                 "name": "Carrera 10",
                                 "way_points": [
-                                    8771,
-                                    8997
+                                    8770,
+                                    8996
                                 ]
                             },
                             {
@@ -1269,8 +1269,8 @@
                                 "instruction": "Turn right onto V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
                                 "name": "V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
                                 "way_points": [
-                                    8997,
-                                    10209
+                                    8996,
+                                    10208
                                 ]
                             },
                             {
@@ -1280,8 +1280,8 @@
                                 "instruction": "Arrive at V\u00eda San Francisco - el Pepino - Villa Garzon, 10, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    10209,
-                                    10209
+                                    10208,
+                                    10208
                                 ]
                             }
                         ]
@@ -1297,8 +1297,8 @@
                                 "instruction": "Head west on V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
                                 "name": "V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
                                 "way_points": [
-                                    10209,
-                                    12134
+                                    10208,
+                                    12133
                                 ]
                             },
                             {
@@ -1308,8 +1308,8 @@
                                 "instruction": "Turn right",
                                 "name": "-",
                                 "way_points": [
-                                    12134,
-                                    12135
+                                    12133,
+                                    12134
                                 ]
                             },
                             {
@@ -1319,8 +1319,8 @@
                                 "instruction": "Turn left onto Calle 17",
                                 "name": "Calle 17",
                                 "way_points": [
-                                    12135,
-                                    12140
+                                    12134,
+                                    12139
                                 ]
                             },
                             {
@@ -1330,8 +1330,8 @@
                                 "instruction": "Turn left onto Carrera 18",
                                 "name": "Carrera 18",
                                 "way_points": [
-                                    12140,
-                                    12141
+                                    12139,
+                                    12140
                                 ]
                             },
                             {
@@ -1341,8 +1341,8 @@
                                 "instruction": "Turn left onto Calle principal, 10",
                                 "name": "Calle principal, 10",
                                 "way_points": [
-                                    12141,
-                                    12142
+                                    12140,
+                                    12141
                                 ]
                             },
                             {
@@ -1352,8 +1352,8 @@
                                 "instruction": "Arrive at Calle principal, 10, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    12142,
-                                    12142
+                                    12141,
+                                    12141
                                 ]
                             }
                         ]
@@ -1369,8 +1369,8 @@
                                 "instruction": "Head southeast on Calle principal, 10",
                                 "name": "Calle principal, 10",
                                 "way_points": [
-                                    12142,
-                                    12143
+                                    12141,
+                                    12142
                                 ]
                             },
                             {
@@ -1380,8 +1380,8 @@
                                 "instruction": "Turn left",
                                 "name": "-",
                                 "way_points": [
-                                    12143,
-                                    12144
+                                    12142,
+                                    12143
                                 ]
                             },
                             {
@@ -1391,8 +1391,8 @@
                                 "instruction": "Turn left onto Calle 17",
                                 "name": "Calle 17",
                                 "way_points": [
-                                    12144,
-                                    12145
+                                    12143,
+                                    12144
                                 ]
                             },
                             {
@@ -1402,8 +1402,8 @@
                                 "instruction": "Turn left onto Carrera 18",
                                 "name": "Carrera 18",
                                 "way_points": [
-                                    12145,
-                                    12146
+                                    12144,
+                                    12145
                                 ]
                             },
                             {
@@ -1413,8 +1413,8 @@
                                 "instruction": "Turn right onto Carretera Pasto - Mocoa, 10",
                                 "name": "Carretera Pasto - Mocoa, 10",
                                 "way_points": [
-                                    12146,
-                                    12198
+                                    12145,
+                                    12197
                                 ]
                             },
                             {
@@ -1424,8 +1424,8 @@
                                 "instruction": "Arrive at Carretera Pasto - Mocoa, 10, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    12198,
-                                    12198
+                                    12197,
+                                    12197
                                 ]
                             }
                         ]
@@ -1441,8 +1441,8 @@
                                 "instruction": "Head southwest on Carretera Pasto - Mocoa, 10",
                                 "name": "Carretera Pasto - Mocoa, 10",
                                 "way_points": [
-                                    12198,
-                                    12286
+                                    12197,
+                                    12285
                                 ]
                             },
                             {
@@ -1452,8 +1452,8 @@
                                 "instruction": "Turn left",
                                 "name": "-",
                                 "way_points": [
-                                    12286,
-                                    12287
+                                    12285,
+                                    12286
                                 ]
                             },
                             {
@@ -1463,8 +1463,8 @@
                                 "instruction": "Arrive at your destination, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    12287,
-                                    12287
+                                    12286,
+                                    12286
                                 ]
                             }
                         ]
@@ -1480,8 +1480,8 @@
                                 "instruction": "Head west",
                                 "name": "-",
                                 "way_points": [
-                                    12287,
-                                    12288
+                                    12286,
+                                    12287
                                 ]
                             },
                             {
@@ -1491,8 +1491,8 @@
                                 "instruction": "Turn left onto Carretera Pasto - Mocoa, 10",
                                 "name": "Carretera Pasto - Mocoa, 10",
                                 "way_points": [
-                                    12288,
-                                    13401
+                                    12287,
+                                    13400
                                 ]
                             },
                             {
@@ -1502,8 +1502,8 @@
                                 "instruction": "Turn right onto Calle 3, 10",
                                 "name": "Calle 3, 10",
                                 "way_points": [
-                                    13401,
-                                    13508
+                                    13400,
+                                    13507
                                 ]
                             },
                             {
@@ -1513,8 +1513,8 @@
                                 "instruction": "Arrive at Calle 3, 10, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    13508,
-                                    13508
+                                    13507,
+                                    13507
                                 ]
                             }
                         ]
@@ -1530,8 +1530,8 @@
                                 "instruction": "Head southwest on 10",
                                 "name": "10",
                                 "way_points": [
-                                    13508,
-                                    14031
+                                    13507,
+                                    14030
                                 ]
                             },
                             {
@@ -1541,8 +1541,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    14031,
-                                    14039
+                                    14030,
+                                    14038
                                 ]
                             },
                             {
@@ -1552,8 +1552,8 @@
                                 "instruction": "Turn sharp left onto Carretera Panamericana",
                                 "name": "Carretera Panamericana",
                                 "way_points": [
-                                    14039,
-                                    14040
+                                    14038,
+                                    14039
                                 ]
                             },
                             {
@@ -1563,8 +1563,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    14040,
-                                    14119
+                                    14039,
+                                    14118
                                 ]
                             },
                             {
@@ -1575,8 +1575,8 @@
                                 "name": "Avenida Bol\u00edvar",
                                 "exit_number": 2,
                                 "way_points": [
-                                    14119,
-                                    14135
+                                    14118,
+                                    14134
                                 ]
                             },
                             {
@@ -1586,8 +1586,8 @@
                                 "instruction": "Turn left onto Carrera 9",
                                 "name": "Carrera 9",
                                 "way_points": [
-                                    14135,
-                                    14157
+                                    14134,
+                                    14156
                                 ]
                             },
                             {
@@ -1598,8 +1598,8 @@
                                 "name": "-",
                                 "exit_number": 2,
                                 "way_points": [
-                                    14157,
-                                    14181
+                                    14156,
+                                    14180
                                 ]
                             },
                             {
@@ -1609,8 +1609,8 @@
                                 "instruction": "Continue straight onto Avenida Panamericana",
                                 "name": "Avenida Panamericana",
                                 "way_points": [
-                                    14181,
-                                    14183
+                                    14180,
+                                    14182
                                 ]
                             },
                             {
@@ -1620,8 +1620,8 @@
                                 "instruction": "Arrive at Avenida Panamericana, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    14183,
-                                    14183
+                                    14182,
+                                    14182
                                 ]
                             }
                         ]
@@ -1683,15 +1683,15 @@
                     6546,
                     6690,
                     7599,
-                    7638,
-                    8335,
-                    8746,
-                    10209,
-                    12142,
-                    12198,
-                    12287,
-                    13508,
-                    14183
+                    7637,
+                    8334,
+                    8745,
+                    10208,
+                    12141,
+                    12197,
+                    12286,
+                    13507,
+                    14182
                 ],
                 "summary": {
                     "distance": 832288.2,
@@ -32249,10 +32249,6 @@
                         1.501581
                     ],
                     [
-                        -76.35773,
-                        1.50236
-                    ],
-                    [
                         -76.357555,
                         1.502635
                     ],
@@ -58444,7 +58440,7 @@
     "metadata": {
         "attribution": "openrouteservice.org | OpenStreetMap contributors",
         "service": "routing",
-        "timestamp": 1744870801353,
+        "timestamp": 1744913893064,
         "query": {
             "coordinates": [
                 [
