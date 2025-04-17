@@ -1086,46 +1086,18 @@
                         ]
                     },
                     {
-                        "distance": 2013.9,
-                        "duration": 85.3,
+                        "distance": 33547.7,
+                        "duration": 1420.8,
                         "steps": [
                             {
-                                "distance": 2013.9,
-                                "duration": 85.3,
+                                "distance": 33547.7,
+                                "duration": 1420.8,
                                 "type": 11,
-                                "instruction": "Head east on V\u00eda Mocoa - Pitalito, 45",
+                                "instruction": "Head west on V\u00eda Mocoa - Pitalito, 45",
                                 "name": "V\u00eda Mocoa - Pitalito, 45",
                                 "way_points": [
                                     7599,
-                                    7637
-                                ]
-                            },
-                            {
-                                "distance": 0.0,
-                                "duration": 0.0,
-                                "type": 10,
-                                "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the left",
-                                "name": "-",
-                                "way_points": [
-                                    7637,
-                                    7637
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "distance": 35724.6,
-                        "duration": 1513.0,
-                        "steps": [
-                            {
-                                "distance": 35724.6,
-                                "duration": 1513.0,
-                                "type": 11,
-                                "instruction": "Head southwest on V\u00eda Mocoa - Pitalito, 45",
-                                "name": "V\u00eda Mocoa - Pitalito, 45",
-                                "way_points": [
-                                    7637,
-                                    8334
+                                    8254
                                 ]
                             },
                             {
@@ -1135,8 +1107,36 @@
                                 "instruction": "Arrive at V\u00eda Mocoa - Pitalito, 45, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    8334,
-                                    8334
+                                    8254,
+                                    8254
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "distance": 172.7,
+                        "duration": 7.3,
+                        "steps": [
+                            {
+                                "distance": 172.7,
+                                "duration": 7.3,
+                                "type": 11,
+                                "instruction": "Head south on Mocoa - San Juan de Villalobos, 45",
+                                "name": "Mocoa - San Juan de Villalobos, 45",
+                                "way_points": [
+                                    8254,
+                                    8259
+                                ]
+                            },
+                            {
+                                "distance": 0.0,
+                                "duration": 0.0,
+                                "type": 10,
+                                "instruction": "Arrive at Mocoa - San Juan de Villalobos, 45, on the right",
+                                "name": "-",
+                                "way_points": [
+                                    8259,
+                                    8259
                                 ]
                             }
                         ]
@@ -1152,8 +1152,8 @@
                                 "instruction": "Head north on Mocoa - San Juan de Villalobos, 45",
                                 "name": "Mocoa - San Juan de Villalobos, 45",
                                 "way_points": [
-                                    8334,
-                                    8335
+                                    8259,
+                                    8260
                                 ]
                             },
                             {
@@ -1163,8 +1163,8 @@
                                 "instruction": "Turn sharp right onto Mocoa - San Juan de Villalobos, 45",
                                 "name": "Mocoa - San Juan de Villalobos, 45",
                                 "way_points": [
-                                    8335,
-                                    8730
+                                    8260,
+                                    8655
                                 ]
                             },
                             {
@@ -1175,8 +1175,8 @@
                                 "name": "Carrera 9, 45",
                                 "exit_number": 2,
                                 "way_points": [
-                                    8730,
-                                    8743
+                                    8655,
+                                    8668
                                 ]
                             },
                             {
@@ -1186,8 +1186,8 @@
                                 "instruction": "Turn sharp left onto Carrera 9, 45",
                                 "name": "Carrera 9, 45",
                                 "way_points": [
-                                    8743,
-                                    8745
+                                    8668,
+                                    8670
                                 ]
                             },
                             {
@@ -1197,8 +1197,8 @@
                                 "instruction": "Arrive at Carrera 9, 45, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    8745,
-                                    8745
+                                    8670,
+                                    8670
                                 ]
                             }
                         ]
@@ -1214,8 +1214,8 @@
                                 "instruction": "Head north on Carrera 9, 45",
                                 "name": "Carrera 9, 45",
                                 "way_points": [
-                                    8745,
-                                    8748
+                                    8670,
+                                    8673
                                 ]
                             },
                             {
@@ -1225,8 +1225,8 @@
                                 "instruction": "Continue straight onto Carrera 9, 45",
                                 "name": "Carrera 9, 45",
                                 "way_points": [
-                                    8748,
-                                    8753
+                                    8673,
+                                    8678
                                 ]
                             },
                             {
@@ -1236,8 +1236,8 @@
                                 "instruction": "Turn slight right onto Carrera 9",
                                 "name": "Carrera 9",
                                 "way_points": [
-                                    8753,
-                                    8758
+                                    8678,
+                                    8683
                                 ]
                             },
                             {
@@ -1247,8 +1247,8 @@
                                 "instruction": "Turn right onto Carrera 8",
                                 "name": "Carrera 8",
                                 "way_points": [
-                                    8758,
-                                    8770
+                                    8683,
+                                    8695
                                 ]
                             },
                             {
@@ -1258,8 +1258,8 @@
                                 "instruction": "Turn left onto Carrera 10",
                                 "name": "Carrera 10",
                                 "way_points": [
-                                    8770,
-                                    8996
+                                    8695,
+                                    8921
                                 ]
                             },
                             {
@@ -1269,8 +1269,8 @@
                                 "instruction": "Turn right onto V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
                                 "name": "V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
                                 "way_points": [
-                                    8996,
-                                    10208
+                                    8921,
+                                    10133
                                 ]
                             },
                             {
@@ -1280,8 +1280,8 @@
                                 "instruction": "Arrive at V\u00eda San Francisco - el Pepino - Villa Garzon, 10, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    10208,
-                                    10208
+                                    10133,
+                                    10133
                                 ]
                             }
                         ]
@@ -1297,8 +1297,8 @@
                                 "instruction": "Head west on V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
                                 "name": "V\u00eda San Francisco - el Pepino - Villa Garzon, 10",
                                 "way_points": [
-                                    10208,
-                                    12133
+                                    10133,
+                                    12058
                                 ]
                             },
                             {
@@ -1308,8 +1308,8 @@
                                 "instruction": "Turn right",
                                 "name": "-",
                                 "way_points": [
-                                    12133,
-                                    12134
+                                    12058,
+                                    12059
                                 ]
                             },
                             {
@@ -1319,8 +1319,8 @@
                                 "instruction": "Turn left onto Calle 17",
                                 "name": "Calle 17",
                                 "way_points": [
-                                    12134,
-                                    12139
+                                    12059,
+                                    12064
                                 ]
                             },
                             {
@@ -1330,8 +1330,8 @@
                                 "instruction": "Turn left onto Carrera 18",
                                 "name": "Carrera 18",
                                 "way_points": [
-                                    12139,
-                                    12140
+                                    12064,
+                                    12065
                                 ]
                             },
                             {
@@ -1341,8 +1341,8 @@
                                 "instruction": "Turn left onto Calle principal, 10",
                                 "name": "Calle principal, 10",
                                 "way_points": [
-                                    12140,
-                                    12141
+                                    12065,
+                                    12066
                                 ]
                             },
                             {
@@ -1352,8 +1352,8 @@
                                 "instruction": "Arrive at Calle principal, 10, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    12141,
-                                    12141
+                                    12066,
+                                    12066
                                 ]
                             }
                         ]
@@ -1369,8 +1369,8 @@
                                 "instruction": "Head southeast on Calle principal, 10",
                                 "name": "Calle principal, 10",
                                 "way_points": [
-                                    12141,
-                                    12142
+                                    12066,
+                                    12067
                                 ]
                             },
                             {
@@ -1380,8 +1380,8 @@
                                 "instruction": "Turn left",
                                 "name": "-",
                                 "way_points": [
-                                    12142,
-                                    12143
+                                    12067,
+                                    12068
                                 ]
                             },
                             {
@@ -1391,8 +1391,8 @@
                                 "instruction": "Turn left onto Calle 17",
                                 "name": "Calle 17",
                                 "way_points": [
-                                    12143,
-                                    12144
+                                    12068,
+                                    12069
                                 ]
                             },
                             {
@@ -1402,8 +1402,8 @@
                                 "instruction": "Turn left onto Carrera 18",
                                 "name": "Carrera 18",
                                 "way_points": [
-                                    12144,
-                                    12145
+                                    12069,
+                                    12070
                                 ]
                             },
                             {
@@ -1413,8 +1413,8 @@
                                 "instruction": "Turn right onto Carretera Pasto - Mocoa, 10",
                                 "name": "Carretera Pasto - Mocoa, 10",
                                 "way_points": [
-                                    12145,
-                                    12197
+                                    12070,
+                                    12122
                                 ]
                             },
                             {
@@ -1424,8 +1424,8 @@
                                 "instruction": "Arrive at Carretera Pasto - Mocoa, 10, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    12197,
-                                    12197
+                                    12122,
+                                    12122
                                 ]
                             }
                         ]
@@ -1441,8 +1441,8 @@
                                 "instruction": "Head southwest on Carretera Pasto - Mocoa, 10",
                                 "name": "Carretera Pasto - Mocoa, 10",
                                 "way_points": [
-                                    12197,
-                                    12285
+                                    12122,
+                                    12210
                                 ]
                             },
                             {
@@ -1452,8 +1452,8 @@
                                 "instruction": "Turn left",
                                 "name": "-",
                                 "way_points": [
-                                    12285,
-                                    12286
+                                    12210,
+                                    12211
                                 ]
                             },
                             {
@@ -1463,8 +1463,8 @@
                                 "instruction": "Arrive at your destination, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    12286,
-                                    12286
+                                    12211,
+                                    12211
                                 ]
                             }
                         ]
@@ -1480,8 +1480,8 @@
                                 "instruction": "Head west",
                                 "name": "-",
                                 "way_points": [
-                                    12286,
-                                    12287
+                                    12211,
+                                    12212
                                 ]
                             },
                             {
@@ -1491,8 +1491,8 @@
                                 "instruction": "Turn left onto Carretera Pasto - Mocoa, 10",
                                 "name": "Carretera Pasto - Mocoa, 10",
                                 "way_points": [
-                                    12287,
-                                    13400
+                                    12212,
+                                    13325
                                 ]
                             },
                             {
@@ -1502,8 +1502,8 @@
                                 "instruction": "Turn right onto Calle 3, 10",
                                 "name": "Calle 3, 10",
                                 "way_points": [
-                                    13400,
-                                    13507
+                                    13325,
+                                    13432
                                 ]
                             },
                             {
@@ -1513,8 +1513,8 @@
                                 "instruction": "Arrive at Calle 3, 10, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    13507,
-                                    13507
+                                    13432,
+                                    13432
                                 ]
                             }
                         ]
@@ -1530,8 +1530,8 @@
                                 "instruction": "Head southwest on 10",
                                 "name": "10",
                                 "way_points": [
-                                    13507,
-                                    14030
+                                    13432,
+                                    13955
                                 ]
                             },
                             {
@@ -1541,8 +1541,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    14030,
-                                    14038
+                                    13955,
+                                    13963
                                 ]
                             },
                             {
@@ -1552,8 +1552,8 @@
                                 "instruction": "Turn sharp left onto Carretera Panamericana",
                                 "name": "Carretera Panamericana",
                                 "way_points": [
-                                    14038,
-                                    14039
+                                    13963,
+                                    13964
                                 ]
                             },
                             {
@@ -1563,8 +1563,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    14039,
-                                    14118
+                                    13964,
+                                    14043
                                 ]
                             },
                             {
@@ -1575,8 +1575,8 @@
                                 "name": "Avenida Bol\u00edvar",
                                 "exit_number": 2,
                                 "way_points": [
-                                    14118,
-                                    14134
+                                    14043,
+                                    14059
                                 ]
                             },
                             {
@@ -1586,8 +1586,8 @@
                                 "instruction": "Turn left onto Carrera 9",
                                 "name": "Carrera 9",
                                 "way_points": [
-                                    14134,
-                                    14156
+                                    14059,
+                                    14081
                                 ]
                             },
                             {
@@ -1598,8 +1598,8 @@
                                 "name": "-",
                                 "exit_number": 2,
                                 "way_points": [
-                                    14156,
-                                    14180
+                                    14081,
+                                    14105
                                 ]
                             },
                             {
@@ -1609,8 +1609,8 @@
                                 "instruction": "Continue straight onto Avenida Panamericana",
                                 "name": "Avenida Panamericana",
                                 "way_points": [
-                                    14180,
-                                    14182
+                                    14105,
+                                    14107
                                 ]
                             },
                             {
@@ -1620,8 +1620,8 @@
                                 "instruction": "Arrive at Avenida Panamericana, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    14182,
-                                    14182
+                                    14107,
+                                    14107
                                 ]
                             }
                         ]
@@ -1642,14 +1642,14 @@
                             ],
                             [
                                 414,
-                                14183,
+                                14107,
                                 0
                             ]
                         ],
                         "summary": [
                             {
                                 "value": 0.0,
-                                "distance": 832120.8,
+                                "distance": 828102.7,
                                 "amount": 99.98
                             },
                             {
@@ -1683,19 +1683,19 @@
                     6546,
                     6690,
                     7599,
-                    7637,
-                    8334,
-                    8745,
-                    10208,
-                    12141,
-                    12197,
-                    12286,
-                    13507,
-                    14182
+                    8254,
+                    8259,
+                    8670,
+                    10133,
+                    12066,
+                    12122,
+                    12211,
+                    13432,
+                    14107
                 ],
                 "summary": {
-                    "distance": 832288.2,
-                    "duration": 47246.2
+                    "distance": 828270.1,
+                    "duration": 47076.0
                 }
             },
             "geometry": {
@@ -32101,310 +32101,6 @@
                         1.499419
                     ],
                     [
-                        -76.370808,
-                        1.499593
-                    ],
-                    [
-                        -76.369905,
-                        1.499943
-                    ],
-                    [
-                        -76.369624,
-                        1.499967
-                    ],
-                    [
-                        -76.369312,
-                        1.499886
-                    ],
-                    [
-                        -76.368518,
-                        1.49961
-                    ],
-                    [
-                        -76.368248,
-                        1.499613
-                    ],
-                    [
-                        -76.368067,
-                        1.499656
-                    ],
-                    [
-                        -76.367895,
-                        1.499758
-                    ],
-                    [
-                        -76.367684,
-                        1.499997
-                    ],
-                    [
-                        -76.366976,
-                        1.501501
-                    ],
-                    [
-                        -76.366822,
-                        1.501646
-                    ],
-                    [
-                        -76.36663,
-                        1.501777
-                    ],
-                    [
-                        -76.366473,
-                        1.501832
-                    ],
-                    [
-                        -76.364403,
-                        1.50188
-                    ],
-                    [
-                        -76.364212,
-                        1.501868
-                    ],
-                    [
-                        -76.363994,
-                        1.501818
-                    ],
-                    [
-                        -76.363798,
-                        1.501688
-                    ],
-                    [
-                        -76.363649,
-                        1.501552
-                    ],
-                    [
-                        -76.363318,
-                        1.500918
-                    ],
-                    [
-                        -76.363121,
-                        1.500427
-                    ],
-                    [
-                        -76.362997,
-                        1.500291
-                    ],
-                    [
-                        -76.362858,
-                        1.500171
-                    ],
-                    [
-                        -76.362679,
-                        1.500106
-                    ],
-                    [
-                        -76.362519,
-                        1.500085
-                    ],
-                    [
-                        -76.36233,
-                        1.50009
-                    ],
-                    [
-                        -76.362193,
-                        1.500141
-                    ],
-                    [
-                        -76.361961,
-                        1.500257
-                    ],
-                    [
-                        -76.360475,
-                        1.50151
-                    ],
-                    [
-                        -76.360363,
-                        1.501563
-                    ],
-                    [
-                        -76.3602,
-                        1.501562
-                    ],
-                    [
-                        -76.360002,
-                        1.501456
-                    ],
-                    [
-                        -76.359515,
-                        1.500765
-                    ],
-                    [
-                        -76.359304,
-                        1.500627
-                    ],
-                    [
-                        -76.359134,
-                        1.500603
-                    ],
-                    [
-                        -76.358951,
-                        1.500624
-                    ],
-                    [
-                        -76.358698,
-                        1.500803
-                    ],
-                    [
-                        -76.358195,
-                        1.501581
-                    ],
-                    [
-                        -76.357555,
-                        1.502635
-                    ],
-                    [
-                        -76.35773,
-                        1.50236
-                    ],
-                    [
-                        -76.358195,
-                        1.501581
-                    ],
-                    [
-                        -76.358698,
-                        1.500803
-                    ],
-                    [
-                        -76.358951,
-                        1.500624
-                    ],
-                    [
-                        -76.359134,
-                        1.500603
-                    ],
-                    [
-                        -76.359304,
-                        1.500627
-                    ],
-                    [
-                        -76.359515,
-                        1.500765
-                    ],
-                    [
-                        -76.360002,
-                        1.501456
-                    ],
-                    [
-                        -76.3602,
-                        1.501562
-                    ],
-                    [
-                        -76.360363,
-                        1.501563
-                    ],
-                    [
-                        -76.360475,
-                        1.50151
-                    ],
-                    [
-                        -76.361961,
-                        1.500257
-                    ],
-                    [
-                        -76.362193,
-                        1.500141
-                    ],
-                    [
-                        -76.36233,
-                        1.50009
-                    ],
-                    [
-                        -76.362519,
-                        1.500085
-                    ],
-                    [
-                        -76.362679,
-                        1.500106
-                    ],
-                    [
-                        -76.362858,
-                        1.500171
-                    ],
-                    [
-                        -76.362997,
-                        1.500291
-                    ],
-                    [
-                        -76.363121,
-                        1.500427
-                    ],
-                    [
-                        -76.363318,
-                        1.500918
-                    ],
-                    [
-                        -76.363649,
-                        1.501552
-                    ],
-                    [
-                        -76.363798,
-                        1.501688
-                    ],
-                    [
-                        -76.363994,
-                        1.501818
-                    ],
-                    [
-                        -76.364212,
-                        1.501868
-                    ],
-                    [
-                        -76.364403,
-                        1.50188
-                    ],
-                    [
-                        -76.366473,
-                        1.501832
-                    ],
-                    [
-                        -76.36663,
-                        1.501777
-                    ],
-                    [
-                        -76.366822,
-                        1.501646
-                    ],
-                    [
-                        -76.366976,
-                        1.501501
-                    ],
-                    [
-                        -76.367684,
-                        1.499997
-                    ],
-                    [
-                        -76.367895,
-                        1.499758
-                    ],
-                    [
-                        -76.368067,
-                        1.499656
-                    ],
-                    [
-                        -76.368248,
-                        1.499613
-                    ],
-                    [
-                        -76.368518,
-                        1.49961
-                    ],
-                    [
-                        -76.369312,
-                        1.499886
-                    ],
-                    [
-                        -76.369624,
-                        1.499967
-                    ],
-                    [
-                        -76.369905,
-                        1.499943
-                    ],
-                    [
-                        -76.370808,
-                        1.499593
-                    ],
-                    [
                         -76.372067,
                         1.499153
                     ],
@@ -35019,6 +34715,10 @@
                     [
                         -76.516419,
                         1.366638
+                    ],
+                    [
+                        -76.516585,
+                        1.366235
                     ],
                     [
                         -76.516645,
@@ -58440,7 +58140,7 @@
     "metadata": {
         "attribution": "openrouteservice.org | OpenStreetMap contributors",
         "service": "routing",
-        "timestamp": 1744913893064,
+        "timestamp": 1744927623464,
         "query": {
             "coordinates": [
                 [
@@ -58508,8 +58208,8 @@
                     1.4994
                 ],
                 [
-                    -76.3575,
-                    1.5026
+                    -76.5165,
+                    1.3662
                 ],
                 [
                     -76.5172,
