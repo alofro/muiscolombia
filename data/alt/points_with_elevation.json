@@ -1,0 +1,339 @@
+[
+    {
+        "name": "Bogotá",
+        "type": "start",
+        "lat": 4.6459,
+        "lon": -74.0787,
+        "description": "Punto de partida",
+        "distancia": 0.0,
+        "kmDesdeEtapa": 0.0
+    },
+    {
+        "name": "Subia",
+        "type": "etapa",
+        "lat": 4.4704,
+        "lon": -74.3837,
+        "description": "Etapa 1",
+        "fecha": "2025-03-30",
+        "distancia": 50.35,
+        "kmDesdeEtapa": 50.35,
+        "elevation": 2014
+    },
+    {
+        "name": "Melgar",
+        "type": "foto",
+        "lat": 4.2474,
+        "lon": -74.7367,
+        "images": [
+            "melgar.jpg"
+        ],
+        "text": "Toma entre Melgar y El Espinal donde me encuentro descansando; hoy fue una etapa de 95km...",
+        "distancia": 128.29
+    },
+    {
+        "name": "El Espinal",
+        "type": "etapa",
+        "lat": 4.1502,
+        "lon": -74.8915,
+        "images": [
+            "espinal.jpg"
+        ],
+        "text": "Parque Mitológico de El Espinal por la mañana.",
+        "description": "Etapa 2",
+        "fecha": "2025-03-31",
+        "distancia": 155.59,
+        "kmDesdeEtapa": 105.24,
+        "elevation": 322
+    },
+    {
+        "name": "Pinchada1",
+        "type": "pinchazo",
+        "lat": 3.7842,
+        "lon": -75.0707,
+        "image": "pinchada1.jpg",
+        "text": "Pinchada a 1/2 de camino entre Saldaña y Natagaima...",
+        "distancia": 205.0
+    },
+    {
+        "name": "Natagaima",
+        "type": "etapa",
+        "lat": 3.6266,
+        "lon": -75.1002,
+        "description": "Etapa 3",
+        "tiempo": "4:51",
+        "fecha": "2025-04-01",
+        "distancia": 222.99,
+        "kmDesdeEtapa": 67.4,
+        "elevation": 328
+    },
+    {
+        "name": "Pinchada2",
+        "type": "pinchazo",
+        "lat": 3.2398,
+        "lon": -75.2441,
+        "images": [
+            "pinchada2.jpg"
+        ],
+        "text": "Pinchada 2: Senza parole 😒",
+        "distancia": 273.26
+    },
+    {
+        "name": "Neiva",
+        "type": "etapa",
+        "lat": 2.9541,
+        "lon": -75.3116,
+        "description": "Etapa 4",
+        "tiempo": "6:20",
+        "fecha": "2025-04-02",
+        "distancia": 308.68,
+        "kmDesdeEtapa": 85.69,
+        "elevation": 440
+    },
+    {
+        "name": "Boa Contrictor",
+        "type": "foto",
+        "lat": 2.5137,
+        "lon": -75.531,
+        "images": [
+            "boa.jpg"
+        ],
+        "text": "Boa Constrictor Constrictor",
+        "distancia": 382.02
+    },
+    {
+        "name": "Pinchada3",
+        "type": "pinchazo",
+        "lat": 2.4696,
+        "lon": -75.5422,
+        "images": [
+            "pinchada3.jpg"
+        ],
+        "text": "Pinchada 3: ¿? 😒",
+        "distancia": 390.18
+    },
+    {
+        "name": "Hobo",
+        "type": "etapa",
+        "lat": 2.583,
+        "lon": -75.4519,
+        "description": "Etapa 5",
+        "tiempo": "4:00",
+        "fecha": "2025-04-03",
+        "distancia": 412.78,
+        "kmDesdeEtapa": 104.1,
+        "elevation": 592
+    },
+    {
+        "name": "Gigante",
+        "type": "etapa",
+        "lat": 2.386522,
+        "lon": -75.5476,
+        "description": "Etapa 6",
+        "tiempo": "3:17",
+        "fecha": "2025-04-04",
+        "distancia": 447.0,
+        "kmDesdeEtapa": 34.22,
+        "elevation": 803
+    },
+    {
+        "name": "Altamira",
+        "type": "etapa",
+        "lat": 2.065,
+        "lon": -75.7895,
+        "description": "Etapa 7",
+        "tiempo": "4:13",
+        "fecha": "2025-04-06",
+        "distancia": 502.81,
+        "kmDesdeEtapa": 55.81,
+        "elevation": 1030
+    },
+    {
+        "name": "Bruselas",
+        "type": "etapa",
+        "lat": 1.7714,
+        "lon": -76.1703,
+        "description": "Etapa 8",
+        "tiempo": "5:21",
+        "fecha": "2025-04-07",
+        "distancia": 565.8,
+        "kmDesdeEtapa": 62.99,
+        "elevation": 1462
+    },
+    {
+        "name": "Pinchada4",
+        "type": "pinchazo",
+        "lat": 1.7239,
+        "lon": -76.181274,
+        "images": [
+            "pinchada4.jpg"
+        ],
+        "text": "4. Pinchazo; con ayuda y una buena bomba es más fácil",
+        "distancia": 572.02
+    },
+    {
+        "name": "San Juan de Villalobos",
+        "type": "etapa",
+        "lat": 1.4994,
+        "lon": -76.3713,
+        "description": "Etapa 9",
+        "tiempo": "4:15",
+        "fecha": "2025-04-08",
+        "distancia": 614.01,
+        "kmDesdeEtapa": 48.21,
+        "elevation": 1424
+    },
+    {
+        "name": "Verdeyaco",
+        "type": "etapa",
+        "lat": 1.5026,
+        "lon": -76.3575,
+        "images": [
+            "verdeyaco1.jpg",
+            "verdeyaco2.jpg"
+        ],
+        "description": "Etapa 10",
+        "tiempo": "2:23",
+        "fecha": "2025-04-09",
+        "distancia": 616.01,
+        "kmDesdeEtapa": 2.0,
+        "elevation": 1516
+    },
+    {
+        "name": "Yunguillo",
+        "type": "foto",
+        "lat": 1.3649,
+        "lon": -76.5172,
+        "images": [
+            "yunguillo1.jpg",
+            "yunguillo2.jpg",
+            "yunguillo3.jpg",
+            "yunguillo4.jpg",
+            "yunguillo5.jpg",
+            "yunguillo6.jpg"
+        ],
+        "text": "Camino a Mocoa",
+        "distancia": 651.73
+    },
+    {
+        "name": "Mocoa",
+        "type": "etapa",
+        "lat": 1.1487,
+        "lon": -76.6482,
+        "images": [
+            "mocoa1.jpg",
+            "mocoa2.jpg",
+            "mocoa3.jpg",
+            "mocoa4.jpg",
+            "mocoa5.jpg",
+            "mocoa6.jpg"
+        ],
+        "description": "Etapa 11",
+        "tiempo": "2:19",
+        "fecha": "2025-04-10",
+        "distancia": 685.2,
+        "kmDesdeEtapa": 69.19,
+        "elevation": 595
+    },
+    {
+        "name": "Filo del Hambre",
+        "type": "etapa",
+        "lat": 1.0727,
+        "lon": -76.7482,
+        "images": [
+            "filo1.jpg",
+            "filo2.jpg"
+        ],
+        "description": "Etapa 12",
+        "tiempo": "4:51",
+        "fecha": "2025-04-12",
+        "distancia": 719.68,
+        "kmDesdeEtapa": 34.48,
+        "elevation": 2258
+    },
+    {
+        "name": "Sibundoy",
+        "type": "etapa",
+        "lat": 1.2043,
+        "lon": -76.919,
+        "images": [
+            "sibundoy1.jpg",
+            "sibundoy2.jpg",
+            "sibundoy3.jpg",
+            "sibundoy4.jpg",
+            "sibundoy5.jpg",
+            "sibundoy6.jpg",
+            "sibundoy7.jpg",
+            "sibundoy8.jpg",
+            "sibundoy9.jpg",
+            "sibundoy10.jpg"
+        ],
+        "description": "Etapa 13",
+        "tiempo": "4:54",
+        "fecha": "2025-04-13",
+        "distancia": 766.24,
+        "kmDesdeEtapa": 46.56,
+        "elevation": 2118
+    },
+    {
+        "name": "Colon",
+        "type": "foto",
+        "lat": 1.1908,
+        "lon": -76.973,
+        "images": [
+            "colon1.jpg",
+            "colon2.jpg"
+        ],
+        "text": "Una emPAnadaUSA en Colón, Putumayo",
+        "distancia": 773.6
+    },
+    {
+        "name": "Santiago",
+        "type": "etapa",
+        "lat": 1.1479,
+        "lon": -77.0039,
+        "description": "Etapa 14",
+        "tiempo": "1:11",
+        "fecha": "2025-04-14",
+        "distancia": 780.08,
+        "kmDesdeEtapa": 13.84,
+        "elevation": 2114
+    },
+    {
+        "name": "Bella Vista",
+        "type": "etapa",
+        "lat": 1.1735,
+        "lon": -77.1602,
+        "images": [
+            "bellavista1.jpg",
+            "bellavista2.jpg",
+            "bellavista3.jpg",
+            "bellavista4.jpg",
+            "bellavista5.jpg",
+            "bellavista6.jpg",
+            "bellavista7.jpg",
+            "bellavista8.jpg"
+        ],
+        "description": "Etapa 15",
+        "tiempo": "3:36",
+        "fecha": "2025-04-15",
+        "distancia": 810.57,
+        "kmDesdeEtapa": 30.49,
+        "elevation": 2953
+    },
+    {
+        "name": "Pasto",
+        "type": "etapa",
+        "lat": 1.2051,
+        "lon": -77.285,
+        "description": "Etapa 16",
+        "images": [
+            "pasto1.jpg",
+            "pasto2.jpg"
+        ],
+        "tiempo": "1:45",
+        "fecha": "2025-04-16",
+        "distancia": 831.29,
+        "kmDesdeEtapa": 20.72,
+        "elevation": 2952
+    }
+]
