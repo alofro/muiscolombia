@@ -81,6 +81,7 @@
     "lon": -75.3116,
     "description": "Etapa 4",
     "tiempo": "6:20",
+    "fecha": "2025-04-02",
     "distancia": 308.68,
     "kmDesdeEtapa": 85.69
   },
@@ -303,5 +304,16 @@
     "fecha": "2025-04-15",
     "distancia": 810.57,
     "kmDesdeEtapa": 30.49
+  },
+  {
+    "name": "Pasto",
+    "type": "etapa",
+    "lat": 1.2051,
+    "lon": -77.2850,
+    "description": "Etapa 16",
+    "tiempo": "1:45",
+    "fecha": "2025-04-16",
+    "distancia": 780.08,
+    "kmDesdeEtapa": 32.00
   }
 ]

@@ -15,7 +15,7 @@
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Chart.js Annotation Plugin -->
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
 
   <style>
     body {
@@ -92,108 +92,30 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <!-- Leaflet Awesome Markers JS -->
   <script src="https://unpkg.com/leaflet.awesome-markers@2.0.5/dist/leaflet.awesome-markers.js"></script>
+  
   <!-- Dein eigenes Karten-Skript -->
-  <script src="script.js"></script>
-
-  <script>
-  let isMapVisible = true;
-  let elevationChartDrawn = false;
-  let elevationChartInstance = null;
-
+<script src="script.js"></script>
+<!-- Neues Script für Höhenprofil -->
+<script src="elevation.js"></script>
+<script>
   function toggleView() {
     const mapDiv = document.getElementById("map");
     const elevationDiv = document.getElementById("elevation-profile");
     const button = document.getElementById("toggle-view");
 
-    if (isMapVisible) {
+    if (mapDiv.style.display !== "none") {
       mapDiv.style.display = "none";
       elevationDiv.style.display = "block";
       button.innerText = "Mostrar mapa";
-
-      if (!elevationChartDrawn) {
-        // Zeichnung verzögern, damit Canvas sichtbar ist
-        setTimeout(drawElevationChart, 0);
-        elevationChartDrawn = true;
-      }
     } else {
       mapDiv.style.display = "block";
       elevationDiv.style.display = "none";
       button.innerText = "Mostrar perfil de altura";
     }
-    isMapVisible = !isMapVisible;
-  }
-
-  function drawElevationChart() {
-    fetch('data/elevation_simplified.geojson')
-      .then(response => response.json())
-      .then(geojson => {
-        const coords = geojson.features[0].geometry.coordinates;
-        const elevationData = [];
-        const distanceLabels = [];
-
-        let totalDistance = 0;
-
-        for (let i = 0; i < coords.length; i++) {
-          if (i > 0) {
-            const [lon1, lat1] = coords[i - 1];
-            const [lon2, lat2] = coords[i];
-
-            // Berechnung der Distanz zwischen den Koordinaten
-            const toRad = deg => deg * Math.PI / 180;
-            const R = 6371; // Erdradius in km
-            const dLat = toRad(lat2 - lat1);
-            const dLon = toRad(lon2 - lon1);
-            const a = Math.sin(dLat / 2) ** 2 +
-                      Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
-                      Math.sin(dLon / 2) ** 2;
-            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-            const d = R * c;
-            totalDistance += d;
-          }
-
-          elevationData.push(coords[i][2]); // Höhe (dritte Koordinate)
-          distanceLabels.push(totalDistance.toFixed(2)); // Distanz in km
-        }
-
-        // Erstellen des Elevation-Charts mit Chart.js
-        const ctx = document.getElementById('elevationChart').getContext('2d');
-        elevationChartInstance = new Chart(ctx, {
-          type: 'line',
-          data: {
-            labels: distanceLabels,
-            datasets: [{
-              label: 'Perfil de altura (m)',
-              data: elevationData,
-              borderColor: 'rgb(75, 192, 192)',
-              fill: false,
-              tension: 0.1
-            }]
-          },
-          options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-              x: {
-                title: {
-                  display: true,
-                  text: 'Distancia (km)'
-                }
-              },
-              y: {
-                title: {
-                  display: true,
-                  text: 'Altura (m)'
-                }
-              }
-            }
-          }
-        });
-      })
-      .catch(error => {
-        console.error("Fehler beim Laden der GeoJSON-Datei:", error);
-      });
   }
 </script>
+
+
 
 </body>
 </html>
