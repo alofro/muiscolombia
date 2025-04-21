@@ -335,5 +335,28 @@
     "distancia": 827.27,
     "kmDesdeEtapa": 20.71,
     "elevation": 2952
+  },
+  {
+    "name": "Ipiales",
+    "type": "etapa",
+    "lat": 0.8297,
+    "lon": -77.6279,
+    "description": "Etapa 17",
+    "images": [
+      "ipiales1.jpg",
+      "ipiales2.jpg",
+      "ipiales3.jpg",
+      "ipiales4.jpg",
+      "ipiales5.jpg",
+      "ipiales6.jpg",
+      "ipiales7.jpg",
+      "ipiales8.jpg",
+      "ipiales9.jpg"
+    ],
+    "tiempo": "7:31",
+    "fecha": "2025-04-20",
+    "distancia": 0.0,
+    "kmDesdeEtapa": 0.0,
+    "elevation": 0.0
   }
 ]
