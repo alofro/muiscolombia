@@ -14,8 +14,8 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.awesome-markers@2.0.5/dist/leaflet.awesome-markers.css">
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Chart.js Annotation Plugin -->
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
+  <!-- Chart.js Annotation Plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
 
   <style>
     body {
@@ -35,9 +35,12 @@
     }
 
     #map, #elevation-profile {
-      height: 500px; /* höher für mehr Platz */
+      height: 500px;
       position: relative;
+      width: 100%;
+      max-width: 900px;
     }
+
     #elevationChart {
       width: 100% !important;
       height: 100% !important;
@@ -48,7 +51,6 @@
       margin: 1em 0;
     }
 
-    /* Der verbesserte Button */
     #toggle-view {
       padding: 12px 24px;
       background-color: #007bff;
@@ -75,47 +77,40 @@
 <body>
   <h1>Aventura Muiscolombia</h1>
 
-  <!-- Button zum Wechseln -->
   <div id="toggle-container">
     <button id="toggle-view" onclick="toggleView()">Mostrar perfil de altura</button>
   </div>
 
-  <!-- Karte -->
   <div id="map"></div>
-
-  <!-- Perfil de altura -->
   <div id="elevation-profile" style="display: none;">
     <canvas id="elevationChart"></canvas>
   </div>
 
-  <!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <!-- Leaflet Awesome Markers JS -->
-  <script src="https://unpkg.com/leaflet.awesome-markers@2.0.5/dist/leaflet.awesome-markers.js"></script>
-  
-  <!-- Dein eigenes Karten-Skript -->
-<script src="script.js"></script>
-<!-- Neues Script für Höhenprofil -->
-<script src="elevation.js"></script>
-<script>
-  function toggleView() {
-    const mapDiv = document.getElementById("map");
-    const elevationDiv = document.getElementById("elevation-profile");
-    const button = document.getElementById("toggle-view");
+  <!-- Toggle-Funktion vor den anderen Skripten -->
+  <script>
+    function toggleView() {
+      const mapDiv = document.getElementById("map");
+      const elevationDiv = document.getElementById("elevation-profile");
+      const button = document.getElementById("toggle-view");
 
-    if (mapDiv.style.display !== "none") {
-      mapDiv.style.display = "none";
-      elevationDiv.style.display = "block";
-      button.innerText = "Mostrar mapa";
-    } else {
-      mapDiv.style.display = "block";
-      elevationDiv.style.display = "none";
-      button.innerText = "Mostrar perfil de altura";
+      if (mapDiv.style.display !== "none") {
+        mapDiv.style.display = "none";
+        elevationDiv.style.display = "block";
+        button.innerText = "Mostrar mapa";
+      } else {
+        mapDiv.style.display = "block";
+        elevationDiv.style.display = "none";
+        button.innerText = "Mostrar perfil de altura";
+      }
     }
-  }
-</script>
+  </script>
 
+  <!-- Leaflet & Kartenlogik -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.awesome-markers@2.0.5/dist/leaflet.awesome-markers.js"></script>
+  <script src="script.js"></script>
 
-
+  <!-- Höhenprofil -->
+  <script src="elevation.js"></script>
 </body>
 </html>

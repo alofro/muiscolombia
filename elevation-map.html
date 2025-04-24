@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil de Altura con Leaflet</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.awesome-markers/2.0.4/leaflet.awesome-markers.css"
+  />
+  <!-- Leaflet Stylesheet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+<!-- AwesomeMarkers Stylesheet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.awesome-markers/dist/leaflet.awesome-markers.css" />
+
+<!-- Leaflet.js -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<!-- Leaflet.AwesomeMarkers Script -->
+<script src="https://unpkg.com/leaflet.awesome-markers/dist/leaflet.awesome-markers.min.js"></script>
+
+  <style>
+    #elevationMap {
+      height: 500px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="elevationMap"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.awesome-markers/2.0.4/leaflet.awesome-markers.js"></script>
+  <script>
+    // Icons wie in script.js
+    const icons = {
+      etapa: L.AwesomeMarkers.icon({ icon: 'flag', markerColor: 'green', prefix: 'fa' }),
+      pinchazo: L.AwesomeMarkers.icon({ icon: 'wrench', markerColor: 'red', prefix: 'fa' }),
+      foto: L.AwesomeMarkers.icon({ icon: 'camera', markerColor: 'blue', prefix: 'fa' })
+    };
+
+    // Eigenes CRS für Profil: X = km, Y = Höhe
+    const profileCRS = L.extend({}, L.CRS.Simple);
+    profileCRS.transformation = new L.Transformation(1, 0, -1, 500); // Höhe gespiegelt (von unten nach oben)
+
+    const map = L.map('elevationMap', {
+      crs: profileCRS,
+      minZoom: -5,
+      maxZoom: 2,
+      zoomSnap: 0.1,
+      zoomDelta: 0.2,
+      zoomControl: true,
+      attributionControl: false,
+      dragging: true
+    });
+
+    Promise.all([
+      fetch('data/elevation_simplified.geojson').then(res => res.json()),
+      fetch('data/points.json').then(res => res.json())
+    ]).then(([elevationData, pointsData]) => {
+      const coords = elevationData.features[0].geometry.coordinates;
+
+      let totalDistance = 0;
+      const points = coords.map(([lon, lat, ele], i) => {
+        if (i > 0) {
+          const [lon0, lat0] = coords[i - 1];
+          totalDistance += haversine(lon0, lat0, lon, lat);
+        }
+        return [totalDistance, ele];
+      });
+
+      const polyline = L.polyline(points, {
+        color: 'blue',
+        weight: 2
+      }).addTo(map);
+
+      // Marker setzen
+      pointsData.forEach(p => {
+        if (typeof p.distancia === 'number' && typeof p.elevation === 'number') {
+          const icon = icons[p.type] || icons.foto;
+          L.marker([p.distancia, p.elevation], { icon }).addTo(map).bindPopup(p.name);
+        }
+      });
+
+      map.fitBounds(polyline.getBounds(), { padding: [20, 20] });
+    });
+
+    function haversine(lon1, lat1, lon2, lat2) {
+      const toRad = deg => deg * Math.PI / 180;
+      const dLat = toRad(lat2 - lat1);
+      const dLon = toRad(lon2 - lon1);
+      const a = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
+      return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    }
+  </script>
+</body>
+</html>

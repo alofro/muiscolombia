@@ -358,5 +358,55 @@
     "distancia": 907.43,
     "kmDesdeEtapa": 80.16,
     "elevation": 2897
+  },
+  {
+    "name": "Las Lajas",
+    "type": "foto",
+    "lat": 0.8062,
+    "lon": -77.5855,
+    "images": [
+      "lajas1.jpg", "lajas2.jpg", "lajas3.jpg", "lajas4.jpg"
+    ],
+    "text": "En la catedral de Las Lajas",
+    "distancia": 0.0
+  },
+  {
+    "name": "Tulcan",
+    "type": "etapa",
+    "lat": 0.8189,
+    "lon": -77.7101,
+    "description": "Etapa 18",
+    "images": [
+      "tulcan1.jpg",
+      "tulcan2.jpg",
+      "tulcan3.jpg",
+      "tulcan4.jpg",
+      "tulcan5.jpg",
+      "tulcan6.jpg",
+      "tulcan7.jpg",
+      "tulcan8.jpg",
+      "tulcan9.jpg"
+    ],
+    "tiempo": "1:20",
+    "fecha": "2025-04-22",
+    "distancia": 0.0,
+    "kmDesdeEtapa": 0.0,
+    "elevation": 0
+  },
+  {
+    "name": "Tulcan - estación de bus",
+    "type": "bus",
+    "lat": 0.8189,
+    "lon": -77.7101,
+    "description": "tramo en bus",
+    "fecha": "2025-04-23"
+  },
+  {
+    "name": "Cuenca - estación de bus",
+    "type": "bus",
+    "lat": -2.8742,
+    "lon": -78.9394,
+    "description": "tramo en bus",
+    "fecha": "2025-04-24"
   }
 ]

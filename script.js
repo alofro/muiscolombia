@@ -13,31 +13,19 @@ const icons = {
   foto: L.AwesomeMarkers.icon({ icon: 'camera', markerColor: 'blue', prefix: 'fa' })
 };
 
-// GeoJSON-Daten aus der Datei laden und auf der Karte darstellen
-fetch('data/route.geojson')
-  .then(response => response.json())
-  .then(data => {
-    if (data.features && data.features.length > 0) {
-      const routeCoordinates = data.features[0].geometry.coordinates.map(coord => [coord[1], coord[0]]);
-      L.polyline(routeCoordinates, { color: 'blue' }).addTo(map);
-    } else {
-      console.error("Keine gültige Route in der GeoJSON-Datei gefunden.");
-    }
-  })
-  .catch(error => {
-    console.error('Fehler beim Laden der GeoJSON-Datei:', error);
-  });
+let routePoints = [];
 
-// Marker aus points.json hinzufügen
+// Punkte laden
 fetch('data/points.json')
   .then(response => response.json())
-  .then(routePoints => {
-    console.log(routePoints);  // Hier werden alle Punkte in der Konsole ausgegeben, um sicherzustellen, dass sie korrekt geladen wurden
-    
+  .then(data => {
+    routePoints = data;
+
     routePoints.forEach(point => {
+      if (point.type === 'bus') return; // Keine Marker für Buspunkte
+
       let markerOptions = {};
-      
-      // Sicherstellen, dass das Icon für den Punkt korrekt zugewiesen wird
+
       if (point.type && icons[point.type]) {
         markerOptions.icon = icons[point.type];
       } else {
@@ -47,10 +35,8 @@ fetch('data/points.json')
       const marker = L.marker([point.lat, point.lon], markerOptions).addTo(map);
 
       let popupContent = `<div style="width: 200px;">`;
-
       const imageId = `img-${Math.random().toString(36).substr(2, 9)}`;
 
-      // Mehrere Bilder
       if (point.images && point.images.length > 0) {
         const imagesData = encodeURIComponent(JSON.stringify(point.images));
         popupContent += `
@@ -69,15 +55,11 @@ fetch('data/points.json')
                            background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%;
                            width: 25px; height: 25px;">▶</button>
           </div>`;
-      }
-
-      // Ein einzelnes Bild
-      else if (point.image) {
+      } else if (point.image) {
         popupContent += `
           <img src="bilder/${point.image}" alt="${point.name}" style="width: 100%; border-radius: 8px;">`;
       }
 
-      // Beschreibungstext
       if (point.name) {
         popupContent += `<strong>${point.name}</strong><br>`;
       }
@@ -87,13 +69,70 @@ fetch('data/points.json')
       }
 
       popupContent += `</div>`;
-
       marker.bindPopup(popupContent);
     });
+
+    drawRouteSegments(); // Starte Zeichnen der Route erst nach Laden der Punkte
   })
   .catch(error => {
     console.error('Fehler beim Laden der Punkte-Datei:', error);
   });
+
+// Routenabschnitte zeichnen (normal oder bus)
+function drawRouteSegments() {
+  fetch('data/route.geojson')
+    .then(response => response.json())
+    .then(data => {
+      const routeCoords = data.features[0].geometry.coordinates.map(coord => [coord[1], coord[0]]);
+
+      const busStops = routePoints
+        .filter(p => p.type === 'bus')
+        .map(p => [parseFloat(p.lat.toFixed(5)), parseFloat(p.lon.toFixed(5))]);
+
+      const isBusPoint = (lat, lon) =>
+        busStops.some(stop =>
+          Math.abs(stop[0] - lat) < 0.0001 && Math.abs(stop[1] - lon) < 0.0001
+        );
+
+      const segments = [];
+      let currentSegment = [];
+      let inBusSegment = false;
+
+      for (let i = 0; i < routeCoords.length; i++) {
+        const [lat, lon] = routeCoords[i];
+        currentSegment.push([lat, lon]);
+
+        if (isBusPoint(lat, lon)) {
+          if (currentSegment.length > 1) {
+            segments.push({
+              coords: [...currentSegment],
+              type: inBusSegment ? 'bus' : 'normal'
+            });
+            currentSegment = [[lat, lon]];
+            inBusSegment = !inBusSegment;
+          }
+        }
+      }
+
+      if (currentSegment.length > 1) {
+        segments.push({
+          coords: currentSegment,
+          type: inBusSegment ? 'bus' : 'normal'
+        });
+      }
+
+      segments.forEach(seg => {
+        L.polyline(seg.coords, {
+          color: seg.type === 'bus' ? 'gray' : 'blue',
+          dashArray: seg.type === 'bus' ? '5,10' : null,
+          weight: 4
+        }).addTo(map);
+      });
+    })
+    .catch(error => {
+      console.error('Fehler beim Laden der GeoJSON-Datei:', error);
+    });
+}
 
 // Slideshow-Funktionen mit Zähler
 function nextImage(id) {

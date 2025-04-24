@@ -1,5 +1,4 @@
-// elevation.js (Marker auf Linie sichtbar: glatte Linie ohne Punkte, Dataset order)
-
+// elevation.js (Etapas auf X-Achse + alle Punkte auf Höhenlinie)
 let elevationChartInstance = null;
 
 function drawElevationChart() {
@@ -10,7 +9,6 @@ function drawElevationChart() {
     .then(([elevationGeojson, pointsData]) => {
       const coords = elevationGeojson.features[0].geometry.coordinates;
 
-      // Strecke berechnen und Chart-Daten
       let totalDistance = 0;
       const chartData = coords.map((pt, idx) => {
         const [lon, lat, ele] = pt;
@@ -21,17 +19,16 @@ function drawElevationChart() {
         return { x: totalDistance, y: ele };
       });
 
-      // Mindesthöhe für X-Achsen-Punkte
       const elevations = chartData.map(p => p.y);
       const minElevation = Math.min(...elevations) - 10;
 
-      // Etappenpunkte (unten) und Label-Infos
+      // Etapas als rote Punkte auf X-Achse
       const etapaLabels = {};
-      const scatterData = [];
+      const scatterDataEtapas = [];
       pointsData.filter(p => p.type === 'etapa' && typeof p.distancia === 'number')
         .forEach(p => {
           const d = new Date(p.fecha);
-          const dateStr = `${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getFullYear()).slice(-2)}`;
+          const dateStr = `${String(d.getDate()).padStart(2, '0')}.${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getFullYear()).slice(-2)}`;
           const sinceStr = p.kmDesdeEtapa != null ? p.kmDesdeEtapa.toFixed(1).replace('.', ',') : '';
           const totalStr = p.distancia.toFixed(1).replace('.', ',');
           const timeStr = p.tiempo ? p.tiempo.replace(':', 'h ') + ' min' : '';
@@ -40,21 +37,21 @@ function drawElevationChart() {
           if (sinceStr) label += `, ${sinceStr} km de etapa`;
           label += `, dist. total: ${totalStr} km`;
           etapaLabels[p.distancia] = label;
-          scatterData.push({ x: p.distancia, y: minElevation });
+          scatterDataEtapas.push({ x: p.distancia, y: minElevation });
         });
 
-      // Melgar-Highlight auf Profil
-      const melgarPoint = pointsData.find(p => p.name.toLowerCase() === 'melgar' && typeof p.distancia === 'number');
-      let highlightPoint;
-      if (melgarPoint) {
-        const yElevation = getElevationAtDistance(chartData, melgarPoint.distancia);
-        highlightPoint = { x: melgarPoint.distancia, y: yElevation, label: `Foto: ${melgarPoint.name}` };
-      }
+      // Alle Punkte auf Höhenlinie zeigen
+      const scatterDataOnLine = pointsData
+        .filter(p => typeof p.distancia === 'number')
+        .map(p => ({
+          x: p.distancia,
+          y: getElevationAtDistance(chartData, p.distancia),
+          label: p.name
+        }));
 
       const ctx = document.getElementById('elevationChart').getContext('2d');
       if (elevationChartInstance) elevationChartInstance.destroy();
 
-      // Datasets mit expliziter Reihenfolge und glatter Linie
       const datasets = [
         {
           type: 'line',
@@ -63,33 +60,31 @@ function drawElevationChart() {
           borderColor: 'rgb(0, 123, 255)',
           fill: false,
           tension: 0.1,
-          pointRadius: 0,      // keine Punkte auf der Linie
+          pointRadius: 0,
           parsing: false,
           order: 0
         },
         {
           type: 'scatter',
           label: 'Etapas',
-          data: scatterData,
+          data: scatterDataEtapas,
           backgroundColor: 'red',
           pointRadius: 6,
           showLine: false,
           parsing: false,
           order: 1
-        }
-      ];
-      if (highlightPoint) {
-        datasets.push({
+        },
+        {
           type: 'scatter',
-          label: 'Melgar',
-          data: [highlightPoint],
+          label: 'Puntos de ruta',
+          data: scatterDataOnLine,
           backgroundColor: 'orange',
-          pointRadius: 8,
+          pointRadius: 6,
           showLine: false,
           parsing: false,
           order: 2
-        });
-      }
+        }
+      ];
 
       elevationChartInstance = new Chart(ctx, {
         data: { datasets },
@@ -117,9 +112,13 @@ function drawElevationChart() {
               callbacks: {
                 label: context => {
                   const ds = context.chart.data.datasets[context.datasetIndex];
-                  return ds.type === 'scatter'
-                    ? (etapaLabels[context.raw.x] || context.raw.label || '')
-                    : ` ${context.raw.y.toFixed(0)} m`;
+                  if (ds.label === 'Etapas') {
+                    return etapaLabels[context.raw.x] || '';
+                  } else if (ds.label === 'Puntos de ruta') {
+                    return context.raw.label || '';
+                  } else {
+                    return ` ${context.raw.y.toFixed(0)} m`;
+                  }
                 }
               }
             }
@@ -141,10 +140,12 @@ window.addEventListener('DOMContentLoaded', () => {
 function haversine(lon1, lat1, lon2, lat2) {
   const toRad = d => d * Math.PI / 180;
   const dLat = toRad(lat2 - lat1), dLon = toRad(lon2 - lon1);
-  const a = Math.sin(dLat/2)**2 + Math.cos(toRad(lat1))*Math.cos(toRad(lat2))*Math.sin(dLon/2)**2;
+  const a = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
   return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
 function getElevationAtDistance(data, dist) {
-  return data.reduce((c,p) => Math.abs(p.x - dist) < Math.abs(c.x - dist) ? p : c).y;
+  return data.reduce((closest, p) =>
+    Math.abs(p.x - dist) < Math.abs(closest.x - dist) ? p : closest
+  ).y;
 }
