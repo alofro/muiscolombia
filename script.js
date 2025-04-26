@@ -1,5 +1,9 @@
 // Erstelle eine Karte
-var map = L.map('map').setView([2.9541, -75.3116], 7);
+var map = L.map('map', {
+  scrollWheelZoom: false, // Deaktiviert Scrollen zum Zoomen auf mobilen Geräten
+  dragging: true,         // Ermöglicht das Verschieben der Karte
+  touchZoom: true         // Ermöglicht Touch-Zoom
+}).setView([2.9541, -75.3116], 7); // Start-Zentrum (kann später dynamisch angepasst werden)
 
 // OpenStreetMap Tiles einfügen
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -14,23 +18,13 @@ const icons = {
 };
 
 let routePoints = [];
+let routeBounds = [];
 
 // Punkte laden
 fetch('data/points.json')
   .then(response => response.json())
   .then(data => {
     routePoints = data;
-
-    // Bestimme die min. und max. Koordinaten
-    let latitudes = routePoints.map(p => p.lat);
-    let longitudes = routePoints.map(p => p.lon);
-    let bounds = [
-      [Math.min(...latitudes), Math.min(...longitudes)],
-      [Math.max(...latitudes), Math.max(...longitudes)]
-    ];
-
-    // Setze den Kartenausschnitt basierend auf den extremen Koordinaten
-    map.fitBounds(bounds);
 
     routePoints.forEach(point => {
       if (point.type === 'bus') return; // Keine Marker für Buspunkte
@@ -71,6 +65,11 @@ fetch('data/points.json')
           <img src="bilder/${point.image}" alt="${point.name}" style="width: 100%; border-radius: 8px;">`;
       }
 
+      // Kommentar unter dem Bild
+      if (point.text) {
+        popupContent += `<p style="font-size: 0.9em; margin-top: 5px;">${point.text}</p>`;
+      }
+
       if (point.name) {
         popupContent += `<strong>${point.name}</strong><br>`;
       }
@@ -81,9 +80,13 @@ fetch('data/points.json')
 
       popupContent += `</div>`;
       marker.bindPopup(popupContent);
+
+      // Koordinaten für den Kartenbereich (Bounds) speichern
+      routeBounds.push([point.lat, point.lon]);
     });
 
     drawRouteSegments(); // Starte Zeichnen der Route erst nach Laden der Punkte
+    updateMapBounds();    // Passe den Kartenausschnitt an, um alle Punkte anzuzeigen
   })
   .catch(error => {
     console.error('Fehler beim Laden der Punkte-Datei:', error);
@@ -164,4 +167,12 @@ function prevImage(id) {
   img.src = 'bilder/' + images[index];
   img.dataset.index = index;
   document.getElementById(`${id}-counter`).textContent = `${index + 1} / ${images.length}`;
+}
+
+// Kartenausschnitt anpassen, um alle Punkte anzuzeigen
+function updateMapBounds() {
+  if (routeBounds.length > 0) {
+    const bounds = L.latLngBounds(routeBounds);
+    map.fitBounds(bounds, { padding: [50, 50] }); // Padding für bessere Anzeige
+  }
 }

@@ -2920,18 +2920,18 @@
                         ]
                     },
                     {
-                        "distance": 74566.3,
-                        "duration": 4365.4,
+                        "distance": 41361.7,
+                        "duration": 2307.4,
                         "steps": [
                             {
-                                "distance": 74566.3,
-                                "duration": 4365.4,
+                                "distance": 41361.7,
+                                "duration": 2307.4,
                                 "type": 11,
                                 "instruction": "Head southwest on Cuenca - Gir\u00f3n - Pasaje, E59",
                                 "name": "Cuenca - Gir\u00f3n - Pasaje, E59",
                                 "way_points": [
                                     26270,
-                                    27638
+                                    26986
                                 ]
                             },
                             {
@@ -2941,8 +2941,36 @@
                                 "instruction": "Arrive at Cuenca - Gir\u00f3n - Pasaje, E59, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    27638,
-                                    27638
+                                    26986,
+                                    26986
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "distance": 33205.3,
+                        "duration": 2058.1,
+                        "steps": [
+                            {
+                                "distance": 33205.3,
+                                "duration": 2058.1,
+                                "type": 11,
+                                "instruction": "Head south on Carretera Cuenca - Machala, E59",
+                                "name": "Carretera Cuenca - Machala, E59",
+                                "way_points": [
+                                    26986,
+                                    27639
+                                ]
+                            },
+                            {
+                                "distance": 0.0,
+                                "duration": 0.0,
+                                "type": 10,
+                                "instruction": "Arrive at Carretera Cuenca - Machala, E59, on the right",
+                                "name": "-",
+                                "way_points": [
+                                    27639,
+                                    27639
                                 ]
                             }
                         ]
@@ -2973,14 +3001,14 @@
                             ],
                             [
                                 19181,
-                                27638,
+                                27639,
                                 0
                             ]
                         ],
                         "summary": [
                             {
                                 "value": 0.0,
-                                "distance": 1724201.6,
+                                "distance": 1724202.3,
                                 "amount": 99.98
                             },
                             {
@@ -3030,11 +3058,12 @@
                     25755,
                     25755,
                     26270,
-                    27638
+                    26986,
+                    27639
                 ],
                 "summary": {
-                    "distance": 1724611.5,
-                    "duration": 95131.09999999999
+                    "distance": 1724612.2,
+                    "duration": 95131.2
                 }
             },
             "geometry": {
@@ -110984,6 +111013,10 @@
                         -3.276565
                     ],
                     [
+                        -79.304281,
+                        -3.276701
+                    ],
+                    [
                         -79.304291,
                         -3.276951
                     ],
@@ -113603,7 +113636,7 @@
     "metadata": {
         "attribution": "openrouteservice.org | OpenStreetMap contributors",
         "service": "routing",
-        "timestamp": 1745692638004,
+        "timestamp": 1745701886939,
         "query": {
             "coordinates": [
                 [
@@ -113733,6 +113766,10 @@
                 [
                     -79.0992,
                     -3.1002
+                ],
+                [
+                    -79.3043,
+                    -3.2767
                 ],
                 [
                     -79.5069,

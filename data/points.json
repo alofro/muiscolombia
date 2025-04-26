@@ -424,7 +424,7 @@
     "lat": -2.9175,
     "lon": -78.9925,
     "description": "Comienzo nueva etapa después de tramo en bus",
-     "images": [
+    "images": [
       "cuenca1.jpg",
       "cuenca2.jpg",
       "cuenca3.jpg",
@@ -451,6 +451,14 @@
     "distancia": 1649.01,
     "kmDesdeEtapa": 29.61,
     "elevation": 2682
+  },
+  {
+    "name": "Pinchada5",
+    "type": "pinchazo",
+    "lat": -3.2767,
+    "lon": -79.3043,
+    "text": "5. Pinchazo: de ahí a buscar taller y/o almacén en una rampa de 1 km con pendiente del 10% o más",
+    "distancia": 1690.38
   },
   {
     "name": "Tendales",
