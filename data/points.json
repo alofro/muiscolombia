@@ -402,6 +402,10 @@
     "lat": 0.8189,
     "lon": -77.7101,
     "description": "tramo en bus",
+    "images": [
+      "tulcanbus1.jpg",
+      "tulcanbus2.jpg"
+    ],
     "fecha": "2025-04-23",
     "distancia": 933.06
   },
@@ -420,6 +424,14 @@
     "lat": -2.9175,
     "lon": -78.9925,
     "description": "Comienzo nueva etapa después de tramo en bus",
+     "images": [
+      "cuenca1.jpg",
+      "cuenca2.jpg",
+      "cuenca3.jpg",
+      "cuenca4.jpg",
+      "cuenca5.jpg",
+      "cuenca6.jpg"
+    ],
     "fecha": "2025-04-24",
     "distancia": 1619.4,
     "kmDesdeEtapa": 686.34,
@@ -431,6 +443,9 @@
     "lat": -3.1002,
     "lon": -79.0992,
     "description": "Etapa 19",
+    "images": [
+      "portete1.jpg"
+    ],
     "tiempo": "3:20",
     "fecha": "2025-04-24",
     "distancia": 1649.01,
@@ -443,6 +458,11 @@
     "lat": -3.3105,
     "lon": -79.5069,
     "description": "Etapa 20",
+    "images": [
+      "tendales1.jpg",
+      "tendales2.jpg",
+      "tendales3.jpg"
+    ],
     "tiempo": "4:50",
     "fecha": "2025-04-25",
     "distancia": 1723.57,
