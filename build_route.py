@@ -2,7 +2,7 @@ import json
 import requests
 
 # API-Key für OpenRouteService
-api_key = '5b3ce3597851110001cf62484213859626f6c091cb6e59e6db2764c382442cd76a3c4492e26519f5'
+api_key = '5b3ce3597851110001cf624848d187f9337702a33e524bd53cb545d634318d18b1a1a664d99f88db'
 
 # Lade die points.json Datei
 with open('data/points.json', 'r') as f:

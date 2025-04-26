@@ -41,8 +41,8 @@
     "text": "Parque Mitológico de El Espinal por la mañana.",
     "description": "Etapa 2",
     "fecha": "2025-03-31",
-    "distancia": 155.59,
-    "kmDesdeEtapa": 105.24,
+    "distancia": 155.6,
+    "kmDesdeEtapa": 105.25,
     "elevation": 322
   },
   {
@@ -52,7 +52,7 @@
     "lon": -75.0707,
     "image": "pinchada1.jpg",
     "text": "Pinchada a 1/2 de camino entre Saldaña y Natagaima...",
-    "distancia": 205.0
+    "distancia": 205.01
   },
   {
     "name": "Natagaima",
@@ -62,7 +62,7 @@
     "description": "Etapa 3",
     "tiempo": "4:51",
     "fecha": "2025-04-01",
-    "distancia": 222.99,
+    "distancia": 223.0,
     "kmDesdeEtapa": 67.4,
     "elevation": 328
   },
@@ -75,7 +75,7 @@
       "pinchada2.jpg"
     ],
     "text": "Pinchada 2: Senza parole 😒",
-    "distancia": 273.26
+    "distancia": 273.27
   },
   {
     "name": "Neiva",
@@ -86,7 +86,7 @@
     "tiempo": "6:20",
     "fecha": "2025-04-02",
     "distancia": 308.68,
-    "kmDesdeEtapa": 85.69,
+    "kmDesdeEtapa": 85.68,
     "elevation": 440
   },
   {
@@ -98,7 +98,7 @@
       "boa.jpg"
     ],
     "text": "Boa Constrictor Constrictor",
-    "distancia": 382.02
+    "distancia": 382.03
   },
   {
     "name": "Pinchada3",
@@ -109,7 +109,7 @@
       "pinchada3.jpg"
     ],
     "text": "Pinchada 3: ¿? 😒",
-    "distancia": 390.18
+    "distancia": 390.19
   },
   {
     "name": "Hobo",
@@ -119,8 +119,8 @@
     "description": "Etapa 5",
     "tiempo": "4:00",
     "fecha": "2025-04-03",
-    "distancia": 412.78,
-    "kmDesdeEtapa": 104.1,
+    "distancia": 412.79,
+    "kmDesdeEtapa": 104.11,
     "elevation": 592
   },
   {
@@ -131,7 +131,7 @@
     "description": "Etapa 6",
     "tiempo": "3:17",
     "fecha": "2025-04-04",
-    "distancia": 447.0,
+    "distancia": 447.01,
     "kmDesdeEtapa": 34.22,
     "elevation": 803
   },
@@ -143,7 +143,7 @@
     "description": "Etapa 7",
     "tiempo": "4:13",
     "fecha": "2025-04-06",
-    "distancia": 502.81,
+    "distancia": 502.82,
     "kmDesdeEtapa": 55.81,
     "elevation": 1030
   },
@@ -155,7 +155,7 @@
     "description": "Etapa 8",
     "tiempo": "5:21",
     "fecha": "2025-04-07",
-    "distancia": 565.8,
+    "distancia": 565.81,
     "kmDesdeEtapa": 62.99,
     "elevation": 1462
   },
@@ -168,7 +168,7 @@
       "pinchada4.jpg"
     ],
     "text": "4. Pinchazo; con ayuda y una buena bomba es más fácil",
-    "distancia": 572.02
+    "distancia": 572.03
   },
   {
     "name": "San Juan de Villalobos",
@@ -178,7 +178,7 @@
     "description": "Etapa 9",
     "tiempo": "4:15",
     "fecha": "2025-04-08",
-    "distancia": 614.01,
+    "distancia": 614.02,
     "kmDesdeEtapa": 48.21,
     "elevation": 1424
   },
@@ -194,7 +194,7 @@
     "description": "Etapa 10",
     "tiempo": "2:23",
     "fecha": "2025-04-09",
-    "distancia": 647.55,
+    "distancia": 647.56,
     "kmDesdeEtapa": 33.54,
     "elevation": 965
   },
@@ -212,7 +212,7 @@
       "yunguillo6.jpg"
     ],
     "text": "Camino a Mocoa",
-    "distancia": 647.72
+    "distancia": 647.73
   },
   {
     "name": "Mocoa",
@@ -230,7 +230,7 @@
     "description": "Etapa 11",
     "tiempo": "2:19",
     "fecha": "2025-04-10",
-    "distancia": 681.19,
+    "distancia": 681.2,
     "kmDesdeEtapa": 33.64,
     "elevation": 595
   },
@@ -246,7 +246,7 @@
     "description": "Etapa 12",
     "tiempo": "4:51",
     "fecha": "2025-04-12",
-    "distancia": 715.66,
+    "distancia": 715.67,
     "kmDesdeEtapa": 34.47,
     "elevation": 2258
   },
@@ -271,7 +271,7 @@
     "tiempo": "4:54",
     "fecha": "2025-04-13",
     "distancia": 762.23,
-    "kmDesdeEtapa": 46.57,
+    "kmDesdeEtapa": 46.56,
     "elevation": 2118
   },
   {
@@ -284,7 +284,7 @@
       "colon2.jpg"
     ],
     "text": "Una emPAnadaUSA en Colón, Putumayo",
-    "distancia": 769.59
+    "distancia": 769.6
   },
   {
     "name": "Santiago",
@@ -294,8 +294,8 @@
     "description": "Etapa 14",
     "tiempo": "1:11",
     "fecha": "2025-04-14",
-    "distancia": 776.06,
-    "kmDesdeEtapa": 13.83,
+    "distancia": 776.07,
+    "kmDesdeEtapa": 13.84,
     "elevation": 2114
   },
   {
@@ -317,7 +317,7 @@
     "tiempo": "3:36",
     "fecha": "2025-04-15",
     "distancia": 806.56,
-    "kmDesdeEtapa": 30.5,
+    "kmDesdeEtapa": 30.49,
     "elevation": 2953
   },
   {
@@ -332,8 +332,8 @@
     ],
     "tiempo": "1:45",
     "fecha": "2025-04-16",
-    "distancia": 827.27,
-    "kmDesdeEtapa": 20.71,
+    "distancia": 827.28,
+    "kmDesdeEtapa": 20.72,
     "elevation": 2606
   },
   {
@@ -356,7 +356,7 @@
     "tiempo": "7:31",
     "fecha": "2025-04-20",
     "distancia": 907.43,
-    "kmDesdeEtapa": 80.16,
+    "kmDesdeEtapa": 80.15,
     "elevation": 2897
   },
   {
@@ -365,10 +365,13 @@
     "lat": 0.8062,
     "lon": -77.5855,
     "images": [
-      "lajas1.jpg", "lajas2.jpg", "lajas3.jpg", "lajas4.jpg"
+      "lajas1.jpg",
+      "lajas2.jpg",
+      "lajas3.jpg",
+      "lajas4.jpg"
     ],
     "text": "En la catedral de Las Lajas",
-    "distancia": 0.0
+    "distancia": 914.7
   },
   {
     "name": "Tulcan",
@@ -389,9 +392,9 @@
     ],
     "tiempo": "1:20",
     "fecha": "2025-04-22",
-    "distancia": 0.0,
-    "kmDesdeEtapa": 0.0,
-    "elevation": 0
+    "distancia": 933.06,
+    "kmDesdeEtapa": 25.63,
+    "elevation": 2928
   },
   {
     "name": "Tulcan - estación de bus",
@@ -399,14 +402,51 @@
     "lat": 0.8189,
     "lon": -77.7101,
     "description": "tramo en bus",
-    "fecha": "2025-04-23"
+    "fecha": "2025-04-23",
+    "distancia": 933.06
   },
   {
     "name": "Cuenca - estación de bus",
     "type": "bus",
-    "lat": -2.8742,
-    "lon": -78.9394,
+    "lat": -2.9175,
+    "lon": -78.9925,
     "description": "tramo en bus",
-    "fecha": "2025-04-24"
+    "fecha": "2025-04-24",
+    "distancia": 1619.4
+  },
+  {
+    "name": "Cuenca",
+    "type": "etapa",
+    "lat": -2.9175,
+    "lon": -78.9925,
+    "description": "Comienzo nueva etapa después de tramo en bus",
+    "fecha": "2025-04-24",
+    "distancia": 1619.4,
+    "kmDesdeEtapa": 686.34,
+    "elevation": 2520
+  },
+  {
+    "name": "Portete",
+    "type": "etapa",
+    "lat": -3.1002,
+    "lon": -79.0992,
+    "description": "Etapa 19",
+    "tiempo": "3:20",
+    "fecha": "2025-04-24",
+    "distancia": 1649.01,
+    "kmDesdeEtapa": 29.61,
+    "elevation": 2682
+  },
+  {
+    "name": "Tendales",
+    "type": "etapa",
+    "lat": -3.3105,
+    "lon": -79.5069,
+    "description": "Etapa 20",
+    "tiempo": "4:50",
+    "fecha": "2025-04-25",
+    "distancia": 1723.57,
+    "kmDesdeEtapa": 74.56,
+    "elevation": 708
   }
 ]

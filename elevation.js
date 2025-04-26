@@ -1,4 +1,4 @@
-// elevation.js (Etapas auf X-Achse + alle Punkte auf Höhenlinie)
+// elevation.js (mit korrekt übersprungenen Busabschnitten, speziell Tulcan-Cuenca)
 let elevationChartInstance = null;
 
 function drawElevationChart() {
@@ -7,16 +7,32 @@ function drawElevationChart() {
     fetch('data/points.json').then(res => res.json())
   ])
     .then(([elevationGeojson, pointsData]) => {
-      const coords = elevationGeojson.features[0].geometry.coordinates;
+      const coords = elevationGeojson.features.flatMap(f => f.geometry.coordinates);
 
       let totalDistance = 0;
-      const chartData = coords.map((pt, idx) => {
+      const chartData = [];
+      let inBusSection = false;  // Flag, ob wir uns in einem Busabschnitt befinden
+
+      coords.forEach((pt, idx) => {
         const [lon, lat, ele] = pt;
-        if (idx > 0) {
-          const [lon0, lat0] = coords[idx - 1];
-          totalDistance += haversine(lon0, lat0, lon, lat);
+
+        // Identifiziere den Busabschnitt zwischen Tulcán und Cuenca (nach Koordinaten oder Etappen)
+        if (pointsData[idx] && pointsData[idx].type === 'bus' && 
+            pointsData[idx].name !== "Cuenca" && pointsData[idx].name !== "Tulcán") {
+          inBusSection = true;
+        } else if (inBusSection) {
+          // Wenn wir aus einem Busabschnitt herauskommen, setzen wir das Flag zurück
+          inBusSection = false;
         }
-        return { x: totalDistance, y: ele };
+
+        // Wenn wir nicht im Busabschnitt sind, zeichnen wir den Punkt
+        if (!inBusSection) {
+          if (idx > 0) {
+            const [lon0, lat0] = coords[idx - 1];
+            totalDistance += haversine(lon0, lat0, lon, lat);
+          }
+          chartData.push({ x: totalDistance, y: ele });
+        }
       });
 
       const elevations = chartData.map(p => p.y);
@@ -42,7 +58,7 @@ function drawElevationChart() {
 
       // Alle Punkte auf Höhenlinie zeigen
       const scatterDataOnLine = pointsData
-        .filter(p => typeof p.distancia === 'number')
+        .filter(p => typeof p.distancia === 'number' && p.type !== 'bus')
         .map(p => ({
           x: p.distancia,
           y: getElevationAtDistance(chartData, p.distancia),

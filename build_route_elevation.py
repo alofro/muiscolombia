@@ -4,11 +4,11 @@ import math
 import time
 
 # API-Key für OpenRouteService
-api_key = '5b3ce3597851110001cf62484213859626f6c091cb6e59e6db2764c382442cd76a3c4492e26519f5'
+api_key = '5b3ce3597851110001cf624848d187f9337702a33e524bd53cb545d634318d18b1a1a664d99f88db'
 
 INPUT_FILE = "data/route.geojson"
 OUTPUT_FILE = "data/elevation.geojson"
-CHUNK_SIZE = 100
+CHUNK_SIZE = 200
 SLEEP_TIME = 1.5  # Sekunden zwischen API-Calls
 
 def request_elevation(coords):
