@@ -1,32 +1,30 @@
-body {
-  font-family: Arial, sans-serif;
+/* Standard Styling */
+body, html {
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  text-align: center;
-  margin: 20px;
+  height: 100%;
+  font-family: Arial, sans-serif;
 }
 
 #map {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
 }
 
-.espinal-popup .image-container {
-  position: relative;
-  display: inline-block;
+/* Responsivität */
+@media (max-width: 768px) {
+  #map {
+    height: 60vh; /* Karte kleiner auf Handys */
+  }
 }
 
-.espinal-image {
-  display: none;
-  width: 200px;
-  margin-top: 8px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+.leaflet-popup-content {
+  font-size: 0.9em;
+  max-width: 200px;
 }
 
-.espinal-popup:hover .espinal-image {
-  display: block;
+@media (max-width: 768px) {
+  .leaflet-popup-content {
+    max-width: 150px; /* Popups kleiner auf Handys */
+  }
 }
