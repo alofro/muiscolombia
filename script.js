@@ -21,6 +21,17 @@ fetch('data/points.json')
   .then(data => {
     routePoints = data;
 
+    // Bestimme die min. und max. Koordinaten
+    let latitudes = routePoints.map(p => p.lat);
+    let longitudes = routePoints.map(p => p.lon);
+    let bounds = [
+      [Math.min(...latitudes), Math.min(...longitudes)],
+      [Math.max(...latitudes), Math.max(...longitudes)]
+    ];
+
+    // Setze den Kartenausschnitt basierend auf den extremen Koordinaten
+    map.fitBounds(bounds);
+
     routePoints.forEach(point => {
       if (point.type === 'bus') return; // Keine Marker für Buspunkte
 
