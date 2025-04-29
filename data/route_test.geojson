@@ -117096,6 +117096,51 @@
                 ],
                 "type": "LineString"
             }
+        },
+        {
+            "bbox": [
+                -79.797419,
+                -3.340269,
+                -79.797419,
+                -3.340269
+            ],
+            "type": "Feature",
+            "properties": {
+                "segments": [
+                    {
+                        "distance": 0.0,
+                        "duration": 0.0,
+                        "steps": [
+                            {
+                                "distance": 0.0,
+                                "duration": 0.0,
+                                "type": 11,
+                                "instruction": "Head east",
+                                "name": "-",
+                                "way_points": [
+                                    0,
+                                    0
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "way_points": [
+                    0,
+                    0
+                ],
+                "summary": {},
+                "modo": "bici"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -79.797419,
+                        -3.340269
+                    ]
+                ],
+                "type": "LineString"
+            }
         }
     ]
 }

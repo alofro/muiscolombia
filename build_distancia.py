@@ -14,10 +14,8 @@ def haversine(lon1, lat1, lon2, lat2):
 def find_elevation(lat, lon, elevation_data):
     min_distance = float('inf')
     closest_elevation = None
-    # Durchlaufe die Koordinaten im Elevation-Daten
     for feature in elevation_data['features']:
         coordinates = feature['geometry']['coordinates']
-        # Suche nach dem Punkt, der der Etappe am nächsten ist
         for coord in coordinates:
             ele_lon, ele_lat, ele_elevation = coord
             distance = haversine(lon, lat, ele_lon, ele_lat)
@@ -26,7 +24,6 @@ def find_elevation(lat, lon, elevation_data):
                 closest_elevation = ele_elevation
     return closest_elevation
 
-# Funktion zur Berechnung der Distanzen entlang der Route
 def add_distances_along_route(points_file, route_file, elevation_data):
     with open(route_file, 'r') as f:
         route_coords = json.load(f)["features"][0]["geometry"]["coordinates"]
@@ -42,7 +39,7 @@ def add_distances_along_route(points_file, route_file, elevation_data):
         dist = haversine(lon1, lat1, lon2, lat2)
         distances.append(distances[-1] + dist)
 
-    # Nächsten Punkt auf Route für jeden Punkt finden
+    # Hilfsfunktion: nächsten Index auf der Route finden
     def find_closest_index(lon, lat):
         best_idx = 0
         best_dist = float('inf')
@@ -53,21 +50,60 @@ def add_distances_along_route(points_file, route_file, elevation_data):
                 best_idx = i
         return best_idx
 
-    # Berechne 'distancia', 'kmDesdeEtapa' und 'elevation'
-    last_etapa_distancia = None
+    # --- Hauptlogik ---
+    custom_mode = False         # Sind wir im manuellen Modus nach einem Bus?
+    last_valid_distancia = 0.0   # Letzter gültiger Wert
+    last_idx = 0                 # Letzter Index auf der Route
+
     for point in points:
         idx = find_closest_index(point["lon"], point["lat"])
-        point["distancia"] = round(distances[idx], 2)
-        
-        if point.get("type") in ["etapa", "start"]:
-            if last_etapa_distancia is None:
-                point["kmDesdeEtapa"] = 0.0
-            else:
-                point["kmDesdeEtapa"] = round(point["distancia"] - last_etapa_distancia, 2)
-            last_etapa_distancia = point["distancia"]
 
-        # Berechne Höhe für 'etapa' Punkte
-        if point['type'] == 'etapa':  # Nur Etappenpunkte verarbeiten
+        if point.get("type") == "bus":
+            # Bus gefunden -> bleibe im custom Mode
+            custom_mode = True
+            point["distancia"] = last_valid_distancia
+            point["kmDesdeEtapa"] = 0.0
+            last_idx = idx
+            continue
+
+        if custom_mode:
+            # Berechne manuell Distanz vom letzten Index bis jetzt
+            distance_since_last = 0.0
+            for i in range(last_idx, idx):
+                lon1, lat1 = route_coords[i]
+                lon2, lat2 = route_coords[i + 1]
+                distance_since_last += haversine(lon1, lat1, lon2, lat2)
+
+            last_valid_distancia += round(distance_since_last, 2)
+            point["distancia"] = last_valid_distancia
+
+            if point.get("type") in ["etapa", "start"]:
+                point["kmDesdeEtapa"] = round(distance_since_last, 2)
+            else:
+                point["kmDesdeEtapa"] = 0.0
+
+            last_idx = idx
+
+        else:
+            # Standardfall: benutze echte kumulierte Distanz
+            current_distance_on_route = distances[idx]
+            point["distancia"] = round(current_distance_on_route, 2)
+
+            if point.get("type") in ["etapa", "start"]:
+                if last_valid_distancia == 0.0:
+                    point["kmDesdeEtapa"] = 0.0
+                else:
+                    point["kmDesdeEtapa"] = round(point["distancia"] - last_valid_distancia, 2)
+
+                last_valid_distancia = point["distancia"]
+
+            else:
+                point["kmDesdeEtapa"] = 0.0
+
+            last_idx = idx
+
+        # Höhe setzen
+        if point.get('type') == 'etapa':
             lat = point.get('lat')
             lon = point.get('lon')
             if lat and lon:
@@ -78,12 +114,10 @@ def add_distances_along_route(points_file, route_file, elevation_data):
     with open(points_file, 'w', encoding="utf-8") as f:
         json.dump(points, f, indent=2, ensure_ascii=False)
 
-    print("✅ 'distancia', 'kmDesdeEtapa' und 'elevation' wurden berechnet und gespeichert.")
+    print("✅ 'distancia', 'kmDesdeEtapa' und 'elevation' wurden korrekt gespeichert.")
 
 if __name__ == "__main__":
-    # Lade die Elevationsdaten
     with open('data/elevation.geojson', 'r') as file:
         elevation_data = json.load(file)
 
-    # Berechne Distanz und Höhe
     add_distances_along_route("data/points.json", "data/route.geojson", elevation_data)

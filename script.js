@@ -92,61 +92,36 @@ fetch('data/points.json')
     console.error('Fehler beim Laden der Punkte-Datei:', error);
   });
 
-// Routenabschnitte zeichnen (normal oder bus)
+// Routenabschnitte zeichnen
 function drawRouteSegments() {
   fetch('data/route.geojson')
     .then(response => response.json())
     .then(data => {
-      const routeCoords = data.features[0].geometry.coordinates.map(coord => [coord[1], coord[0]]);
+      data.features.forEach(feature => {
+        const coords = feature.geometry.coordinates.map(coord => [coord[1], coord[0]]);
+        const modo = feature.properties.modo; // Lese den Modus ("bici" oder "bus")
 
-      const busStops = routePoints
-        .filter(p => p.type === 'bus')
-        .map(p => [parseFloat(p.lat.toFixed(5)), parseFloat(p.lon.toFixed(5))]);
-
-      const isBusPoint = (lat, lon) =>
-        busStops.some(stop =>
-          Math.abs(stop[0] - lat) < 0.0001 && Math.abs(stop[1] - lon) < 0.0001
-        );
-
-      const segments = [];
-      let currentSegment = [];
-      let inBusSegment = false;
-
-      for (let i = 0; i < routeCoords.length; i++) {
-        const [lat, lon] = routeCoords[i];
-        currentSegment.push([lat, lon]);
-
-        if (isBusPoint(lat, lon)) {
-          if (currentSegment.length > 1) {
-            segments.push({
-              coords: [...currentSegment],
-              type: inBusSegment ? 'bus' : 'normal'
-            });
-            currentSegment = [[lat, lon]];
-            inBusSegment = !inBusSegment;
-          }
+        if (modo === 'bici') {
+          L.polyline(coords, {
+            color: 'blue',
+            weight: 4
+          }).addTo(map);
+        } else if (modo === 'bus') {
+          L.polyline(coords, {
+            color: 'gray',
+            dashArray: '5,10',
+            weight: 4
+          }).addTo(map);
+        } else {
+          console.warn('Unbekannter Modus:', modo);
         }
-      }
-
-      if (currentSegment.length > 1) {
-        segments.push({
-          coords: currentSegment,
-          type: inBusSegment ? 'bus' : 'normal'
-        });
-      }
-
-      segments.forEach(seg => {
-        L.polyline(seg.coords, {
-          color: seg.type === 'bus' ? 'gray' : 'blue',
-          dashArray: seg.type === 'bus' ? '5,10' : null,
-          weight: 4
-        }).addTo(map);
       });
     })
     .catch(error => {
       console.error('Fehler beim Laden der GeoJSON-Datei:', error);
     });
 }
+
 
 // Slideshow-Funktionen mit Zähler
 function nextImage(id) {
