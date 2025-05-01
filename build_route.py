@@ -79,10 +79,10 @@ def main():
         "features": all_features
     }
 
-    with open('data/route_test.geojson', 'w') as f:
+    with open('data/route.geojson', 'w') as f:
         json.dump(final_geojson, f, indent=4)
 
-    print("🏁 Fertig! Route gespeichert in data/route_test.geojson")
+    print("🏁 Fertig! Route gespeichert in data/route.geojson")
 
 if __name__ == "__main__":
     main()

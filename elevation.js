@@ -1,10 +1,15 @@
-// elevation.js (Rad- und Bus-Abschnitte mit Lücken im Höhenprofil)
-
 let elevationChartInstance = null;
+
+fetch('data/elevation_simplified.geojson')
+  .then(res => res.text())
+  .then(text => {
+    console.log("elevation_simplified.geojson Inhalt:", text.slice(0, 100));
+    return JSON.parse(text);
+  });
 
 function drawElevationChart() {
   Promise.all([
-    fetch('data/elevation_bike.geojson').then(res => res.json()),
+    fetch('data/elevation_simplified.geojson').then(res => res.json()),
     fetch('data/points.json').then(res => res.json())
   ])
     .then(([elevationGeojson, pointsData]) => {
@@ -14,6 +19,8 @@ function drawElevationChart() {
       const busDistances = pointsData
         .filter(p => p.type === 'bus' && typeof p.distancia === 'number')
         .map(p => p.distancia);
+
+      console.log("busDistances:", busDistances);
 
       let totalDistance = 0;
       const chartData = [];
@@ -29,23 +36,25 @@ function drawElevationChart() {
         // Prüfen, ob wir uns in einem Bussegment befinden
         const inBusSegment = busDistances.some(d => Math.abs(d - totalDistance) < 0.001);
 
+        // Nur Höhenwerte für bici-Abschnitte verwenden, Busabschnitte bleiben als Lücke
         if (inBusSegment) {
-          // Lücke: Chart.js überspringt null-Einträge, wenn spanGaps=false
           chartData.push(null);
         } else {
           chartData.push({ x: totalDistance, y: ele });
         }
       });
 
+      console.log("Beispiel chartData (erste 10 Punkte):", chartData.slice(0, 10));
+
       // Berechne y-Achse Minimum
       const yValues = chartData.filter(pt => pt !== null).map(pt => pt.y);
-      const minElevation = Math.min(...yValues) - 10;
+      const minElevation = yValues.length > 0 ? Math.min(...yValues) - 10 : 1000;
 
-      // Etappenpunkte für X-Achse
+      // Etappenpunkte für X-Achse nur für 'bici' verwenden
       const etapaLabels = {};
       const scatterEtapas = [];
       pointsData
-        .filter(p => p.type === 'etapa' && typeof p.distancia === 'number')
+        .filter(p => p.type === 'etapa' && p.modo === 'bici' && typeof p.distancia === 'number')
         .forEach(p => {
           const d = new Date(p.fecha);
           const dd = String(d.getDate()).padStart(2, '0');
@@ -67,9 +76,9 @@ function drawElevationChart() {
           scatterEtapas.push({ x: p.distancia, y: minElevation });
         });
 
-      // Alle übrigen Punkte auf Höhenlinie
+      // Alle übrigen Punkte auf Höhenlinie nur für 'bici' verwenden
       const scatterAll = pointsData
-        .filter(p => typeof p.distancia === 'number' && p.type !== 'bus')
+        .filter(p => p.modo === 'bici' && typeof p.distancia === 'number' && p.type !== 'bus')
         .map(p => ({
           x: p.distancia,
           y: getElevationAtDistance(chartData, p.distancia),

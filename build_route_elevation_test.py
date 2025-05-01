@@ -6,8 +6,8 @@ import time
 # API-Key für OpenRouteService
 api_key = '5b3ce3597851110001cf624848d187f9337702a33e524bd53cb545d634318d18b1a1a664d99f88db'
 
-INPUT_FILE = "data/route_test.geojson"
-OUTPUT_FILE = "data/elevation_test.geojson"
+INPUT_FILE = "data/route.geojson"
+OUTPUT_FILE = "data/elevation.geojson"
 CHUNK_SIZE = 200
 SLEEP_TIME = 1.5  # Sekunden zwischen API-Calls
 
@@ -137,7 +137,7 @@ def main():
     print(f"✓ Höhenprofil gespeichert in {OUTPUT_FILE}")
 
     # Vereinfachen
-    simplify_geojson("data/elevation_test.geojson", "data/elevation_simplified_test.geojson", tolerance=0.0001)
+    simplify_geojson("data/elevation.geojson", "data/elevation_simplified.geojson", tolerance=0.0001)
 
     # Distanz ergänzen
     #add_distances_along_route("data/points.json", "data/route.geojson")
