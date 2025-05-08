@@ -76,3 +76,40 @@ Dadurch wird der Server auf http://localhost:8000 gestartet.
 **Öffne die Seite im Browser:**
 
 Geh in deinem Browser zu http://localhost:8000 und du solltest die interaktive Karte mit den Routenpunkten und der berechneten Route sehen.
+
+
+
+
+
+# 🚴 Muiscolombia Route Project
+
+This project documents a cycling journey with structured geodata and interactive visualizations. The core of the data structure is the `points.json` file, which contains all waypoints and metadata used to generate the route, map markers, elevation profiles, and more.
+
+---
+
+## 🧭 Route Point Structure (`points.json`)
+
+Each point along the route is defined with metadata that controls how it is displayed and processed. Fields are either manually added or automatically computed by scripts.
+
+### 📌 Required Fields
+
+| Field       | Description |
+|-------------|-------------|
+| `name`      | Free text – typically a place name or point of interest. |
+| `type`      | Type of point. One of: `start`, `etapa` (stage), `foto` (photo), `pinchazo` (breakdown), `bus`. |
+| `lat`, `lon`| Geographic coordinates (WGS84). |
+| `description` | Optional text shown in tooltips or on the map. |
+| `modo`      | Mode of transport. Either `"bici"` for cycling or `"bus"` for transferred segments. |
+
+### 🖼️ Optional Fields (manually added)
+
+| Field       | Description |
+|-------------|-------------|
+| `images`    | Array of image filenames to display on hover. |
+| `tiempo`    | Travel time (used for stages, shown in elevation profile). |
+| `fecha`     | Arrival date (format: `YYYY-MM-DD`). |
+
+### ⚙️ Automatically Computed Fields (by scripts)
+
+These fields are filled in by the following scripts
+

@@ -7,131 +7,90 @@ import time
 api_key = '5b3ce3597851110001cf624848d187f9337702a33e524bd53cb545d634318d18b1a1a664d99f88db'
 
 INPUT_FILE = "data/route.geojson"
-OUTPUT_FILE = "data/elevation.geojson"
+FULL_OUT = "data/elevation.geojson"
+SIMPL_OUT = "data/elevation_simplified.geojson"
 CHUNK_SIZE = 200
-SLEEP_TIME = 1.5  # Sekunden zwischen API-Calls
+SLEEP_TIME = 1.5
 
 def request_elevation(coords):
     url = "https://api.openrouteservice.org/elevation/line"
-    headers = {
-        "Authorization": api_key,
-        "Content-Type": "application/json"
-    }
-
-    body = {
-        "format_in": "geojson",
-        "format_out": "geojson",
-        "geometry": {
-            "type": "LineString",
-            "coordinates": coords
-        }
-    }
-
-    response = requests.post(url, headers=headers, json=body)
-    if response.ok:
-        return response.json()["geometry"]["coordinates"]
-    elif response.status_code == 429:
-        print("✋ Rate limit erreicht. Warte...")
+    headers = {"Authorization": api_key, "Content-Type": "application/json"}
+    body = {"format_in":"geojson","format_out":"geojson",
+            "geometry":{"type":"LineString","coordinates":coords}}
+    resp = requests.post(url, headers=headers, json=body)
+    if resp.ok:
+        return resp.json()["geometry"]["coordinates"]
+    if resp.status_code == 429:
+        print("✋ Rate limit, waiting 10s...")
         time.sleep(10)
         return request_elevation(coords)
-    else:
-        print("Fehler bei Anfrage:", response.status_code)
-        print(response.text)
-        return []
+    print("Error", resp.status_code, resp.text)
+    return []
 
-def douglas_peucker(points, tolerance):
-    if len(points) <= 2:
-        return points
+def douglas_peucker(points, tol):
+    if len(points) <= 2: return points
+    def perp(p, a, b):
+        if a==b: return math.dist(p[:2], a[:2])
+        x0,y0=p[0],p[1]; x1,y1=a[0],a[1]; x2,y2=b[0],b[1]
+        num=abs((y2-y1)*x0 - (x2-x1)*y0 + x2*y1 - y2*x1)
+        den=math.hypot(x2-x1, y2-y1)
+        return num/den
+    maxd,idx=0,0
+    for i in range(1,len(points)-1):
+        d=perp(points[i], points[0], points[-1])
+        if d>maxd: maxd,idx=d,i
+    if maxd>tol:
+        left = douglas_peucker(points[:idx+1], tol)
+        right= douglas_peucker(points[idx:],   tol)
+        return left[:-1] + right
+    return [points[0], points[-1]]
 
-    def perpendicular_distance(point, start, end):
-        if start == end:
-            return math.dist(point[:2], start[:2])
-        else:
-            x0, y0 = point[0], point[1]
-            x1, y1 = start[0], start[1]
-            x2, y2 = end[0], end[1]
-            num = abs((y2 - y1)*x0 - (x2 - x1)*y0 + x2*y1 - y2*x1)
-            den = math.hypot(x2 - x1, y2 - y1)
-            return num / den
-
-    max_dist = 0.0
-    index = 0
-    for i in range(1, len(points) - 1):
-        dist = perpendicular_distance(points[i], points[0], points[-1])
-        if dist > max_dist:
-            index = i
-            max_dist = dist
-
-    if max_dist > tolerance:
-        rec_results1 = douglas_peucker(points[:index + 1], tolerance)
-        rec_results2 = douglas_peucker(points[index:], tolerance)
-        return rec_results1[:-1] + rec_results2
-    else:
-        return [points[0], points[-1]]
-
-def simplify_geojson(input_file, output_file, tolerance):
-    with open(input_file, 'r') as f:
-        data = json.load(f)
-
-    coords = data["features"][0]["geometry"]["coordinates"]
-    simplified = douglas_peucker(coords, tolerance)
-
-    data["features"][0]["geometry"]["coordinates"] = simplified
-
-    with open(output_file, 'w') as f:
-        json.dump(data, f, indent=2)
-
-    print(f"✔ Datei gespeichert unter: {output_file}")
-    print(f"➡ Ursprünglich: {len(coords)} Punkte → Vereinfacht: {len(simplified)} Punkte")
-
-def haversine(lon1, lat1, lon2, lat2):
-    R = 6371.0  # Erdradius in Kilometern
-    lon1, lat1, lon2, lat2 = map(math.radians, [lon1, lat1, lon2, lat2])
-    dlon = lon2 - lon1
-    dlat = lat2 - lat1
-    a = math.sin(dlat/2)**2 + math.cos(lat1)*math.cos(lat2)*math.sin(dlon/2)**2
-    return R * 2 * math.asin(math.sqrt(a))
+def simplify_all(infile, outfile, tol=0.0001):
+    with open(infile,'r',encoding='utf-8') as f:
+        data=json.load(f)
+    for feat in data['features']:
+        coords=feat['geometry']['coordinates']
+        feat['geometry']['coordinates'] = douglas_peucker(coords, tol)
+    with open(outfile,'w',encoding='utf-8') as f:
+        json.dump(data,f,indent=2)
+    print(f"✔ Simplified written to {outfile}")
 
 def main():
-    # Höhenprofil abrufen und speichern
-    with open(INPUT_FILE, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    # 1) load route segments
+    with open(INPUT_FILE,'r',encoding='utf-8') as f:
+        route = json.load(f)
 
-    coords = data["features"][0]["geometry"]["coordinates"]
-    print(f"→ {len(coords)} Koordinaten geladen.")
+    all_feats=[]
+    print(f"→ {len(route['features'])} segments found")
 
-    elevation_coords = []
-    for i in range(0, len(coords), CHUNK_SIZE):
-        chunk = coords[i:i+CHUNK_SIZE+1]
-        print(f"  ↳ Bearbeite Chunk {i//CHUNK_SIZE + 1}")
-        chunk_elevation = request_elevation(chunk)
-        if i > 0:
-            chunk_elevation = chunk_elevation[1:]
-        elevation_coords.extend(chunk_elevation)
-        time.sleep(SLEEP_TIME)
+    # 2) per segment, request elevation
+    for idx,feat in enumerate(route['features'],1):
+        modo=feat.get('properties',{}).get('modo','bici')
+        pts=feat['geometry']['coordinates']
+        elev=[]
+        print(f"→ Segment {idx} modo={modo}, {len(pts)} pts")
+        for i in range(0,len(pts),CHUNK_SIZE):
+            chunk=pts[i:i+CHUNK_SIZE+1]
+            print(f"  ↳ chunk {i//CHUNK_SIZE+1}")
+            got=request_elevation(chunk)
+            if i>0 and got: got=got[1:]
+            elev.extend(got)
+            time.sleep(SLEEP_TIME)
+        all_feats.append({
+            "type":"Feature",
+            "properties":{"modo":modo},
+            "geometry":{"type":"LineString","coordinates":elev}
+        })
+        print(f"  → {len(elev)} elev points")
 
-    elevation_geojson = {
-        "type": "FeatureCollection",
-        "features": [{
-            "type": "Feature",
-            "properties": {},
-            "geometry": {
-                "type": "LineString",
-                "coordinates": elevation_coords
-            }
-        }]
-    }
+    # 3) write full elevation.geojson
+    out={"type":"FeatureCollection","features":all_feats}
+    with open(FULL_OUT,'w',encoding='utf-8') as f:
+        json.dump(out,f,indent=2)
+    print(f"✓ Full elevation saved to {FULL_OUT}")
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(elevation_geojson, f, indent=2)
+    # 4) simplify and write elevation_simplified.geojson
+    simplify_all(FULL_OUT, SIMPL_OUT, tol=0.0001)
 
-    print(f"✓ Höhenprofil gespeichert in {OUTPUT_FILE}")
-
-    # Vereinfachen
-    simplify_geojson("data/elevation.geojson", "data/elevation_simplified.geojson", tolerance=0.0001)
-
-    # Distanz ergänzen
-    #add_distances_along_route("data/points.json", "data/route.geojson")
-
-if __name__ == "__main__":
+if __name__=="__main__":
     main()
