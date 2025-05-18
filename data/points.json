@@ -686,5 +686,77 @@
         "distancia": 1087,
         "kmDesdeEtapa": 71,
         "elevation": 68
+    },
+    {
+        "name": "Retén entre Piura y Chiclayo",
+        "type": "etapa",
+        "lat": -5.3161,
+        "lon": -80.621,
+        "description": "Etapa 27",
+        "modo": "bici",
+        "tiempo": "3:14",
+        "fecha": "2025-05-07",
+        "distancia": 1132,
+        "kmDesdeEtapa": 44,
+        "elevation": 22
+    },
+    {
+        "name": "Retén entre Piura y Chiclayo",
+        "type": "bus",
+        "lat": -5.3161,
+        "lon": -80.621,
+        "description": "tramo en bus",
+        "modo": "bus",
+        "fecha": "2025-05-07",
+        "distancia": 1132,
+        "elevation": 22
+    },
+    {
+        "name": "Lima",
+        "type": "bus",
+        "lat": -12.0078,
+        "lon": -77.0613,
+        "description": "tramo en bus",
+        "modo": "bus",
+        "fecha": "2025-05-07",
+        "distancia": 1132,
+        "elevation": 82
+    },
+    {
+        "name": "Lima",
+        "type": "etapa",
+        "lat": -12.0078,
+        "lon": -77.0613,
+        "modo": "bici",
+        "fecha": "2025-05-15",
+        "distancia": 1132,
+        "kmDesdeEtapa": 837,
+        "elevation": 82
+    },
+    {
+        "name": "San Juan de Miraflores",
+        "type": "etapa",
+        "lat": -12.1555,
+        "lon": -76.9837,
+        "description": "Etapa 28",
+        "modo": "bici",
+        "tiempo": "1:18",
+        "fecha": "2025-05-15",
+        "distancia": 1150,
+        "kmDesdeEtapa": 18,
+        "elevation": 82
+    },
+    {
+        "name": "Punta Hermosa",
+        "type": "etapa",
+        "lat": -12.3097,
+        "lon": -76.837,
+        "description": "Etapa 29",
+        "modo": "bici",
+        "tiempo": "2:35",
+        "fecha": "2025-05-16",
+        "distancia": 1174,
+        "kmDesdeEtapa": 23,
+        "elevation": 37
     }
 ]

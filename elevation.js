@@ -12,8 +12,8 @@ function drawElevationChart() {
       const chartData = [];
       let inBusSection = false;  // Flag, ob wir uns in einem Busabschnitt befinden
 //      let currentSegmentColor = 'rgb(0, 123, 255)';  // Standardfarbe
-
       // Wir markieren jeden Punkt, ob er zum Bus-Segment gehört (orange) oder Rad-Segment (blau)
+
       coords.forEach((pt, idx) => {
         const [lon, lat, ele] = pt;
 
