@@ -23,6 +23,16 @@ body, html {
   max-width: 200px;
 }
 
+#elevation-profile .chart-legend li {
+  cursor: pointer !important;
+  transition: background 0.2s ease-in-out;
+}
+
+#elevation-profile .chart-legend li:hover {
+  background: rgba(0, 123, 255, 0.1);
+}
+
+
 @media (max-width: 768px) {
   .leaflet-popup-content {
     max-width: 150px; /* Popups kleiner auf Handys */

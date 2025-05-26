@@ -86,6 +86,9 @@
 
   <div id="map"></div>
   <div id="elevation-profile" style="display: none;">
+   <div id="legend-hint" style="margin-bottom: 10px; font-size: 0.95rem; color: #555;">
+    💡 <strong>Tip:</strong> haz clic en los tramos de la leyenda para mostrarlos u ocultarlos.
+  </div>
     <canvas id="elevationChart"></canvas>
   </div>
 
@@ -101,11 +104,11 @@
         elevationDiv.style.display = "block";
         button.innerText = "Mostrar mapa";
     // Zusatz: Hinweis auf Wartung einblenden
-      elevationDiv.innerHTML = `
-      <div style="text-align: center; margin-top: 100px; font-size: 1.5em; color: red;">
-          🚧 Perfil de altura en mantenimiento. 🚧
-        </div>
-      `;
+ //     elevationDiv.innerHTML = `
+ //     <div style="text-align: center; margin-top: 100px; font-size: 1.5em; color: red;">
+ //         🚧 Perfil de altura en mantenimiento. 🚧
+ //       </div>
+ //     `;
       } else {
         mapDiv.style.display = "block";
         elevationDiv.style.display = "none";
