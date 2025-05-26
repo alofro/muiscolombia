@@ -1621,8 +1621,8 @@
                         ]
                     },
                     {
-                        "distance": 80167.5,
-                        "duration": 4118.3,
+                        "distance": 80154.7,
+                        "duration": 4181.3,
                         "steps": [
                             {
                                 "distance": 1715.4,
@@ -1647,37 +1647,36 @@
                                 ]
                             },
                             {
-                                "distance": 71300.0,
-                                "duration": 3391.6,
+                                "distance": 71129.7,
+                                "duration": 3384.4,
                                 "type": 6,
                                 "instruction": "Continue straight onto Panamericana, 25",
                                 "name": "Panamericana, 25",
                                 "way_points": [
                                     14239,
-                                    15527
+                                    15521
                                 ]
                             },
                             {
-                                "distance": 2278.7,
-                                "duration": 97.0,
-                                "type": 7,
-                                "instruction": "Enter the roundabout and take the 1st exit onto Carrera 1, 25",
-                                "name": "Carrera 1, 25",
-                                "exit_number": 1,
+                                "distance": 2436.1,
+                                "duration": 166.2,
+                                "type": 13,
+                                "instruction": "Keep right",
+                                "name": "-",
                                 "way_points": [
-                                    15527,
-                                    15569
+                                    15521,
+                                    15566
                                 ]
                             },
                             {
                                 "distance": 63.4,
-                                "duration": 4.4,
+                                "duration": 5.3,
                                 "type": 6,
                                 "instruction": "Continue straight onto Carrera 1, 25",
                                 "name": "Carrera 1, 25",
                                 "way_points": [
-                                    15569,
-                                    15571
+                                    15566,
+                                    15568
                                 ]
                             },
                             {
@@ -1687,104 +1686,114 @@
                                 "instruction": "Arrive at Carrera 1, 25, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    15571,
-                                    15571
+                                    15568,
+                                    15568
                                 ]
                             }
                         ]
                     },
                     {
-                        "distance": 7901.7,
-                        "duration": 550.1,
+                        "distance": 7267.1,
+                        "duration": 638.7,
                         "steps": [
                             {
-                                "distance": 15.2,
-                                "duration": 0.6,
+                                "distance": 80.3,
+                                "duration": 4.8,
                                 "type": 11,
                                 "instruction": "Head east on Carrera 1, 25",
                                 "name": "Carrera 1, 25",
+                                "way_points": [
+                                    15568,
+                                    15571
+                                ]
+                            },
+                            {
+                                "distance": 170.5,
+                                "duration": 20.5,
+                                "type": 1,
+                                "instruction": "Turn right onto Calle 2",
+                                "name": "Calle 2",
                                 "way_points": [
                                     15571,
                                     15572
                                 ]
                             },
                             {
-                                "distance": 331.8,
-                                "duration": 16.8,
-                                "type": 6,
-                                "instruction": "Continue straight onto Carrera 1, 25",
-                                "name": "Carrera 1, 25",
+                                "distance": 225.8,
+                                "duration": 14.8,
+                                "type": 0,
+                                "instruction": "Turn left onto Carrera 2",
+                                "name": "Carrera 2",
                                 "way_points": [
                                     15572,
-                                    15579
+                                    15575
                                 ]
                             },
                             {
-                                "distance": 272.0,
-                                "duration": 33.6,
-                                "type": 0,
-                                "instruction": "Turn left onto Calle 6",
-                                "name": "Calle 6",
+                                "distance": 30.6,
+                                "duration": 7.3,
+                                "type": 1,
+                                "instruction": "Turn right",
+                                "name": "-",
                                 "way_points": [
-                                    15579,
+                                    15575,
+                                    15576
+                                ]
+                            },
+                            {
+                                "distance": 18.4,
+                                "duration": 4.4,
+                                "type": 6,
+                                "instruction": "Continue straight onto Carrera 2 A",
+                                "name": "Carrera 2 A",
+                                "way_points": [
+                                    15576,
+                                    15577
+                                ]
+                            },
+                            {
+                                "distance": 181.2,
+                                "duration": 43.5,
+                                "type": 5,
+                                "instruction": "Turn slight right",
+                                "name": "-",
+                                "way_points": [
+                                    15577,
                                     15582
                                 ]
                             },
                             {
-                                "distance": 89.8,
-                                "duration": 7.2,
+                                "distance": 269.0,
+                                "duration": 33.3,
                                 "type": 1,
-                                "instruction": "Turn right onto Carrera 2",
-                                "name": "Carrera 2",
+                                "instruction": "Turn right onto Calle 1",
+                                "name": "Calle 1",
                                 "way_points": [
                                     15582,
-                                    15586
+                                    15584
                                 ]
                             },
                             {
-                                "distance": 23.6,
-                                "duration": 1.9,
-                                "type": 12,
-                                "instruction": "Keep left onto Carrera 2",
-                                "name": "Carrera 2",
-                                "way_points": [
-                                    15586,
-                                    15587
-                                ]
-                            },
-                            {
-                                "distance": 114.2,
-                                "duration": 13.7,
-                                "type": 2,
-                                "instruction": "Turn sharp left onto Calle 6",
-                                "name": "Calle 6",
-                                "way_points": [
-                                    15587,
-                                    15592
-                                ]
-                            },
-                            {
-                                "distance": 1328.9,
-                                "duration": 79.6,
-                                "type": 7,
-                                "instruction": "Enter the roundabout and take the 2nd exit onto Carrera 3",
+                                "distance": 565.0,
+                                "duration": 37.0,
+                                "type": 0,
+                                "instruction": "Turn left onto Carrera 3",
                                 "name": "Carrera 3",
-                                "exit_number": 2,
                                 "way_points": [
-                                    15592,
-                                    15623
+                                    15584,
+                                    15599
                                 ]
                             },
                             {
                                 "distance": 4889.9,
-                                "duration": 285.6,
+                                "duration": 362.0,
                                 "type": 7,
                                 "instruction": "Enter the roundabout and take the 4th exit onto Carrera 3",
                                 "name": "Carrera 3",
                                 "exit_number": 4,
                                 "way_points": [
-                                    15623,
-                                    15741
+                                    15599,
+                                    15717
                                 ]
                             },
                             {
@@ -1794,8 +1803,8 @@
                                 "instruction": "Keep right onto Carrera 3",
                                 "name": "Carrera 3",
                                 "way_points": [
-                                    15741,
-                                    15780
+                                    15717,
+                                    15756
                                 ]
                             },
                             {
@@ -1805,8 +1814,8 @@
                                 "instruction": "Turn left onto Calle 4",
                                 "name": "Calle 4",
                                 "way_points": [
-                                    15780,
-                                    15782
+                                    15756,
+                                    15758
                                 ]
                             },
                             {
@@ -1816,8 +1825,8 @@
                                 "instruction": "Turn right onto Carrera 3",
                                 "name": "Carrera 3",
                                 "way_points": [
-                                    15782,
-                                    15783
+                                    15758,
+                                    15759
                                 ]
                             },
                             {
@@ -1827,15 +1836,15 @@
                                 "instruction": "Arrive at Carrera 3, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    15783,
-                                    15783
+                                    15759,
+                                    15759
                                 ]
                             }
                         ]
                     },
                     {
                         "distance": 18359.4,
-                        "duration": 1042.4,
+                        "duration": 1120.7,
                         "steps": [
                             {
                                 "distance": 11.1,
@@ -1844,8 +1853,8 @@
                                 "instruction": "Head northwest on Carrera 3",
                                 "name": "Carrera 3",
                                 "way_points": [
-                                    15783,
-                                    15784
+                                    15759,
+                                    15760
                                 ]
                             },
                             {
@@ -1855,8 +1864,8 @@
                                 "instruction": "Turn left onto Calle 4",
                                 "name": "Calle 4",
                                 "way_points": [
-                                    15784,
-                                    15786
+                                    15760,
+                                    15762
                                 ]
                             },
                             {
@@ -1866,41 +1875,30 @@
                                 "instruction": "Turn right onto Carrera 2A",
                                 "name": "Carrera 2A",
                                 "way_points": [
-                                    15786,
-                                    15825
+                                    15762,
+                                    15801
                                 ]
                             },
                             {
                                 "distance": 4437.9,
-                                "duration": 245.8,
+                                "duration": 319.5,
                                 "type": 4,
                                 "instruction": "Turn slight left onto V\u00eda a Las Lajas",
                                 "name": "V\u00eda a Las Lajas",
                                 "way_points": [
-                                    15825,
-                                    15919
+                                    15801,
+                                    15895
                                 ]
                             },
                             {
-                                "distance": 455.4,
-                                "duration": 36.4,
+                                "distance": 476.8,
+                                "duration": 46.1,
                                 "type": 12,
                                 "instruction": "Keep left onto Carrera 5",
                                 "name": "Carrera 5",
                                 "way_points": [
-                                    15919,
-                                    15930
-                                ]
-                            },
-                            {
-                                "distance": 21.4,
-                                "duration": 5.1,
-                                "type": 12,
-                                "instruction": "Keep left onto Carrera 6",
-                                "name": "Carrera 6",
-                                "way_points": [
-                                    15930,
-                                    15931
+                                    15895,
+                                    15907
                                 ]
                             },
                             {
@@ -1910,8 +1908,8 @@
                                 "instruction": "Turn left onto Variante de Ipiales, 25 NR C",
                                 "name": "Variante de Ipiales, 25 NR C",
                                 "way_points": [
-                                    15931,
-                                    16095
+                                    15907,
+                                    16071
                                 ]
                             },
                             {
@@ -1921,8 +1919,8 @@
                                 "instruction": "Turn left onto E35",
                                 "name": "E35",
                                 "way_points": [
-                                    16095,
-                                    16099
+                                    16071,
+                                    16075
                                 ]
                             },
                             {
@@ -1932,8 +1930,8 @@
                                 "instruction": "Turn right onto Panamericana Norte, E35",
                                 "name": "Panamericana Norte, E35",
                                 "way_points": [
-                                    16099,
-                                    16128
+                                    16075,
+                                    16104
                                 ]
                             },
                             {
@@ -1943,8 +1941,8 @@
                                 "instruction": "Keep right onto Avenida Brasil",
                                 "name": "Avenida Brasil",
                                 "way_points": [
-                                    16128,
-                                    16177
+                                    16104,
+                                    16153
                                 ]
                             },
                             {
@@ -1954,8 +1952,8 @@
                                 "instruction": "Turn right onto Sucre",
                                 "name": "Sucre",
                                 "way_points": [
-                                    16177,
-                                    16178
+                                    16153,
+                                    16154
                                 ]
                             },
                             {
@@ -1965,8 +1963,8 @@
                                 "instruction": "Turn left onto Paraguay",
                                 "name": "Paraguay",
                                 "way_points": [
-                                    16178,
-                                    16179
+                                    16154,
+                                    16155
                                 ]
                             },
                             {
@@ -1976,8 +1974,8 @@
                                 "instruction": "Turn right onto Luciano Coral",
                                 "name": "Luciano Coral",
                                 "way_points": [
-                                    16179,
-                                    16180
+                                    16155,
+                                    16156
                                 ]
                             },
                             {
@@ -1987,8 +1985,8 @@
                                 "instruction": "Arrive at Luciano Coral, on the right",
                                 "name": "-",
                                 "way_points": [
-                                    16180,
-                                    16180
+                                    16156,
+                                    16156
                                 ]
                             }
                         ]
@@ -2009,14 +2007,14 @@
                             ],
                             [
                                 414,
-                                16180,
+                                16156,
                                 0
                             ]
                         ],
                         "summary": [
                             {
                                 "value": 0.0,
-                                "distance": 934570.1,
+                                "distance": 933922.7,
                                 "amount": 99.98
                             },
                             {
@@ -2059,13 +2057,13 @@
                     12210,
                     13431,
                     14106,
-                    15571,
-                    15783,
-                    16180
+                    15568,
+                    15759,
+                    16156
                 ],
                 "summary": {
-                    "distance": 934735.1,
-                    "duration": 52792.3
+                    "distance": 934087.7,
+                    "duration": 53022.2
                 },
                 "modo": "bici"
             },
@@ -7665,11 +7663,11 @@
                     ],
                     [
                         -74.507257,
-                        4.26657
+                        4.266571
                     ],
                     [
-                        -74.510817,
-                        4.265147
+                        -74.510787,
+                        4.26515
                     ],
                     [
                         -74.510906,
@@ -64160,32 +64158,20 @@
                         0.82886
                     ],
                     [
-                        -77.606845,
-                        0.828633
+                        -77.607283,
+                        0.828598
                     ],
                     [
-                        -77.60702,
-                        0.828541
+                        -77.60752,
+                        0.82854
                     ],
                     [
-                        -77.607202,
-                        0.828466
+                        -77.607762,
+                        0.828506
                     ],
                     [
-                        -77.607392,
-                        0.828409
-                    ],
-                    [
-                        -77.607586,
-                        0.828371
-                    ],
-                    [
-                        -77.607981,
-                        0.82835
-                    ],
-                    [
-                        -77.608073,
-                        0.828353
+                        -77.608006,
+                        0.828497
                     ],
                     [
                         -77.60856,
@@ -64364,144 +64350,60 @@
                         0.829722
                     ],
                     [
-                        -77.627761,
-                        0.829798
+                        -77.627537,
+                        0.829707
                     ],
                     [
-                        -77.628042,
-                        0.829817
+                        -77.627177,
+                        0.829684
                     ],
                     [
-                        -77.628372,
-                        0.829838
+                        -77.626817,
+                        0.828194
                     ],
                     [
-                        -77.628393,
-                        0.829839
+                        -77.62614,
+                        0.828364
                     ],
                     [
-                        -77.628837,
-                        0.829868
+                        -77.625285,
+                        0.828577
                     ],
                     [
-                        -77.629582,
-                        0.829916
+                        -77.624846,
+                        0.828687
                     ],
                     [
-                        -77.630662,
-                        0.829986
+                        -77.624782,
+                        0.82842
                     ],
                     [
-                        -77.630669,
-                        0.829911
+                        -77.624766,
+                        0.828255
                     ],
                     [
-                        -77.630894,
-                        0.828854
+                        -77.624982,
+                        0.827722
                     ],
                     [
-                        -77.631483,
-                        0.827706
+                        -77.625202,
+                        0.827245
                     ],
                     [
-                        -77.631684,
-                        0.827712
+                        -77.625213,
+                        0.827186
                     ],
                     [
-                        -77.632021,
-                        0.827693
+                        -77.625182,
+                        0.827146
                     ],
                     [
-                        -77.632179,
-                        0.827649
+                        -77.6248,
+                        0.826974
                     ],
                     [
-                        -77.632269,
-                        0.827594
-                    ],
-                    [
-                        -77.632388,
-                        0.827419
-                    ],
-                    [
-                        -77.632267,
-                        0.827436
-                    ],
-                    [
-                        -77.632239,
-                        0.827421
-                    ],
-                    [
-                        -77.632214,
-                        0.827382
-                    ],
-                    [
-                        -77.632059,
-                        0.826955
-                    ],
-                    [
-                        -77.631976,
-                        0.826592
-                    ],
-                    [
-                        -77.632013,
-                        0.82651
-                    ],
-                    [
-                        -77.631984,
-                        0.826424
-                    ],
-                    [
-                        -77.631932,
-                        0.826387
-                    ],
-                    [
-                        -77.631868,
-                        0.82638
-                    ],
-                    [
-                        -77.631304,
-                        0.825899
-                    ],
-                    [
-                        -77.63097,
-                        0.825616
-                    ],
-                    [
-                        -77.630744,
-                        0.825494
-                    ],
-                    [
-                        -77.630614,
-                        0.825463
-                    ],
-                    [
-                        -77.630486,
-                        0.825463
-                    ],
-                    [
-                        -77.629918,
-                        0.82553
-                    ],
-                    [
-                        -77.629694,
-                        0.82556
-                    ],
-                    [
-                        -77.628579,
-                        0.825683
-                    ],
-                    [
-                        -77.628306,
-                        0.825694
-                    ],
-                    [
-                        -77.627979,
-                        0.825666
-                    ],
-                    [
-                        -77.627672,
-                        0.825577
+                        -77.625781,
+                        0.824848
                     ],
                     [
                         -77.625814,
@@ -117552,7 +117454,7 @@
                         ]
                     },
                     {
-                        "distance": 48442.3,
+                        "distance": 48442.4,
                         "duration": 2172.5,
                         "steps": [
                             {
@@ -117563,7 +117465,7 @@
                                 "name": "Carretera Panamericana Norte, PE-1N",
                                 "way_points": [
                                     2997,
-                                    3180
+                                    3181
                                 ]
                             },
                             {
@@ -117573,8 +117475,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    3180,
-                                    3184
+                                    3181,
+                                    3185
                                 ]
                             },
                             {
@@ -117584,8 +117486,8 @@
                                 "instruction": "Keep left",
                                 "name": "-",
                                 "way_points": [
-                                    3184,
-                                    3186
+                                    3185,
+                                    3187
                                 ]
                             },
                             {
@@ -117596,8 +117498,8 @@
                                 "name": "-",
                                 "exit_number": 2,
                                 "way_points": [
-                                    3186,
-                                    3300
+                                    3187,
+                                    3303
                                 ]
                             },
                             {
@@ -117607,8 +117509,8 @@
                                 "instruction": "Arrive at your destination, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    3300,
-                                    3300
+                                    3303,
+                                    3303
                                 ]
                             }
                         ]
@@ -117622,10 +117524,10 @@
                     1434,
                     2528,
                     2997,
-                    3300
+                    3303
                 ],
                 "summary": {
-                    "distance": 407929.6,
+                    "distance": 407929.7,
                     "duration": 18726.7
                 },
                 "modo": "bici"
@@ -129785,6 +129687,10 @@
                         -5.008591
                     ],
                     [
+                        -80.700518,
+                        -5.017708
+                    ],
+                    [
                         -80.700635,
                         -5.019987
                     ],
@@ -130597,28 +130503,32 @@
                         -5.264619
                     ],
                     [
-                        -80.612541,
-                        -5.265858
+                        -80.612582,
+                        -5.265527
                     ],
                     [
-                        -80.612447,
-                        -5.266921
+                        -80.612475,
+                        -5.266521
+                    ],
+                    [
+                        -80.612415,
+                        -5.267535
                     ],
                     [
                         -80.612394,
                         -5.268238
                     ],
                     [
-                        -80.612403,
-                        -5.269111
+                        -80.612398,
+                        -5.268897
                     ],
                     [
-                        -80.61242,
-                        -5.269559
+                        -80.612448,
+                        -5.270006
                     ],
                     [
-                        -80.612518,
-                        -5.270851
+                        -80.612559,
+                        -5.27125
                     ],
                     [
                         -80.612665,
@@ -130671,6 +130581,10 @@
                     [
                         -80.614648,
                         -5.281367
+                    ],
+                    [
+                        -80.614732,
+                        -5.281761
                     ],
                     [
                         -80.614867,
@@ -130851,8 +130765,8 @@
             "properties": {
                 "segments": [
                     {
-                        "distance": 951651.5,
-                        "duration": 49016.9,
+                        "distance": 951657.0,
+                        "duration": 49013.4,
                         "steps": [
                             {
                                 "distance": 184541.7,
@@ -131030,7 +130944,7 @@
                                 "name": "Panamericana Norte, PE-1N",
                                 "way_points": [
                                     754,
-                                    1052
+                                    1050
                                 ]
                             },
                             {
@@ -131040,8 +130954,8 @@
                                 "instruction": "Keep right onto Panamericana Norte, PE-1N",
                                 "name": "Panamericana Norte, PE-1N",
                                 "way_points": [
-                                    1052,
-                                    1117
+                                    1050,
+                                    1115
                                 ]
                             },
                             {
@@ -131051,8 +130965,8 @@
                                 "instruction": "Turn right",
                                 "name": "-",
                                 "way_points": [
-                                    1117,
-                                    1157
+                                    1115,
+                                    1155
                                 ]
                             },
                             {
@@ -131062,8 +130976,8 @@
                                 "instruction": "Turn right onto Avenida Juan Velasco Alvarado",
                                 "name": "Avenida Juan Velasco Alvarado",
                                 "way_points": [
-                                    1157,
-                                    1188
+                                    1155,
+                                    1186
                                 ]
                             },
                             {
@@ -131073,8 +130987,8 @@
                                 "instruction": "Turn left onto Jir\u00f3n V\u00edctor Valera",
                                 "name": "Jir\u00f3n V\u00edctor Valera",
                                 "way_points": [
-                                    1188,
-                                    1189
+                                    1186,
+                                    1187
                                 ]
                             },
                             {
@@ -131084,8 +130998,8 @@
                                 "instruction": "Turn sharp right onto Avenida Juan Velasco Alvarado",
                                 "name": "Avenida Juan Velasco Alvarado",
                                 "way_points": [
-                                    1189,
-                                    1210
+                                    1187,
+                                    1208
                                 ]
                             },
                             {
@@ -131095,8 +131009,8 @@
                                 "instruction": "Turn slight left onto Jir\u00f3n Libertad",
                                 "name": "Jir\u00f3n Libertad",
                                 "way_points": [
-                                    1210,
-                                    1228
+                                    1208,
+                                    1226
                                 ]
                             },
                             {
@@ -131106,8 +131020,8 @@
                                 "instruction": "Turn left",
                                 "name": "-",
                                 "way_points": [
-                                    1228,
-                                    1235
+                                    1226,
+                                    1233
                                 ]
                             },
                             {
@@ -131117,8 +131031,8 @@
                                 "instruction": "Turn slight left onto Carretera Guadalupe - Pueblo Nuevo",
                                 "name": "Carretera Guadalupe - Pueblo Nuevo",
                                 "way_points": [
-                                    1235,
-                                    1290
+                                    1233,
+                                    1288
                                 ]
                             },
                             {
@@ -131128,8 +131042,8 @@
                                 "instruction": "Turn left onto Avenida 5 de Diciembre",
                                 "name": "Avenida 5 de Diciembre",
                                 "way_points": [
-                                    1290,
-                                    1296
+                                    1288,
+                                    1294
                                 ]
                             },
                             {
@@ -131139,8 +131053,8 @@
                                 "instruction": "Turn right onto Avenida Pacasmayo",
                                 "name": "Avenida Pacasmayo",
                                 "way_points": [
-                                    1296,
-                                    1302
+                                    1294,
+                                    1300
                                 ]
                             },
                             {
@@ -131150,8 +131064,8 @@
                                 "instruction": "Keep right onto Avenida Nila Cerrutti, PE-1N",
                                 "name": "Avenida Nila Cerrutti, PE-1N",
                                 "way_points": [
-                                    1302,
-                                    1411
+                                    1300,
+                                    1409
                                 ]
                             },
                             {
@@ -131161,8 +131075,8 @@
                                 "instruction": "Keep left",
                                 "name": "-",
                                 "way_points": [
-                                    1411,
-                                    1444
+                                    1409,
+                                    1442
                                 ]
                             },
                             {
@@ -131172,8 +131086,8 @@
                                 "instruction": "Turn sharp right onto Carretera San Pedro de Lloc - San Jos\u00e9, LI-585",
                                 "name": "Carretera San Pedro de Lloc - San Jos\u00e9, LI-585",
                                 "way_points": [
-                                    1444,
-                                    1569
+                                    1442,
+                                    1567
                                 ]
                             },
                             {
@@ -131183,8 +131097,8 @@
                                 "instruction": "Turn left onto Panamericana Norte, PE-1N",
                                 "name": "Panamericana Norte, PE-1N",
                                 "way_points": [
-                                    1569,
-                                    1645
+                                    1567,
+                                    1643
                                 ]
                             },
                             {
@@ -131194,8 +131108,8 @@
                                 "instruction": "Keep right onto Panamericana Norte, PE-1N",
                                 "name": "Panamericana Norte, PE-1N",
                                 "way_points": [
-                                    1645,
-                                    1730
+                                    1643,
+                                    1728
                                 ]
                             },
                             {
@@ -131206,8 +131120,8 @@
                                 "name": "Carretera Panamericana Norte, PE-1N",
                                 "exit_number": 2,
                                 "way_points": [
-                                    1730,
-                                    1874
+                                    1728,
+                                    1872
                                 ]
                             },
                             {
@@ -131218,8 +131132,8 @@
                                 "name": "Panamericana Norte, PE-1N",
                                 "exit_number": 2,
                                 "way_points": [
-                                    1874,
-                                    1912
+                                    1872,
+                                    1910
                                 ]
                             },
                             {
@@ -131230,8 +131144,8 @@
                                 "name": "Panamericana Norte, PE-1N",
                                 "exit_number": 2,
                                 "way_points": [
-                                    1912,
-                                    1934
+                                    1910,
+                                    1932
                                 ]
                             },
                             {
@@ -131242,8 +131156,8 @@
                                 "name": "Carretera Panamericana Norte, PE-1N",
                                 "exit_number": 2,
                                 "way_points": [
-                                    1934,
-                                    1965
+                                    1932,
+                                    1963
                                 ]
                             },
                             {
@@ -131254,8 +131168,8 @@
                                 "name": "Carretera Panamericana Norte, PE-1N",
                                 "exit_number": 2,
                                 "way_points": [
-                                    1965,
-                                    1987
+                                    1963,
+                                    1985
                                 ]
                             },
                             {
@@ -131266,8 +131180,8 @@
                                 "name": "Carretera Panamericana Norte, PE-1N",
                                 "exit_number": 2,
                                 "way_points": [
-                                    1987,
-                                    2001
+                                    1985,
+                                    1999
                                 ]
                             },
                             {
@@ -131278,8 +131192,8 @@
                                 "name": "V\u00eda de Evitamiento de Chicama, PE-1N",
                                 "exit_number": 1,
                                 "way_points": [
-                                    2001,
-                                    2022
+                                    1999,
+                                    2020
                                 ]
                             },
                             {
@@ -131290,8 +131204,8 @@
                                 "name": "Carretera Panamericana Norte, PE-1N",
                                 "exit_number": 1,
                                 "way_points": [
-                                    2022,
-                                    2102
+                                    2020,
+                                    2100
                                 ]
                             },
                             {
@@ -131302,8 +131216,8 @@
                                 "name": "Avenida Miguel Grau",
                                 "exit_number": 2,
                                 "way_points": [
-                                    2102,
-                                    2191
+                                    2100,
+                                    2189
                                 ]
                             },
                             {
@@ -131313,8 +131227,8 @@
                                 "instruction": "Keep right onto Avenida Jos\u00e9 Gabriel Condorcanqui",
                                 "name": "Avenida Jos\u00e9 Gabriel Condorcanqui",
                                 "way_points": [
-                                    2191,
-                                    2215
+                                    2189,
+                                    2213
                                 ]
                             },
                             {
@@ -131324,8 +131238,8 @@
                                 "instruction": "Turn left onto Calle Mateo de Toro y Zambrano",
                                 "name": "Calle Mateo de Toro y Zambrano",
                                 "way_points": [
-                                    2215,
-                                    2216
+                                    2213,
+                                    2214
                                 ]
                             },
                             {
@@ -131335,8 +131249,8 @@
                                 "instruction": "Turn right onto Avenida Jos\u00e9 Gabriel Condorcanqui",
                                 "name": "Avenida Jos\u00e9 Gabriel Condorcanqui",
                                 "way_points": [
-                                    2216,
-                                    2247
+                                    2214,
+                                    2245
                                 ]
                             },
                             {
@@ -131346,8 +131260,8 @@
                                 "instruction": "Turn right onto Calle los Diamantes",
                                 "name": "Calle los Diamantes",
                                 "way_points": [
-                                    2247,
-                                    2248
+                                    2245,
+                                    2246
                                 ]
                             },
                             {
@@ -131357,8 +131271,8 @@
                                 "instruction": "Turn left onto Avenida Nicol\u00e1s de Pi\u00e9rola",
                                 "name": "Avenida Nicol\u00e1s de Pi\u00e9rola",
                                 "way_points": [
-                                    2248,
-                                    2258
+                                    2246,
+                                    2256
                                 ]
                             },
                             {
@@ -131368,8 +131282,8 @@
                                 "instruction": "Keep left",
                                 "name": "-",
                                 "way_points": [
-                                    2258,
-                                    2273
+                                    2256,
+                                    2271
                                 ]
                             },
                             {
@@ -131379,8 +131293,8 @@
                                 "instruction": "Turn left onto Avenida Jes\u00fas de Nazareth",
                                 "name": "Avenida Jes\u00fas de Nazareth",
                                 "way_points": [
-                                    2273,
-                                    2288
+                                    2271,
+                                    2286
                                 ]
                             },
                             {
@@ -131390,8 +131304,8 @@
                                 "instruction": "Keep right onto Avenida 28 de Julio",
                                 "name": "Avenida 28 de Julio",
                                 "way_points": [
-                                    2288,
-                                    2304
+                                    2286,
+                                    2302
                                 ]
                             },
                             {
@@ -131401,8 +131315,8 @@
                                 "instruction": "Turn sharp right onto Avenida Moche",
                                 "name": "Avenida Moche",
                                 "way_points": [
-                                    2304,
-                                    2308
+                                    2302,
+                                    2306
                                 ]
                             },
                             {
@@ -131413,8 +131327,8 @@
                                 "name": "Avenida la Marina",
                                 "exit_number": 2,
                                 "way_points": [
-                                    2308,
-                                    2329
+                                    2306,
+                                    2327
                                 ]
                             },
                             {
@@ -131425,8 +131339,8 @@
                                 "name": "Carretera Industrial, PE-1N",
                                 "exit_number": 2,
                                 "way_points": [
-                                    2329,
-                                    2335
+                                    2327,
+                                    2333
                                 ]
                             },
                             {
@@ -131436,8 +131350,8 @@
                                 "instruction": "Turn sharp left onto Carretera Industrial, PE-1N",
                                 "name": "Carretera Industrial, PE-1N",
                                 "way_points": [
-                                    2335,
-                                    2338
+                                    2333,
+                                    2336
                                 ]
                             },
                             {
@@ -131448,8 +131362,8 @@
                                 "name": "Panamericana Norte, PE-1N",
                                 "exit_number": 1,
                                 "way_points": [
-                                    2338,
-                                    2526
+                                    2336,
+                                    2524
                                 ]
                             },
                             {
@@ -131460,8 +131374,8 @@
                                 "name": "Panamericana Norte, PE-1N",
                                 "exit_number": 2,
                                 "way_points": [
-                                    2526,
-                                    2788
+                                    2524,
+                                    2786
                                 ]
                             },
                             {
@@ -131472,8 +131386,8 @@
                                 "name": "Panamericana Norte, PE-1N",
                                 "exit_number": 1,
                                 "way_points": [
-                                    2788,
-                                    2919
+                                    2786,
+                                    2917
                                 ]
                             },
                             {
@@ -131484,8 +131398,8 @@
                                 "name": "V\u00eda de Evitamiento Chimbote",
                                 "exit_number": 1,
                                 "way_points": [
-                                    2919,
-                                    3006
+                                    2917,
+                                    3004
                                 ]
                             },
                             {
@@ -131495,8 +131409,8 @@
                                 "instruction": "Keep left",
                                 "name": "-",
                                 "way_points": [
-                                    3006,
-                                    3011
+                                    3004,
+                                    3009
                                 ]
                             },
                             {
@@ -131506,8 +131420,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    3011,
-                                    3049
+                                    3009,
+                                    3046
                                 ]
                             },
                             {
@@ -131518,8 +131432,8 @@
                                 "name": "Via de Evitamiento Chimbote",
                                 "exit_number": 2,
                                 "way_points": [
-                                    3049,
-                                    3173
+                                    3046,
+                                    3170
                                 ]
                             },
                             {
@@ -131530,8 +131444,8 @@
                                 "name": "Via de Evitamiento Chimbote, PE-1N",
                                 "exit_number": 2,
                                 "way_points": [
-                                    3173,
-                                    3215
+                                    3170,
+                                    3212
                                 ]
                             },
                             {
@@ -131542,8 +131456,8 @@
                                 "name": "Panamericana Norte, PE-1N",
                                 "exit_number": 2,
                                 "way_points": [
-                                    3215,
-                                    3229
+                                    3212,
+                                    3226
                                 ]
                             },
                             {
@@ -131554,8 +131468,8 @@
                                 "name": "Panamericana Norte, PE-1N",
                                 "exit_number": 2,
                                 "way_points": [
-                                    3229,
-                                    3342
+                                    3226,
+                                    3339
                                 ]
                             },
                             {
@@ -131566,8 +131480,8 @@
                                 "name": "Panamericana Norte, PE-1N",
                                 "exit_number": 2,
                                 "way_points": [
-                                    3342,
-                                    3448
+                                    3339,
+                                    3445
                                 ]
                             },
                             {
@@ -131578,8 +131492,8 @@
                                 "name": "Panamericana Norte, PE-1N",
                                 "exit_number": 1,
                                 "way_points": [
-                                    3448,
-                                    3484
+                                    3445,
+                                    3481
                                 ]
                             },
                             {
@@ -131589,8 +131503,8 @@
                                 "instruction": "Keep left onto Carretera Casma-Huaraz, PE-14A",
                                 "name": "Carretera Casma-Huaraz, PE-14A",
                                 "way_points": [
-                                    3484,
-                                    3485
+                                    3481,
+                                    3482
                                 ]
                             },
                             {
@@ -131600,8 +131514,8 @@
                                 "instruction": "Turn sharp right",
                                 "name": "-",
                                 "way_points": [
-                                    3485,
-                                    3487
+                                    3482,
+                                    3484
                                 ]
                             },
                             {
@@ -131611,8 +131525,8 @@
                                 "instruction": "Turn slight left onto Panamericana Norte, PE-1N",
                                 "name": "Panamericana Norte, PE-1N",
                                 "way_points": [
-                                    3487,
-                                    3990
+                                    3484,
+                                    3987
                                 ]
                             },
                             {
@@ -131622,8 +131536,8 @@
                                 "instruction": "Turn left",
                                 "name": "-",
                                 "way_points": [
-                                    3990,
-                                    3998
+                                    3987,
+                                    3995
                                 ]
                             },
                             {
@@ -131633,8 +131547,8 @@
                                 "instruction": "Turn right",
                                 "name": "-",
                                 "way_points": [
-                                    3998,
-                                    4005
+                                    3995,
+                                    4002
                                 ]
                             },
                             {
@@ -131644,8 +131558,8 @@
                                 "instruction": "Turn slight left onto Panamericana Norte, PE-1N",
                                 "name": "Panamericana Norte, PE-1N",
                                 "way_points": [
-                                    4005,
-                                    4510
+                                    4002,
+                                    4507
                                 ]
                             },
                             {
@@ -131656,20 +131570,53 @@
                                 "name": "Panamericana Norte, PE-1N",
                                 "exit_number": 2,
                                 "way_points": [
-                                    4510,
-                                    4544
+                                    4507,
+                                    4541
                                 ]
                             },
                             {
-                                "distance": 178928.2,
-                                "duration": 9303.9,
+                                "distance": 169756.5,
+                                "duration": 8711.4,
                                 "type": 7,
                                 "instruction": "Enter the roundabout and take the 2nd exit onto Panamericana Norte, PE-1N",
                                 "name": "Panamericana Norte, PE-1N",
                                 "exit_number": 2,
                                 "way_points": [
-                                    4544,
-                                    5488
+                                    4541,
+                                    5427
+                                ]
+                            },
+                            {
+                                "distance": 97.2,
+                                "duration": 3.9,
+                                "type": 13,
+                                "instruction": "Keep right",
+                                "name": "-",
+                                "way_points": [
+                                    5427,
+                                    5428
+                                ]
+                            },
+                            {
+                                "distance": 108.3,
+                                "duration": 11.1,
+                                "type": 4,
+                                "instruction": "Turn slight left onto Avenida Buenos Aires",
+                                "name": "Avenida Buenos Aires",
+                                "way_points": [
+                                    5428,
+                                    5431
+                                ]
+                            },
+                            {
+                                "distance": 8971.8,
+                                "duration": 574.0,
+                                "type": 6,
+                                "instruction": "Continue straight onto Avenida Buenos Aires",
+                                "name": "Avenida Buenos Aires",
+                                "way_points": [
+                                    5431,
+                                    5490
                                 ]
                             },
                             {
@@ -131679,8 +131626,8 @@
                                 "instruction": "Continue straight onto Avenida Panamericana Norte, PE-1N",
                                 "name": "Avenida Panamericana Norte, PE-1N",
                                 "way_points": [
-                                    5488,
-                                    5516
+                                    5490,
+                                    5518
                                 ]
                             },
                             {
@@ -131690,8 +131637,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    5516,
-                                    5522
+                                    5518,
+                                    5524
                                 ]
                             },
                             {
@@ -131702,8 +131649,8 @@
                                 "name": "-",
                                 "exit_number": 2,
                                 "way_points": [
-                                    5522,
-                                    5531
+                                    5524,
+                                    5533
                                 ]
                             },
                             {
@@ -131713,8 +131660,8 @@
                                 "instruction": "Keep left",
                                 "name": "-",
                                 "way_points": [
-                                    5531,
-                                    5574
+                                    5533,
+                                    5576
                                 ]
                             },
                             {
@@ -131724,8 +131671,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    5574,
-                                    5582
+                                    5576,
+                                    5584
                                 ]
                             },
                             {
@@ -131736,8 +131683,8 @@
                                 "name": "Avenida Alfredo Mendiola",
                                 "exit_number": 2,
                                 "way_points": [
-                                    5582,
-                                    5591
+                                    5584,
+                                    5593
                                 ]
                             },
                             {
@@ -131748,8 +131695,8 @@
                                 "name": "Avenida Alfredo Mendiola",
                                 "exit_number": 1,
                                 "way_points": [
-                                    5591,
-                                    5597
+                                    5593,
+                                    5599
                                 ]
                             },
                             {
@@ -131759,8 +131706,8 @@
                                 "instruction": "Arrive at Avenida Alfredo Mendiola, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    5597,
-                                    5597
+                                    5599,
+                                    5599
                                 ]
                             }
                         ]
@@ -131768,11 +131715,11 @@
                 ],
                 "way_points": [
                     0,
-                    5597
+                    5599
                 ],
                 "summary": {
-                    "distance": 951651.5,
-                    "duration": 49016.9
+                    "distance": 951657.0,
+                    "duration": 49013.4
                 },
                 "modo": "bus"
             },
@@ -135491,10 +135438,6 @@
                         -6.912334
                     ],
                     [
-                        -79.762331,
-                        -6.914778
-                    ],
-                    [
                         -79.754708,
                         -6.919551
                     ],
@@ -135629,10 +135572,6 @@
                     [
                         -79.661482,
                         -6.977466
-                    ],
-                    [
-                        -79.661396,
-                        -6.977475
                     ],
                     [
                         -79.65765,
@@ -143855,64 +143794,64 @@
                         -8.975148
                     ],
                     [
-                        -78.583247,
-                        -8.974385
+                        -78.582822,
+                        -8.974347
                     ],
                     [
-                        -78.582396,
-                        -8.974315
+                        -78.58197,
+                        -8.97429
                     ],
                     [
-                        -78.581544,
-                        -8.974271
+                        -78.581066,
+                        -8.974257
                     ],
                     [
-                        -78.580589,
-                        -8.974252
+                        -78.580111,
+                        -8.974254
                     ],
                     [
-                        -78.579633,
-                        -8.974264
+                        -78.579156,
+                        -8.974282
                     ],
                     [
                         -78.578679,
                         -8.974308
                     ],
                     [
-                        -78.577352,
-                        -8.974435
+                        -78.577794,
+                        -8.974385
                     ],
                     [
-                        -78.576041,
-                        -8.974624
+                        -78.576476,
+                        -8.974554
                     ],
                     [
-                        -78.574744,
-                        -8.974875
+                        -78.575175,
+                        -8.974784
+                    ],
+                    [
+                        -78.574242,
+                        -8.974992
                     ],
                     [
                         -78.573244,
                         -8.975252
                     ],
                     [
-                        -78.572256,
-                        -8.975545
+                        -78.571766,
+                        -8.975704
                     ],
                     [
-                        -78.571278,
-                        -8.975871
+                        -78.570794,
+                        -8.976046
                     ],
                     [
-                        -78.570298,
-                        -8.976244
+                        -78.569318,
+                        -8.976664
                     ],
                     [
-                        -78.568833,
-                        -8.976886
-                    ],
-                    [
-                        -78.56752,
-                        -8.977536
+                        -78.568392,
+                        -8.977096
                     ],
                     [
                         -78.567089,
@@ -143951,12 +143890,8 @@
                         -8.988671
                     ],
                     [
-                        -78.554074,
-                        -8.991281
-                    ],
-                    [
-                        -78.553464,
-                        -8.992105
+                        -78.553532,
+                        -8.991979
                     ],
                     [
                         -78.551994,
@@ -153503,16 +153438,36 @@
                         -11.842192
                     ],
                     [
-                        -77.102034,
-                        -11.842786
+                        -77.102223,
+                        -11.842887
                     ],
                     [
-                        -77.101035,
-                        -11.843568
+                        -77.102078,
+                        -11.843007
                     ],
                     [
-                        -77.100972,
-                        -11.84362
+                        -77.101639,
+                        -11.843365
+                    ],
+                    [
+                        -77.101461,
+                        -11.843512
+                    ],
+                    [
+                        -77.101312,
+                        -11.843627
+                    ],
+                    [
+                        -77.101175,
+                        -11.843741
+                    ],
+                    [
+                        -77.101097,
+                        -11.843796
+                    ],
+                    [
+                        -77.100514,
+                        -11.844088
                     ],
                     [
                         -77.100321,
@@ -154177,8 +154132,8 @@
         {
             "bbox": [
                 -77.062306,
-                -12.313955,
-                -76.834022,
+                -13.085918,
+                -76.355576,
                 -12.004008
             ],
             "type": "Feature",
@@ -154321,7 +154276,7 @@
                                 "name": "Avenida Enrique Canaval y Moreyra",
                                 "way_points": [
                                     191,
-                                    205
+                                    206
                                 ]
                             },
                             {
@@ -154331,8 +154286,8 @@
                                 "instruction": "Turn right onto Avenida Rep\u00fablica de Panam\u00e1",
                                 "name": "Avenida Rep\u00fablica de Panam\u00e1",
                                 "way_points": [
-                                    205,
-                                    217
+                                    206,
+                                    218
                                 ]
                             },
                             {
@@ -154342,8 +154297,8 @@
                                 "instruction": "Keep left onto Avenida Tom\u00e1s Marsano",
                                 "name": "Avenida Tom\u00e1s Marsano",
                                 "way_points": [
-                                    217,
-                                    252
+                                    218,
+                                    253
                                 ]
                             },
                             {
@@ -154353,8 +154308,8 @@
                                 "instruction": "Continue straight onto Avenida Tom\u00e1s Marsano",
                                 "name": "Avenida Tom\u00e1s Marsano",
                                 "way_points": [
-                                    252,
-                                    258
+                                    253,
+                                    259
                                 ]
                             },
                             {
@@ -154364,8 +154319,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    258,
-                                    280
+                                    259,
+                                    281
                                 ]
                             },
                             {
@@ -154375,8 +154330,8 @@
                                 "instruction": "Keep left onto Avenida Santiago de Surco",
                                 "name": "Avenida Santiago de Surco",
                                 "way_points": [
-                                    280,
-                                    288
+                                    281,
+                                    289
                                 ]
                             },
                             {
@@ -154386,8 +154341,8 @@
                                 "instruction": "Turn right onto Avenida Los Pr\u00f3ceres",
                                 "name": "Avenida Los Pr\u00f3ceres",
                                 "way_points": [
-                                    288,
-                                    289
+                                    289,
+                                    290
                                 ]
                             },
                             {
@@ -154397,8 +154352,8 @@
                                 "instruction": "Turn left onto Avenida Santiago de Surco",
                                 "name": "Avenida Santiago de Surco",
                                 "way_points": [
-                                    289,
-                                    294
+                                    290,
+                                    295
                                 ]
                             },
                             {
@@ -154408,8 +154363,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    294,
-                                    315
+                                    295,
+                                    316
                                 ]
                             },
                             {
@@ -154419,8 +154374,8 @@
                                 "instruction": "Arrive at your destination, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    315,
-                                    315
+                                    316,
+                                    316
                                 ]
                             }
                         ]
@@ -154436,8 +154391,8 @@
                                 "instruction": "Head south on Avenida Panamericana Sur, PE-1S",
                                 "name": "Avenida Panamericana Sur, PE-1S",
                                 "way_points": [
-                                    315,
-                                    358
+                                    316,
+                                    359
                                 ]
                             },
                             {
@@ -154447,8 +154402,8 @@
                                 "instruction": "Keep right onto Carretera Panamericana Sur, PE-1S",
                                 "name": "Carretera Panamericana Sur, PE-1S",
                                 "way_points": [
-                                    358,
-                                    459
+                                    359,
+                                    460
                                 ]
                             },
                             {
@@ -154458,8 +154413,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    459,
-                                    461
+                                    460,
+                                    462
                                 ]
                             },
                             {
@@ -154469,8 +154424,8 @@
                                 "instruction": "Keep right",
                                 "name": "-",
                                 "way_points": [
-                                    461,
-                                    497
+                                    462,
+                                    498
                                 ]
                             },
                             {
@@ -154480,19 +154435,241 @@
                                 "instruction": "Continue straight onto Antigua Panamericana Sur",
                                 "name": "Antigua Panamericana Sur",
                                 "way_points": [
-                                    497,
-                                    502
+                                    498,
+                                    503
                                 ]
                             },
                             {
                                 "distance": 0.0,
                                 "duration": 0.0,
                                 "type": 10,
-                                "instruction": "Arrive at Antigua Panamericana Sur, on the right",
+                                "instruction": "Arrive at Antigua Panamericana Sur, on the left",
                                 "name": "-",
                                 "way_points": [
-                                    502,
-                                    502
+                                    503,
+                                    503
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "distance": 53611.9,
+                        "duration": 2598.1,
+                        "steps": [
+                            {
+                                "distance": 111.3,
+                                "duration": 7.3,
+                                "type": 11,
+                                "instruction": "Head northwest on Antigua Panamericana Sur",
+                                "name": "Antigua Panamericana Sur",
+                                "way_points": [
+                                    503,
+                                    505
+                                ]
+                            },
+                            {
+                                "distance": 1088.2,
+                                "duration": 72.6,
+                                "type": 6,
+                                "instruction": "Continue straight onto Antigua Panamericana Sur",
+                                "name": "Antigua Panamericana Sur",
+                                "way_points": [
+                                    505,
+                                    519
+                                ]
+                            },
+                            {
+                                "distance": 14.8,
+                                "duration": 3.6,
+                                "type": 0,
+                                "instruction": "Turn left",
+                                "name": "-",
+                                "way_points": [
+                                    519,
+                                    521
+                                ]
+                            },
+                            {
+                                "distance": 5.6,
+                                "duration": 1.4,
+                                "type": 0,
+                                "instruction": "Turn left onto Antigua Panamericana Sur",
+                                "name": "Antigua Panamericana Sur",
+                                "way_points": [
+                                    521,
+                                    522
+                                ]
+                            },
+                            {
+                                "distance": 41.3,
+                                "duration": 11.4,
+                                "type": 1,
+                                "instruction": "Turn right",
+                                "name": "-",
+                                "way_points": [
+                                    522,
+                                    524
+                                ]
+                            },
+                            {
+                                "distance": 27905.2,
+                                "duration": 1235.2,
+                                "type": 1,
+                                "instruction": "Turn right",
+                                "name": "-",
+                                "way_points": [
+                                    524,
+                                    639
+                                ]
+                            },
+                            {
+                                "distance": 24445.5,
+                                "duration": 1266.7,
+                                "type": 13,
+                                "instruction": "Keep right onto Telepass V\u00eda 8",
+                                "name": "Telepass V\u00eda 8",
+                                "way_points": [
+                                    639,
+                                    777
+                                ]
+                            },
+                            {
+                                "distance": 0.0,
+                                "duration": 0.0,
+                                "type": 10,
+                                "instruction": "Arrive at Telepass V\u00eda 8, on the right",
+                                "name": "-",
+                                "way_points": [
+                                    777,
+                                    777
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "distance": 57421.6,
+                        "duration": 2830.4,
+                        "steps": [
+                            {
+                                "distance": 41625.1,
+                                "duration": 1786.2,
+                                "type": 11,
+                                "instruction": "Head southeast on Carretera Panamericana Sur, PE-1S",
+                                "name": "Carretera Panamericana Sur, PE-1S",
+                                "way_points": [
+                                    777,
+                                    1051
+                                ]
+                            },
+                            {
+                                "distance": 332.6,
+                                "duration": 45.2,
+                                "type": 13,
+                                "instruction": "Keep right",
+                                "name": "-",
+                                "way_points": [
+                                    1051,
+                                    1058
+                                ]
+                            },
+                            {
+                                "distance": 33.9,
+                                "duration": 8.1,
+                                "type": 0,
+                                "instruction": "Turn left",
+                                "name": "-",
+                                "way_points": [
+                                    1058,
+                                    1061
+                                ]
+                            },
+                            {
+                                "distance": 10559.7,
+                                "duration": 497.3,
+                                "type": 4,
+                                "instruction": "Turn slight left onto Antigua Carretera Panamericana Sur, PE-24",
+                                "name": "Antigua Carretera Panamericana Sur, PE-24",
+                                "way_points": [
+                                    1061,
+                                    1162
+                                ]
+                            },
+                            {
+                                "distance": 1185.1,
+                                "duration": 89.1,
+                                "type": 12,
+                                "instruction": "Keep left onto Avenida Libertadores",
+                                "name": "Avenida Libertadores",
+                                "way_points": [
+                                    1162,
+                                    1175
+                                ]
+                            },
+                            {
+                                "distance": 271.5,
+                                "duration": 39.0,
+                                "type": 1,
+                                "instruction": "Turn right onto Garro",
+                                "name": "Garro",
+                                "way_points": [
+                                    1175,
+                                    1180
+                                ]
+                            },
+                            {
+                                "distance": 611.0,
+                                "duration": 55.1,
+                                "type": 0,
+                                "instruction": "Turn left onto Avenida Mariscal Benavides, PE-24",
+                                "name": "Avenida Mariscal Benavides, PE-24",
+                                "way_points": [
+                                    1180,
+                                    1188
+                                ]
+                            },
+                            {
+                                "distance": 597.1,
+                                "duration": 45.7,
+                                "type": 7,
+                                "instruction": "Enter the roundabout and take the 2nd exit onto Avenida Mariscal Benavides, PE-24",
+                                "name": "Avenida Mariscal Benavides, PE-24",
+                                "exit_number": 2,
+                                "way_points": [
+                                    1188,
+                                    1202
+                                ]
+                            },
+                            {
+                                "distance": 106.0,
+                                "duration": 12.7,
+                                "type": 1,
+                                "instruction": "Turn right",
+                                "name": "-",
+                                "way_points": [
+                                    1202,
+                                    1207
+                                ]
+                            },
+                            {
+                                "distance": 2099.8,
+                                "duration": 252.0,
+                                "type": 12,
+                                "instruction": "Keep left",
+                                "name": "-",
+                                "way_points": [
+                                    1207,
+                                    1277
+                                ]
+                            },
+                            {
+                                "distance": 0.0,
+                                "duration": 0.0,
+                                "type": 10,
+                                "instruction": "Arrive at your destination, on the left",
+                                "name": "-",
+                                "way_points": [
+                                    1277,
+                                    1277
                                 ]
                             }
                         ]
@@ -154500,12 +154677,14 @@
                 ],
                 "way_points": [
                     0,
-                    315,
-                    502
+                    316,
+                    503,
+                    777,
+                    1277
                 ],
                 "summary": {
-                    "distance": 48114.9,
-                    "duration": 3277.2
+                    "distance": 159148.4,
+                    "duration": 8705.699999999999
                 },
                 "modo": "bici"
             },
@@ -155302,6 +155481,10 @@
                     [
                         -77.023767,
                         -12.097036
+                    ],
+                    [
+                        -77.023699,
+                        -12.097045
                     ],
                     [
                         -77.022339,
@@ -156522,6 +156705,3102 @@
                     [
                         -76.837035,
                         -12.309728
+                    ],
+                    [
+                        -76.837287,
+                        -12.309431
+                    ],
+                    [
+                        -76.837717,
+                        -12.308982
+                    ],
+                    [
+                        -76.837765,
+                        -12.309036
+                    ],
+                    [
+                        -76.837338,
+                        -12.309482
+                    ],
+                    [
+                        -76.837081,
+                        -12.309775
+                    ],
+                    [
+                        -76.836451,
+                        -12.310524
+                    ],
+                    [
+                        -76.836143,
+                        -12.310939
+                    ],
+                    [
+                        -76.835775,
+                        -12.311465
+                    ],
+                    [
+                        -76.835303,
+                        -12.312137
+                    ],
+                    [
+                        -76.835194,
+                        -12.312292
+                    ],
+                    [
+                        -76.834841,
+                        -12.312796
+                    ],
+                    [
+                        -76.834206,
+                        -12.313751
+                    ],
+                    [
+                        -76.83407,
+                        -12.313955
+                    ],
+                    [
+                        -76.832877,
+                        -12.315699
+                    ],
+                    [
+                        -76.832215,
+                        -12.316675
+                    ],
+                    [
+                        -76.832027,
+                        -12.316953
+                    ],
+                    [
+                        -76.831964,
+                        -12.316912
+                    ],
+                    [
+                        -76.831914,
+                        -12.316879
+                    ],
+                    [
+                        -76.831942,
+                        -12.316837
+                    ],
+                    [
+                        -76.831846,
+                        -12.316773
+                    ],
+                    [
+                        -76.831629,
+                        -12.316626
+                    ],
+                    [
+                        -76.8316,
+                        -12.316655
+                    ],
+                    [
+                        -76.831349,
+                        -12.316681
+                    ],
+                    [
+                        -76.831086,
+                        -12.316818
+                    ],
+                    [
+                        -76.819943,
+                        -12.333516
+                    ],
+                    [
+                        -76.819836,
+                        -12.333674
+                    ],
+                    [
+                        -76.819431,
+                        -12.334311
+                    ],
+                    [
+                        -76.813266,
+                        -12.343539
+                    ],
+                    [
+                        -76.812596,
+                        -12.344427
+                    ],
+                    [
+                        -76.81215,
+                        -12.344897
+                    ],
+                    [
+                        -76.793414,
+                        -12.362912
+                    ],
+                    [
+                        -76.792555,
+                        -12.363712
+                    ],
+                    [
+                        -76.789513,
+                        -12.366632
+                    ],
+                    [
+                        -76.788346,
+                        -12.367795
+                    ],
+                    [
+                        -76.784678,
+                        -12.37136
+                    ],
+                    [
+                        -76.781784,
+                        -12.374156
+                    ],
+                    [
+                        -76.781622,
+                        -12.374313
+                    ],
+                    [
+                        -76.779559,
+                        -12.376317
+                    ],
+                    [
+                        -76.776695,
+                        -12.379092
+                    ],
+                    [
+                        -76.773745,
+                        -12.381941
+                    ],
+                    [
+                        -76.773259,
+                        -12.382411
+                    ],
+                    [
+                        -76.771046,
+                        -12.384553
+                    ],
+                    [
+                        -76.769768,
+                        -12.385783
+                    ],
+                    [
+                        -76.763507,
+                        -12.391764
+                    ],
+                    [
+                        -76.758079,
+                        -12.397024
+                    ],
+                    [
+                        -76.757708,
+                        -12.39743
+                    ],
+                    [
+                        -76.757364,
+                        -12.397899
+                    ],
+                    [
+                        -76.757115,
+                        -12.398386
+                    ],
+                    [
+                        -76.756997,
+                        -12.398694
+                    ],
+                    [
+                        -76.756896,
+                        -12.399008
+                    ],
+                    [
+                        -76.756789,
+                        -12.399492
+                    ],
+                    [
+                        -76.756746,
+                        -12.399831
+                    ],
+                    [
+                        -76.75673,
+                        -12.400243
+                    ],
+                    [
+                        -76.75672,
+                        -12.402822
+                    ],
+                    [
+                        -76.756686,
+                        -12.408235
+                    ],
+                    [
+                        -76.756626,
+                        -12.409459
+                    ],
+                    [
+                        -76.756532,
+                        -12.410079
+                    ],
+                    [
+                        -76.756237,
+                        -12.411361
+                    ],
+                    [
+                        -76.756002,
+                        -12.412381
+                    ],
+                    [
+                        -76.755753,
+                        -12.413465
+                    ],
+                    [
+                        -76.755717,
+                        -12.413622
+                    ],
+                    [
+                        -76.754794,
+                        -12.417648
+                    ],
+                    [
+                        -76.75436,
+                        -12.419585
+                    ],
+                    [
+                        -76.754249,
+                        -12.42018
+                    ],
+                    [
+                        -76.754163,
+                        -12.420817
+                    ],
+                    [
+                        -76.753517,
+                        -12.428315
+                    ],
+                    [
+                        -76.753482,
+                        -12.429301
+                    ],
+                    [
+                        -76.753516,
+                        -12.429923
+                    ],
+                    [
+                        -76.753618,
+                        -12.430693
+                    ],
+                    [
+                        -76.75373,
+                        -12.431215
+                    ],
+                    [
+                        -76.75466,
+                        -12.43434
+                    ],
+                    [
+                        -76.754818,
+                        -12.434859
+                    ],
+                    [
+                        -76.75684,
+                        -12.441843
+                    ],
+                    [
+                        -76.756962,
+                        -12.442382
+                    ],
+                    [
+                        -76.75703,
+                        -12.442864
+                    ],
+                    [
+                        -76.757061,
+                        -12.443269
+                    ],
+                    [
+                        -76.757063,
+                        -12.443999
+                    ],
+                    [
+                        -76.756959,
+                        -12.444841
+                    ],
+                    [
+                        -76.756832,
+                        -12.445426
+                    ],
+                    [
+                        -76.756058,
+                        -12.44828
+                    ],
+                    [
+                        -76.755778,
+                        -12.449262
+                    ],
+                    [
+                        -76.755224,
+                        -12.451299
+                    ],
+                    [
+                        -76.754443,
+                        -12.454105
+                    ],
+                    [
+                        -76.754358,
+                        -12.454418
+                    ],
+                    [
+                        -76.754054,
+                        -12.455539
+                    ],
+                    [
+                        -76.753558,
+                        -12.457385
+                    ],
+                    [
+                        -76.753246,
+                        -12.458501
+                    ],
+                    [
+                        -76.752463,
+                        -12.461574
+                    ],
+                    [
+                        -76.752323,
+                        -12.462119
+                    ],
+                    [
+                        -76.750837,
+                        -12.467551
+                    ],
+                    [
+                        -76.750511,
+                        -12.468803
+                    ],
+                    [
+                        -76.750298,
+                        -12.469546
+                    ],
+                    [
+                        -76.74998,
+                        -12.470748
+                    ],
+                    [
+                        -76.749739,
+                        -12.471576
+                    ],
+                    [
+                        -76.748956,
+                        -12.47442
+                    ],
+                    [
+                        -76.748361,
+                        -12.476599
+                    ],
+                    [
+                        -76.748008,
+                        -12.477906
+                    ],
+                    [
+                        -76.747824,
+                        -12.478711
+                    ],
+                    [
+                        -76.746962,
+                        -12.481738
+                    ],
+                    [
+                        -76.746183,
+                        -12.484646
+                    ],
+                    [
+                        -76.745916,
+                        -12.485627
+                    ],
+                    [
+                        -76.745809,
+                        -12.486021
+                    ],
+                    [
+                        -76.745164,
+                        -12.48839
+                    ],
+                    [
+                        -76.743492,
+                        -12.49447
+                    ],
+                    [
+                        -76.743452,
+                        -12.49462
+                    ],
+                    [
+                        -76.743427,
+                        -12.494714
+                    ],
+                    [
+                        -76.743053,
+                        -12.496077
+                    ],
+                    [
+                        -76.743035,
+                        -12.496144
+                    ],
+                    [
+                        -76.742811,
+                        -12.496965
+                    ],
+                    [
+                        -76.742768,
+                        -12.497126
+                    ],
+                    [
+                        -76.742667,
+                        -12.497497
+                    ],
+                    [
+                        -76.74212,
+                        -12.499484
+                    ],
+                    [
+                        -76.741987,
+                        -12.499939
+                    ],
+                    [
+                        -76.741711,
+                        -12.500764
+                    ],
+                    [
+                        -76.74151,
+                        -12.501307
+                    ],
+                    [
+                        -76.741248,
+                        -12.501933
+                    ],
+                    [
+                        -76.741044,
+                        -12.502385
+                    ],
+                    [
+                        -76.740616,
+                        -12.503241
+                    ],
+                    [
+                        -76.740294,
+                        -12.503815
+                    ],
+                    [
+                        -76.739765,
+                        -12.50465
+                    ],
+                    [
+                        -76.739637,
+                        -12.504846
+                    ],
+                    [
+                        -76.73781,
+                        -12.507424
+                    ],
+                    [
+                        -76.736874,
+                        -12.508738
+                    ],
+                    [
+                        -76.735158,
+                        -12.511151
+                    ],
+                    [
+                        -76.734767,
+                        -12.511706
+                    ],
+                    [
+                        -76.732276,
+                        -12.515198
+                    ],
+                    [
+                        -76.731376,
+                        -12.516428
+                    ],
+                    [
+                        -76.731065,
+                        -12.516819
+                    ],
+                    [
+                        -76.727378,
+                        -12.521078
+                    ],
+                    [
+                        -76.726907,
+                        -12.521665
+                    ],
+                    [
+                        -76.726461,
+                        -12.522271
+                    ],
+                    [
+                        -76.726024,
+                        -12.522918
+                    ],
+                    [
+                        -76.72541,
+                        -12.52395
+                    ],
+                    [
+                        -76.724912,
+                        -12.524917
+                    ],
+                    [
+                        -76.724469,
+                        -12.525886
+                    ],
+                    [
+                        -76.722247,
+                        -12.530808
+                    ],
+                    [
+                        -76.722133,
+                        -12.53128
+                    ],
+                    [
+                        -76.721636,
+                        -12.532429
+                    ],
+                    [
+                        -76.721432,
+                        -12.532862
+                    ],
+                    [
+                        -76.720498,
+                        -12.534862
+                    ],
+                    [
+                        -76.720048,
+                        -12.535671
+                    ],
+                    [
+                        -76.718247,
+                        -12.539675
+                    ],
+                    [
+                        -76.712138,
+                        -12.553186
+                    ],
+                    [
+                        -76.709738,
+                        -12.558448
+                    ],
+                    [
+                        -76.709564,
+                        -12.558778
+                    ],
+                    [
+                        -76.709167,
+                        -12.559426
+                    ],
+                    [
+                        -76.708908,
+                        -12.559794
+                    ],
+                    [
+                        -76.708533,
+                        -12.560255
+                    ],
+                    [
+                        -76.708026,
+                        -12.560793
+                    ],
+                    [
+                        -76.707645,
+                        -12.561152
+                    ],
+                    [
+                        -76.706234,
+                        -12.562329
+                    ],
+                    [
+                        -76.705039,
+                        -12.563279
+                    ],
+                    [
+                        -76.701245,
+                        -12.56637
+                    ],
+                    [
+                        -76.696567,
+                        -12.570098
+                    ],
+                    [
+                        -76.695967,
+                        -12.570579
+                    ],
+                    [
+                        -76.693757,
+                        -12.572327
+                    ],
+                    [
+                        -76.69279,
+                        -12.57302
+                    ],
+                    [
+                        -76.692336,
+                        -12.573297
+                    ],
+                    [
+                        -76.691804,
+                        -12.573621
+                    ],
+                    [
+                        -76.690786,
+                        -12.574179
+                    ],
+                    [
+                        -76.68548,
+                        -12.576809
+                    ],
+                    [
+                        -76.683698,
+                        -12.577715
+                    ],
+                    [
+                        -76.681563,
+                        -12.578829
+                    ],
+                    [
+                        -76.678971,
+                        -12.58006
+                    ],
+                    [
+                        -76.674253,
+                        -12.582423
+                    ],
+                    [
+                        -76.673855,
+                        -12.582645
+                    ],
+                    [
+                        -76.668679,
+                        -12.585227
+                    ],
+                    [
+                        -76.667377,
+                        -12.585871
+                    ],
+                    [
+                        -76.666886,
+                        -12.586146
+                    ],
+                    [
+                        -76.666275,
+                        -12.586531
+                    ],
+                    [
+                        -76.665819,
+                        -12.58686
+                    ],
+                    [
+                        -76.665356,
+                        -12.587258
+                    ],
+                    [
+                        -76.665095,
+                        -12.587492
+                    ],
+                    [
+                        -76.66477,
+                        -12.587816
+                    ],
+                    [
+                        -76.66443,
+                        -12.588219
+                    ],
+                    [
+                        -76.66399,
+                        -12.588798
+                    ],
+                    [
+                        -76.663588,
+                        -12.589429
+                    ],
+                    [
+                        -76.66315,
+                        -12.590331
+                    ],
+                    [
+                        -76.662854,
+                        -12.591084
+                    ],
+                    [
+                        -76.662631,
+                        -12.591868
+                    ],
+                    [
+                        -76.662471,
+                        -12.592813
+                    ],
+                    [
+                        -76.662408,
+                        -12.593695
+                    ],
+                    [
+                        -76.66243,
+                        -12.597794
+                    ],
+                    [
+                        -76.662515,
+                        -12.598886
+                    ],
+                    [
+                        -76.662672,
+                        -12.599974
+                    ],
+                    [
+                        -76.663094,
+                        -12.601793
+                    ],
+                    [
+                        -76.663589,
+                        -12.603348
+                    ],
+                    [
+                        -76.664098,
+                        -12.604638
+                    ],
+                    [
+                        -76.664851,
+                        -12.606577
+                    ],
+                    [
+                        -76.666015,
+                        -12.609546
+                    ],
+                    [
+                        -76.666668,
+                        -12.611206
+                    ],
+                    [
+                        -76.669751,
+                        -12.619071
+                    ],
+                    [
+                        -76.670169,
+                        -12.620141
+                    ],
+                    [
+                        -76.670195,
+                        -12.620188
+                    ],
+                    [
+                        -76.670412,
+                        -12.620863
+                    ],
+                    [
+                        -76.670594,
+                        -12.62159
+                    ],
+                    [
+                        -76.670672,
+                        -12.622033
+                    ],
+                    [
+                        -76.670738,
+                        -12.622547
+                    ],
+                    [
+                        -76.670774,
+                        -12.623204
+                    ],
+                    [
+                        -76.670776,
+                        -12.623547
+                    ],
+                    [
+                        -76.670758,
+                        -12.623976
+                    ],
+                    [
+                        -76.670711,
+                        -12.624478
+                    ],
+                    [
+                        -76.670599,
+                        -12.625173
+                    ],
+                    [
+                        -76.670486,
+                        -12.625654
+                    ],
+                    [
+                        -76.670167,
+                        -12.626749
+                    ],
+                    [
+                        -76.66999,
+                        -12.627333
+                    ],
+                    [
+                        -76.669771,
+                        -12.628094
+                    ],
+                    [
+                        -76.669669,
+                        -12.6285
+                    ],
+                    [
+                        -76.6696,
+                        -12.628819
+                    ],
+                    [
+                        -76.669538,
+                        -12.62921
+                    ],
+                    [
+                        -76.669469,
+                        -12.629827
+                    ],
+                    [
+                        -76.669446,
+                        -12.630453
+                    ],
+                    [
+                        -76.669458,
+                        -12.630937
+                    ],
+                    [
+                        -76.669517,
+                        -12.631553
+                    ],
+                    [
+                        -76.669589,
+                        -12.632011
+                    ],
+                    [
+                        -76.669865,
+                        -12.633238
+                    ],
+                    [
+                        -76.669946,
+                        -12.633672
+                    ],
+                    [
+                        -76.670012,
+                        -12.634148
+                    ],
+                    [
+                        -76.670052,
+                        -12.634627
+                    ],
+                    [
+                        -76.670066,
+                        -12.635263
+                    ],
+                    [
+                        -76.670037,
+                        -12.635814
+                    ],
+                    [
+                        -76.669955,
+                        -12.636476
+                    ],
+                    [
+                        -76.669834,
+                        -12.637112
+                    ],
+                    [
+                        -76.669658,
+                        -12.637784
+                    ],
+                    [
+                        -76.669504,
+                        -12.638259
+                    ],
+                    [
+                        -76.665264,
+                        -12.650573
+                    ],
+                    [
+                        -76.664942,
+                        -12.651511
+                    ],
+                    [
+                        -76.663048,
+                        -12.656965
+                    ],
+                    [
+                        -76.662869,
+                        -12.657431
+                    ],
+                    [
+                        -76.662593,
+                        -12.658081
+                    ],
+                    [
+                        -76.662252,
+                        -12.658812
+                    ],
+                    [
+                        -76.661901,
+                        -12.659464
+                    ],
+                    [
+                        -76.661675,
+                        -12.659872
+                    ],
+                    [
+                        -76.661396,
+                        -12.660322
+                    ],
+                    [
+                        -76.661034,
+                        -12.660877
+                    ],
+                    [
+                        -76.660618,
+                        -12.661479
+                    ],
+                    [
+                        -76.65768,
+                        -12.665414
+                    ],
+                    [
+                        -76.654,
+                        -12.670339
+                    ],
+                    [
+                        -76.653595,
+                        -12.670881
+                    ],
+                    [
+                        -76.652103,
+                        -12.672874
+                    ],
+                    [
+                        -76.651731,
+                        -12.673473
+                    ],
+                    [
+                        -76.651397,
+                        -12.674111
+                    ],
+                    [
+                        -76.651137,
+                        -12.674757
+                    ],
+                    [
+                        -76.650966,
+                        -12.675255
+                    ],
+                    [
+                        -76.650824,
+                        -12.675777
+                    ],
+                    [
+                        -76.65067,
+                        -12.676473
+                    ],
+                    [
+                        -76.650606,
+                        -12.676827
+                    ],
+                    [
+                        -76.65001,
+                        -12.679726
+                    ],
+                    [
+                        -76.649706,
+                        -12.681222
+                    ],
+                    [
+                        -76.649338,
+                        -12.683094
+                    ],
+                    [
+                        -76.649331,
+                        -12.683125
+                    ],
+                    [
+                        -76.648786,
+                        -12.685742
+                    ],
+                    [
+                        -76.648611,
+                        -12.686402
+                    ],
+                    [
+                        -76.648309,
+                        -12.68736
+                    ],
+                    [
+                        -76.647986,
+                        -12.688245
+                    ],
+                    [
+                        -76.647785,
+                        -12.688706
+                    ],
+                    [
+                        -76.647489,
+                        -12.689347
+                    ],
+                    [
+                        -76.647294,
+                        -12.689693
+                    ],
+                    [
+                        -76.64694,
+                        -12.690404
+                    ],
+                    [
+                        -76.6466,
+                        -12.690983
+                    ],
+                    [
+                        -76.645789,
+                        -12.692248
+                    ],
+                    [
+                        -76.644033,
+                        -12.694923
+                    ],
+                    [
+                        -76.642992,
+                        -12.69655
+                    ],
+                    [
+                        -76.641577,
+                        -12.698728
+                    ],
+                    [
+                        -76.63705,
+                        -12.705689
+                    ],
+                    [
+                        -76.636495,
+                        -12.706485
+                    ],
+                    [
+                        -76.635539,
+                        -12.707687
+                    ],
+                    [
+                        -76.634817,
+                        -12.708464
+                    ],
+                    [
+                        -76.634767,
+                        -12.708514
+                    ],
+                    [
+                        -76.634633,
+                        -12.708643
+                    ],
+                    [
+                        -76.633659,
+                        -12.709536
+                    ],
+                    [
+                        -76.632648,
+                        -12.710358
+                    ],
+                    [
+                        -76.631227,
+                        -12.711516
+                    ],
+                    [
+                        -76.631159,
+                        -12.71157
+                    ],
+                    [
+                        -76.629653,
+                        -12.712782
+                    ],
+                    [
+                        -76.62962,
+                        -12.712811
+                    ],
+                    [
+                        -76.627488,
+                        -12.714509
+                    ],
+                    [
+                        -76.626927,
+                        -12.714963
+                    ],
+                    [
+                        -76.623351,
+                        -12.717874
+                    ],
+                    [
+                        -76.622506,
+                        -12.718557
+                    ],
+                    [
+                        -76.621961,
+                        -12.719002
+                    ],
+                    [
+                        -76.620928,
+                        -12.719979
+                    ],
+                    [
+                        -76.620424,
+                        -12.720513
+                    ],
+                    [
+                        -76.619852,
+                        -12.721179
+                    ],
+                    [
+                        -76.6193,
+                        -12.721882
+                    ],
+                    [
+                        -76.618801,
+                        -12.722573
+                    ],
+                    [
+                        -76.618272,
+                        -12.72343
+                    ],
+                    [
+                        -76.617926,
+                        -12.724036
+                    ],
+                    [
+                        -76.617667,
+                        -12.724538
+                    ],
+                    [
+                        -76.61743,
+                        -12.725049
+                    ],
+                    [
+                        -76.617218,
+                        -12.725531
+                    ],
+                    [
+                        -76.616893,
+                        -12.726365
+                    ],
+                    [
+                        -76.616792,
+                        -12.726645
+                    ],
+                    [
+                        -76.616601,
+                        -12.727206
+                    ],
+                    [
+                        -76.616372,
+                        -12.728019
+                    ],
+                    [
+                        -76.615234,
+                        -12.732537
+                    ],
+                    [
+                        -76.614231,
+                        -12.736602
+                    ],
+                    [
+                        -76.613778,
+                        -12.738422
+                    ],
+                    [
+                        -76.613029,
+                        -12.741458
+                    ],
+                    [
+                        -76.612678,
+                        -12.742793
+                    ],
+                    [
+                        -76.612315,
+                        -12.743916
+                    ],
+                    [
+                        -76.611929,
+                        -12.744905
+                    ],
+                    [
+                        -76.611575,
+                        -12.745669
+                    ],
+                    [
+                        -76.611305,
+                        -12.7462
+                    ],
+                    [
+                        -76.610827,
+                        -12.747049
+                    ],
+                    [
+                        -76.610191,
+                        -12.74804
+                    ],
+                    [
+                        -76.607523,
+                        -12.751746
+                    ],
+                    [
+                        -76.605857,
+                        -12.754094
+                    ],
+                    [
+                        -76.604715,
+                        -12.755672
+                    ],
+                    [
+                        -76.604461,
+                        -12.756013
+                    ],
+                    [
+                        -76.604308,
+                        -12.75623
+                    ],
+                    [
+                        -76.603479,
+                        -12.757389
+                    ],
+                    [
+                        -76.602884,
+                        -12.758179
+                    ],
+                    [
+                        -76.602455,
+                        -12.758694
+                    ],
+                    [
+                        -76.600037,
+                        -12.761591
+                    ],
+                    [
+                        -76.599372,
+                        -12.762379
+                    ],
+                    [
+                        -76.597765,
+                        -12.764294
+                    ],
+                    [
+                        -76.596815,
+                        -12.765402
+                    ],
+                    [
+                        -76.596653,
+                        -12.765594
+                    ],
+                    [
+                        -76.591521,
+                        -12.771704
+                    ],
+                    [
+                        -76.591464,
+                        -12.771771
+                    ],
+                    [
+                        -76.588184,
+                        -12.77568
+                    ],
+                    [
+                        -76.587064,
+                        -12.776995
+                    ],
+                    [
+                        -76.586626,
+                        -12.777489
+                    ],
+                    [
+                        -76.586022,
+                        -12.778116
+                    ],
+                    [
+                        -76.585417,
+                        -12.778693
+                    ],
+                    [
+                        -76.584521,
+                        -12.779444
+                    ],
+                    [
+                        -76.584099,
+                        -12.779771
+                    ],
+                    [
+                        -76.583584,
+                        -12.780141
+                    ],
+                    [
+                        -76.582645,
+                        -12.780742
+                    ],
+                    [
+                        -76.582144,
+                        -12.781018
+                    ],
+                    [
+                        -76.577571,
+                        -12.783536
+                    ],
+                    [
+                        -76.575492,
+                        -12.78467
+                    ],
+                    [
+                        -76.571427,
+                        -12.786891
+                    ],
+                    [
+                        -76.566811,
+                        -12.789384
+                    ],
+                    [
+                        -76.566131,
+                        -12.789756
+                    ],
+                    [
+                        -76.565092,
+                        -12.790322
+                    ],
+                    [
+                        -76.563903,
+                        -12.790969
+                    ],
+                    [
+                        -76.563738,
+                        -12.791061
+                    ],
+                    [
+                        -76.561628,
+                        -12.792212
+                    ],
+                    [
+                        -76.560979,
+                        -12.792566
+                    ],
+                    [
+                        -76.560267,
+                        -12.792982
+                    ],
+                    [
+                        -76.559709,
+                        -12.793335
+                    ],
+                    [
+                        -76.559164,
+                        -12.793706
+                    ],
+                    [
+                        -76.558373,
+                        -12.79429
+                    ],
+                    [
+                        -76.557703,
+                        -12.794832
+                    ],
+                    [
+                        -76.5565,
+                        -12.795889
+                    ],
+                    [
+                        -76.555085,
+                        -12.797127
+                    ],
+                    [
+                        -76.554834,
+                        -12.797346
+                    ],
+                    [
+                        -76.552129,
+                        -12.799689
+                    ],
+                    [
+                        -76.550678,
+                        -12.800948
+                    ],
+                    [
+                        -76.546182,
+                        -12.804854
+                    ],
+                    [
+                        -76.544672,
+                        -12.806122
+                    ],
+                    [
+                        -76.543097,
+                        -12.807544
+                    ],
+                    [
+                        -76.542708,
+                        -12.807937
+                    ],
+                    [
+                        -76.542468,
+                        -12.80824
+                    ],
+                    [
+                        -76.542247,
+                        -12.808577
+                    ],
+                    [
+                        -76.542044,
+                        -12.808967
+                    ],
+                    [
+                        -76.541854,
+                        -12.809463
+                    ],
+                    [
+                        -76.541706,
+                        -12.810027
+                    ],
+                    [
+                        -76.541625,
+                        -12.81053
+                    ],
+                    [
+                        -76.541381,
+                        -12.812408
+                    ],
+                    [
+                        -76.541264,
+                        -12.813114
+                    ],
+                    [
+                        -76.541146,
+                        -12.813641
+                    ],
+                    [
+                        -76.540976,
+                        -12.814221
+                    ],
+                    [
+                        -76.540771,
+                        -12.814781
+                    ],
+                    [
+                        -76.540517,
+                        -12.815366
+                    ],
+                    [
+                        -76.540253,
+                        -12.815868
+                    ],
+                    [
+                        -76.539946,
+                        -12.816365
+                    ],
+                    [
+                        -76.539594,
+                        -12.816872
+                    ],
+                    [
+                        -76.539052,
+                        -12.817524
+                    ],
+                    [
+                        -76.535781,
+                        -12.821277
+                    ],
+                    [
+                        -76.534417,
+                        -12.822847
+                    ],
+                    [
+                        -76.530732,
+                        -12.827088
+                    ],
+                    [
+                        -76.530412,
+                        -12.827454
+                    ],
+                    [
+                        -76.526258,
+                        -12.832226
+                    ],
+                    [
+                        -76.525822,
+                        -12.83273
+                    ],
+                    [
+                        -76.525111,
+                        -12.833674
+                    ],
+                    [
+                        -76.524728,
+                        -12.834219
+                    ],
+                    [
+                        -76.524436,
+                        -12.834694
+                    ],
+                    [
+                        -76.524122,
+                        -12.835223
+                    ],
+                    [
+                        -76.523708,
+                        -12.836001
+                    ],
+                    [
+                        -76.523568,
+                        -12.83629
+                    ],
+                    [
+                        -76.523334,
+                        -12.836775
+                    ],
+                    [
+                        -76.522376,
+                        -12.839066
+                    ],
+                    [
+                        -76.522054,
+                        -12.83976
+                    ],
+                    [
+                        -76.521629,
+                        -12.840554
+                    ],
+                    [
+                        -76.521206,
+                        -12.841292
+                    ],
+                    [
+                        -76.520705,
+                        -12.842074
+                    ],
+                    [
+                        -76.52024,
+                        -12.842755
+                    ],
+                    [
+                        -76.519762,
+                        -12.843384
+                    ],
+                    [
+                        -76.519263,
+                        -12.844011
+                    ],
+                    [
+                        -76.518688,
+                        -12.844664
+                    ],
+                    [
+                        -76.516374,
+                        -12.847161
+                    ],
+                    [
+                        -76.515303,
+                        -12.848498
+                    ],
+                    [
+                        -76.514821,
+                        -12.849207
+                    ],
+                    [
+                        -76.514259,
+                        -12.850123
+                    ],
+                    [
+                        -76.5139,
+                        -12.850788
+                    ],
+                    [
+                        -76.513543,
+                        -12.851526
+                    ],
+                    [
+                        -76.513163,
+                        -12.852412
+                    ],
+                    [
+                        -76.513001,
+                        -12.852837
+                    ],
+                    [
+                        -76.51267,
+                        -12.853829
+                    ],
+                    [
+                        -76.512511,
+                        -12.854396
+                    ],
+                    [
+                        -76.511433,
+                        -12.85858
+                    ],
+                    [
+                        -76.511254,
+                        -12.859395
+                    ],
+                    [
+                        -76.511173,
+                        -12.859824
+                    ],
+                    [
+                        -76.511022,
+                        -12.860876
+                    ],
+                    [
+                        -76.510928,
+                        -12.861829
+                    ],
+                    [
+                        -76.510889,
+                        -12.862813
+                    ],
+                    [
+                        -76.510897,
+                        -12.86354
+                    ],
+                    [
+                        -76.510943,
+                        -12.864567
+                    ],
+                    [
+                        -76.510981,
+                        -12.865073
+                    ],
+                    [
+                        -76.511227,
+                        -12.868631
+                    ],
+                    [
+                        -76.511312,
+                        -12.870571
+                    ],
+                    [
+                        -76.511294,
+                        -12.871567
+                    ],
+                    [
+                        -76.510942,
+                        -12.882539
+                    ],
+                    [
+                        -76.510905,
+                        -12.883136
+                    ],
+                    [
+                        -76.510835,
+                        -12.883843
+                    ],
+                    [
+                        -76.510754,
+                        -12.884475
+                    ],
+                    [
+                        -76.510632,
+                        -12.885189
+                    ],
+                    [
+                        -76.51051,
+                        -12.885761
+                    ],
+                    [
+                        -76.510322,
+                        -12.886501
+                    ],
+                    [
+                        -76.510153,
+                        -12.88711
+                    ],
+                    [
+                        -76.509902,
+                        -12.887858
+                    ],
+                    [
+                        -76.509765,
+                        -12.888216
+                    ],
+                    [
+                        -76.509422,
+                        -12.889024
+                    ],
+                    [
+                        -76.507007,
+                        -12.894682
+                    ],
+                    [
+                        -76.505861,
+                        -12.897373
+                    ],
+                    [
+                        -76.504762,
+                        -12.899879
+                    ],
+                    [
+                        -76.503845,
+                        -12.902055
+                    ],
+                    [
+                        -76.503275,
+                        -12.903367
+                    ],
+                    [
+                        -76.502549,
+                        -12.905099
+                    ],
+                    [
+                        -76.502126,
+                        -12.906065
+                    ],
+                    [
+                        -76.501829,
+                        -12.906825
+                    ],
+                    [
+                        -76.501609,
+                        -12.907533
+                    ],
+                    [
+                        -76.501525,
+                        -12.907883
+                    ],
+                    [
+                        -76.501445,
+                        -12.908311
+                    ],
+                    [
+                        -76.501378,
+                        -12.908841
+                    ],
+                    [
+                        -76.501347,
+                        -12.909371
+                    ],
+                    [
+                        -76.501339,
+                        -12.909922
+                    ],
+                    [
+                        -76.501373,
+                        -12.910453
+                    ],
+                    [
+                        -76.501445,
+                        -12.911011
+                    ],
+                    [
+                        -76.501484,
+                        -12.911309
+                    ],
+                    [
+                        -76.501544,
+                        -12.911763
+                    ],
+                    [
+                        -76.501604,
+                        -12.912305
+                    ],
+                    [
+                        -76.501994,
+                        -12.915337
+                    ],
+                    [
+                        -76.502042,
+                        -12.916019
+                    ],
+                    [
+                        -76.502031,
+                        -12.916663
+                    ],
+                    [
+                        -76.501987,
+                        -12.917211
+                    ],
+                    [
+                        -76.501878,
+                        -12.918085
+                    ],
+                    [
+                        -76.50181,
+                        -12.918356
+                    ],
+                    [
+                        -76.501519,
+                        -12.91941
+                    ],
+                    [
+                        -76.501019,
+                        -12.921001
+                    ],
+                    [
+                        -76.500236,
+                        -12.9235
+                    ],
+                    [
+                        -76.499828,
+                        -12.924847
+                    ],
+                    [
+                        -76.499618,
+                        -12.92567
+                    ],
+                    [
+                        -76.499524,
+                        -12.926151
+                    ],
+                    [
+                        -76.499462,
+                        -12.926579
+                    ],
+                    [
+                        -76.499411,
+                        -12.92707
+                    ],
+                    [
+                        -76.499373,
+                        -12.927676
+                    ],
+                    [
+                        -76.499353,
+                        -12.929139
+                    ],
+                    [
+                        -76.499297,
+                        -12.930149
+                    ],
+                    [
+                        -76.499182,
+                        -12.931167
+                    ],
+                    [
+                        -76.499069,
+                        -12.931849
+                    ],
+                    [
+                        -76.498933,
+                        -12.932508
+                    ],
+                    [
+                        -76.498771,
+                        -12.93317
+                    ],
+                    [
+                        -76.49861,
+                        -12.933742
+                    ],
+                    [
+                        -76.498284,
+                        -12.934751
+                    ],
+                    [
+                        -76.497901,
+                        -12.935725
+                    ],
+                    [
+                        -76.497591,
+                        -12.936411
+                    ],
+                    [
+                        -76.496854,
+                        -12.937933
+                    ],
+                    [
+                        -76.496747,
+                        -12.938168
+                    ],
+                    [
+                        -76.496503,
+                        -12.938757
+                    ],
+                    [
+                        -76.496378,
+                        -12.939224
+                    ],
+                    [
+                        -76.496317,
+                        -12.939568
+                    ],
+                    [
+                        -76.496274,
+                        -12.940032
+                    ],
+                    [
+                        -76.496278,
+                        -12.940468
+                    ],
+                    [
+                        -76.496334,
+                        -12.940961
+                    ],
+                    [
+                        -76.496433,
+                        -12.941416
+                    ],
+                    [
+                        -76.496527,
+                        -12.941711
+                    ],
+                    [
+                        -76.496723,
+                        -12.942182
+                    ],
+                    [
+                        -76.496894,
+                        -12.942506
+                    ],
+                    [
+                        -76.497107,
+                        -12.942838
+                    ],
+                    [
+                        -76.497426,
+                        -12.94325
+                    ],
+                    [
+                        -76.497685,
+                        -12.94353
+                    ],
+                    [
+                        -76.498115,
+                        -12.943893
+                    ],
+                    [
+                        -76.499262,
+                        -12.944647
+                    ],
+                    [
+                        -76.499709,
+                        -12.944943
+                    ],
+                    [
+                        -76.500054,
+                        -12.945196
+                    ],
+                    [
+                        -76.500338,
+                        -12.945427
+                    ],
+                    [
+                        -76.500633,
+                        -12.945724
+                    ],
+                    [
+                        -76.500803,
+                        -12.945941
+                    ],
+                    [
+                        -76.501052,
+                        -12.946335
+                    ],
+                    [
+                        -76.501224,
+                        -12.946647
+                    ],
+                    [
+                        -76.501402,
+                        -12.94703
+                    ],
+                    [
+                        -76.501585,
+                        -12.947541
+                    ],
+                    [
+                        -76.50169,
+                        -12.947965
+                    ],
+                    [
+                        -76.501754,
+                        -12.948403
+                    ],
+                    [
+                        -76.501777,
+                        -12.948839
+                    ],
+                    [
+                        -76.501762,
+                        -12.949256
+                    ],
+                    [
+                        -76.501644,
+                        -12.950189
+                    ],
+                    [
+                        -76.500584,
+                        -12.956512
+                    ],
+                    [
+                        -76.499643,
+                        -12.962089
+                    ],
+                    [
+                        -76.499486,
+                        -12.963035
+                    ],
+                    [
+                        -76.499438,
+                        -12.963341
+                    ],
+                    [
+                        -76.498858,
+                        -12.966819
+                    ],
+                    [
+                        -76.498681,
+                        -12.967727
+                    ],
+                    [
+                        -76.498514,
+                        -12.968366
+                    ],
+                    [
+                        -76.498371,
+                        -12.968843
+                    ],
+                    [
+                        -76.498227,
+                        -12.969236
+                    ],
+                    [
+                        -76.497858,
+                        -12.970119
+                    ],
+                    [
+                        -76.497684,
+                        -12.970536
+                    ],
+                    [
+                        -76.496392,
+                        -12.973568
+                    ],
+                    [
+                        -76.495476,
+                        -12.975819
+                    ],
+                    [
+                        -76.494395,
+                        -12.978402
+                    ],
+                    [
+                        -76.494197,
+                        -12.978935
+                    ],
+                    [
+                        -76.493474,
+                        -12.980583
+                    ],
+                    [
+                        -76.493176,
+                        -12.981266
+                    ],
+                    [
+                        -76.492488,
+                        -12.982924
+                    ],
+                    [
+                        -76.492158,
+                        -12.983681
+                    ],
+                    [
+                        -76.490649,
+                        -12.987321
+                    ],
+                    [
+                        -76.490083,
+                        -12.988613
+                    ],
+                    [
+                        -76.489707,
+                        -12.989535
+                    ],
+                    [
+                        -76.489202,
+                        -12.990683
+                    ],
+                    [
+                        -76.488122,
+                        -12.993298
+                    ],
+                    [
+                        -76.485745,
+                        -12.998898
+                    ],
+                    [
+                        -76.483389,
+                        -13.004514
+                    ],
+                    [
+                        -76.482937,
+                        -13.005579
+                    ],
+                    [
+                        -76.481986,
+                        -13.007857
+                    ],
+                    [
+                        -76.481162,
+                        -13.009802
+                    ],
+                    [
+                        -76.48063,
+                        -13.011063
+                    ],
+                    [
+                        -76.480082,
+                        -13.012344
+                    ],
+                    [
+                        -76.479462,
+                        -13.013795
+                    ],
+                    [
+                        -76.47929,
+                        -13.014197
+                    ],
+                    [
+                        -76.478036,
+                        -13.017195
+                    ],
+                    [
+                        -76.477975,
+                        -13.017341
+                    ],
+                    [
+                        -76.477635,
+                        -13.018154
+                    ],
+                    [
+                        -76.477104,
+                        -13.019427
+                    ],
+                    [
+                        -76.476181,
+                        -13.021518
+                    ],
+                    [
+                        -76.476091,
+                        -13.02171
+                    ],
+                    [
+                        -76.476002,
+                        -13.021902
+                    ],
+                    [
+                        -76.47578,
+                        -13.022474
+                    ],
+                    [
+                        -76.475003,
+                        -13.024258
+                    ],
+                    [
+                        -76.474232,
+                        -13.026084
+                    ],
+                    [
+                        -76.473983,
+                        -13.026662
+                    ],
+                    [
+                        -76.473519,
+                        -13.027869
+                    ],
+                    [
+                        -76.473262,
+                        -13.028614
+                    ],
+                    [
+                        -76.473054,
+                        -13.02933
+                    ],
+                    [
+                        -76.473006,
+                        -13.029721
+                    ],
+                    [
+                        -76.472988,
+                        -13.029966
+                    ],
+                    [
+                        -76.472992,
+                        -13.030263
+                    ],
+                    [
+                        -76.473015,
+                        -13.030495
+                    ],
+                    [
+                        -76.473062,
+                        -13.030749
+                    ],
+                    [
+                        -76.473182,
+                        -13.031155
+                    ],
+                    [
+                        -76.473549,
+                        -13.032238
+                    ],
+                    [
+                        -76.473504,
+                        -13.032314
+                    ],
+                    [
+                        -76.473426,
+                        -13.032383
+                    ],
+                    [
+                        -76.473319,
+                        -13.032431
+                    ],
+                    [
+                        -76.472775,
+                        -13.032392
+                    ],
+                    [
+                        -76.472122,
+                        -13.032338
+                    ],
+                    [
+                        -76.471607,
+                        -13.032294
+                    ],
+                    [
+                        -76.471452,
+                        -13.032294
+                    ],
+                    [
+                        -76.471275,
+                        -13.032322
+                    ],
+                    [
+                        -76.471104,
+                        -13.032367
+                    ],
+                    [
+                        -76.470992,
+                        -13.032409
+                    ],
+                    [
+                        -76.470639,
+                        -13.032611
+                    ],
+                    [
+                        -76.469757,
+                        -13.033026
+                    ],
+                    [
+                        -76.469204,
+                        -13.033314
+                    ],
+                    [
+                        -76.468781,
+                        -13.033549
+                    ],
+                    [
+                        -76.468465,
+                        -13.033693
+                    ],
+                    [
+                        -76.468148,
+                        -13.033818
+                    ],
+                    [
+                        -76.467855,
+                        -13.033915
+                    ],
+                    [
+                        -76.467651,
+                        -13.033958
+                    ],
+                    [
+                        -76.467362,
+                        -13.033994
+                    ],
+                    [
+                        -76.466679,
+                        -13.034053
+                    ],
+                    [
+                        -76.462054,
+                        -13.034072
+                    ],
+                    [
+                        -76.458979,
+                        -13.034118
+                    ],
+                    [
+                        -76.457711,
+                        -13.03416
+                    ],
+                    [
+                        -76.457497,
+                        -13.034167
+                    ],
+                    [
+                        -76.456836,
+                        -13.034187
+                    ],
+                    [
+                        -76.456386,
+                        -13.034227
+                    ],
+                    [
+                        -76.455937,
+                        -13.034311
+                    ],
+                    [
+                        -76.455515,
+                        -13.03439
+                    ],
+                    [
+                        -76.454932,
+                        -13.034496
+                    ],
+                    [
+                        -76.454481,
+                        -13.034584
+                    ],
+                    [
+                        -76.454068,
+                        -13.034661
+                    ],
+                    [
+                        -76.453344,
+                        -13.034823
+                    ],
+                    [
+                        -76.453,
+                        -13.03493
+                    ],
+                    [
+                        -76.45268,
+                        -13.035061
+                    ],
+                    [
+                        -76.452355,
+                        -13.035228
+                    ],
+                    [
+                        -76.452048,
+                        -13.035422
+                    ],
+                    [
+                        -76.451758,
+                        -13.035644
+                    ],
+                    [
+                        -76.451331,
+                        -13.036004
+                    ],
+                    [
+                        -76.450062,
+                        -13.036959
+                    ],
+                    [
+                        -76.449916,
+                        -13.037057
+                    ],
+                    [
+                        -76.447322,
+                        -13.039065
+                    ],
+                    [
+                        -76.443029,
+                        -13.042383
+                    ],
+                    [
+                        -76.442866,
+                        -13.042515
+                    ],
+                    [
+                        -76.44207,
+                        -13.043138
+                    ],
+                    [
+                        -76.441357,
+                        -13.043651
+                    ],
+                    [
+                        -76.440608,
+                        -13.044102
+                    ],
+                    [
+                        -76.439977,
+                        -13.044395
+                    ],
+                    [
+                        -76.438602,
+                        -13.045036
+                    ],
+                    [
+                        -76.436728,
+                        -13.045865
+                    ],
+                    [
+                        -76.436276,
+                        -13.046192
+                    ],
+                    [
+                        -76.436128,
+                        -13.046327
+                    ],
+                    [
+                        -76.435791,
+                        -13.046638
+                    ],
+                    [
+                        -76.434257,
+                        -13.048511
+                    ],
+                    [
+                        -76.433942,
+                        -13.048889
+                    ],
+                    [
+                        -76.433053,
+                        -13.050017
+                    ],
+                    [
+                        -76.432966,
+                        -13.050127
+                    ],
+                    [
+                        -76.432669,
+                        -13.050501
+                    ],
+                    [
+                        -76.43104,
+                        -13.052554
+                    ],
+                    [
+                        -76.430867,
+                        -13.052758
+                    ],
+                    [
+                        -76.430812,
+                        -13.05282
+                    ],
+                    [
+                        -76.43058,
+                        -13.053098
+                    ],
+                    [
+                        -76.430233,
+                        -13.053536
+                    ],
+                    [
+                        -76.429873,
+                        -13.053991
+                    ],
+                    [
+                        -76.429472,
+                        -13.054497
+                    ],
+                    [
+                        -76.428532,
+                        -13.05567
+                    ],
+                    [
+                        -76.428295,
+                        -13.055906
+                    ],
+                    [
+                        -76.428009,
+                        -13.056147
+                    ],
+                    [
+                        -76.427478,
+                        -13.056524
+                    ],
+                    [
+                        -76.426779,
+                        -13.056861
+                    ],
+                    [
+                        -76.425278,
+                        -13.057626
+                    ],
+                    [
+                        -76.425072,
+                        -13.057731
+                    ],
+                    [
+                        -76.424502,
+                        -13.058022
+                    ],
+                    [
+                        -76.424077,
+                        -13.058234
+                    ],
+                    [
+                        -76.417832,
+                        -13.061429
+                    ],
+                    [
+                        -76.416854,
+                        -13.062197
+                    ],
+                    [
+                        -76.413617,
+                        -13.065193
+                    ],
+                    [
+                        -76.412871,
+                        -13.06576
+                    ],
+                    [
+                        -76.407824,
+                        -13.069459
+                    ],
+                    [
+                        -76.407247,
+                        -13.069882
+                    ],
+                    [
+                        -76.405831,
+                        -13.071321
+                    ],
+                    [
+                        -76.40302,
+                        -13.074493
+                    ],
+                    [
+                        -76.402574,
+                        -13.074861
+                    ],
+                    [
+                        -76.402427,
+                        -13.074983
+                    ],
+                    [
+                        -76.402206,
+                        -13.075113
+                    ],
+                    [
+                        -76.401644,
+                        -13.075446
+                    ],
+                    [
+                        -76.40112,
+                        -13.075731
+                    ],
+                    [
+                        -76.400613,
+                        -13.075995
+                    ],
+                    [
+                        -76.400049,
+                        -13.076285
+                    ],
+                    [
+                        -76.398807,
+                        -13.076922
+                    ],
+                    [
+                        -76.397481,
+                        -13.077603
+                    ],
+                    [
+                        -76.397183,
+                        -13.077708
+                    ],
+                    [
+                        -76.396923,
+                        -13.077774
+                    ],
+                    [
+                        -76.396655,
+                        -13.077804
+                    ],
+                    [
+                        -76.396359,
+                        -13.0778
+                    ],
+                    [
+                        -76.396119,
+                        -13.077767
+                    ],
+                    [
+                        -76.395848,
+                        -13.077701
+                    ],
+                    [
+                        -76.394587,
+                        -13.077333
+                    ],
+                    [
+                        -76.394045,
+                        -13.077174
+                    ],
+                    [
+                        -76.393681,
+                        -13.077066
+                    ],
+                    [
+                        -76.393473,
+                        -13.076984
+                    ],
+                    [
+                        -76.392976,
+                        -13.076855
+                    ],
+                    [
+                        -76.39277,
+                        -13.076813
+                    ],
+                    [
+                        -76.392623,
+                        -13.0768
+                    ],
+                    [
+                        -76.392564,
+                        -13.076795
+                    ],
+                    [
+                        -76.392396,
+                        -13.076673
+                    ],
+                    [
+                        -76.392224,
+                        -13.076617
+                    ],
+                    [
+                        -76.391408,
+                        -13.076468
+                    ],
+                    [
+                        -76.389967,
+                        -13.076189
+                    ],
+                    [
+                        -76.388627,
+                        -13.075766
+                    ],
+                    [
+                        -76.388467,
+                        -13.075758
+                    ],
+                    [
+                        -76.387503,
+                        -13.075451
+                    ],
+                    [
+                        -76.385961,
+                        -13.074961
+                    ],
+                    [
+                        -76.385465,
+                        -13.074803
+                    ],
+                    [
+                        -76.383622,
+                        -13.07422
+                    ],
+                    [
+                        -76.383176,
+                        -13.074075
+                    ],
+                    [
+                        -76.382537,
+                        -13.073872
+                    ],
+                    [
+                        -76.382115,
+                        -13.073737
+                    ],
+                    [
+                        -76.381681,
+                        -13.074406
+                    ],
+                    [
+                        -76.381243,
+                        -13.075068
+                    ],
+                    [
+                        -76.381024,
+                        -13.075472
+                    ],
+                    [
+                        -76.380866,
+                        -13.075764
+                    ],
+                    [
+                        -76.380832,
+                        -13.075832
+                    ],
+                    [
+                        -76.380048,
+                        -13.075713
+                    ],
+                    [
+                        -76.379544,
+                        -13.075631
+                    ],
+                    [
+                        -76.379073,
+                        -13.075554
+                    ],
+                    [
+                        -76.378159,
+                        -13.075404
+                    ],
+                    [
+                        -76.376442,
+                        -13.075136
+                    ],
+                    [
+                        -76.375493,
+                        -13.074984
+                    ],
+                    [
+                        -76.37542,
+                        -13.074988
+                    ],
+                    [
+                        -76.375274,
+                        -13.075048
+                    ],
+                    [
+                        -76.375214,
+                        -13.075073
+                    ],
+                    [
+                        -76.375148,
+                        -13.075074
+                    ],
+                    [
+                        -76.375094,
+                        -13.075054
+                    ],
+                    [
+                        -76.375051,
+                        -13.075018
+                    ],
+                    [
+                        -76.374932,
+                        -13.074924
+                    ],
+                    [
+                        -76.374861,
+                        -13.074891
+                    ],
+                    [
+                        -76.374147,
+                        -13.074781
+                    ],
+                    [
+                        -76.373879,
+                        -13.074737
+                    ],
+                    [
+                        -76.373292,
+                        -13.074642
+                    ],
+                    [
+                        -76.372416,
+                        -13.074503
+                    ],
+                    [
+                        -76.371702,
+                        -13.07439
+                    ],
+                    [
+                        -76.370604,
+                        -13.074214
+                    ],
+                    [
+                        -76.370137,
+                        -13.074132
+                    ],
+                    [
+                        -76.369898,
+                        -13.074074
+                    ],
+                    [
+                        -76.369684,
+                        -13.074325
+                    ],
+                    [
+                        -76.369607,
+                        -13.074445
+                    ],
+                    [
+                        -76.36949,
+                        -13.074684
+                    ],
+                    [
+                        -76.369446,
+                        -13.074738
+                    ],
+                    [
+                        -76.369331,
+                        -13.07484
+                    ],
+                    [
+                        -76.369079,
+                        -13.075043
+                    ],
+                    [
+                        -76.368949,
+                        -13.075123
+                    ],
+                    [
+                        -76.36881,
+                        -13.075244
+                    ],
+                    [
+                        -76.368636,
+                        -13.075563
+                    ],
+                    [
+                        -76.368579,
+                        -13.075615
+                    ],
+                    [
+                        -76.368491,
+                        -13.075659
+                    ],
+                    [
+                        -76.368248,
+                        -13.07567
+                    ],
+                    [
+                        -76.368049,
+                        -13.075708
+                    ],
+                    [
+                        -76.367956,
+                        -13.07571
+                    ],
+                    [
+                        -76.367628,
+                        -13.07566
+                    ],
+                    [
+                        -76.367495,
+                        -13.075662
+                    ],
+                    [
+                        -76.36742,
+                        -13.075687
+                    ],
+                    [
+                        -76.367245,
+                        -13.075856
+                    ],
+                    [
+                        -76.367168,
+                        -13.075905
+                    ],
+                    [
+                        -76.367007,
+                        -13.075938
+                    ],
+                    [
+                        -76.366891,
+                        -13.075943
+                    ],
+                    [
+                        -76.366816,
+                        -13.075965
+                    ],
+                    [
+                        -76.366743,
+                        -13.076027
+                    ],
+                    [
+                        -76.366709,
+                        -13.076088
+                    ],
+                    [
+                        -76.366558,
+                        -13.07665
+                    ],
+                    [
+                        -76.366492,
+                        -13.076728
+                    ],
+                    [
+                        -76.366232,
+                        -13.076907
+                    ],
+                    [
+                        -76.366004,
+                        -13.077007
+                    ],
+                    [
+                        -76.365686,
+                        -13.077109
+                    ],
+                    [
+                        -76.36504,
+                        -13.077212
+                    ],
+                    [
+                        -76.363986,
+                        -13.077404
+                    ],
+                    [
+                        -76.363921,
+                        -13.07743
+                    ],
+                    [
+                        -76.36385,
+                        -13.077491
+                    ],
+                    [
+                        -76.363763,
+                        -13.077605
+                    ],
+                    [
+                        -76.363651,
+                        -13.07772
+                    ],
+                    [
+                        -76.363373,
+                        -13.077966
+                    ],
+                    [
+                        -76.363222,
+                        -13.078139
+                    ],
+                    [
+                        -76.363137,
+                        -13.078269
+                    ],
+                    [
+                        -76.363113,
+                        -13.078333
+                    ],
+                    [
+                        -76.36305,
+                        -13.078739
+                    ],
+                    [
+                        -76.362955,
+                        -13.078868
+                    ],
+                    [
+                        -76.362766,
+                        -13.079018
+                    ],
+                    [
+                        -76.362562,
+                        -13.079216
+                    ],
+                    [
+                        -76.362114,
+                        -13.07958
+                    ],
+                    [
+                        -76.361936,
+                        -13.079771
+                    ],
+                    [
+                        -76.361855,
+                        -13.079819
+                    ],
+                    [
+                        -76.361662,
+                        -13.079862
+                    ],
+                    [
+                        -76.361377,
+                        -13.0801
+                    ],
+                    [
+                        -76.3609,
+                        -13.080404
+                    ],
+                    [
+                        -76.360748,
+                        -13.080514
+                    ],
+                    [
+                        -76.360551,
+                        -13.080692
+                    ],
+                    [
+                        -76.360504,
+                        -13.080713
+                    ],
+                    [
+                        -76.360375,
+                        -13.080741
+                    ],
+                    [
+                        -76.360095,
+                        -13.080772
+                    ],
+                    [
+                        -76.359995,
+                        -13.080803
+                    ],
+                    [
+                        -76.359732,
+                        -13.080902
+                    ],
+                    [
+                        -76.359564,
+                        -13.081022
+                    ],
+                    [
+                        -76.35948,
+                        -13.081122
+                    ],
+                    [
+                        -76.359457,
+                        -13.081204
+                    ],
+                    [
+                        -76.359456,
+                        -13.081317
+                    ],
+                    [
+                        -76.359626,
+                        -13.081895
+                    ],
+                    [
+                        -76.359621,
+                        -13.081985
+                    ],
+                    [
+                        -76.359602,
+                        -13.08207
+                    ],
+                    [
+                        -76.35954,
+                        -13.082168
+                    ],
+                    [
+                        -76.359503,
+                        -13.082287
+                    ],
+                    [
+                        -76.359486,
+                        -13.082431
+                    ],
+                    [
+                        -76.359445,
+                        -13.082542
+                    ],
+                    [
+                        -76.359347,
+                        -13.082668
+                    ],
+                    [
+                        -76.358856,
+                        -13.083122
+                    ],
+                    [
+                        -76.358652,
+                        -13.083246
+                    ],
+                    [
+                        -76.357673,
+                        -13.084199
+                    ],
+                    [
+                        -76.356466,
+                        -13.085255
+                    ],
+                    [
+                        -76.356032,
+                        -13.085579
+                    ],
+                    [
+                        -76.355798,
+                        -13.085788
+                    ],
+                    [
+                        -76.355576,
+                        -13.085918
                     ]
                 ],
                 "type": "LineString"

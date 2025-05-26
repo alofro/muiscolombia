@@ -728,6 +728,14 @@
         "lat": -12.0078,
         "lon": -77.0613,
         "modo": "bici",
+        "images": [
+            "lima1.jpg",
+            "lima2.jpg",
+            "lima3.jpg",
+            "lima4.jpg",
+            "lima5.jpg",
+            "lima6.jpg"
+        ],
         "fecha": "2025-05-15",
         "distancia": 1132,
         "kmDesdeEtapa": 837,
@@ -753,10 +761,48 @@
         "lon": -76.837,
         "description": "Etapa 29",
         "modo": "bici",
+        "images": [
+            "puntahermosa1.jpg",
+            "puntahermosa2.jpg",
+            "puntahermosa3.jpg",
+            "puntahermosa4.jpg",
+            "puntahermosa5.jpg"
+        ],
         "tiempo": "2:35",
         "fecha": "2025-05-16",
         "distancia": 1174,
         "kmDesdeEtapa": 23,
         "elevation": 37
+    },
+    {
+        "name": "Asia",
+        "type": "etapa",
+        "lat": -12.7115,
+        "lon": -76.6311,
+        "description": "Etapa 30",
+        "modo": "bici",
+        "tiempo": "4:20",
+        "fecha": "2025-05-18",
+        "distancia": 1223,
+        "kmDesdeEtapa": 50,
+        "elevation": 5
+    },
+    {
+        "name": "San Vicente de Cañete",
+        "type": "etapa",
+        "lat": -13.0846,
+        "lon": -76.3537,
+        "description": "Etapa 31",
+        "modo": "bici",
+        "images": [
+            "canete1.jpg",
+            "canete2.jpg",
+            "canete3.jpg"
+        ],
+        "tiempo": "4:23",
+        "fecha": "2025-05-19",
+        "distancia": 1275,
+        "kmDesdeEtapa": 51,
+        "elevation": 60
     }
 ]
